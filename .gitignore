@@ -1,0 +1,10 @@
+# Ignore WordPress backup archives and directories
+*.wpress
+public_html/**/ai1wm-backups/
+
+# Ignore thetripdealers and learn directories
+public_html/thetripdealers/
+public_html/learn/
+
+# Ignore Elementor generated styles
+public_html/**/uploads/elementor/css/
