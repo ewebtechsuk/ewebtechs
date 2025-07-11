@@ -1,5 +1,6 @@
 # ewebtechs
 
+
 ## Pushing to GitHub
 After cleaning large backup files, add `*.wpress` to `.gitignore`.
 Then push the repository:
@@ -10,4 +11,3 @@ git branch -M main
 # git remote add origin <YOUR_REPO_URL>
 
 git push -u origin main
-
