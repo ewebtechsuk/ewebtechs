@@ -9,5 +9,8 @@ public_html/thetripdealers/wp-content/ai1wm-backups/
 public_html/thetripdealers/
 public_html/learn/
 
+
 # Ignore Elementor generated styles
 public_html/wp-content/uploads/elementor/css/
+
+
