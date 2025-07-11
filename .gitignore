@@ -1,9 +1,11 @@
 # Ignore WordPress backup archives and directories
+
 *.wpress
 public_html/wp-content/ai1wm-backups/
 public_html/thetripdealers/wp-content/ai1wm-backups/
 
-# Ignore full site copies
+# Ignore thetripdealers and learn directories
+
 public_html/thetripdealers/
 public_html/learn/
 
