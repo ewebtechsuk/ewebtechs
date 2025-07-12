@@ -1,14 +1,114 @@
-# Ignore WordPress backup archives and directories
+# WordPress .gitignore
 
+# WordPress Core Files
+wp-config.php
+wp-config-sample.php
+wp-config-local.php
+wp-config-production.php
+wp-config-staging.php
+wp-config-development.php
+
+# WordPress Core
+/wp-admin/
+/wp-includes/
+/wp-content/index.php
+/wp-content/languages
+/wp-content/upgrade/
+
+# WordPress Uploads
+/wp-content/uploads/
+wp-content/uploads/
+uploads/
+
+# WordPress Cache
+/wp-content/cache/
+wp-content/cache/
+/wp-content/w3tc-config/
+/wp-content/advanced-cache.php
+/wp-content/object-cache.php
+
+# WordPress Backup Files
 *.wpress
+*.zip
+*.tar.gz
+*.sql
+*.sql.gz
+/wp-content/backups/
+/backups/
 public_html/wp-content/ai1wm-backups/
 public_html/thetripdealers/wp-content/ai1wm-backups/
 
-# Ignore thetripdealers and learn directories
+# WordPress Plugins (uncomment if you want to ignore all plugins)
+# /wp-content/plugins/
 
+# WordPress Themes (uncomment if you want to ignore all themes)
+# /wp-content/themes/
+
+# WordPress Temporary Files
+/wp-content/upgrade/
+/wp-content/uploads/wpo/
+/wp-content/temp/
+*.tmp
+*.temp
+
+# WordPress Log Files
+*.log
+/wp-content/debug.log
+error_log
+access_log
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.metadata
+.buildpath
+.settings/
+*.swp
+*.swo
+*~
+
+# Node.js Dependencies (for WordPress themes/plugins using npm)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Composer Dependencies
+vendor/
+composer.lock
+
+# Environment Files
+.env
+.env.local
+.env.production
+.env.staging
+.env.development
+
+# SASS/SCSS
+.sass-cache/
+*.css.map
+
+# Project Specific Directories
 public_html/thetripdealers/
 public_html/learn/
 
-
-# Ignore Elementor generated styles
+# Elementor Generated Files
 public_html/wp-content/uploads/elementor/css/
+/wp-content/uploads/elementor/css/
+
+# Security Files
+.htaccess.bak
+.htpasswd
+wp-config.php.bak
