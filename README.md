@@ -11,6 +11,18 @@ under version control). To include your actual site files:
 4. Commit the files: `git commit -m "Add site files"`.
 5. Push to GitHub: `git push origin main` (use `--force` if overwriting).
 
+## Troubleshooting push errors
+
+If `git push` rejects your commit because the remote contains work you
+don't have locally, fetch the remote history first:
+
+```bash
+git pull origin main --allow-unrelated-histories
+```
+
+Resolve any merge conflicts, commit the result, and push again. Use
+`--force` only if you intend to overwrite the history on GitHub.
+
 This README was added from Codex environment which cannot connect to the
 original server or GitHub, so you must perform the above steps on a machine
 with network access.

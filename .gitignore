@@ -1,0 +1,6 @@
+# Ignore MacOS Finder files
+.DS_Store
+
+# Keep public_html directory when empty via .gitkeep
+
+
