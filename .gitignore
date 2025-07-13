@@ -1,0 +1,4 @@
+# Ignore MacOS Finder files
+.DS_Store
+
+# Placeholder to track public_html when site files are absent
