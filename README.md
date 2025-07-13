@@ -19,7 +19,6 @@ If your WordPress files already exist in `/htdocs/eWeb\ Techs/public_html`:
    If one exists, remove it with `rm -rf public_html/.git`.
 3. Run the commit steps above to add and push the files to GitHub.
 
-
 ## Troubleshooting push errors
 
 If `git push` rejects your commit because the remote contains work you
@@ -31,6 +30,27 @@ git pull origin main --allow-unrelated-histories
 
 Resolve any merge conflicts, commit the result, and push again. Use
 `--force` only if you intend to overwrite the history on GitHub.
+
+## Import from Hostinger
+
+If your live WordPress site is hosted on Hostinger and you want to copy those
+files here, you can archive them over SSH and download the archive:
+
+```bash
+ssh <user>@<host> "cd /home/<user>/public_html && tar -czf site.tar.gz ."
+scp <user>@<host>:/home/<user>/public_html/site.tar.gz .
+tar -xzf site.tar.gz -C public_html && rm site.tar.gz
+```
+
+After extracting the archive, ensure no `.git` folder was included and remove
+any macOS `.DS_Store` files before committing:
+
+```bash
+find public_html -name '.DS_Store' -delete
+rm -rf public_html/.git
+```
+
+Then follow the commit steps above.
 
 
 This README was added from Codex environment which cannot connect to the
