@@ -2,10 +2,7 @@
 
 This repository is prepared to hold the files for the `ewebtechs.com` site.
 
-The `public_html` directory is currently empty. If you already have a working
-WordPress installation at `/htdocs/eWeb\ Techs/public_html` on your local
-machine, copy those files into this repository's `public_html/` directory and
-commit the results:
+The `public_html` directory is tracked with a placeholder `.gitkeep` file so the folder exists in this repository even when no site files are present. If you already have a working WordPress installation at `/htdocs/eWeb\ Techs/public_html` on your local machine, copy those files into this repository's `public_html/` directory and commit the results:
 
 
 1. Copy your website files into the `public_html/` directory.
