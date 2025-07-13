@@ -3,3 +3,4 @@
 
 # Avoid committing a nested Git repo if public_html was copied from another project
 public_html/.git/
+
