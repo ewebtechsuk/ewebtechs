@@ -121,11 +121,11 @@
             </a>
         </nav>
         <div class="content">
-            <svg 
+            <svg
                 class="main-image"
-                width="650" 
-                height="406" 
-                viewBox="0 0 650 406" 
+                width="650"
+                height="406"
+                viewBox="0 0 650 406"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -145,8 +145,8 @@
                 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
                 <use xlink:href="#image0_793_7454" transform="translate(0 -0.0294456) scale(0.000431034 0.000453478)"/>
                 </pattern>
-                    <image 
-                        id="image0_793_7454" 
+                    <image
+                        id="image0_793_7454"
                         width="2320"
                         height="2296"
                         href="https://assets.hostinger.com/content/hostinger_welcome/v2/man1.png"
@@ -156,23 +156,23 @@
             <h1>You Are All Set to Go!</h1>
             <p>All you have to do now is upload your website files and start your journey. Check out how to do that below:</p>
             <div class="link-container">
-                <a 
+                <a
                     class=link
                     href="https://support.hostinger.com/en/articles/4455931-how-can-i-migrate-website-to-hostinger"
                     rel="nofollow"
                     target="_blank"
                 >
-                    How can I migrate a website to Hostinger? 
+                    How can I migrate a website to Hostinger?
                     <svg class="ic-launch" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path 
-                            fill-rule="evenodd" 
-                            clip-rule="evenodd" 
-                            d="M16.3333 15.8333H4.66667V4.16667H10.5V2.5H4.66667C3.74167 2.5 3 3.25 3 4.16667V15.8333C3 16.75 3.74167 17.5 4.66667 17.5H16.3333C17.25 17.5 18 16.75 18 15.8333V10H16.3333V15.8333ZM12.1667 2.5V4.16667H15.1583L6.96667 12.3583L8.14167 13.5333L16.3333 5.34167V8.33333H18V2.5H12.1667Z" 
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M16.3333 15.8333H4.66667V4.16667H10.5V2.5H4.66667C3.74167 2.5 3 3.25 3 4.16667V15.8333C3 16.75 3.74167 17.5 4.66667 17.5H16.3333C17.25 17.5 18 16.75 18 15.8333V10H16.3333V15.8333ZM12.1667 2.5V4.16667H15.1583L6.96667 12.3583L8.14167 13.5333L16.3333 5.34167V8.33333H18V2.5H12.1667Z"
                             fill="#673DE6"
                         />
                     </svg>
                 </a>
-                <a 
+                <a
                     class="link"
                     href="https://support.hostinger.com/en/articles/3220304-how-to-install-wordpress-using-auto-installer"
                     rel="nofollow"
@@ -180,16 +180,16 @@
                 >
                     How to install WordPress using Auto Installer?
                     <svg class="ic-launch" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path 
-                            fill-rule="evenodd" 
-                            clip-rule="evenodd" 
-                            d="M16.3333 15.8333H4.66667V4.16667H10.5V2.5H4.66667C3.74167 2.5 3 3.25 3 4.16667V15.8333C3 16.75 3.74167 17.5 4.66667 17.5H16.3333C17.25 17.5 18 16.75 18 15.8333V10H16.3333V15.8333ZM12.1667 2.5V4.16667H15.1583L6.96667 12.3583L8.14167 13.5333L16.3333 5.34167V8.33333H18V2.5H12.1667Z" 
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M16.3333 15.8333H4.66667V4.16667H10.5V2.5H4.66667C3.74167 2.5 3 3.25 3 4.16667V15.8333C3 16.75 3.74167 17.5 4.66667 17.5H16.3333C17.25 17.5 18 16.75 18 15.8333V10H16.3333V15.8333ZM12.1667 2.5V4.16667H15.1583L6.96667 12.3583L8.14167 13.5333L16.3333 5.34167V8.33333H18V2.5H12.1667Z"
                             fill="#673DE6"
                         />
                     </svg>
                 </a>
             </div>
-            
+
         </div>
     </body>
 </html>
