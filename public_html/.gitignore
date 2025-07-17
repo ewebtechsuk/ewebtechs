@@ -1,1 +1,13 @@
 /thetripdealers
+/learn
+/wp-content/uploads
+/.env
+/.DS_Store'
+/node_modules
+/.vscode
+/.idea
+/.cache
+/.history
+/.next
+/.nuxt
+/.sass-cache
