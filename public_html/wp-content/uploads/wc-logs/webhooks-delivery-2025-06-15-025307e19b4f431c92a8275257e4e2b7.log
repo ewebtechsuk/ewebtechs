@@ -1,0 +1,799 @@
+2025-06-15T00:32:06+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 8f1c5450076d38b5fd52e201962b9662
+            [Date] => Jun 15, 2025 @ 0:32
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 0.84307
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.3 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.updated
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => +jgiHLmHLIwablaMmBHpCLa9y3OzjEiIYpJGwUCfrK8=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 8f1c5450076d38b5fd52e201962b9662
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sun, 15 Jun 2025 00:32:06 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-06-15T00:32:57+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 4a3f245626cb136359e938fdcc953a1b
+            [Date] => Jun 15, 2025 @ 0:32
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 0.84894
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.3 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.updated
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => bT2yIxndGo0NeS6LS6HX3QtFVDEx8MnMd2O5dd0zn7I=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 4a3f245626cb136359e938fdcc953a1b
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sun, 15 Jun 2025 00:32:57 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-06-15T00:33:06+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => c421330303e098c7d3fbf8b0a81fdb69
+            [Date] => Jun 15, 2025 @ 0:33
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 0.83387
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.3 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.updated
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => +jgiHLmHLIwablaMmBHpCLa9y3OzjEiIYpJGwUCfrK8=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => c421330303e098c7d3fbf8b0a81fdb69
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sun, 15 Jun 2025 00:33:06 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-06-15T00:33:57+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 169d929f8230fd579c8c97a53df7f902
+            [Date] => Jun 15, 2025 @ 0:33
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 0.80788
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.3 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.updated
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => bT2yIxndGo0NeS6LS6HX3QtFVDEx8MnMd2O5dd0zn7I=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 169d929f8230fd579c8c97a53df7f902
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sun, 15 Jun 2025 00:33:57 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-06-15T00:33:58+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 6af071f4b0adaf0337a6d0b55ea23d5d
+            [Date] => Jun 15, 2025 @ 0:33
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 0.64159
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.3 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.updated
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => bT2yIxndGo0NeS6LS6HX3QtFVDEx8MnMd2O5dd0zn7I=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 6af071f4b0adaf0337a6d0b55ea23d5d
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sun, 15 Jun 2025 00:33:58 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-06-15T00:34:06+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 5f9bb090e4f6b868fb30054db44e976f
+            [Date] => Jun 15, 2025 @ 0:34
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 0.82046
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.3 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.updated
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => +jgiHLmHLIwablaMmBHpCLa9y3OzjEiIYpJGwUCfrK8=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 5f9bb090e4f6b868fb30054db44e976f
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sun, 15 Jun 2025 00:34:06 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-06-15T00:37:17+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => de2ab594d80b7ac330a995285000fb71
+            [Date] => Jun 15, 2025 @ 0:37
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 0.80882
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.3 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.updated
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => BCmdF4zJujIcpObCujts/Q6KbJ7RgY9lm847OMQbSF4=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => de2ab594d80b7ac330a995285000fb71
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sun, 15 Jun 2025 00:37:17 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-06-15T00:38:25+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 6e3292d2609a222d29a73405d607ff82
+            [Date] => Jun 15, 2025 @ 0:38
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 0.82002
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.3 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.updated
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => BCmdF4zJujIcpObCujts/Q6KbJ7RgY9lm847OMQbSF4=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 6e3292d2609a222d29a73405d607ff82
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sun, 15 Jun 2025 00:38:25 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-06-15T00:41:52+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => f8fafba30153754632958adbe33c19cd
+            [Date] => Jun 15, 2025 @ 0:41
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 0.78466
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.3 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.updated
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => ygGi52Spk7KsQx98fudRd/J7jA2JmzIXeBslK+MtvK4=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => f8fafba30153754632958adbe33c19cd
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sun, 15 Jun 2025 00:41:51 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-06-15T00:43:02+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => e4bd39b8d4081a1f5586e9fd9c65e034
+            [Date] => Jun 15, 2025 @ 0:43
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 0.83367
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.3 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.updated
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => WKKkaIOK06YGsSHuyvazx9H0x+J2efGkbSMeTbXYCWs=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => e4bd39b8d4081a1f5586e9fd9c65e034
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sun, 15 Jun 2025 00:43:02 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-06-15T00:43:03+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 7b7552dd02faf41eafaaf2a63d8773b0
+            [Date] => Jun 15, 2025 @ 0:43
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 0.69876
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.3 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.updated
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => WKKkaIOK06YGsSHuyvazx9H0x+J2efGkbSMeTbXYCWs=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 7b7552dd02faf41eafaaf2a63d8773b0
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sun, 15 Jun 2025 00:43:03 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-06-15T01:30:48+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 3e0837fe4ffe42b0657a4dedca4499d5
+            [Date] => Jun 15, 2025 @ 1:30
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 0.82718
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.3 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.updated
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => JkdGBXG9M+4sVKPKrCTLjclTtNfelRvkWQVpInIqcng=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 3e0837fe4ffe42b0657a4dedca4499d5
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sun, 15 Jun 2025 01:30:48 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-06-15T01:30:49+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 5dc556a3ecd8d05151999f8f8df7bc81
+            [Date] => Jun 15, 2025 @ 1:30
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 0.64036
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.3 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.updated
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => vWy6JDR0jHlog0W6uUkNHCdEJ0mlhWoOMZ6c2dr4cNk=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 5dc556a3ecd8d05151999f8f8df7bc81
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sun, 15 Jun 2025 01:30:49 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-06-15T01:52:54+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 0929197f73bb5c04d423a53dc9d9b5aa
+            [Date] => Jun 15, 2025 @ 1:52
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 0.82235
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.3 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.updated
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => 5c4DINL+uzcEw7fDvurG1znkHkbBliFkdho2HT8RnbU=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 0929197f73bb5c04d423a53dc9d9b5aa
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sun, 15 Jun 2025 01:52:54 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-06-15T01:55:05+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => ab3a510b9b11b8d2d742b971aa26fb45
+            [Date] => Jun 15, 2025 @ 1:55
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 0.80803
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.3 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.updated
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => vIqohJuz6M15Z83Jqq0JCvwyjwx3nj7z/R595bkiRlM=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => ab3a510b9b11b8d2d742b971aa26fb45
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sun, 15 Jun 2025 01:55:05 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-06-15T01:56:07+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => e2f0353b47866598fff24bf2d8629571
+            [Date] => Jun 15, 2025 @ 1:56
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 0.80636
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.3 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.updated
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => vIqohJuz6M15Z83Jqq0JCvwyjwx3nj7z/R595bkiRlM=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => e2f0353b47866598fff24bf2d8629571
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sun, 15 Jun 2025 01:56:07 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-06-15T01:56:13+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 6f6428e374b4f0b1acb5427eeb28efca
+            [Date] => Jun 15, 2025 @ 1:56
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 0.77114
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.3 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.updated
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => vIqohJuz6M15Z83Jqq0JCvwyjwx3nj7z/R595bkiRlM=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 6f6428e374b4f0b1acb5427eeb28efca
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sun, 15 Jun 2025 01:56:13 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)

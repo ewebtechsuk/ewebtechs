@@ -1,0 +1,878 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Hide My WP Ghost - Advanced Pack\n"
+"POT-Creation-Date: 2024-08-16 12:09+0300\n"
+"PO-Revision-Date: 2020-12-24 09:30+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.4.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: index.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: classes/Tools.php:91
+msgid ""
+"ERROR: Too many invalid verification codes, you can try again in {time}."
+msgstr ""
+
+#: classes/Tools.php:94
+msgid ""
+"WARNING: Your account has attempted to login {count} times without providing "
+"a valid code. The last failed login occurred {time} ago. If this wasn't you, "
+"please reset your password."
+msgstr ""
+
+#: controllers/Menu.php:26
+msgid "requires Hide My WP Ghost plugin to be active."
+msgstr ""
+
+#: controllers/Settings.php:78
+#, php-format
+msgid ""
+"Javascript is disabled on your browser! You need to activate the javascript "
+"in order to use %s plugin."
+msgstr ""
+
+#: controllers/Settings.php:123 view/Twofactor.php:62
+msgid "2FA Code"
+msgstr ""
+
+#: controllers/Settings.php:133 view/Twofactor.php:63
+msgid "Email Code"
+msgstr ""
+
+#: controllers/Settings.php:170 view/Templogin.php:338
+msgid "Email"
+msgstr ""
+
+#: controllers/Settings.php:171 controllers/Templogin.php:336
+msgid "Last Access"
+msgstr ""
+
+#: controllers/Settings.php:172
+msgid "Mode"
+msgstr ""
+
+#: controllers/Settings.php:173
+msgid "Login"
+msgstr ""
+
+#: controllers/Settings.php:197
+msgid "Success"
+msgstr ""
+
+#: controllers/Settings.php:197
+msgid "Failed"
+msgstr ""
+
+#: controllers/Settings.php:206
+msgid "No logins with 2FA."
+msgstr ""
+
+#: controllers/Templogin.php:115 controllers/Uniquelogin.php:144
+msgid "Could not login with this user."
+msgstr ""
+
+#: controllers/Templogin.php:115 controllers/Templogin.php:240
+#: controllers/Uniquelogin.php:144 models/Menu.php:33 models/Menu.php:34
+#: view/Templogin.php:159
+msgid "Temporary Login"
+msgstr ""
+
+#: controllers/Templogin.php:176
+msgid "Sorry, you are not allowed to access this page."
+msgstr ""
+
+#: controllers/Templogin.php:213 controllers/Twofactor.php:204
+msgid "Saved"
+msgstr ""
+
+#: controllers/Templogin.php:221
+msgid "Empty email address"
+msgstr ""
+
+#: controllers/Templogin.php:223
+msgid "Invalid email address"
+msgstr ""
+
+#: controllers/Templogin.php:225 models/Templogin.php:246
+#: models/Templogin.php:249
+msgid "Email address already exists"
+msgstr ""
+
+#: controllers/Templogin.php:234
+msgid "User successfully created."
+msgstr ""
+
+#: controllers/Templogin.php:252
+msgid "Could not detect the user"
+msgstr ""
+
+#: controllers/Templogin.php:264
+msgid "User successfully updated."
+msgstr ""
+
+#: controllers/Templogin.php:278
+msgid "User successfully disabled."
+msgstr ""
+
+#: controllers/Templogin.php:280
+msgid "User could not be disabled."
+msgstr ""
+
+#: controllers/Templogin.php:287
+msgid "User successfully activated."
+msgstr ""
+
+#: controllers/Templogin.php:289
+msgid "User could not be activated."
+msgstr ""
+
+#: controllers/Templogin.php:315
+msgid "User successfully deleted."
+msgstr ""
+
+#: controllers/Templogin.php:317
+msgid "User could not be deleted."
+msgstr ""
+
+#: controllers/Templogin.php:334
+msgid "User"
+msgstr ""
+
+#: controllers/Templogin.php:335
+msgid "Role"
+msgstr ""
+
+#: controllers/Templogin.php:337
+msgid "Expires"
+msgstr ""
+
+#: controllers/Templogin.php:338
+msgid "Options"
+msgstr ""
+
+#: controllers/Templogin.php:368
+msgid "Lock user"
+msgstr ""
+
+#: controllers/Templogin.php:375
+msgid "Reactivate user for 1 day"
+msgstr ""
+
+#: controllers/Templogin.php:379
+msgid "Edit user"
+msgstr ""
+
+#: controllers/Templogin.php:384
+msgid "Do you want to delete temporary user?"
+msgstr ""
+
+#: controllers/Templogin.php:384
+msgid "Delete user"
+msgstr ""
+
+#: controllers/Templogin.php:387
+msgid "Copy Link"
+msgstr ""
+
+#: controllers/Templogin.php:397
+msgid "after first access"
+msgstr ""
+
+#: controllers/Templogin.php:419
+msgid "No temporary logins."
+msgstr ""
+
+#: controllers/Templogin.php:420
+msgid "Create New Temporary Login"
+msgstr ""
+
+#: controllers/Uniquelogin.php:86
+#, php-format
+msgid "Send magic login url to %s"
+msgstr ""
+
+#: controllers/Uniquelogin.php:86
+msgid "Send magic login link"
+msgstr ""
+
+#: controllers/Uniquelogin.php:270
+msgid ""
+"Please verify your email and click on the magic login URL provided in the "
+"email."
+msgstr ""
+
+#: controllers/Uniquelogin.php:281 controllers/Uniquelogin.php:368
+msgid "The server was unable to send the email."
+msgstr ""
+
+#: controllers/Uniquelogin.php:288
+msgid "User does not exists."
+msgstr ""
+
+#: controllers/Uniquelogin.php:328
+msgid "Magic login link sent!"
+msgstr ""
+
+#: models/Menu.php:46
+msgid "2FA Login"
+msgstr ""
+
+#: models/Menu.php:47 view/Twofactor.php:17
+msgid "Two-factor Authentication"
+msgstr ""
+
+#: models/Menu.php:94 models/Menu.php:180 view/Templogin.php:24
+msgid "Temporary Logins"
+msgstr ""
+
+#: models/Menu.php:98 models/Menu.php:108
+msgid "Settings"
+msgstr ""
+
+#: models/Menu.php:104 view/Twofactor.php:147
+msgid "2FA Logins"
+msgstr ""
+
+#: models/Menu.php:140
+msgid "Magic Link Login"
+msgstr ""
+
+#: models/Menu.php:141 models/Menu.php:161
+msgid ""
+"Allow users to log in to the website using their email address and a unique "
+"login URL delivered via email."
+msgstr ""
+
+#: models/Menu.php:160
+msgid "Woocommerce Magic Link"
+msgstr ""
+
+#: models/Menu.php:181 view/Templogin.php:57
+msgid ""
+"Create a temporary login URL with any user role to access the website "
+"dashboard without username and password for a limited period of time."
+msgstr ""
+
+#: models/Menu.php:201 models/Menu.php:216
+msgid "2FA"
+msgstr ""
+
+#: models/Menu.php:202 models/Menu.php:217
+msgid ""
+"Add Two Factor security on login page with Code Scan or Email Code "
+"authentication."
+msgstr ""
+
+#: models/Templogin.php:30 models/Uniquelogin.php:29
+msgid "One Hour"
+msgstr ""
+
+#: models/Templogin.php:34 models/Uniquelogin.php:33
+msgid "Three Hours"
+msgstr ""
+
+#: models/Templogin.php:38 models/Uniquelogin.php:37
+msgid "One Day"
+msgstr ""
+
+#: models/Templogin.php:42 models/Uniquelogin.php:41
+msgid "Three Days"
+msgstr ""
+
+#: models/Templogin.php:46 models/Uniquelogin.php:45
+msgid "One Week"
+msgstr ""
+
+#: models/Templogin.php:50 models/Uniquelogin.php:49
+msgid "One Month"
+msgstr ""
+
+#: models/Templogin.php:54 models/Uniquelogin.php:53
+msgid "Six Months"
+msgstr ""
+
+#: models/Templogin.php:58 models/Uniquelogin.php:57
+msgid "One Year"
+msgstr ""
+
+#: models/Templogin.php:164 models/Twofactor.php:806 models/Uniquelogin.php:131
+msgid "Not yet logged in"
+msgstr ""
+
+#: models/Templogin.php:180
+msgid "Super Admin"
+msgstr ""
+
+#: models/Templogin.php:570 models/Templogin.php:607 models/Uniquelogin.php:244
+#: models/Uniquelogin.php:281
+msgid "Expired"
+msgstr ""
+
+#: models/Templogin.php:600 models/Twofactor.php:674 models/Uniquelogin.php:274
+#, php-format
+msgid "%d %s ago"
+msgstr ""
+
+#: models/Templogin.php:602 models/Twofactor.php:676 models/Uniquelogin.php:276
+#, php-format
+msgid "%d %s remaining"
+msgstr ""
+
+#: models/Twofactor.php:43 models/Twofactor.php:242 models/Twofactor.php:259
+#: models/Twofactor.php:328 models/Twofactor.php:361
+msgid "Failed to create a login nonce."
+msgstr ""
+
+#: models/Twofactor.php:302
+msgid "You have logged in successfully."
+msgstr ""
+
+#: models/Twofactor.php:316 models/Twofactor.php:332
+msgid "ERROR: Invalid verification code."
+msgstr ""
+
+#: models/Twofactor.php:716
+#, php-format
+msgid ""
+"2FA Codes: You are out of backup codes and need <a href=\"%s\">new codes!</a>"
+msgstr ""
+
+#: models/Twofactor.php:768
+msgid "2FA Settings"
+msgstr ""
+
+#: models/Twofactor.php:770
+msgid "Last Login"
+msgstr ""
+
+#: models/Twofactor.php:798
+msgid "Disabled"
+msgstr ""
+
+#: models/Twofactor.php:800
+msgid "Active"
+msgstr ""
+
+#: models/Uniquelogin.php:159
+msgid "Empty email address."
+msgstr ""
+
+#: models/Uniquelogin.php:162
+msgid "Invalid email address."
+msgstr ""
+
+#: models/Uniquelogin.php:165
+msgid "User does not exist."
+msgstr ""
+
+#: models/Uniquelogin.php:182
+msgid "This user is a temporary user."
+msgstr ""
+
+#: models/Uniquelogin.php:378
+#, php-format
+msgid "[%s] Your Magic Login URL"
+msgstr ""
+
+#: models/Uniquelogin.php:379
+#, php-format
+msgid "Click on this magic link %s to log in to your account."
+msgstr ""
+
+#: models/Uniquelogin.php:482
+msgid "Login using a magic link"
+msgstr ""
+
+#: models/Uniquelogin.php:487
+msgid "Login without password:"
+msgstr ""
+
+#: models/Uniquelogin.php:492
+msgid "Email Address"
+msgstr ""
+
+#: models/Uniquelogin.php:497
+msgid "Send"
+msgstr ""
+
+#: models/Uniquelogin.php:498
+msgid "Back"
+msgstr ""
+
+#. translators: %s: the site's domain
+#: models/services/Codes.php:106
+#, php-format
+msgid "2FA Backup Codes for %s"
+msgstr ""
+
+#: models/services/Email.php:271
+#, php-format
+msgid "Your login confirmation code for %s"
+msgstr ""
+
+#: models/services/Email.php:272
+#, php-format
+msgid "Enter %s to log in."
+msgstr ""
+
+#: models/services/Email.php:302
+msgid ""
+"A verification code has been sent to the email address associated with your "
+"account."
+msgstr ""
+
+#: models/services/Email.php:304
+msgid "Verification Code:"
+msgstr ""
+
+#: models/services/Email.php:306
+msgid "Log In"
+msgstr ""
+
+#: models/services/Email.php:309
+msgid "Resend Code"
+msgstr ""
+
+#: models/services/Tftotp.php:72
+msgid "Invalid 2FA Authentication Secret Key."
+msgstr ""
+
+#: models/services/Tftotp.php:76
+msgid "Invalid 2FA Authentication code."
+msgstr ""
+
+#: models/services/Tftotp.php:80
+msgid ""
+"Unable to save 2FA Authentication code. Please re-scan the QR code and enter "
+"the code provided by your application."
+msgstr ""
+
+#: models/services/Tftotp.php:393
+msgid "Please enter the code generated by your authenticator app."
+msgstr ""
+
+#: models/services/Tftotp.php:396 view/blocks/Totp.php:43
+msgid "Authentication Code:"
+msgstr ""
+
+#: models/services/Tftotp.php:410
+msgid "Authenticate"
+msgstr ""
+
+#: update/v5p4/Plugin/Ui.php:56
+msgid "View details"
+msgstr ""
+
+#: update/v5p4/Plugin/Ui.php:79
+#, php-format
+msgid "More information about %s"
+msgstr ""
+
+#: update/v5p4/Plugin/Ui.php:130
+msgid "Check for updates"
+msgstr ""
+
+#: update/v5p4/Plugin/Ui.php:217
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr ""
+
+#: update/v5p4/Plugin/Ui.php:219
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr ""
+
+#: update/v5p4/Plugin/Ui.php:221
+#, php-format
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr ""
+
+#: update/v5p4/Plugin/Ui.php:227
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr ""
+
+#: update/v5p4/Vcs/PluginUpdateChecker.php:113
+msgid "There is no changelog available."
+msgstr ""
+
+#: view/Notices.php:15
+msgid "ignore alert"
+msgstr ""
+
+#: view/Templogin.php:32
+msgid "Activate Temporary Logins"
+msgstr ""
+
+#: view/Templogin.php:45
+msgid "Temporary Login Settings"
+msgstr ""
+
+#: view/Templogin.php:54
+msgid "Use Temporary Logins"
+msgstr ""
+
+#: view/Templogin.php:68
+msgid "Default User Role"
+msgstr ""
+
+#: view/Templogin.php:69
+msgid "Default user role for which the temporary login will be created."
+msgstr ""
+
+#: view/Templogin.php:97
+msgid "Default Redirect After Login"
+msgstr ""
+
+#: view/Templogin.php:98
+msgid "Redirect temporary users to a custom page after login."
+msgstr ""
+
+#: view/Templogin.php:102 view/Templogin.php:261 view/Templogin.php:426
+msgid "Dashboard"
+msgstr ""
+
+#: view/Templogin.php:116
+msgid "Default Temporary Expire Time"
+msgstr ""
+
+#: view/Templogin.php:117
+msgid ""
+"Select how long the temporary login will be available after the first user "
+"access."
+msgstr ""
+
+#: view/Templogin.php:135
+msgid "Delete Temporary Users on Plugin Uninstall"
+msgstr ""
+
+#: view/Templogin.php:147 view/Twofactor.php:135
+msgid "Save"
+msgstr ""
+
+#: view/Templogin.php:149
+msgid "Add New Temporary Login"
+msgstr ""
+
+#: view/Templogin.php:160
+#, php-format
+msgid ""
+"Create a temporary login URL with any user role to access the website "
+"dashboard without username and password for a limited period of time. %s "
+"This is useful when you need to give admin access to a developer for support "
+"or for performing routine tasks."
+msgstr ""
+
+#: view/Templogin.php:174
+msgid "Edit User"
+msgstr ""
+
+#: view/Templogin.php:188 view/Templogin.php:347
+msgid "First Name"
+msgstr ""
+
+#: view/Templogin.php:197 view/Templogin.php:356
+msgid "Last Name"
+msgstr ""
+
+#: view/Templogin.php:214 view/Templogin.php:373
+msgid "Website"
+msgstr ""
+
+#: view/Templogin.php:215 view/Templogin.php:374
+msgid "Set the website you want this user to be created for."
+msgstr ""
+
+#: view/Templogin.php:233 view/Templogin.php:392
+msgid "User Role"
+msgstr ""
+
+#: view/Templogin.php:234 view/Templogin.php:393
+msgid "Set the current user role."
+msgstr ""
+
+#: view/Templogin.php:256 view/Templogin.php:421
+msgid "Redirect After Login"
+msgstr ""
+
+#: view/Templogin.php:257 view/Templogin.php:422
+msgid "Redirect user to a custom page after login."
+msgstr ""
+
+#: view/Templogin.php:276 view/Templogin.php:441
+msgid "Expire Time"
+msgstr ""
+
+#: view/Templogin.php:277 view/Templogin.php:442
+msgid ""
+"How long the temporary login will be available after the user first access."
+msgstr ""
+
+#: view/Templogin.php:292 view/Templogin.php:457
+msgid "Language"
+msgstr ""
+
+#: view/Templogin.php:293 view/Templogin.php:458
+msgid "Load custom language is WordPress local language is installed."
+msgstr ""
+
+#: view/Templogin.php:305
+msgid "Save User"
+msgstr ""
+
+#: view/Templogin.php:306 view/Templogin.php:471
+msgid "Cancel"
+msgstr ""
+
+#: view/Templogin.php:326
+msgid "Add New Temporary Login User"
+msgstr ""
+
+#: view/Templogin.php:470
+msgid "Create"
+msgstr ""
+
+#: view/Twofactor.php:25
+msgid "Activate TwoFactor Authentication"
+msgstr ""
+
+#: view/Twofactor.php:38
+msgid "Two-factor Authentication Settings"
+msgstr ""
+
+#: view/Twofactor.php:47
+msgid "Use 2FA Authentication"
+msgstr ""
+
+#: view/Twofactor.php:50 view/Twofactor.php:148
+msgid ""
+"Add an extra layer of security to your online accounts by requiring both a "
+"password and a second verification method, such as a text message or app-"
+"generated code, to log in."
+msgstr ""
+
+#: view/Twofactor.php:67
+#, php-format
+msgid "Guarantee email delivery using the complimentary email plugin like %s"
+msgstr ""
+
+#: view/Twofactor.php:74
+msgid "Max fail attempts"
+msgstr ""
+
+#: view/Twofactor.php:75
+msgid "Block IP on login page"
+msgstr ""
+
+#: view/Twofactor.php:84
+msgid "Ban duration"
+msgstr ""
+
+#: view/Twofactor.php:85
+msgid "No. of seconds"
+msgstr ""
+
+#: view/Twofactor.php:94
+msgid "Failed Attempts Message"
+msgstr ""
+
+#: view/Twofactor.php:95
+msgid ""
+"Show alert message for a specific user when there were fail attempts on his "
+"account."
+msgstr ""
+
+#: view/Twofactor.php:96
+msgid "Variables: {count} - no. of tries, {time} - time since last fail."
+msgstr ""
+
+#: view/Twofactor.php:105
+msgid "Lockout Message"
+msgstr ""
+
+#: view/Twofactor.php:106
+msgid "Show message instead over login form."
+msgstr ""
+
+#: view/Twofactor.php:107
+msgid "Variables: {time} - time since available again."
+msgstr ""
+
+#: view/Twofactor.php:119
+msgid "Delete 2FA Data on Plugin Uninstall"
+msgstr ""
+
+#: view/Twofactor.php:137
+msgid "Add Two Factor Authentication"
+msgstr ""
+
+#: view/TwofactorUser.php:8
+msgid "2FA Setup"
+msgstr ""
+
+#: view/blocks/Codes.php:7
+msgid "Download Recovery Codes"
+msgstr ""
+
+#: view/blocks/Codes.php:7
+msgid "Optional"
+msgstr ""
+
+#: view/blocks/Codes.php:12
+#, php-format
+msgid ""
+"Utilize this %s code for login in case you lose access to your website "
+"dashboard. Each code can be employed only once."
+msgid_plural ""
+"Utilize one of these unique %s codes for login in case you lose access to "
+"your website dashboard. Each code can be employed only once."
+msgstr[0] ""
+msgstr[1] ""
+
+#: view/blocks/Codes.php:25
+msgid "Download Codes"
+msgstr ""
+
+#: view/blocks/Codes.php:26
+msgid "Finalize"
+msgstr ""
+
+#: view/blocks/Codes.php:35
+msgid "Generate Backup Codes"
+msgstr ""
+
+#: view/blocks/Email.php:8
+msgid ""
+"Specify the email address to receive the authentication code during the "
+"login process for 2FA."
+msgstr ""
+
+#: view/blocks/Email.php:15
+msgid "Email:"
+msgstr ""
+
+#: view/blocks/Email.php:18 view/blocks/Totp.php:46
+msgid "Submit"
+msgstr ""
+
+#: view/blocks/Email.php:21
+msgid "The email address to which the authentication code will be sent is"
+msgstr ""
+
+#: view/blocks/Email.php:28
+msgid "Reset Email"
+msgstr ""
+
+#: view/blocks/Totp.php:20
+msgid "Download and start the application of your choice."
+msgstr ""
+
+#: view/blocks/Totp.php:21
+msgid ""
+"Click on the icon of the app that you are using for a detailed guide on how "
+"to set it up."
+msgstr ""
+
+#: view/blocks/Totp.php:30
+msgid ""
+"Scan the provided code using your authenticator app to link this account."
+msgstr ""
+
+#: view/blocks/Totp.php:31
+msgid "Some authenticator apps permit you to manually input the text version."
+msgstr ""
+
+#: view/blocks/Totp.php:35
+msgid ""
+"Type in the one-time code from your chosen authentication app to finalize "
+"the setup."
+msgstr ""
+
+#: view/blocks/Totp.php:44
+#, php-format
+msgid "eg. %s"
+msgstr ""
+
+#: view/blocks/Totp.php:55
+msgid "Secret key is configured and registered."
+msgstr ""
+
+#: view/blocks/Totp.php:58
+msgid "It is not possible to view it again for security reasons."
+msgstr ""
+
+#: view/blocks/Totp.php:61
+msgid ""
+"You will have to re-scan the QR code on all devices as the previous codes "
+"will stop working."
+msgstr ""
+
+#: view/blocks/Totp.php:69
+msgid "Reset Key"
+msgstr ""
+
+#. translators: %s: Site title.
+#: view/login/footer.php:15
+#, php-format
+msgctxt "site"
+msgid "&larr; Go to %s"
+msgstr ""
+
+#. translators: Login screen title. 1: Login screen name, 2: Network or site name.
+#: view/login/header.php:33
+#, php-format
+msgid "%1$s &lsaquo; %2$s &#8212; WordPress"
+msgstr ""
+
+#. translators: %s: Login screen title.
+#: view/login/header.php:37
+#, php-format
+msgid "Recovery Mode &#8212; %s"
+msgstr ""
+
+#: view/login/header.php:84
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: view/login/header.php:110
+msgid ""
+"Usage of the title attribute on the login logo is not recommended for "
+"accessibility reasons. Use the link text instead."
+msgstr ""
+
+#: view/login/header.php:113
+msgid "Powered by WordPress"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Hide My WP Ghost - Advanced Pack"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://hidemywp.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Advanced security features for Hide My WP Ghost plugin"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WPPlugins"
+msgstr ""

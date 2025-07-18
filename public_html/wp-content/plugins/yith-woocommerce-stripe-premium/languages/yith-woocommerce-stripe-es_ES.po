@@ -1,0 +1,1693 @@
+# Translation of YITH WooCommerce Stripe in Spanish (Spain)
+# This file is distributed under the same license as the YITH WooCommerce Stripe package.
+msgid ""
+msgstr ""
+"Project-Id-Version: YITH WooCommerce Stripe\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/yith-woocommerce-"
+"stripe.premium\n"
+"POT-Creation-Date: 2025-06-10 13:00:41+00:00\n"
+"PO-Revision-Date: 2024-08-23 10:10:25+0000\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+
+#: includes/class-yith-stripe-admin-premium.php:130
+msgid "Webhook correctly configured"
+msgstr "Gancho correctamente configurado"
+
+#: includes/class-yith-stripe-admin-premium.php:130
+msgid ""
+"It wasn't possible to configure webhooks correctly; please, try again later."
+msgstr ""
+"No ha sido posible configurar correctamente los webhooks; por favor, "
+"inténtalo de nuevo más tarde."
+
+#: includes/class-yith-stripe-admin.php:81
+msgid "Settings"
+msgstr "Ajustes"
+
+#: includes/class-yith-stripe-admin.php:89
+msgid "Blacklist"
+msgstr "Lista negra"
+
+#: includes/class-yith-stripe-admin.php:93
+msgid "Premium version"
+msgstr "Versión premium"
+
+#: includes/class-yith-stripe-admin.php:98
+#: plugin-options/subscriptions-options.php:16
+msgid "Subscriptions"
+msgstr "Suscripciones"
+
+#: includes/class-yith-stripe-admin.php:162
+msgid ""
+"The base URL has been changed, so YITH WooCommerce Stripe has been switched "
+"to <b>Test Mode</b> to prevent any unexpected transactions on the new URL."
+"<br/>Choose what to do now:"
+msgstr ""
+"La URL base ha sido cambiada, por lo que YITH WooCommerce Stripe se cambió a "
+"<b>modo de prueba</b> para prevenir cualquier transacción inesperada en la "
+"nueva URL.<br/>Elige qué hacer ahora:"
+
+#: includes/class-yith-stripe-admin.php:166
+msgid "Keep test mode"
+msgstr "Mantener el modo prueba"
+
+#: includes/class-yith-stripe-admin.php:169
+msgid "Set live mode"
+msgstr "Establecer demo en vivo"
+
+#: includes/class-yith-stripe-admin.php:228
+msgid "Authorize & Capture status"
+msgstr "Estado de autorización y captura"
+
+#: includes/class-yith-stripe-admin.php:235
+msgid "Captured"
+msgstr "Capturado"
+
+#: includes/class-yith-stripe-admin.php:235
+msgid "Authorized only (not captured yet)"
+msgstr "Autorizado solamente (sin capturar aún)"
+
+#: includes/class-yith-stripe-admin.php:237
+msgid "N/A"
+msgstr "N/D"
+
+#: includes/class-yith-stripe-blacklist-admin.php:73
+#: includes/class-yith-stripe-blacklist-admin.php:74
+msgid "Stripe blacklist"
+msgstr "Lista negra de Stripe"
+
+#: includes/class-yith-stripe-blacklist-admin.php:151
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: includes/class-yith-stripe-blacklist-table.php:81
+msgid "User"
+msgstr "Usuario"
+
+#: includes/class-yith-stripe-blacklist-table.php:82
+msgid "IP Address"
+msgstr "Dirección IP"
+
+#: includes/class-yith-stripe-blacklist-table.php:83
+msgid "Order"
+msgstr "Pedido"
+
+#: includes/class-yith-stripe-blacklist-table.php:84
+msgid "Date"
+msgstr "Fecha"
+
+#: includes/class-yith-stripe-blacklist-table.php:85
+msgid "Status"
+msgstr "Estado"
+
+#: includes/class-yith-stripe-blacklist-table.php:100
+#: includes/class-yith-stripe-blacklist-table.php:443
+msgid "Ban"
+msgstr "Bloquear"
+
+#: includes/class-yith-stripe-blacklist-table.php:101
+#: includes/class-yith-stripe-blacklist-table.php:443
+msgid "Unban"
+msgstr "Desbloquear"
+
+#: includes/class-yith-stripe-blacklist-table.php:117
+msgid "All"
+msgstr "Todos"
+
+#: includes/class-yith-stripe-blacklist-table.php:118
+#: includes/class-yith-stripe-blacklist-table.php:373
+msgid "Banned"
+msgstr "Bloqueados"
+
+#: includes/class-yith-stripe-blacklist-table.php:119
+#: includes/class-yith-stripe-blacklist-table.php:373
+msgid "Active"
+msgstr "Activo"
+
+#: includes/class-yith-stripe-blacklist-table.php:380
+msgid "Unknown"
+msgstr "Desconocido"
+
+#: includes/class-yith-stripe-blacklist-table.php:402
+#: includes/class-yith-stripe-gateway-advanced.php:2307
+msgid "Guest"
+msgstr "Invitado"
+
+#: includes/class-yith-stripe-blacklist-table.php:426
+msgid "Y/m/d g:i:s A"
+msgstr "Y/m/d g:i:s A"
+
+#. translators: Time since record creation, in a human-friendly format 4 (4
+#. hours / 2 days).
+#: includes/class-yith-stripe-blacklist-table.php:434
+msgid "%s ago"
+msgstr "hace %s"
+
+#: includes/class-yith-stripe-blacklist-table.php:436
+msgid "Y/m/d"
+msgstr "D/m/Y"
+
+#: includes/class-yith-stripe-blacklist-table.php:509
+msgid "No bans found."
+msgstr "Ningún bloqueo encontrado."
+
+#: includes/class-yith-stripe-blacklist-table.php:526
+msgid "Filter"
+msgstr "Filtro"
+
+#: includes/class-yith-stripe-blacklist-table.php:582
+msgid "Filter by date"
+msgstr "Filtrar por fecha"
+
+#: includes/class-yith-stripe-blacklist-table.php:584
+msgid "All dates"
+msgstr "Todas las fechas"
+
+#. translators: 1: Month name, 2: 4-digit year.
+#: includes/class-yith-stripe-blacklist-table.php:599
+msgid "%1$s %2$d"
+msgstr "%1$s %2$d"
+
+#: includes/class-yith-stripe-gateway-addons.php:148
+#: includes/class-yith-stripe-gateway-addons.php:457
+#: includes/class-yith-stripe-gateway-addons.php:478
+#: includes/class-yith-stripe-gateway-addons.php:824
+#: includes/class-yith-stripe-gateway-addons.php:829
+#: includes/class-yith-stripe-gateway-addons.php:1414
+#: includes/class-yith-stripe-gateway-addons.php:1427
+#: includes/class-yith-stripe-gateway-addons.php:1438
+#: includes/class-yith-stripe-gateway-advanced.php:369
+#: includes/class-yith-stripe-gateway-advanced.php:374
+#: includes/class-yith-stripe-gateway-advanced.php:506
+#: includes/class-yith-stripe-gateway-advanced.php:530
+msgid "Sorry, there was an error while processing payment; please, try again."
+msgstr ""
+"Lo siento, ha ocurrido un error al procesar el pago; por favor, inténtalo de "
+"nuevo."
+
+#: includes/class-yith-stripe-gateway-addons.php:153
+#: includes/class-yith-stripe-gateway-addons.php:863
+#: includes/class-yith-stripe-gateway-advanced.php:410
+msgid ""
+"No payment method could be applied to this payment; please, try again by "
+"selecting another payment method."
+msgstr ""
+"No se ha podido aplicar ningún método de pago a este pago; por favor, "
+"inténtalo de nuevo seleccionando otro método."
+
+#: includes/class-yith-stripe-gateway-addons.php:305
+#: includes/class-yith-stripe-gateway-addons.php:1253
+msgid ""
+"Sorry, to use this payment method the minimum order total allowed is 0.50."
+msgstr ""
+"Lo siento, para utilizar este método de pago el total mínimo de pedido "
+"permitido es de 0,50."
+
+#. translators: 1. Order number.
+#: includes/class-yith-stripe-gateway-addons.php:322
+msgid "Couldn't find any valid Stripe Customer ID for pre-order #%d."
+msgstr ""
+"No se ha podido encontrar ningún ID de cliente de Stripe válido para la "
+"precompra #%d."
+
+#: includes/class-yith-stripe-gateway-addons.php:374
+#: includes/class-yith-stripe-gateway-addons.php:1325
+msgid "Sorry, we couldn't find any valid payment method for your renewal."
+msgstr ""
+"Lo siento, no hemos podido encontrar ningún método de pago válido para tu "
+"renovación."
+
+#. translators: 1. Blog name. 2. Order number.
+#. translators: 1. Blog name. 2. Order id.
+#. translators: 1. Blog name. 2 Order id.
+#: includes/class-yith-stripe-gateway-addons.php:394
+#: includes/class-yith-stripe-gateway-addons.php:1348
+#: includes/class-yith-stripe-gateway-advanced.php:553
+#: includes/class-yith-stripe-gateway-advanced.php:1337
+#: includes/class-yith-stripe-gateway-advanced.php:1507
+#: includes/class-yith-stripe-gateway.php:454
+#: includes/class-yith-stripe-gateway.php:779
+#: includes/class-yith-stripe-webhook.php:492
+msgid "%1$s - Order %2$s"
+msgstr "%1$s - Pedido %2$s"
+
+#: includes/class-yith-stripe-gateway-addons.php:452
+#: includes/class-yith-stripe-gateway-addons.php:476
+#: includes/class-yith-stripe-gateway-addons.php:1409
+#: includes/class-yith-stripe-gateway-addons.php:1436
+msgid "Please, validate your payment method before proceeding any further."
+msgstr "Por favor, valida tu método de pago antes de seguir."
+
+#. translators: 1. Renew ID.
+#: includes/class-yith-stripe-gateway-addons.php:463
+msgid "Error while processing pre-order payment: %s."
+msgstr "Error al procesar el pago de la precompra: %s."
+
+#: includes/class-yith-stripe-gateway-addons.php:470
+msgid ""
+"Sorry, there was an error while processing the pre-order payment; please, "
+"try again."
+msgstr ""
+"Lo siento, ha ocurrido un error al procesar el pago de la precompra; por "
+"favor, inténtalo de nuevo."
+
+#. translators: 1. Stripe charge id.
+#. translators: 1. Charge id.
+#. translators: 1. Charge id.
+#: includes/class-yith-stripe-gateway-addons.php:493
+#: includes/class-yith-stripe-gateway-addons.php:1453
+#: includes/class-yith-stripe-gateway-advanced.php:596
+#: includes/class-yith-stripe-gateway.php:486
+msgid "Stripe payment approved (ID: %s)"
+msgstr "Pago con Stripe aprobado (ID: %s)"
+
+#: includes/class-yith-stripe-gateway-addons.php:516
+msgid ""
+"Error while processing renewal payment: this renewal order does not exist."
+msgstr ""
+"Error al procesar el pago de la renovación: esta orden de renovación no "
+"existe."
+
+#. translators: 1. Order id.
+#: includes/class-yith-stripe-gateway-addons.php:537
+msgid ""
+"Error while processing renewal payment: order #%d is part of an active "
+"Stripe Subscription. No manual renewal is required."
+msgstr ""
+"Error al procesar el pago de la renovación: el pedido #%d forma parte de una "
+"suscripción activa de Stripe. No es obligatoria una renovación manual."
+
+#. translators: 1. Error details.
+#. translators: 1. Renew ID.
+#: includes/class-yith-stripe-gateway-addons.php:596
+#: includes/class-yith-stripe-gateway-addons.php:1420
+msgid "Error while processing renew payment: %s."
+msgstr "Error al procesar el pago de la renovación: %s."
+
+#. translators: 1. Error details.
+#: includes/class-yith-stripe-gateway-addons.php:650
+msgid "Error while processing manual renew: %s."
+msgstr "Error al procesar la renovación manual: %s."
+
+#: includes/class-yith-stripe-gateway-addons.php:691
+#: includes/class-yith-stripe-gateway-advanced.php:264
+msgid "Refund not supported for bitcoin"
+msgstr "Reembolso no es compatible con bitcoin"
+
+#. translators: 1. Amount refunded. 2. Refund id.
+#. translators: 1. Refund amount. 2. Refund id.
+#. translators: 1. Amount refunded. 2. Refund id.
+#: includes/class-yith-stripe-gateway-addons.php:770
+#: includes/class-yith-stripe-gateway-advanced.php:324
+#: includes/class-yith-stripe-webhook.php:211
+msgid "Refunded %1$s - Refund ID: %2$s"
+msgstr "Reembolsado %1$s - Refund ID: %2$s"
+
+#. translators: 1. Error details.
+#: includes/class-yith-stripe-gateway-addons.php:789
+#: includes/class-yith-stripe-gateway-advanced.php:335
+msgid "Stripe Credit Card refund failed with message: \"%s\""
+msgstr ""
+"El reembolso de Stripe a la tarjeta de crédito ha fallado con el mensaje: "
+"\"%s\""
+
+#. translators: 1. Stripe subscription id.
+#: includes/class-yith-stripe-gateway-addons.php:1190
+#: includes/class-yith-stripe-gateway-addons.php:1205
+msgid "Error while canceling subscription %s"
+msgstr "Error al cancelar la suscripción %s"
+
+#. translators: 1. Order number.
+#: includes/class-yith-stripe-gateway-addons.php:1273
+msgid "Couldn't find any valid Stripe Customer ID for order #%d."
+msgstr ""
+"No se ha podido encontrar ningún ID de cliente de Stripe válido para el "
+"pedido #%d."
+
+#. translators: 1. number of trial days.
+#: includes/class-yith-stripe-gateway-addons.php:1753
+msgid " - %s days trial"
+msgstr " - %s días de periodo de prueba"
+
+#: includes/class-yith-stripe-gateway-advanced.php:111
+#: plugin-options/settings-options.php:236
+msgid "Place order"
+msgstr "Finalizar pedido"
+
+#: includes/class-yith-stripe-gateway-advanced.php:112
+msgid "Use a new card"
+msgstr "Usa una nueva tarjeta"
+
+#: includes/class-yith-stripe-gateway-advanced.php:260
+msgid "There isn't any charge linked to this order."
+msgstr "No hay ningún cargo enlazado a este pedido."
+
+#: includes/class-yith-stripe-gateway-advanced.php:528
+#: includes/class-yith-stripe-gateway-advanced.php:1880
+msgid ""
+"Please, validate your payment method before proceeding further; in order to "
+"do this, refresh the page and proceed with checkout as usual"
+msgstr ""
+"Por favor, valida tu método de pago antes de seguir; para ello, actualiza la "
+"página y continúa con el proceso de pago como siempre"
+
+#: includes/class-yith-stripe-gateway-advanced.php:733
+msgid "Confirmation needed"
+msgstr "Solicitud de confirmación"
+
+#: includes/class-yith-stripe-gateway-advanced.php:734
+msgid ""
+"Please, confirm if you want to delete this credit card. This action cannot "
+"be undone."
+msgstr ""
+"Por favor, confirma si quieres borrar esta tarjeta de crédito. Esta acción "
+"no se puede deshacer."
+
+#: includes/class-yith-stripe-gateway-advanced.php:735
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: includes/class-yith-stripe-gateway-advanced.php:736
+#: includes/class-yith-stripe-premium.php:1059
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: includes/class-yith-stripe-gateway-advanced.php:882
+#: includes/class-yith-stripe-gateway-advanced.php:883
+msgid "Name on card"
+msgstr "Nombre en tarjeta"
+
+#: includes/class-yith-stripe-gateway-advanced.php:886
+msgid "Card number"
+msgstr "Número de tarjeta"
+
+#: includes/class-yith-stripe-gateway-advanced.php:890
+msgid "Exp date"
+msgstr "Fecha de caducidad"
+
+#: includes/class-yith-stripe-gateway-advanced.php:891
+msgid "MM / YY"
+msgstr "MM / AA"
+
+#: includes/class-yith-stripe-gateway-advanced.php:894
+#: includes/class-yith-stripe-gateway-advanced.php:1037
+msgid "Security Code"
+msgstr "Código de seguridad"
+
+#: includes/class-yith-stripe-gateway-advanced.php:895
+#: includes/class-yith-stripe-gateway-advanced.php:1048
+msgid "CVC"
+msgstr "CVC"
+
+#: includes/class-yith-stripe-gateway-advanced.php:898
+msgid "Card details"
+msgstr "Detalle de la tarjeta"
+
+#: includes/class-yith-stripe-gateway-advanced.php:1047
+msgid "What is my CVV code?"
+msgstr "¿Qué es mi código CVV?"
+
+#: includes/class-yith-stripe-gateway-advanced.php:1052
+msgid "Visa&reg;, Mastercard&reg;, and Discover&reg; cardholders:"
+msgstr "Visa&reg;, Mastercard&reg;, and Discover&reg; cardholders:"
+
+#: includes/class-yith-stripe-gateway-advanced.php:1054
+msgid ""
+"Turn your card over and look at the signature box. You should see either the "
+"entire 16-digit credit card number or just the last four digits followed by "
+"a special 3-digit code. This 3-digit code is your CVV number / Card Security "
+"Code."
+msgstr ""
+"Dale la vuelta a tu tarjeta y mira la caja de la firma. Deberías ver el "
+"número completo de la tarjeta de crédito de 16 dígitos o sólo los últimos "
+"cuatro dígitos seguido de un código especial de 3 dígitos. Este código de 3 "
+"dígitos es su número de CVV / código de seguridad de la tarjeta."
+
+#: includes/class-yith-stripe-gateway-advanced.php:1058
+msgid "American Express&reg; cardholders:"
+msgstr "American Express&reg; cardholders:"
+
+#: includes/class-yith-stripe-gateway-advanced.php:1060
+msgid ""
+"Look for the 4-digit code printed on the front of your card just above and "
+"to the right of your main credit card number. This 4-digit code is your Card "
+"Identification Number (CID). The CID is the four-digit code printed just "
+"above the Account Number."
+msgstr ""
+"Busca el código de 4 dígitos impreso en la parte frontal de su tarjeta justo "
+"encima y a la derecha de su número de tarjeta de crédito principal. Este "
+"código de 4 dígitos es su número de identificación de tarjeta (CID). El CID "
+"es el código de cuatro dígitos impreso justo encima del número de cuenta."
+
+#. translators: 1. Cart hash ( unique identifier of current cart ).
+#. translators: 1. Cart hash.
+#: includes/class-yith-stripe-gateway-advanced.php:1351
+#: includes/class-yith-stripe-gateway-advanced.php:1518
+msgid "Payment intent for cart %s."
+msgstr "Intento de pago para el carrito %s."
+
+#: includes/class-yith-stripe-gateway-advanced.php:1718
+msgid "There was an error processing payment; please, try again later."
+msgstr ""
+"Ha ocurrido un error durante el pago; por favor, inténtalo de nuevo más tarde"
+
+#: includes/class-yith-stripe-gateway-advanced.php:1728
+msgid "You must login before using a registered card."
+msgstr "Debes acceder antes de utilizar una tarjeta registrada."
+
+#: includes/class-yith-stripe-gateway-advanced.php:1734
+#: includes/class-yith-stripe-gateway-advanced.php:1751
+msgid ""
+"The card you're trying to use isn't valid; please, try again with another "
+"payment method."
+msgstr ""
+"La tarjeta que intentas utilizar no es válida; por favor, inténtalo de nuevo "
+"con otro método de pago."
+
+#: includes/class-yith-stripe-gateway-advanced.php:1868
+#: includes/class-yith-stripe-gateway-advanced.php:1882
+msgid ""
+"Sorry, There was an error while registering payment method; please, try again"
+msgstr ""
+"Lo siento, ha ocurrido un error mientras se registraba el método de pago; "
+"inténtalo de nuevo, por favor"
+
+#: includes/class-yith-stripe-gateway-advanced.php:2012
+msgid "Credit card info not valid."
+msgstr "Datos de tarjeta de crédito no válidos."
+
+#: includes/class-yith-stripe-gateway.php:160
+#: plugin-options/settings-options.php:22
+msgid "Stripe"
+msgstr "Stripe"
+
+#: includes/class-yith-stripe-gateway.php:170
+msgid ""
+"Take payments via Stripe - it uses stripe.js to create card tokens and the "
+"Stripe SDK. Requires SSL when sandbox is disabled."
+msgstr ""
+"Acepta pagos a través de Stripe - utiliza stripe.js para crear tokens de "
+"tarjeta y el SDK de Stripe. Requiere SSL cuando el entorno de pruebas está "
+"desactivado."
+
+#. translators: 1. Link to Stripe testing article.
+#: includes/class-yith-stripe-gateway.php:299
+msgid "TEST MODE ENABLED. Use a test card: %s"
+msgstr "MODO PRUEBA ACTIVADO. Use una tarjeta de prueba: %s"
+
+#: includes/class-yith-stripe-gateway.php:503
+#: includes/class-yith-stripe-premium.php:1343
+#: includes/class-yith-stripe-premium.php:1488
+msgid "There was an error during payment; please, try again later."
+msgstr ""
+"Se ha producido un error durante el pago; por favor, inténtalo de nuevo más "
+"tarde."
+
+#: includes/class-yith-stripe-gateway.php:550
+msgid "There was a problem during payment; please, try again later."
+msgstr ""
+"Se ha producido un problema durante el pago; por favor, inténtalo de nuevo "
+"más tarde."
+
+#. translators: 1. Fee name.
+#: includes/class-yith-stripe-gateway.php:721
+msgid "Fee: %s"
+msgstr "Cuota: %s"
+
+#. translators: 1. Shipping name.
+#: includes/class-yith-stripe-gateway.php:731
+msgid "Shipping: %s"
+msgstr "Envío: %s"
+
+#. translators: 1. Tax name.
+#: includes/class-yith-stripe-gateway.php:752
+msgid "Tax: %s"
+msgstr "Impuesto: %s"
+
+#: includes/class-yith-stripe-gateway.php:876
+msgid "Stripe needs the CURL PHP extension."
+msgstr "Stripe necesita la extensión CURL PHP."
+
+#: includes/class-yith-stripe-gateway.php:880
+msgid "Stripe needs the JSON PHP extension."
+msgstr "Stripe necesita la extensión JSON PHP."
+
+#: includes/class-yith-stripe-gateway.php:884
+msgid "Stripe needs the Multibyte String PHP extension."
+msgstr "Stripe necesita la extensión Multibyte String PHP."
+
+#: includes/class-yith-stripe-gateway.php:888
+msgid "Please enter the public and private keys for Stripe gateway."
+msgstr ""
+"Por favor, introduzca las claves públicas y privadas para la pasarela de "
+"pago de Stripe."
+
+#. translators: 1. Url to WC settings page. 2. Url to related Stripe doc.
+#: includes/class-yith-stripe-gateway.php:893
+msgid ""
+"Stripe sandbox testing is disabled and can performe live transactions but "
+"the <a href=\"%1$s\">force SSL option</a> is disabled; your checkout is not "
+"secure! Please enable SSL and ensure your server has a valid SSL "
+"certificate. <a href=\"%2$s\">Learn more</a>."
+msgstr ""
+"El modo de prueba de Stripe está desactivado y puede realizar transacciones "
+"en vivo pero la <a href=\"%1$s\">opción Forzar SSL</a> está desactivado; ¡Tu "
+"proceso de pago está desactivado! Por favor, activa SSL y asegúrate de que "
+"tu servidor tenga un certificado SSL válido. <a href=\"%2$s\">Leer más</a>."
+
+#: includes/class-yith-stripe-gateway.php:920
+msgid ""
+"Thank you for your order, please click the button below to pay with credit "
+"card using Stripe."
+msgstr ""
+"Gracias por su pedido, por favor haga clic en el botón de abajo para pagar "
+"con tarjeta de crédito usando Stripe."
+
+#: includes/class-yith-stripe-gateway.php:921
+msgid "Proceed to payment"
+msgstr "Proceder al pago"
+
+#. translators: 1. Error code. 2. Error message.
+#: includes/class-yith-stripe-gateway.php:968
+msgid "Stripe Error: %1$s - %2$s"
+msgstr "Error de Stripe: %1$s - %2$s"
+
+#: includes/class-yith-stripe-gateway.php:1030
+#: includes/class-yith-stripe-gateway.php:1103
+#: includes/class-yith-stripe-gateway.php:1135
+msgid "The card number is incorrect."
+msgstr "El número de la tarjeta es incorrecto."
+
+#: includes/class-yith-stripe-gateway.php:1031
+msgid "The card number is not a valid credit card number."
+msgstr "El numero de la tarjeta no es un número válido de tarjeta de crédito."
+
+#: includes/class-yith-stripe-gateway.php:1032
+msgid "The card's expiration month is invalid."
+msgstr "El mes de vencimiento de la tarjeta no es válido."
+
+#: includes/class-yith-stripe-gateway.php:1033
+msgid "The card's expiration year is invalid."
+msgstr "El año de vencimiento de la tarjeta no es válido."
+
+#: includes/class-yith-stripe-gateway.php:1034
+msgid "The card's security code is invalid."
+msgstr "El código de seguridad de la tarjeta no es válido."
+
+#: includes/class-yith-stripe-gateway.php:1035
+#: includes/class-yith-stripe-gateway.php:1091
+msgid "The card has expired."
+msgstr "La tarjeta ha vencido."
+
+#: includes/class-yith-stripe-gateway.php:1036
+msgid "The card's security code is incorrect."
+msgstr "El número de seguridad de la tarjeta es incorrecto."
+
+#: includes/class-yith-stripe-gateway.php:1037
+msgid "The card's ZIP code failed validation."
+msgstr "El código postal de la tarjeta no ha sido validado."
+
+#: includes/class-yith-stripe-gateway.php:1038
+#: includes/class-yith-stripe-gateway.php:1040
+#: includes/class-yith-stripe-gateway.php:1167
+msgid "An error occurred while processing the card."
+msgstr "Se produjo un error mientras se procesaba la tarjeta."
+
+#: includes/class-yith-stripe-gateway.php:1039
+msgid "There is no card on a customer that is being charged."
+msgstr "No hay tarjeta en un cliente que está siendo cargado."
+
+#: includes/class-yith-stripe-gateway.php:1041
+msgid ""
+"An error occurred due to requests hitting the API too quickly. Please, let "
+"us know if you're consistently running into this error."
+msgstr ""
+"Se ha producido un error debido a que las solicitudes llegan a la API "
+"demasiado rápido. Por favor, infórmanos si encuentras constantemente este "
+"error."
+
+#: includes/class-yith-stripe-gateway.php:1059
+msgid "The payment cannot be authorized."
+msgstr "El pago no puede ser autorizado."
+
+#: includes/class-yith-stripe-gateway.php:1063
+#: includes/class-yith-stripe-gateway.php:1079
+#: includes/class-yith-stripe-gateway.php:1083
+#: includes/class-yith-stripe-gateway.php:1095
+#: includes/class-yith-stripe-gateway.php:1099
+#: includes/class-yith-stripe-gateway.php:1143
+#: includes/class-yith-stripe-gateway.php:1147
+#: includes/class-yith-stripe-gateway.php:1155
+#: includes/class-yith-stripe-gateway.php:1179
+#: includes/class-yith-stripe-gateway.php:1183
+#: includes/class-yith-stripe-gateway.php:1187
+#: includes/class-yith-stripe-gateway.php:1191
+#: includes/class-yith-stripe-gateway.php:1195
+#: includes/class-yith-stripe-gateway.php:1199
+msgid "The card has been declined."
+msgstr "La tarjeta ha sido rechazada."
+
+#: includes/class-yith-stripe-gateway.php:1067
+msgid "The card does not support this type of purchase."
+msgstr "La tarjeta no soporta este tipo de compra."
+
+#: includes/class-yith-stripe-gateway.php:1071
+#: includes/class-yith-stripe-gateway.php:1215
+msgid "You have exceeded the balance or credit limit available on your card."
+msgstr "Has excedido el balance o crédito límite disponible en tu tarjeta."
+
+#: includes/class-yith-stripe-gateway.php:1075
+msgid "The card does not support the specified currency."
+msgstr "La tarjeta no soporta la divisa especificada."
+
+#: includes/class-yith-stripe-gateway.php:1087
+msgid ""
+"A transaction with an identical amount and credit card information was "
+"submitted very recently."
+msgstr ""
+"Hace muy poco se presentó una transacción con un importe y unos datos de "
+"tarjeta de crédito idénticos."
+
+#: includes/class-yith-stripe-gateway.php:1107
+#: includes/class-yith-stripe-gateway.php:1127
+msgid "The CVC number is incorrect."
+msgstr "El número CVC no es correcto."
+
+#: includes/class-yith-stripe-gateway.php:1111
+msgid "The ZIP/postal code is incorrect."
+msgstr "El código postal no es correcto."
+
+#: includes/class-yith-stripe-gateway.php:1115
+msgid "The card has insufficient funds to complete the purchase."
+msgstr "La tarjeta no tiene fondos suficientes para completar la compra."
+
+#: includes/class-yith-stripe-gateway.php:1119
+#: includes/class-yith-stripe-gateway.php:1151
+msgid "The card, or the account the card is connected to, is invalid."
+msgstr ""
+"La tarjeta, o la cuenta a la que está conectada la tarjeta, no es válida."
+
+#: includes/class-yith-stripe-gateway.php:1123
+msgid "The payment amount is invalid, or it exceeds the amount allowed."
+msgstr "El importe del pago no es válido o supera el importe permitido."
+
+#: includes/class-yith-stripe-gateway.php:1131
+msgid "The expiration year is invalid."
+msgstr "El año de caducidad no es válido."
+
+#: includes/class-yith-stripe-gateway.php:1139
+msgid ""
+"The card issuer could not be reached, so the payment could not be authorized."
+msgstr ""
+"No ha sido posible contactar al emisor de la tarjeta, por lo que el pago no "
+"puede ser autorizado."
+
+#: includes/class-yith-stripe-gateway.php:1159
+msgid "The payment is not permitted."
+msgstr "El pago no está permitido."
+
+#: includes/class-yith-stripe-gateway.php:1163
+#: includes/class-yith-stripe-gateway.php:1175
+msgid ""
+"The card cannot be used to make this payment (it is possible it has been "
+"reported lost or stolen)."
+msgstr ""
+"La tarjeta no puede usarse para hacer este pago (es posible que se haya "
+"denunciado su pérdida o robo)."
+
+#: includes/class-yith-stripe-gateway.php:1171
+msgid "The payment could not be processed by the issuer."
+msgstr "El pago no ha podido ser procesado por el emisor."
+
+#: includes/class-yith-stripe-gateway.php:1203
+msgid "A Stripe test card number was used."
+msgstr "Un número de tarjeta de prueba de Stripe ha sido usado."
+
+#: includes/class-yith-stripe-gateway.php:1207
+#: includes/class-yith-stripe-gateway.php:1211
+msgid "The card has been declined for an unknown reason."
+msgstr "La tarjeta ha sido rechazada por motivo desconocido."
+
+#: includes/class-yith-stripe-gateway.php:1233
+msgid ""
+"Please, try again later. If the problem persists, contact you card issuer "
+"for more information."
+msgstr ""
+"Por favor, inténtalo de nuevo. Si el problema persiste, contacta con el "
+"emisor de la tarjeta para más información."
+
+#: includes/class-yith-stripe-gateway.php:1234
+msgid "Please, contact your card issuer for more information."
+msgstr "Por favor, contacta al emisor de tu tarjeta para más información."
+
+#: includes/class-yith-stripe-gateway.php:1235
+msgid "Please, contact us to get help with this issue."
+msgstr ""
+"Por favor, ponte en contacto con nosotros para obtener ayuda con este error."
+
+#: includes/class-yith-stripe-gateway.php:1236
+msgid ""
+"Please, double-check the information entered for your card, or try again "
+"using another card."
+msgstr ""
+"Por favor, comprueba dos veces la información introducida para tu tarjeta o "
+"inténtalo de nuevo con otra tarjeta."
+
+#: includes/class-yith-stripe-gateway.php:1298
+msgid "An error occurred during your transaction. Please, try again later."
+msgstr ""
+"Se ha producido un error durante tu transacción; por favor, inténtalo de "
+"nuevo más tarde."
+
+#: includes/class-yith-stripe-premium.php:581
+msgid "Subscription renewed successfully!"
+msgstr "¡Suscripción renovada satisfactoriamente!"
+
+#: includes/class-yith-stripe-premium.php:708
+msgid "Invalid payment method."
+msgstr "Método de pago no válido."
+
+#: includes/class-yith-stripe-premium.php:723
+msgid "This payment method was confirmed successfully."
+msgstr "Este método de pago ha sido confirmado correctamente."
+
+#: includes/class-yith-stripe-premium.php:725
+msgid ""
+"There was an error while confirming the payment method; please, try again "
+"later."
+msgstr ""
+"Se ha ocurrido un error mientras se confirmaba el método de pago; inténtalo "
+"de nuevo más tarde, por favor"
+
+#. translators: 1: credit card type 2: last 4 digits
+#: includes/class-yith-stripe-premium.php:991
+msgid "%1$s ending in %2$s"
+msgstr "%1$s terminada en %2$s"
+
+#: includes/class-yith-stripe-premium.php:1026
+msgid "default"
+msgstr "predeterminada"
+
+#: includes/class-yith-stripe-premium.php:1030
+msgid "expired"
+msgstr "expirada"
+
+#: includes/class-yith-stripe-premium.php:1137
+msgid "Every 20 minutes"
+msgstr "Cada 20 minutos"
+
+#: includes/class-yith-stripe-premium.php:1141
+msgid "Every 15 days"
+msgstr "Cada 15 días"
+
+#: includes/class-yith-stripe-premium.php:1390
+msgid "Error while initializing gateway."
+msgstr "Error al inicializar la pasarela."
+
+#: includes/class-yith-stripe-premium.php:1397
+msgid "Missing order ID for payment confirmation."
+msgstr "Falta el ID del pedido para la confirmación del pago."
+
+#. translators: 1. Error message.
+#: includes/class-yith-stripe-premium.php:1418
+msgid "Payment verification error: %s"
+msgstr "Error de verificación de pago: %s"
+
+#: includes/class-yith-stripe-privacy.php:47
+msgid "While you visit our site, we’ll track:"
+msgstr "Mientras visitas nuestro sitio, recopilaremos:"
+
+#: includes/class-yith-stripe-privacy.php:49
+msgid ""
+"Card unique identifiers: these IDs, returned by Stripe when submitting card "
+"details, will be stored to help you check out faster the next time you make "
+"a purchase on our store."
+msgstr ""
+"Identificadores únicos de la tarjeta: estos IDs, devueltos por Stripe cuando "
+"se presentan los datos de la tarjeta, se almacenarán para ayudarte a "
+"comprobar rápidamente la próxima vez que realices una compra en nuestra "
+"tienda."
+
+#: includes/class-yith-stripe-privacy.php:50
+msgid ""
+"User unique identifier: this ID is used to uniquely identify the user on "
+"Stripe platform and create charges/subscriptions."
+msgstr ""
+"Identificador único del usuario: este ID se utiliza para identificar de "
+"manera única al usuario en la plataforma de Stripe y crear cargos/reembolsos."
+
+#: includes/class-yith-stripe-privacy.php:51
+msgid ""
+"Subscription unique identifiers: these IDs will identify subscriptions on "
+"Stripe and will help us manage renewals that come from Stripe platform."
+msgstr ""
+"Identificadores de suscripción únicos: Estos Ids identificarán las "
+"suscripciones en Stripe y nos ayudará a gestionar renovaciones que vengan de "
+"la plataforma de Stripe."
+
+#: includes/class-yith-stripe-privacy.php:55
+msgid ""
+"Members of our team have access to the information you provide us. For "
+"example, both Administrators and Shop Managers can access:"
+msgstr ""
+"Los miembros de nuestro equipo tienen acceso a la información que nos "
+"proporcionas. Por ejemplo, tanto los administradores como los gerentes de "
+"tiene pueden acceder a:"
+
+#: includes/class-yith-stripe-privacy.php:57
+msgid ""
+"All data returned by Stripe, including (but not limited to) cards’ unique "
+"ID, subscriptions’ data, and users’ details."
+msgstr ""
+"Todos los datos devueltos por Stripe, incluyendo (pero sin limitarse a) el "
+"ID único de las tarjetas, los datos de las suscripciones y los detalles de "
+"los usuarios."
+
+#: includes/class-yith-stripe-privacy.php:59
+msgid ""
+"Our team members have access to this information to track user identity on "
+"Stripe’s server."
+msgstr ""
+"Los miembros de nuestro equipo tienen acceso a esta información para "
+"rastrear la información de usuario en el servidor de Stripe."
+
+#: includes/class-yith-stripe-privacy.php:62
+msgid ""
+"We accept payments through Stripe. When processing payments, some of your "
+"data will be passed to Stripe, including information required to process or "
+"support the payment, such as the purchase total and billing information."
+msgstr ""
+"Aceptamos pagos a través de Stripe. Al procesar los pagos, algunos de tus "
+"datos se pasarán a Stripe, incluida la información necesaria para procesar o "
+"respaldar el pago, como el total de la compra y la información de "
+"facturación."
+
+#: includes/class-yith-stripe-privacy.php:63
+msgid ""
+"Please see the <a href=\"https://stripe.com/us/privacy/\">Stripe Worldwide "
+"Privacy Policy</a> for more details."
+msgstr ""
+"Por favor, lee la <a href=\"https://stripe.com/us/privacy/\">Política de "
+"privacidad Stripe Worldwide</a> para más detalles."
+
+#: includes/class-yith-stripe-privacy.php:93
+msgid "Stripe data"
+msgstr "Datos de Stripe"
+
+#: includes/class-yith-stripe-privacy.php:125
+msgid "Removed stripe's customer data."
+msgstr "Eliminada información de cliente de Stripe"
+
+#. translators: 1. Method invoked.
+#: includes/class-yith-stripe-webhook.php:66
+msgid "No action to perform with this event (method invoked is: %s)."
+msgstr ""
+"No hay acción que realizar con este evento (el método invocado es: %s)."
+
+#: includes/class-yith-stripe-webhook.php:72
+msgid "No gateway."
+msgstr "Ninguna pasarela."
+
+#: includes/class-yith-stripe-webhook.php:80
+msgid "Webhook performed without error."
+msgstr "Webhook realizado sin errores."
+
+#. translators: 1. Amount captured via Stripe.
+#: includes/class-yith-stripe-webhook.php:138
+msgid "Captured only %1$s via Stripe. %2$s"
+msgstr "Capturado sólo %1$s vía Stripe. %2$s"
+
+#: includes/class-yith-stripe-webhook.php:152
+msgid "Charge captured via Stripe account."
+msgstr "Cargo capturado vía cuenta Stripe."
+
+#: includes/class-yith-stripe-webhook.php:205
+msgid "Refunded via Stripe."
+msgstr "Reembolsado vía Stripe."
+
+#: includes/class-yith-stripe-webhook.php:231
+msgid "Authorization released via Stripe."
+msgstr "Autorización liberada vía Stripe."
+
+#: includes/class-yith-stripe-webhook.php:284
+msgid "Payment reversed via Stripe."
+msgstr "Pago revertido a través de Stripe."
+
+#: includes/class-yith-stripe-webhook.php:344
+msgid "Payment completed after winning dispute."
+msgstr "Pago completado después de ganar la disputa."
+
+#: includes/class-yith-stripe-webhook.php:346
+msgid "Payment refunded after losing dispute."
+msgstr "Reembolso del pago tras perder la disputa."
+
+#: includes/class-yith-stripe-webhook.php:547
+msgid "Stripe subscription payment completed."
+msgstr "Pago de suscripción de Stripe completado."
+
+#. translators: 1. Order id.
+#: includes/class-yith-stripe-webhook.php:660
+msgid "Failed payment for order %d"
+msgstr "Pago fallido para el pedido %d"
+
+#: includes/class-yith-stripe-webhook.php:683
+#: includes/class-yith-stripe-webhook.php:685
+msgid "YSBS - Webhook Failed payment."
+msgstr "YSBS - Webhook pago fallido"
+
+#: includes/class-yith-stripe.php:354
+msgid "Stripe Credit Card charge failed because the transaction ID is missing."
+msgstr ""
+"El cargo de Stripe a la tarjeta de crédito ha fallado porque falta el ID de "
+"la transacción."
+
+#. translators: 1. Error message.
+#: includes/class-yith-stripe.php:369
+msgid "Stripe Error - Charge not captured. %s"
+msgstr "Error de Stripe - Cobro no capturado. %s"
+
+#: includes/emails/class-yith-stripe-email.php:30
+msgid "Dummy Product"
+msgstr ""
+
+#: includes/emails/class-yith-stripe-email.php:73
+msgid "Direct bank transfer"
+msgstr ""
+
+#: includes/emails/class-yith-stripe-expiring-card-email.php:66
+msgid "Customer's expiring card reminder"
+msgstr "Recordatorio de caducidad de tarjeta del cliente"
+
+#: includes/emails/class-yith-stripe-expiring-card-email.php:67
+msgid ""
+"This email is sent to customers that have at least one expiring card in the "
+"related period."
+msgstr ""
+"Este correo electrónico se envía a los clientes que tienen al menos una "
+"tarjeta que caduca en el periodo relacionado."
+
+#: includes/emails/class-yith-stripe-expiring-card-email.php:70
+#: includes/emails/class-yith-stripe-expiring-card-email.php:71
+msgid "Update your card information"
+msgstr "Actualiza la información de tu tarjeta"
+
+#: includes/emails/class-yith-stripe-expiring-card-email.php:242
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:359
+#: plugin-options/settings-options.php:29
+msgid "Enable/Disable"
+msgstr "Activa/desactiva"
+
+#: includes/emails/class-yith-stripe-expiring-card-email.php:244
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:361
+msgid "Enable this email notification"
+msgstr "Activa esta notificación de correo electrónico"
+
+#: includes/emails/class-yith-stripe-expiring-card-email.php:248
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:365
+msgid "Subject"
+msgstr "Asunto"
+
+#. translators: 1. Default subject for the email.
+#: includes/emails/class-yith-stripe-expiring-card-email.php:251
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:368
+msgid ""
+"This controls the email subject line. Leave blank to use the default "
+"subject: <code>%s</code>."
+msgstr ""
+"Esto controla la línea de asunto. Déjala en blanco para usar el asunto por "
+"defecto: <code>%s</code>."
+
+#: includes/emails/class-yith-stripe-expiring-card-email.php:256
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:373
+msgid "Email heading"
+msgstr "Encabezado del correo electrónico"
+
+#. translators: 1. Default heading for the email.
+#: includes/emails/class-yith-stripe-expiring-card-email.php:259
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:376
+msgid ""
+"This controls the main heading contained within the email notification. "
+"Leave blank to use the default heading: <code>%s</code>."
+msgstr ""
+"Esto controla el encabezado principal contenido en la notificación de correo "
+"electrónico. Déjalo en blanco para usar el encabezado por defecto: <code>%s</"
+"code>."
+
+#: includes/emails/class-yith-stripe-expiring-card-email.php:264
+msgid "Months before expiration"
+msgstr "Meses antes de la caducidad"
+
+#: includes/emails/class-yith-stripe-expiring-card-email.php:266
+msgid ""
+"This controls how many months before the card's expiration date the reminder "
+"should be sent."
+msgstr ""
+"Esto controla cuántos meses antes de la fecha de vencimiento de la tarjeta "
+"debe enviarse el recordatorio."
+
+#: includes/emails/class-yith-stripe-expiring-card-email.php:273
+msgid "Subscribed users only"
+msgstr "Usuarios suscritos solamente"
+
+#: includes/emails/class-yith-stripe-expiring-card-email.php:275
+msgid ""
+"Send this notification only to customers that have at least one active "
+"subscription"
+msgstr ""
+"Enviar esta notificación solo a los clientes que tienen al menos una "
+"suscripción activa"
+
+#: includes/emails/class-yith-stripe-expiring-card-email.php:281
+msgid "Exclusions"
+msgstr "Exclusiones"
+
+#: includes/emails/class-yith-stripe-expiring-card-email.php:283
+msgid ""
+"Enter a list of email addresses, separated by a comma, that should not "
+"receive this notification."
+msgstr ""
+"Introduce una lista de direcciones de correo electrónico, separadas por una "
+"coma, que no deban recibir este aviso."
+
+#: includes/emails/class-yith-stripe-expiring-card-email.php:288
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:409
+msgid "Email type"
+msgstr "Tipo de correo electronico"
+
+#: includes/emails/class-yith-stripe-expiring-card-email.php:290
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:411
+msgid "Choose email format."
+msgstr "Elige el formato del correo electrónico."
+
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:72
+msgid "Payment pending confirmation email"
+msgstr "Correo electrónico de confirmación de pago pendiente"
+
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:73
+msgid ""
+"This email is sent to customers that have a pending payment awaiting their "
+"confirmation."
+msgstr ""
+"Este correo electrónico se envía a los clientes que tienen un pago pendiente "
+"a la espera de su confirmación."
+
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:76
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:77
+msgid "Confirm your {order_total} payment"
+msgstr "Confirma tu {order_total} pago"
+
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:381
+msgid "Opening text HTML"
+msgstr "Abriendo texto HTML"
+
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:383
+msgid ""
+"Enter the text that you want to show before the CTA button. You can use the "
+"following placeholders: <code>{site_title}, {site_url}, {card_type}, "
+"{pay_renew_url}, {card_last4}, {order_id}, {order_total}, {billing_email}, "
+"{contact_email}, {opening_text}, {closing_text}</code>."
+msgstr ""
+"Introduce el texto que quieres mostrar antes del botón CTA. Puedes utilizar "
+"los siguientes marcadores de posición: <code>{site_title}, {site_url}, "
+"{card_type}, {pay_renew_url}, {card_last4}, {order_id}, {order_total}, "
+"{billing_email}, {contact_email}, {opening_text}, {closing_text}</code>."
+
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:388
+msgid "Opening text plain"
+msgstr "Abriendo texto plano"
+
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:390
+msgid ""
+"Enter the text that you want to show before the CTA button (plain text "
+"version). You can use the following placeholders: <code>{site_title}, "
+"{site_url}, {card_type}, {pay_renew_url}, {card_last4}, {order_id}, "
+"{order_total}, {billing_email}, {contact_email}, {opening_text}, "
+"{closing_text}</code>."
+msgstr ""
+"Introduce el texto que quieres mostrar antes del botón CTA (versión en texto "
+"plano). Puedes utilizar los siguientes marcadores de posición: "
+"<code>{site_title}, {site_url}, {card_type}, {pay_renew_url}, {card_last4}, "
+"{order_id}, {order_total}, {billing_email}, {contact_email}, {opening_text}, "
+"{closing_text}</code>."
+
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:395
+msgid "Closing text HTML"
+msgstr "Cerrando texto HTML"
+
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:397
+msgid ""
+"Enter the text that you want to show after the order summary table. You can "
+"use the following placeholders: <code>{site_title}, {site_url}, {card_type}, "
+"{pay_renew_url}, {card_last4}, {order_id}, {order_total}, {billing_email}, "
+"{contact_email}, {opening_text}, {closing_text}</code>."
+msgstr ""
+"Introduce el texto que quieres mostrar después de la tabla de resumen del "
+"pedido. Puedes utilizar los siguientes marcadores de posición: "
+"<code>{site_title}, {site_url}, {card_type}, {pay_renew_url}, {card_last4}, "
+"{order_id}, {order_total}, {billing_email}, {contact_email}, {opening_text}, "
+"{closing_text}</code>."
+
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:402
+msgid "Closing text plain"
+msgstr "Cerrando texto plano"
+
+#: includes/emails/class-yith-stripe-renew-needs-action-email.php:404
+msgid ""
+"Enter the text that you want to show after the order summary table (plain "
+"text version). You can use the following placeholders: <code>{site_title}, "
+"{site_url}, {card_type}, {pay_renew_url}, {card_last4}, {order_id}, "
+"{order_total}, {billing_email}, {contact_email}, {opening_text}, "
+"{closing_text}</code>."
+msgstr ""
+"Introduce el texto que quieres mostrar después de la tabla de resumen del "
+"pedido (versión en texto plano). Puedes utilizar los siguientes marcadores "
+"de posición: <code>{site_title}, {site_url}, {card_type}, {pay_renew_url}, "
+"{card_last4}, {order_id}, {order_total}, {billing_email}, {contact_email}, "
+"{opening_text}, {closing_text}</code>."
+
+#. translators: %s is the plugin name.
+#: init.php:97
+msgid ""
+"%s is enabled but not effective. It requires WooCommerce in order to work."
+msgstr ""
+"%s está activado pero no es efectivo. Requiere WooCommerce para funcionar."
+
+#: plugin-options/settings-options.php:32
+msgid "Enable to use the plugin features."
+msgstr "Activa para utilizar las características del plugin."
+
+#: plugin-options/settings-options.php:38
+msgid "Test secret key"
+msgstr "Clave secreta de prueba"
+
+#. translators: %s is the path to the stripe webhook configuration panel.
+#: plugin-options/settings-options.php:42
+msgid ""
+"Set the secret API key for the test mode. You can find it in <a href=\"%s\" "
+"target=\"_blank\">your Stripe dashboard</a>."
+msgstr ""
+"Establece la clave secreta de la API para el modo de prueba. Puedes "
+"encontrarla en <a href=\"%s\" target=\"_blank\">tu escritorio de Stripe</a>."
+
+#: plugin-options/settings-options.php:53
+msgid "Test publishable key"
+msgstr "Clave publicable de prueba"
+
+#. translators: %s is the path to the stripe webhook configuration panel.
+#: plugin-options/settings-options.php:57
+msgid ""
+"Set the publishable API key for the test mode. You can find it in <a "
+"href=\"%s\" target=\"_blank\">your Stripe dashboard</a>."
+msgstr ""
+"Establece la clave de API publicable para el modo de prueba. Puedes "
+"encontrarla en <a href=\"%s\" target=\"_blank\">tu escritorio de Stripe</a>."
+
+#: plugin-options/settings-options.php:68
+msgid "Live secret key"
+msgstr "Clave secreta en vivo"
+
+#. translators: %s is the path to the stripe webhook configuration panel.
+#: plugin-options/settings-options.php:72
+msgid ""
+"Set the secret API key for the live mode. You can find it in <a href=\"%s\" "
+"target=\"_blank\">your Stripe dashboard</a>."
+msgstr ""
+"Establece la clave secreta de la API para el modo en vivo. Puedes "
+"encontrarla en <a href=\"%s\" target=\"_blank\">tu escritorio de Stripe</a>."
+
+#: plugin-options/settings-options.php:83
+msgid "Live publishable key"
+msgstr "Clave publicable en vivo"
+
+#. translators: %s is the path to the stripe webhook configuration panel.
+#: plugin-options/settings-options.php:87
+msgid ""
+"Set the publishable API key for the live mode. You can find it in <a "
+"href=\"%s\" target=\"_blank\">your Stripe dashboard</a>."
+msgstr ""
+"Establece la clave de API publicable para el modo en vivo. Puedes "
+"encontrarla en <a href=\"%s\" target=\"_blank\">tu escritorio de Stripe</a>."
+
+#: plugin-options/settings-options.php:98
+msgid "Capture"
+msgstr "Captura"
+
+#: plugin-options/settings-options.php:102
+msgid "Authorize only & Capture later"
+msgstr "Autorizar solamente y capturar más tarde"
+
+#: plugin-options/settings-options.php:103
+msgid "Authorize & Capture immediately"
+msgstr "Autorizar y capturar inmediatamente"
+
+#. translators: %s is the url of the Stripe doc.
+#: plugin-options/settings-options.php:106
+msgid ""
+"Decide whether to capture the charge immediately or not. When \"Authorize "
+"only & Capture later\" is selected, the charge issues an authorization (or "
+"pre-authorization) and it will be captured later. <br>Uncaptured charges "
+"expire in 7 days.<br>For further information, <a href=\"%s\" "
+"target=\"_blank\">see authorizing charges and settling later.</a>"
+msgstr ""
+"Decide si capturar inmediatemente o no el cargo. Cuando se selecciona "
+"«Autorizar solamente y capturar más tarde», el cargo emite una autorización "
+"(o preautorización) y se capturará más tarde. \n"
+"<br>Los cargos no capturados caducan en 7 días.<br>Para más información, <a "
+"href=\"%s\" target=\"_blank\">consulta autorizar cargos y liquidar más tarde."
+"</a>"
+
+#: plugin-options/settings-options.php:117
+msgid "Payment mode"
+msgstr "Modo de pago"
+
+#: plugin-options/settings-options.php:121
+msgid "Standard"
+msgstr "Estándar"
+
+#: plugin-options/settings-options.php:122
+msgid "Stripe Checkout"
+msgstr "Stripe Checkout"
+
+#: plugin-options/settings-options.php:123
+msgid "Stripe Elements"
+msgstr "Elementos de Stripe"
+
+#: plugin-options/settings-options.php:125
+msgid ""
+"<strong>Standard</strong> will display credit card fields on your store (SSL "
+"required).<br><strong>Stripe Checkout</strong> will redirect the user to the "
+"checkout page hosted in Stripe.<br><strong>Elements</strong> will show an "
+"embedded form handled by Stripe."
+msgstr ""
+"<strong>Standard</strong> mostrará los campos de la tarjeta de crédito en tu "
+"tienda (SSL obligatorio).<br><strong>Stripe Checkout</strong> redirigirá al "
+"usuario a la página de pago alojada en Stripe.<br><strong>Elements</strong> "
+"mostrará un formulario incrustado gestionado por Stripe."
+
+#: plugin-options/settings-options.php:131
+msgid "Save cards"
+msgstr "Guarda las tarjetas"
+
+#: plugin-options/settings-options.php:134
+msgid ""
+"Enable to save users' credit cards so they can use them for future payments."
+msgstr ""
+"Activa para guardar las tarjetas de crédito de los usuarios para que puedan "
+"utilizarlas en futuros pagos."
+
+#: plugin-options/settings-options.php:140
+msgid "Card registration mode"
+msgstr "Modo registro de tarjeta"
+
+#: plugin-options/settings-options.php:144
+msgid "Register automatically"
+msgstr "Registrar automáticamente"
+
+#: plugin-options/settings-options.php:145
+msgid "Let user choose"
+msgstr "Permite elegir al usuario"
+
+#: plugin-options/settings-options.php:147
+msgid ""
+"If you choose to automatically register cards, every card used by the "
+"customer will be registered automatically.<br>Otherwise, the system will "
+"register cards only when the customer marks the \"Save card\" checkbox."
+"<br>Please note that this option does not affect Stripe, which registers "
+"cards for internal processing anyway."
+msgstr ""
+"Si eliges registrar automáticamente las tarjetas, cada tarjeta utilizada por "
+"el cliente se registrará automáticamente.<br>De lo contrario, el sistema "
+"registrará las tarjetas solo cuando el cliente marque la casilla de "
+"verificación «Guardar tarjeta».<br>Ten en cuenta que esta opción no afecta a "
+"Stripe, que registra las tarjetas para el procesamiento interno de todos "
+"modos."
+
+#: plugin-options/settings-options.php:153
+msgid "Apply custom style to Payment Methods"
+msgstr "Aplica un estilo personalizado a los métodos de pago"
+
+#: plugin-options/settings-options.php:156
+msgid ""
+"Enable to apply the plugin's custom style to the Payment Method's table in "
+"My Account."
+msgstr ""
+"Activa para aplicar el estilo personalizado del plugin a la tabla del método "
+"de pago en Mi cuenta."
+
+#: plugin-options/settings-options.php:162
+msgid "Add billing fields for Stripe Checkout"
+msgstr "Añade campos de facturación para el pago de Stripe"
+
+#: plugin-options/settings-options.php:165
+#: plugin-options/settings-options.php:174
+msgid "Option available only for \"Stripe Checkout\" payment mode."
+msgstr "Opción solo disponible para el modo de pago «Stripe Checkout»"
+
+#: plugin-options/settings-options.php:171
+msgid "Add shipping fields for Stripe Checkout"
+msgstr "Añade campos de envío para Stripe Checkout"
+
+#: plugin-options/settings-options.php:180
+msgid "Add billing fields"
+msgstr "Añade campos de facturación"
+
+#: plugin-options/settings-options.php:183
+msgid ""
+"If you have installed any WooCommerce extension to edit checkout fields, "
+"this option allows you to require some necessary information associated with "
+"the credit card, to further reduce the risk of fraudulent transactions."
+msgstr ""
+"Si has instalado alguna extensión de WooCommerce para editar los campos del "
+"pago, esta opción te permite requerir alguna información necesaria asociada "
+"a la tarjeta de crédito, para reducir aún más el riesgo de transacciones "
+"fraudulentas."
+
+#: plugin-options/settings-options.php:189
+msgid "Show 'Name on card' field"
+msgstr "Muestra el campo «nombre en tarjeta»"
+
+#: plugin-options/settings-options.php:192
+msgid ""
+"Show a 'Name on card' field in Elements and Standard mode; the name will be "
+"sent within card data to let Stripe perform additional checks over the user "
+"and better evaluate risk."
+msgstr ""
+"Muestra el campo «Nombre en tarjeta» en el modo Elements y Standard; el "
+"nombre será enviado junto con los datos de la tarjeta para permitir a Stripe "
+"que realice comprobaciones adicionales sobre el usuario y evalúe mejor el "
+"riesgo."
+
+#: plugin-options/settings-options.php:198
+msgid "Show 'ZIP' field"
+msgstr "Muestra el campo «código postal»"
+
+#: plugin-options/settings-options.php:201
+msgid ""
+"Show a 'ZIP' field in Elements mode; the ZIP code will be sent within card "
+"data to let Stripe perform additional checks over the user and better "
+"evaluate risk."
+msgstr ""
+"Muestra un campo 'código postal' en el modo Elements; el código postal se "
+"enviará dentro de los datos de la tarjeta para que Stripe realice "
+"comprobaciones adicionales sobre el usuario y evalúe mejor el riesgo."
+
+#: plugin-options/settings-options.php:210
+msgid "Customization"
+msgstr "Personalización"
+
+#: plugin-options/settings-options.php:216
+msgid "Title"
+msgstr "Título"
+
+#: plugin-options/settings-options.php:219
+msgid "Enter the title that the user sees during the checkout process."
+msgstr "Introduce el título que el usuario ve durante el proceso de pago."
+
+#: plugin-options/settings-options.php:220
+msgid "Credit Card"
+msgstr "Tarjeta de crédito"
+
+#: plugin-options/settings-options.php:224
+msgid "Description"
+msgstr "Descripción"
+
+#: plugin-options/settings-options.php:227
+msgid "Enter the description that the user sees during the checkout process."
+msgstr "Introduce la descripción que el usuario ve durante el proceso de pago."
+
+#: plugin-options/settings-options.php:228
+msgid "Pay with a credit card."
+msgstr "Pagar con una tarjeta de crédito."
+
+#: plugin-options/settings-options.php:232
+msgid "Button label"
+msgstr "Botón de etiqueta"
+
+#: plugin-options/settings-options.php:235
+msgid "Enter the label for the button on checkout."
+msgstr "Introduce la etiqueta para el botón en el pago."
+
+#: plugin-options/settings-options.php:243
+msgid "Security"
+msgstr "Seguridad"
+
+#: plugin-options/settings-options.php:251
+msgid "Enable Blacklist"
+msgstr "Activa la lista negra"
+
+#: plugin-options/settings-options.php:254
+msgid ""
+"Hide payment gateway on frontend if the same user or the same IP address "
+"already has a failed payment. The blacklist table is available on "
+"<strong>YITH -> Stripe -> Blacklist</strong>."
+msgstr ""
+"Oculta la pasarela de pago en la portada si el mismo usuario o la misma "
+"dirección IP ya tiene un pago fallido. La tabla de la lista negra está "
+"disponible en <strong>YITH -> Stripe -> Lista negra</strong>."
+
+#: plugin-options/settings-options.php:262
+msgid "Testing & Debug"
+msgstr "Prueba y Depuración"
+
+#: plugin-options/settings-options.php:264
+msgid ""
+"Enable here the testing mode to debug the payment system before going into "
+"production."
+msgstr ""
+"Activa aquí el modo de prueba para depurar el sistema de pago antes de "
+"entrar a producción."
+
+#: plugin-options/settings-options.php:269
+msgid "Enable test mode"
+msgstr "Activa el modo de prueba"
+
+#: plugin-options/settings-options.php:272
+msgid ""
+"Enable this option if you want to test the gateway before going into "
+"production."
+msgstr ""
+"Activa esta opción si quieres probar la pasarela antes de entrar a "
+"producción."
+
+#: plugin-options/settings-options.php:277
+msgid "Debug Log"
+msgstr "Registro de depuración"
+
+#. translators: %s is the path to the stripe log and the second one is the URL
+#. to the logs inside the Stripe web.
+#: plugin-options/settings-options.php:281
+msgid ""
+"Log Stripe events inside: <div style=\"background: #f1f1f1;font-"
+"weight:500;color:black;\">%1$s</div>You can also consult the logs in your <a "
+"href=\"%2$s\" target=\"_blank\">Logs Dashboard</a>, without checking this "
+"option."
+msgstr ""
+"Registra eventos de Stripe dentro de: <div style=\"background: #f1f1f1;font-"
+"weight:500;color:black;\">%1$s</div>También puedes consultar los registros "
+"en tu <a href=\"%2$s\" target=\"_blank\">escritorio de registros</a>, sin "
+"marcar esta opción."
+
+#: plugin-options/settings-options.php:289
+msgid "Webhooks"
+msgstr "Webhooks"
+
+#. translators: %1$s is the webhook URL. %2$s is the path to the stripe webhook
+#. configuration panel.
+#: plugin-options/settings-options.php:292
+msgid ""
+"You can configure the webhook URL %1$s in your <a href=\"%2$s\" "
+"target=\"_blank\">developers settings</a>. All the webhooks for your account "
+"will be sent to this endpoint."
+msgstr ""
+"Puedes configurar la URL del webhook %1$s en tus <a href=\"%2$s\" "
+"target=\"_blank\">ajustes de desarrolladores</a>. Todos los webhooks de tu "
+"cuenta se enviarán a esta variable."
+
+#: plugin-options/subscriptions-options.php:23
+msgid "Subscriptions' renewal mode"
+msgstr "Modo de renovación de las suscripciones"
+
+#: plugin-options/subscriptions-options.php:27
+msgid "Stripe Classic"
+msgstr "Stripe Classic"
+
+#: plugin-options/subscriptions-options.php:28
+msgid "YWSBS Renews"
+msgstr "Renovaciones YWSBS"
+
+#: plugin-options/subscriptions-options.php:30
+msgid ""
+"Select how you want to process Subscriptions' renewals.<br> Stripe Classic "
+"will create subscriptions on Stripe's side and let Stripe manage renewals "
+"automatically.<br> YWSBS Renews will charge renewals when triggered by YITH "
+"WooCommerce Subscription, this grants more flexibility."
+msgstr ""
+"Selecciona cómo quieres procesar las renovaciones de las suscripciones.<br> "
+"Stripe Classic creará las suscripciones en el lado de Stripe y dejará que "
+"Stripe gestione las renovaciones automáticamente.<br> YWSBS Renews cobrará "
+"las renovaciones cuando sean activadas por YITH WooCommerce Subscription, "
+"esto otorga más flexibilidad."
+
+#: plugin-options/subscriptions-options.php:36
+msgid "If renewal fails, try again with other cards"
+msgstr "Si la renovación falla, inténtalo de nuevo con otras tarjetas"
+
+#: plugin-options/subscriptions-options.php:39
+msgid ""
+"If renewal fails, and the customer has additional cards registered, try to "
+"process payment with other cards, before giving up."
+msgstr ""
+"Si la renovación falla, y el cliente tiene otras tarjetas registradas, "
+"intenta procesar el pago con otras tarjetas antes de desistir."
+
+#. translators: 1. Username.
+#: templates/emails/expiring-card-email.php:36
+#: templates/emails/plain/expiring-card-email.php:35
+#: templates/emails/plain/renew-needs-action-email.php:34
+#: templates/emails/renew-needs-action-email.php:34
+msgid "Hi %s,"
+msgstr "Hola %s,"
+
+#. translators: 1. Card type (Visa/Mastercard...) 2. Last 4 digit of card
+#. number 3. Formatted expiration date. 4 is the site title.
+#: templates/emails/expiring-card-email.php:45
+msgid ""
+"This is a friendly reminder that your <b>%1$s</b> card ending in <b>%2$s</b> "
+"expired on <b>%3$s</b>. To continue purchasing, please update your card "
+"information on %4$s."
+msgstr ""
+"Esto es un recordatorio amistoso de que tu tarjeta <b>%1$s</b> que termina "
+"en <b>%2$s</b> expiró el <b>%3$s</b>. Para seguir comprando, por favor "
+"actualiza los datos de tu tarjeta en %4$s."
+
+#. translators: 1. Card type (Visa/Mastercard...) 2. Last 4 digit of card
+#. number 3. Formatted expiration date. 4 is the site title.
+#: templates/emails/expiring-card-email.php:47
+msgid ""
+"This is a friendly reminder that your <b>%1$s</b> card ending in <b>%2$s</b> "
+"expires on <b>%3$s</b>. To continue purchasing, please update your card "
+"information on %4$s."
+msgstr ""
+"Esto es un recordatorio amistoso de que tu tarjeta <b>%1$s</b> que termina "
+"en <b>%2$s</b> caduca el <b>%3$s</b>. Para seguir comprando, por favor, "
+"actualiza los datos de tu tarjeta en %4$s."
+
+#: templates/emails/expiring-card-email.php:58
+msgid "Update now"
+msgstr "Actualizar ahora"
+
+#. translators: 1. Card type (Visa/Mastercard...) 2. Last 4 digit of card
+#. number 3. Formatted expiration date. 4 is the site title.
+#: templates/emails/plain/expiring-card-email.php:43
+msgid ""
+"This is a friendly reminder that your %1$s card ending in %2$s expired on "
+"%3$s. To continue purchasing, please update your card information on %4$s.\n"
+"\n"
+msgstr ""
+"Esto es un recordatorio amistoso de que tu tarjeta %1$s que termina en %2$s "
+"expiró el %3$s. Para seguir comprando, por favor, actualiza los datos de tu "
+"tarjeta en %4$s.\n"
+
+#. translators: 1. Card type (Visa/Mastercard...) 2. Last 4 digit of card
+#. number 3. Formatted expiration date. 4 is the site title.
+#: templates/emails/plain/expiring-card-email.php:45
+msgid ""
+"This is a friendly reminder that your %1$s card ending in %2$s expires on "
+"%3$s. To continue purchasing, please update your card information on %4$s.\n"
+"\n"
+msgstr ""
+"Esto es un recordatorio amistoso de que tu tarjeta %1$s que termina en %2$s "
+"caduca el %3$s. Para seguir comprando, por favor, actualiza los datos de tu "
+"tarjeta en %4$s.\n"
+
+#. translators: 1. Updated card url.
+#: templates/emails/plain/expiring-card-email.php:56
+msgid "Update now (%s)"
+msgstr "Actualizar ahora (%s)"
+
+#. translators: 1. Updated card url.
+#: templates/emails/plain/renew-needs-action-email.php:41
+msgid "Confirm payment (%s)"
+msgstr "Confirmar pago (%s)"
+
+#: templates/emails/renew-needs-action-email.php:41
+msgid "Confirm payment"
+msgstr "Confirmar pago"
+
+#: views/blacklist-table.php:29
+msgid "You do not have any banned users yet"
+msgstr "Todavía no tienes ningún usuario bloqueado"
+
+#: views/blacklist-table.php:39
+msgid "Stripe Blacklist"
+msgstr "Lista negra de Stripe"
+
+#: views/blacklist-table.php:46
+msgid "Search bans"
+msgstr "Buscar bloqueos"
+
+#: views/webhooks-section.php:16
+msgid ""
+"It's important to note that only test webhooks will be sent to your "
+"development webhook URL. Yet, if you are working on a live website,"
+msgstr ""
+"Es importante tener en cuenta que solo se enviarán los webhooks de prueba a "
+"tu URL de webhook de desarrollo. Sin embargo, si estás trabajando en una web "
+"en vivo,"
+
+#: views/webhooks-section.php:16
+msgid " both live and test"
+msgstr "tanto los en vivo como los de prueba"
+
+#: views/webhooks-section.php:16
+msgid "webhooks will be sent to your production webhook URL."
+msgstr "serán enviados a tu URL de webhook de producción."
+
+#: views/webhooks-section.php:17
+msgid ""
+"This is because you can create both live and test objects under a production "
+"application."
+msgstr ""
+"Esto se debe a que puedes crear tanto objetos en vivo como de prueba bajo "
+"una aplicación de producción."
+
+#: views/webhooks-section.php:18
+msgid "For more information about webhooks, see the "
+msgstr "Para más información acerca de los webhooks, consulta la "
+
+#: views/webhooks-section.php:18
+msgid "webhook documentation."
+msgstr "documentación del webhook."
+
+#: views/webhooks-section.php:19
+msgid ""
+"You can automatically configure your webhooks for test environment by using "
+"the following shortcut:"
+msgstr ""
+"Puedes configurar automáticamente tus webhooks para el entorno de prueba "
+"utilizando el siguiente atajo:"
+
+#: views/webhooks-section.php:20
+msgid "Configure webhooks"
+msgstr "Configurar webhooks"
+
+#. Description of the plugin/theme
+msgid ""
+"<code><strong>YITH WooCommerce Stripe</strong></code> allows your users to "
+"pay with credit cards thanks to the integration with Stripe, a powerful and "
+"flexible payment gateway. You will be able to get payments with credit cards "
+"while assuring your users of the reliability of an international partner. <a "
+"href=\"https://yithemes.com/\" target=\"_blank\">Get more plugins for your e-"
+"commerce on <strong>YITH</strong></a>."
+msgstr ""
+"<code><strong>YITH WooCommerce Stripe</strong></code> permite a tus usuarios "
+"pagar con tarjetas de crédito gracias a la integración con Stripe, una "
+"pasarela de pago potente y flexible. Podrás conseguir pagos con tarjetas de "
+"crédito mientras aseguras a tus usuarios la fiabilidad de un socio "
+"internacional. <a href=\"https://yithemes.com/\" target=\"_blank\">Obtén más "
+"plugins para tu comercio electrónico en <strong>YITH</strong></a>."

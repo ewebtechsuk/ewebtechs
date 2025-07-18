@@ -1,0 +1,20 @@
+2025-06-27T01:00:16+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE Start check subscriptions that should change status after the payment due date at 2025-06-27 02:00:16 CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-27 01:59:28 CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE Start expired cron at 2025-06-27 02:00:16 CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE Search subscription with expired date < 2025-06-27 02:00:16 CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE Start resume orders cron at 2025-06-27 02:00:16 CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE Search subscriptions to resume with expired pause date <  2025-06-27 01:00:16 CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE Start check suspended subscription at 2025-06-27 02:00:16 CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE Search suspended subscriptions with Payment due date < 2025-06-07 02:00:16 CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-27T01:00:16+00:00 NOTICE ================ CONTEXT: {"_legacy":true}

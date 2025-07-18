@@ -1,0 +1,360 @@
+# Loco Gettext template
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Grid Builder - LearnDash\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-grid-builder-"
+"learndash\n"
+"POT-Creation-Date: 2024-04-02T10:49:19+00:00\n"
+"PO-Revision-Date: 2024-04-02 12:49+0200\n"
+"Last-Translator: \n"
+"Language-Team: Wp Trads <contact@wolforg.eu>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"POT-Revision-Date: Tue Apr 07 2020 16:30:52 GMT+0200 (heure d’été d’Europe "
+"centrale)\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#. Plugin Name of the plugin
+msgid "WP Grid Builder - LearnDash"
+msgstr "WP Grid Builder - LearnDash"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.wpgridbuilder.com"
+msgstr "https://www.wpgridbuilder.com"
+
+#. Description of the plugin
+msgid "Add new blocks to the card builder to display courses information."
+msgstr ""
+"Ajoutez de nouveaux blocs au constructeur de cartes pour afficher les "
+"informations des cours."
+
+#. Author of the plugin
+msgid "Loïc Blascos"
+msgstr "Loïc Blascos"
+
+#: includes/blocks/blocks.php:16 includes/blocks/blocks.php:133
+#: includes/blocks/fields.php:23
+msgid "Course Progress Bar"
+msgstr "Barre de progression du cours"
+
+#: includes/blocks/blocks.php:17
+msgid "Displays the progress bar of the course."
+msgstr "Affiche la barre de progression du cours."
+
+#: includes/blocks/blocks.php:62 includes/blocks/fields.php:50
+msgid "Progress Type"
+msgstr "Type de progression"
+
+#: includes/blocks/blocks.php:67 includes/blocks/fields.php:53
+msgid "Bar"
+msgstr "Barre"
+
+#: includes/blocks/blocks.php:71 includes/blocks/fields.php:54
+msgid "Circle"
+msgstr "Cercle"
+
+#: includes/blocks/blocks.php:77 includes/blocks/fields.php:73
+msgid "Progress Background"
+msgstr "Arrière-plan de la progression"
+
+#: includes/blocks/blocks.php:88 includes/blocks/blocks.php:115
+#: includes/blocks/fields.php:98 includes/blocks/fields.php:151
+msgid "Progress Color"
+msgstr "Couleur de la progression"
+
+#: includes/blocks/blocks.php:99 includes/blocks/fields.php:123
+msgid "Circle Thickness"
+msgstr "Épaisseur du cercle"
+
+#: includes/blocks/blocks.php:174
+msgid "Course Progress"
+msgstr "Progression du Cours"
+
+#: includes/blocks/blocks.php:175
+msgid "Displays the percentage progress of the course."
+msgstr "Affiche le pourcentage d'avancement du cours."
+
+#: includes/blocks/blocks.php:208 includes/blocks/fields.php:177
+msgid "Progress Text"
+msgstr "Texte de progression"
+
+#: includes/blocks/blocks.php:218 includes/blocks/fields.php:25
+msgid "Course Steps"
+msgstr "Étapes du cours"
+
+#: includes/blocks/blocks.php:219
+msgid "Displays the number of steps of the course."
+msgstr "Affiche le nombre d'étapes du cours."
+
+#: includes/blocks/blocks.php:251 includes/blocks/blocks.php:315
+#: includes/blocks/fields.php:215 includes/blocks/fields.php:254
+msgid "Singular Text"
+msgstr "Texte au singulier"
+
+#: includes/blocks/blocks.php:256 includes/blocks/blocks.php:320
+#: includes/blocks/fields.php:234 includes/blocks/fields.php:273
+msgid "Plural Text"
+msgstr "Texte au pluriel"
+
+#: includes/blocks/blocks.php:266 includes/blocks/fields.php:26
+msgid "Course Lessons"
+msgstr "Leçons du cours"
+
+#: includes/blocks/blocks.php:267
+msgid "Displays the number of lessons of the course."
+msgstr "Affiche le nombre de leçons du cours."
+
+#: includes/blocks/blocks.php:330 includes/blocks/fields.php:27
+msgid "Course Status"
+msgstr "État du cours"
+
+#: includes/blocks/blocks.php:331
+msgid "Displays the status of the course."
+msgstr "Affiche le statut du cours."
+
+#: includes/blocks/blocks.php:341
+msgid "Not Enrolled"
+msgstr "Non inscrit"
+
+#: includes/blocks/blocks.php:344
+msgid "Not Started"
+msgstr "Non démarré"
+
+#: includes/blocks/blocks.php:347 includes/class-builder.php:232
+msgid "In Progress"
+msgstr "En progression"
+
+#: includes/blocks/blocks.php:350
+msgid "Complete"
+msgstr "Terminé"
+
+#: includes/blocks/blocks.php:382 includes/blocks/fields.php:292
+msgid "Not Enrolled Status"
+msgstr "État non inscrit"
+
+#: includes/blocks/blocks.php:386 includes/blocks/blocks.php:416
+#: includes/blocks/blocks.php:446 includes/blocks/blocks.php:476
+#: includes/blocks/fields.php:298 includes/blocks/fields.php:342
+#: includes/blocks/fields.php:386 includes/blocks/fields.php:430
+msgid "Status Label"
+msgstr "Libellé de l’état"
+
+#: includes/blocks/blocks.php:393 includes/blocks/blocks.php:423
+#: includes/blocks/blocks.php:453 includes/blocks/blocks.php:483
+#: includes/blocks/blocks.php:673 includes/blocks/blocks.php:699
+#: includes/blocks/blocks.php:725 includes/blocks/fields.php:304
+#: includes/blocks/fields.php:348 includes/blocks/fields.php:392
+#: includes/blocks/fields.php:436 includes/blocks/fields.php:496
+#: includes/blocks/fields.php:534 includes/blocks/fields.php:572
+msgid "Background"
+msgstr "Arrière-plan"
+
+#: includes/blocks/blocks.php:398 includes/blocks/blocks.php:428
+#: includes/blocks/blocks.php:458 includes/blocks/blocks.php:488
+#: includes/blocks/blocks.php:678 includes/blocks/blocks.php:704
+#: includes/blocks/blocks.php:730 includes/blocks/fields.php:313
+#: includes/blocks/fields.php:357 includes/blocks/fields.php:401
+#: includes/blocks/fields.php:445 includes/blocks/fields.php:505
+#: includes/blocks/fields.php:543 includes/blocks/fields.php:581
+msgid "Color"
+msgstr "Couleur"
+
+#: includes/blocks/blocks.php:412 includes/blocks/fields.php:336
+msgid "Enrolled Status"
+msgstr "État inscrit"
+
+#: includes/blocks/blocks.php:442 includes/blocks/fields.php:380
+msgid "In Progress Status"
+msgstr "État en progression"
+
+#: includes/blocks/blocks.php:472
+msgid "Complete Status"
+msgstr "Statut complet"
+
+#: includes/blocks/blocks.php:502 includes/blocks/fields.php:28
+msgid "Course Price"
+msgstr "Prix du cours"
+
+#: includes/blocks/blocks.php:503
+msgid "Displays the price of the course."
+msgstr "Affiche le prix du cours."
+
+#: includes/blocks/blocks.php:532 includes/blocks/fields.php:29
+msgid "Course Activity"
+msgstr "Activité du cours"
+
+#: includes/blocks/blocks.php:533
+msgid "Displays the activity of the course."
+msgstr "Affiche l'activité du cours."
+
+#: includes/blocks/blocks.php:565 includes/blocks/fields.php:196
+msgid "Activity Text"
+msgstr "Texte de l'activité"
+
+#: includes/blocks/blocks.php:575 includes/blocks/fields.php:36
+msgid "Lesson Release Date"
+msgstr "Date de publication de la leçon"
+
+#: includes/blocks/blocks.php:576
+msgid "Displays the release date of the lesson."
+msgstr "Affiche la date de publication de la leçon."
+
+#: includes/blocks/blocks.php:608 includes/blocks/fields.php:468
+msgid "Release Date Text"
+msgstr "Texte de la date de publication"
+
+#: includes/blocks/blocks.php:618 includes/blocks/fields.php:32
+#: includes/blocks/functions.php:673 includes/class-builder.php:231
+#: assets/js/blocks.js:10
+msgid "Course Ribbon"
+msgstr "Ruban du cours"
+
+#: includes/blocks/blocks.php:619
+msgid "Displays the ribbon of the course."
+msgstr "Affiche le ruban du cours."
+
+#: includes/blocks/blocks.php:666 includes/blocks/fields.php:490
+msgid "Enrolled Ribbon"
+msgstr "Ruban inscrit"
+
+#: includes/blocks/blocks.php:692
+msgid "Complete Ribbon"
+msgstr "Ruban complet"
+
+#: includes/blocks/blocks.php:718 includes/blocks/fields.php:566
+msgid "Custom Ribbon"
+msgstr "Ruban personnalisé"
+
+#: includes/blocks/blocks.php:744 includes/blocks/fields.php:34
+msgid "Course Description"
+msgstr "Description du cours"
+
+#: includes/blocks/blocks.php:745
+msgid "Displays the description of the course."
+msgstr "Affiche la description du cours."
+
+#: includes/blocks/blocks.php:782 includes/blocks/fields.php:33
+msgid "Course Button"
+msgstr "Bouton du cours"
+
+#: includes/blocks/blocks.php:783
+msgid "Displays the button of the course."
+msgstr "Affiche le bouton du cours."
+
+#: includes/blocks/blocks.php:795 includes/blocks/functions.php:737
+#: includes/class-builder.php:230 assets/js/blocks.js:10
+msgid "See more..."
+msgstr "Voir plus..."
+
+#: includes/blocks/blocks.php:842 includes/blocks/fields.php:604
+msgid "Default Text"
+msgstr "Texte par défaut"
+
+#: includes/blocks/fields.php:21 includes/class-builder.php:146
+msgid "LearnDash Field"
+msgstr "Champ LearnDash"
+
+#: includes/blocks/fields.php:24
+msgid "Course Progress Percent"
+msgstr "Pourcentage de progression du cours"
+
+#: includes/blocks/fields.php:74 includes/blocks/fields.php:99
+#: includes/blocks/fields.php:152 includes/blocks/fields.php:305
+#: includes/blocks/fields.php:314 includes/blocks/fields.php:349
+#: includes/blocks/fields.php:358 includes/blocks/fields.php:393
+#: includes/blocks/fields.php:402 includes/blocks/fields.php:437
+#: includes/blocks/fields.php:446 includes/blocks/fields.php:497
+#: includes/blocks/fields.php:506 includes/blocks/fields.php:535
+#: includes/blocks/fields.php:544 includes/blocks/fields.php:573
+#: includes/blocks/fields.php:582
+msgid "Clear"
+msgstr "Vider"
+
+#: includes/blocks/fields.php:424
+msgid "Completed Status"
+msgstr "État terminé"
+
+#: includes/blocks/fields.php:528
+msgid "Completed Ribbon"
+msgstr "Ruban terminé"
+
+#. translators: %1$s completed course steps, %2$s total course steps
+#: includes/blocks/functions.php:28 assets/js/blocks.js:10
+msgid "%1$s/%2$s Step"
+msgid_plural "%1$s/%2$s Steps"
+msgstr[0] "Étape %1$s / %2$s"
+msgstr[1] "Étapes %1$s / %2$s"
+
+#. translators: %s course number of lessons.
+#: includes/blocks/functions.php:30 assets/js/blocks.js:10
+msgid "%s Lesson"
+msgid_plural "%s Lessons"
+msgstr[0] "%s leçon"
+msgstr[1] "%s leçons"
+
+#. translators: %s course last activity date.
+#: includes/blocks/functions.php:32 assets/js/blocks.js:10
+msgid "Last activity on %s"
+msgstr "Dernière activité le %s"
+
+#. translators: %s course progress in percent.
+#: includes/blocks/functions.php:34 assets/js/blocks.js:10
+msgid "%s%% Complete"
+msgstr "%s%% terminé"
+
+#. translators: %s course progress in percent.
+#: includes/blocks/functions.php:36 assets/js/blocks.js:10
+msgid "Available on %s"
+msgstr "Disponible le %s"
+
+#: includes/blocks/functions.php:615
+msgid "Free"
+msgstr "Gratuit"
+
+#: includes/class-builder.php:129
+msgid "LearnDash Blocks"
+msgstr "Blocs LearnDash"
+
+#: includes/class-builder.php:229 assets/js/blocks.js:10
+msgid "$99"
+msgstr "99€"
+
+#: includes/class-plugin.php:218
+msgid ""
+"<strong>Gridbuilder ᵂᴾ - LearnDash</strong> add-on requires at least "
+"<code>LearnDash v3.0.0</code>. Please update or activate LearnDash plugin to "
+"use LearnDash add-on."
+msgstr ""
+"Le module <strong>Gridbuilder ᵂᴾ - LearnDash</strong> nécessite au moins la "
+"version <code>3.0.0 de LearnDash</code>. Veuillez mettre à jour ou activer "
+"l’extension LearnDash pour utiliser le module LearnDash."
+
+#: wp-grid-builder-learndash.php:61
+msgid ""
+"<strong>Gridbuilder ᵂᴾ - LearnDash</strong> add-on requires at least "
+"<code>Gridbuilder ᵂᴾ v1.1.5</code>. Please update Gridbuilder ᵂᴾ to use "
+"LearnDash add-on."
+msgstr ""
+"Le module <strong>Gridbuilder ᵂᴾ - LearnDash</strong> nécessite au moins "
+"<code>Gridbuilder ᵂᴾ v1.1.5</code>. Veuillez mettre à jour Gridbuilder ᵂᴾ "
+"pour utiliser le module LearnDash."
+
+#~ msgid "LearnDash"
+#~ msgstr "LearnDash"
+
+#, fuzzy
+#~| msgid "Default Text"
+#~ msgid "Schedule Text"
+#~ msgstr "Texte par défaut"

@@ -1,0 +1,94 @@
+2025-06-18T07:23:33+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 7ecbd47b4cda83bbb05bcba9039441f2
+            [Date] => Jun 18, 2025 @ 7:23
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 1.08558
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.4 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.created
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => OnpLAtDJ1hrlcYuO+ed69dFiGS73O+8P3CumyYtdrKg=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 7ecbd47b4cda83bbb05bcba9039441f2
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Wed, 18 Jun 2025 07:23:33 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2025-06-18T07:23:34+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => f192fed7df2d2d1aaa789716b474993b
+            [Date] => Jun 18, 2025 @ 7:23
+            [URL] => https://api2.unific.com/webhooks/woocommerce?integration=i2g6E4hPfUe4DbS3NtGq4lOxZBTLsu4vAN2bqze_7q4nJFE48YfzWQoFSo4
+            [Duration] => 0.6547
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.9.4 Hookshot (WordPress/6.8.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ewebtechs.com/
+                            [X-WC-Webhook-Topic] => customer.updated
+                            [X-WC-Webhook-Resource] => customer
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => OnpLAtDJ1hrlcYuO+ed69dFiGS73O+8P3CumyYtdrKg=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => f192fed7df2d2d1aaa789716b474993b
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Wed, 18 Jun 2025 07:23:34 GMT
+                                    [content-length] => 0
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)

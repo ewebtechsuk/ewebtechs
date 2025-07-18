@@ -1,0 +1,6170 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* LearnDash Dashboard */
+
+/*.ld-dashboard-main-wrapper.ld-dashboard-admin {
+    max-width: 1200px !important;
+}*/
+
+.ld-dashboard-main-wrapper a {
+    text-decoration: none;
+}
+
+.ld-dashboard-content-wrapper {
+    width: 100%;
+    display: flex;
+    background: #f8f8fb;
+    border: 1px solid #e7e9ee;
+    border-top: 0;
+}
+
+.ld-dashboard-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 0;
+    max-width: 100%;
+}
+
+#ld-dashboard-profile {
+    margin-bottom: 80px;
+}
+
+div.ld-dashboard-course-builder-lesson.ldd-active-lesson {
+    /* border-color: #156AE9; */
+}
+
+.ld-dashboard-copy-join-link-message {
+    opacity: 0;
+}
+
+.ld-dashboard-copy-join-link-message.show-msg {
+    opacity: 1;
+}
+
+.ld-dashboard-sidebar-left {
+    width: 100%;
+    padding: 0;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 23%;
+    flex: 0 0 23%;
+    padding-left: 0;
+    max-width: 23%;
+}
+
+.ld-dashboard-sidebar-right {
+    width: 100%;
+    padding: 0;
+    max-width: 100%;
+}
+
+.acf-taxonomy-field .ldd-custom-zindex {
+    z-index: 23;
+}
+
+.ld-dashboard-content {
+    margin-bottom: 20px;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    max-width: 78%;
+    border-left: 1px solid #dcdfe5;
+}
+
+.ld-dashboard-content-wrapper.ld-live-feed-enabled .ld-dashboard-content {
+    padding: 0;
+    max-width: 100%;
+}
+
+.ld-dashboard-zoom-api-status.zoom-api-active {
+    color: green;
+}
+
+.ld-dashboard-zoom-api-status.zoom-api-inactive {
+    color: #ff0000e6;
+}
+
+.ld-dashboard-profile-summary:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #3a3a46;
+    opacity: 0.6;
+}
+
+.ld-dashboard-landing-content {
+    position: relative;
+    z-index: 99;
+    padding: 15px 0 0;
+}
+
+.ld-dashboard-landing-text {
+    color: #fff;
+    font-size: 22px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.ld-dashboard-profile-summary {
+    position: relative;
+    text-align: center;
+    padding: 60px 25px;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../img/ld-dashboard-cover.jpg);
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+}
+
+.ld-dashboard-profile-summary .ld-dashboard-profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    position: relative;
+    z-index: 1;
+    -webkit-align-items: center;
+    flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.ld-dashboard-profile-summary .ld-dashboard-profile-info {
+    flex: 1;
+    flex-grow: 1;
+    text-align: left;
+    padding: 15px 25px;
+}
+
+.ld-dashboard-profile-avatar {}
+
+.ld-dashboard-profile-avatar img {
+    width: 110px;
+    height: 110px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.ld-dashboard-display-name {
+    margin-bottom: 5px;
+}
+
+.ld-dashboard-profile-summary .ld-dashboard-display-name h4 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0;
+}
+
+.ld-dashboard-profile-summary .ld-dashboard-display-name h4 strong {
+    color: #fff;
+}
+
+.ld-dashboard-profile-email {
+    color: #fff;
+    font-size: 15px;
+}
+
+.ld-dashboard-social-media-url {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.ld-dashboard-social-media-url a.ld-social-media-link {
+    display: block;
+    max-width: 22px;
+    margin-right: 8px;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.ld-dashboard-social-media-url a.ld-social-media-link:hover {
+    opacity: 0.8;
+}
+
+.ld-dashboard-header-button .ld-dashboard-add-course {
+    color: #fff !important;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-size: 15px;
+    box-shadow: 0 8px 20px rgba(54, 54, 54, 0.26);
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.ld-dashboard-profile .ld-dashboard-header-button .ld-dashboard-add-course span.ld-icons.ld-icon-add-line,
+.ld-dashboard-profile .ld-dashboard-header-button .ld-dashboard-add-course span.ld-icons.ld-icon-account-circle-line {
+    font-size: 24px;
+}
+
+.ld-dashboard-header-button .ld-dashboard-add-course:hover,
+.ld-dashboard-course-filter button.ld-dashboard-course-filter-submit:hover,
+button#ld-buddypress-message-send:hover,
+button#ld-email-send:hover,
+.ld-dashboard-profile-form-field-list .form-submit input[type="submit"]:hover {
+    background: #1564bd;
+}
+
+.ld-dashboard-add-course img {
+    width: 18px;
+    filter: brightness(0) invert(1);
+    margin-right: 8px;
+}
+
+.ld-dashboard-location ul {
+    margin: 0 !important;
+    padding: 0 0 0 !important;
+    list-style: none !important;
+}
+
+.ld-dashboard-location ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.ld-dashboard-edit-remove-link-action {
+    display: none;
+    align-items: center;
+    position: absolute;
+    right: 45px;
+    top: 15px;
+    font-size: 15px;
+    font-weight: normal;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.ld-dashboard-course-builder-wrapper .ld-dashboard-course-builder-lesson:hover .ld-dashboard-edit-remove-link-action {
+    display: flex;
+}
+
+.ld-dashboard-course-builder-wrapper .ld-dashboard-course-builder-lesson:hover .ld-dashboard-lesson-builder-wrapper .ld-dashboard-edit-remove-link-action {
+    display: none;
+}
+
+.ld-dashboard-course-builder-wrapper .ld-dashboard-course-builder-lesson .ld-dashboard-lesson-builder-wrapper .ld-dashboard-course-lesson-builder-topic-single:hover .ld-dashboard-edit-remove-link-action,
+.ld-dashboard-course-builder-wrapper .ld-dashboard-course-builder-lesson .ld-dashboard-lesson-builder-wrapper .ld-dashboard-course-lesson-builder-quiz-single:hover .ld-dashboard-edit-remove-link-action {
+    display: flex;
+}
+
+.ld-dashboard-remove-wrapper {
+    display: block !important;
+    font-weight: normal;
+    cursor: pointer;
+    color: #e01515e0;
+    transition: all 0.3s;
+    line-height: 1;
+}
+
+.ld-dashboard-share-steps-dropper {
+    margin: 10px 0;
+    text-align: center;
+    border: 2px dashed #e3e3e3;
+    font-weight: 500;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.ld-dashboard-single-wrap.ld-dashboard-course-lesson-builder-topic-single .ld-dashboard-course-lesson-topic-remove,
+.ld-dashboard-single-wrap.ld-dashboard-course-lesson-builder-quiz-single .ld-dashboard-course-lesson-quiz-remove {
+    top: 14px;
+    right: 25px;
+}
+
+div.ld-dashboard-course-builder-lesson .ld-dashboard-share-steps-dropper {
+    margin: 10px 15px 0;
+}
+
+.ld-dashboard-share-course-toggle.dashicons-arrow-up,
+div.ld-dashboard-share-toggle-content {
+    display: none;
+}
+
+.ld-dashboard-location ul li a {
+    display: flex;
+    padding: 17px 20px;
+    font-size: 16px;
+    align-items: center;
+    color: #000;
+    text-decoration: none !important;
+    line-height: 14px;
+}
+
+.ld-dashboard-location .ld-dashboard-left-panel .ld-dashboard-menu-icon {
+    margin-right: 12px;
+    width: 25px;
+}
+
+.ld-dashboard-location .ld-dashboard-left-panel .ld-dashboard-menu-icon span.ld-icons {
+    font-size: 25px;
+}
+
+.ld-dashboard-location .ld-dashboard-left-panel .ld-dashboard-menu-icon span.ld-icons.ld-icon-bullhorn,
+.ld-dashboard-location .ld-dashboard-left-panel .ld-dashboard-menu-icon span.ld-icons.ld-icon-puzzle-piece {
+    font-size: 20px;
+}
+
+.ld-dashboard-location .ld-dashboard-left-panel .ld-dashboard-menu-icon span.ld-icons.ld-icon-puzzle-piece {
+    padding-left: 2px;
+}
+
+.ld-dashboard-location .ld-dashboard-left-panel .ld-dashboard-menu-icon [class^="ld-icon-"]:before,
+.ld-dashboard-location .ld-dashboard-left-panel .ld-dashboard-menu-icon [class*=" ld-icon-"]:before {
+    margin: 0;
+}
+
+.ld-dashboard-location .ld-dashboard-menu-icon img {
+    width: 100%;
+}
+
+.ld-dashboard-location ul li a:hover {
+    background-color: #edf0f9;
+}
+
+.ld-dashboard-location ul li a:hover img {
+    filter: invert(42%) sepia(50%) saturate(1352%) hue-rotate(203deg) brightness(119%) contrast(119%);
+}
+
+.ld-dashboard-location li.ld-dashboard-menu-tab.ld-dashboard-active a.ld-focus-menu-link {
+    color: #fff;
+}
+
+.ld-dashboard-share-course-steps-wrapper {
+    background: #fff;
+    padding: 15px 25px 30px;
+    border-radius: 4px;
+    box-shadow: 0 0 0 0 rgb(94 92 154 / 5%);
+}
+
+.ld-dashboard-location li.ld-dashboard-menu-tab.ld-dashboard-active a.ld-focus-menu-link span img {
+    filter: brightness(0) invert(1);
+}
+
+form.ld-course-filter-form {
+    display: flex;
+    flex-flow: wrap;
+    margin: 0 -10px 20px;
+}
+
+form.ld-course-filter-form .ld-dashboard-courses,
+form.ld-course-filter-form .ld-dashboard-students,
+form.ld-course-filter-form input[type="submit"] {
+    flex: 1;
+    margin: 10px;
+}
+
+form.ld-course-filter-form .ld-dashboard-courses .select2-container.select2-container,
+form.ld-course-filter-form .ld-dashboard-students .select2-container.select2-container {
+    width: 100% !important;
+}
+
+.live-course-activity form.ld-course-filter-form input.btn-search-activity {
+    font-size: 16px;
+}
+
+h3.ld-dashboard-feed-title {
+    margin: 0 0 20px !important;
+    line-height: 1;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.ld-dashboard-feed .activity-item {
+    display: block;
+    margin: 15px 0;
+    padding: 15px;
+    background: #fff;
+    border-left: 3px solid #84c1be;
+    border-radius: 4px;
+    position: relative;
+}
+
+.ld-dashboard-feed .activity-item.course {
+    /* border-left: 3px solid #156AE9 !important; */
+}
+
+.ld-dashboard-feed .activity-item {
+    border-left: 3px solid #a31dda !important;
+}
+
+.ld-dashboard-feed .activity-item.lesson {
+    border-left: 3px solid #1ddad1 !important;
+}
+
+.ld-dashboard-feed .activity-item p {
+    margin: 0 0;
+    line-height: 1.4;
+}
+
+div#ld-dashboard-feed {
+    padding-left: 30px;
+    position: relative;
+}
+
+div#ld-dashboard-feed:before {
+    content: "";
+    background: #dcdfe5;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+}
+
+.ld-dashboard-feed .activity-item:before {
+    content: "";
+    background: #1dda83;
+    height: 11px;
+    width: 11px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -25px;
+    top: 10px;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 3px rgb(58 46 68 / 8%);
+}
+
+.ld-dashboard-feed .activity-item i {
+    color: #999;
+    font-size: 80%;
+    text-transform: capitalize;
+    font-style: normal;
+}
+
+p.ld-dashboard-report-pager-info {
+    text-align: right;
+    text-transform: capitalize;
+}
+
+.ld-dashboard-report-pager-info button.ld-dashboard-button {
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.08);
+    font-size: 25px;
+    padding: 0px 12px;
+    line-height: 42px;
+    font-weight: normal;
+    color: #153045;
+}
+
+button.ld-dashboard-button.next {
+    margin: 0 7px;
+}
+
+button.ld-dashboard-button.prev {
+    margin: 0 7px;
+}
+
+.ld-dashboard-activity-empty {
+    background: #fbeded;
+    width: 100%;
+    padding: 8px 15px;
+    border-left: 4px solid #eb0000;
+    color: #eb0000 !important;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.4;
+    margin-left: -27px;
+}
+
+.ld-dashboard-seperator {
+    margin: 30px 0 20px;
+    overflow: hidden;
+}
+
+.ld-dashboard-course-report .ld-dashboard-courses {
+    margin-bottom: 12px;
+}
+
+.ld-dashboard-seperator span {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #3a3a46;
+    text-transform: uppercase;
+}
+
+.ld-dashboard-seperator span:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    border-bottom: 2px solid #eee;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 800px;
+}
+
+.ld-dashboard-seperator span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.ld-dashboard-menu-divider {
+    position: relative;
+    height: 5px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 9;
+}
+
+li.ld-dashboard-menu-divider:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+    border-radius: 100%/5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.ld-dashboard-location ul li.ld-dashboard-menu-divider-label {
+    padding: 15px 15px 10px;
+    cursor: default;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ld-dashboard-content .select2-container.select2-container {
+    /*  width: 40% !important;*/
+    height: auto;
+    min-height: 40px;
+}
+
+.ld-dashboard-content #ld-dashboard-email-frm .select2-container.select2-container {
+    width: 100% !important;
+    margin: 0;
+}
+
+
+/*#ld-dashboard-email-frm .select2-container--default .select2-selection--multiple {
+    border-radius: 4px;
+    min-height: 40px;
+}*/
+
+
+/*#ld-dashboard-email-frm .select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+    padding: 0px 8px;
+    width: 100%;
+    margin: 0;
+}*/
+
+#ld-dashboard-email-frm .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    margin: 0;
+    padding: 0;
+}
+
+#ld-dashboard-email-frm .select2-container--default .select2-search--inline .select2-search__field {
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+    min-height: 35px;
+}
+
+.ld-dashboard-content .select2-container--default .select2-selection--multiple,
+.ld-dashboard-content .select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: 1px solid #d5d5d5 !important;
+    padding: 5px 10px 0 !important;
+    min-height: 42px;
+}
+
+.ld-dashboard-content .select2-container.-acf .select2-selection--multiple .select2-search__field {
+    border: none !important;
+    margin: 0;
+    height: auto !important;
+    padding: 0 !important;
+}
+
+.ld-dashboard-content .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    padding: 0px;
+}
+
+.ld-dashboard-content textarea.select2-search__field[type="search"] {
+    position: absolute;
+    font-size: 15px !important;
+    top: 10px;
+}
+
+.ld-dashboard-content .select2-container .select2-selection--multiple .select2-selection__choice {
+    border: 1px #dbdbdb solid;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    padding: 0px 10px;
+    border-radius: 4px;
+    line-height: 30px;
+}
+
+.ld-dashboard-content .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid #dbdbdb !important;
+    border-radius: 0;
+    color: #999;
+    cursor: pointer;
+    min-height: 30px;
+    font-size: 1em;
+    margin-right: 3px;
+    font-weight: bold;
+    padding-right: 8px;
+    position: unset;
+    left: 0;
+    top: 0;
+}
+
+.ld-dashboard-content .select2-container.-acf .select2-container .select2-search--inline .select2-search__field {
+    margin-top: 0;
+}
+
+.ld-dashboard-content .select2-container--default .select2-selection--multiple .select2-selection__rendered li.select2-search .select2-search__field {
+    min-height: 30px;
+}
+
+#ld-dashboard-email-frm .ld-email-course-students label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.ld-dashboard-content .select2-container--default .select2-selection--single {
+    border: none !important;
+    border-radius: 4px;
+    padding: 5px 0 !important;
+}
+
+.ld-dashboard-content .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 30px;
+}
+
+.ld-dashboard-email-content .select2-container .select2-selection--single {
+    height: 52px;
+}
+
+
+/*.ld-dashboard .select2-dropdown.select2-dropdown {
+  margin-top: 24px !important;
+}*/
+
+.select2-container.-acf .select2-selection--multiple .select2-selection__choice .select2-selection__choice__remove {
+    margin-right: 5px;
+    padding-right: 8px !important;
+}
+
+span#ld-dashboard-new-announcements-span {
+    margin-left: 15px;
+    color: #fff;
+    font-size: 13px;
+    padding: 0 8px;
+    line-height: 18px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+li.ld-dashboard-menu-tab.ld-dashboard-active span#ld-dashboard-new-announcements-span {
+    background: #dcdfe5;
+}
+
+.ld-dashboard-announcement-single.ld-unread-announcement .ld-dashboard-announcement-single-title {
+    font-weight: bold;
+}
+
+/* LearnDash Dashboard Tiles Options */
+
+.ld-dashboard-statistics-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+}
+
+.ld-dashboard-statistics {
+    margin: 0.5%;
+    padding: 5px 15px;
+    border-radius: 4px;
+    width: 32.33%;
+}
+
+.ld-dashboard-statistics:nth-child(even) {
+    background: #3a3a46;
+}
+
+.ld-dashboard-statistics:nth-child(odd) {
+    background: #3a3a46;
+}
+
+.statistics-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: unset;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px 0px 15px 0;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ld-dashboard-icons {
+    display: flex;
+    align-items: center;
+    max-width: 55%;
+}
+
+.learndash-instructor-earning .ld-dashboard-icons {
+    max-width: 50%;
+}
+
+.ld-dashboard-statistics-container .ld-dashboard-icons span.ld-icons {
+    color: #fff;
+    font-size: 28px;
+}
+
+.ld-dashboard-statistics-container .ld-dashboard-icons span.ld-icons.ld-icon-puzzle-piece,
+.ld-dashboard-statistics-container .ld-dashboard-icons span.ld-icons.ld-icon-file-certificate {
+    font-size: 24px;
+}
+
+h2.statistics-label {
+    font-size: 12px !important;
+    font-weight: normal !important;
+    line-height: 1.4 !important;
+    text-transform: uppercase;
+    margin: 0 0 0 10px;
+    display: inline-block;
+    color: #fff !important;
+}
+
+.statistics-inner strong.learndash-statistics,
+.statistics-inner strong.statistics {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    margin-right: 0;
+    color: #fff;
+    float: revert;
+    display: block;
+    right: 0;
+}
+
+.ld-dashboard-tiles-options.ld-dashboard-landing {
+    margin-bottom: 20px;
+}
+
+.ld-dashboard-tiles-options .ld-dashboard-statistics-container {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin: 0 -4px;
+}
+
+.ld-dashboard-tiles-options .ld-dashboard-section-head-title {
+    margin-bottom: 10px;
+}
+
+.ld-dashboard-icons img {
+    width: 40px;
+    filter: brightness(0) invert(1);
+}
+
+strong#earnings-usd span.small {
+    font-size: 15px;
+    margin-bottom: -3px;
+    display: block;
+}
+
+.wbcom-ld-dashboard #acf-popup .acf-popup-box {
+    border-radius: 8px;
+    border: none;
+}
+
+.wbcom-ld-dashboard .acf-popup-box .acf-label {
+    display: none;
+}
+
+.wbcom-ld-dashboard #acf-popup .acf-popup-box .title {
+    border: none;
+}
+
+.wbcom-ld-dashboard #acf-popup .acf-popup-box .title .acf-icon {
+    top: -10px;
+    right: -10px;
+    background: red;
+    border-radius: 6px;
+}
+
+
+/* LearnDash Dashboard Course Report */
+.ld-dashboard-content select {
+    display: inline-block;
+    line-height: 1.3;
+    padding: 0.6em 1.8em 0.5em 0.8em;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-right: 10px;
+    border: 1px solid #d5d5d5;
+    border-radius: 0.3em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+    font-size: 14px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.ld-dashboard-content select:hover {
+    border-color: #888;
+}
+
+select#ld-dashboard-courses-id,
+.ld-dashboard-student-lists,
+select#ld-dashboard-student-courses-id {
+    margin-bottom: 20px;
+}
+
+select#ld-dashboard-student-courses-id {
+    width: 100%;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field.select2-search__field {
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    height: 38px;
+}
+
+.ld-dashboard-content .select2-container .select2-selection--single .select2-selection__rendered {
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    line-height: 40px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.ld-dashboard-content .ld-dasboard-my-filter .select2-container .select2-selection--single .select2-selection__rendered,
+.ld-dashboard-content .ld-dashboard-course-filter .select2-container .select2-selection--single .select2-selection__rendered {
+    line-height: 40px;
+    height: 40px;
+}
+
+.ld-dashboard-content .ld-dashboard-email-content .select2-container .select2-selection--single .select2-selection__rendered,
+.ld-dashboard-content .ld-dashboard-email-content .select2-container--default .select2-selection--single .select2-selection__arrow {
+    line-height: 52px;
+    height: 52px;
+}
+
+.ld-dashboard-content .select2-container--default .select2-selection--single .select2-selection__clear {
+    display: none;
+}
+
+.ld-dashboard-content .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 39px;
+    right: 10px;
+}
+
+.ld-dashboard-course-chart {
+    margin-bottom: 30px;
+}
+
+.ld-dashboard-overview-course-students {
+    background: #fff;
+    padding: 20px 0;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.ld-dashboard-overview-course-students::-webkit-scrollbar {
+    display: none;
+}
+
+.ld-dashboard-overview-course-students h3 {
+    text-transform: uppercase;
+    padding: 12px 22px;
+    margin: -20px 0px 0;
+    background: #3e3f5e;
+    color: #fff;
+    font-size: 15px;
+}
+
+.ld-dashboard-overview-course-sort-by {
+    margin: 15px;
+}
+
+.ld-dashboard-overview-course-students table tr td,
+.ld-dashboard-overview-course-students table tr th {
+    padding: 8px 22px;
+    font-size: 15px;
+}
+
+.ld-dashboard-overview-course-students table tr th {
+    color: #111;
+}
+
+table#ld-dashboard-overview-course-students {
+    margin: 0 2%;
+    width: 96%;
+    border-left: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+}
+
+.ld-dashboard-overview-course-students .ld-dashboard-loader,
+.ld-dashboard-overview-course-students .ld-course-details.ld-dashboard-pagination,
+.ld-dashboard-overview-course-students span.ld-dashboard-export {
+    padding: 0 22px;
+}
+
+#ld-dashboard-overview-course-students thead {
+    background: #f9f9f9;
+}
+
+#ld-dashboard-overview-course-students tr:nth-child(2n + 2) {
+    background: #f9f9f9;
+}
+
+.ld-dashboard-info {
+    background: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.ld-dashboard-info p {
+    margin: 0 !important;
+}
+.ld-dashboard-chart-notice {
+    padding: 12px 20px;
+    background: #fdf5f5;
+    border-radius: 8px;
+    color: #e60808;
+    margin-top: 15px;
+    border-left: 2px solid;
+}
+
+/*Course Average Chart*/
+.ld-dashboard-course-progress .ld-dashboard-course-completion-report-summary.chart-summary {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    border-radius: 8px;
+    margin: 25px 0px 35px;
+    border: 1px solid #eee;
+    padding: 20px;
+    flex-wrap: wrap;
+    box-shadow: 0 10px 40px #e8e8e8;
+}
+
+.ld-dashbord-course-average {
+    width: 48%;
+}
+
+.ld-dashbord-course-average .ld-dashboard-chart-summary-amount {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.ld-dashboard-summary-lable span {
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    /* font-size: 18px; */
+}
+
+.ld-dashbord-course-particulars {
+    border-left: 1px solid;
+    padding-left: 2.5%;
+    width: 50%;
+}
+
+.ld-dashboard-summery-right-entry {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.ld-dashboard-summary-amount {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ld-dashboard-course-completion-report-wrapper {
+    width: 100%;
+}
+
+.ld-dashboard-course-completion-report-wrapper .ld-dashboard-doughnut-chart-container {
+    margin: 0 auto;
+    max-width: 600px;
+    /* height: 450px; */
+}
+
+.ld-dashboard-course-completion-report-wrapper .ld-dashboard-bar-chart-container,
+.ld-dashboard-top-courses-report-wrapper {
+    height: 450px;
+}
+
+.ld-dashboard-course-chart {
+    display: flex;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    align-items: center;
+    box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.05);
+    border: 1px solid rgba(94, 92, 154, 0.1);
+}
+
+.ld-dashboard-course-report-summary.chart-summary {
+    width: 50%;
+}
+
+canvas#ld-dashboard-instructor-highchart-student-progress {
+    padding: 0;
+    width: 50% !important;
+    height: auto !important;
+    box-shadow: none;
+    border: none;
+}
+
+#ld-dashboard-student-course-progress-highchart,
+#ld-dashboard-student-course-quizze-progress-highchart,
+#ld-dashboard-student-course-assignment-progress-highchart {
+    max-width: 100%;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.ld-dashboard-chart-loader {
+    width: 80px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1019px) {
+    .ld-dashbord-course-average {
+        width: 100%;
+    }
+
+    .ld-dashbord-course-particulars {
+        border-left: none;
+        padding-top: 1.5%;
+        width: 100%;
+        margin-top: 20px;
+        border-top: 1px solid #eee;
+    }
+
+    .ld-dashbord-course-average .ld-dashboard-chart-summary-amount {
+        margin-bottom: 8px;
+    }
+
+    .ld-dashboard-course-chart .ld-dashboard-summery-right-entry {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .ld-dashboard-course-chart .ld-dashboard-summery-right-entry {
+        font-size: 16px;
+    }
+
+    .ld-dashbord-student-particulars {
+        padding: 0 8px !important;
+    }
+
+    .ld-dashbord-student-progress-item .ld-dashboard-summery-right-entry {
+        font-size: 15px !important;
+        margin: 8px 0 !important;
+        line-height: 1.2;
+    }
+
+    canvas#ld-dashboard-instructor-highchart-student-progress {
+        padding: 0;
+    }
+
+}
+
+@media only screen and (max-width: 630px) {
+
+    .ld-dashbord-student-progress-item {
+        width: 100% !important;
+        margin: 8px 0;
+    }
+
+    .ld-dashbord-student-progress-item .ld-dashboard-summery-right-entry {
+        font-size: 16px !important;
+        margin: 8px !important;
+    }
+
+    canvas#ld-dashboard-instructor-highchart-student-progress {
+        padding: 0;
+    }
+    .ld-dashboard-chart-notice {
+        padding: 10px 15px;
+    }
+
+}
+
+@media only screen and (max-width: 510px) {
+
+    .ld-dashboard-course-report-summary.chart-summary,
+    canvas#ld-dashboard-instructor-highchart-student-progress {
+        width: 100% !important;
+    }
+
+}
+
+/* TIME SPENT ON A COURSE */
+
+.ld-dashboard-course-progress .ld-dashboard-time-spent-on-a-course-summary.course-summary,
+.ld-dashboard-course-progress .ld-dashboard-course-time-tracking-lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 2%;
+    border-radius: 8px;
+    margin: 25px 0px 35px;
+    border: 1px solid #eee;
+    padding: 20px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-shadow: 0 10px 40px #e8e8e8;
+}
+
+.ld-dashboard-time-spent-on-a-course-summary .revenue-particulars-wrapper {
+    border-left: 1px solid;
+    padding-left: 2.5%;
+    width: 50%;
+}
+
+.ld-dashboard-time-spent-on-a-course-summary .revenue-particulars-wrapper .summery-right-entry {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.ld-dashboard-time-spent-on-a-course-summary .revenue-figure-wrapper {
+    width: 48%;
+}
+
+.ld-dashboard-course-time-tracking-chart {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.ld-dashboard-course-progress .ld-dashboard-course-time-tracking-lists {
+    display: block;
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.ld-dashboard-course-time-tracking-lists .ld-dashboard-course-title {
+    margin: 0;
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.ld-dashboard-course-time-tracking-lists .ld-dashboard-course-title .ld-dashboard-timespent {
+    margin-left: 15px;
+}
+
+.ld-dashboard-course-time-tracking-lists .ld-dashboard-course-title+.ld-dashboard-course-title {
+    border-top: 1px solid #e8e8e8;
+}
+
+/* Most Popular Courses */
+
+.ld-dashboard-seperator.popular-courses-heading {
+    margin-bottom: 18px;
+}
+
+.ld-dashboard-info-table thead {
+    font-weight: 500;
+    background: #3e3f5e;
+    color: #fff;
+}
+
+.ld-dashboard-info-table td,
+.ld-dashboard-info-table th {
+    padding: 12px 15px !important;
+    line-height: 1.3;
+}
+
+table.ld-dashboard-info-table {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.popular-courses-wrap .ld-dashboard-info-table td a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    max-width: 450px;
+}
+
+table.ld-dashboard-info-table small.label-course-status.label-course-publish {
+    background: #32a532;
+    color: #fff;
+    border-radius: 40px;
+    /* display: block; */
+    font-size: 13px;
+    padding: 4px 18px 3px;
+    text-align: center;
+    line-height: 1.3;
+}
+
+
+/* LearnDash Dashboard Student Report */
+
+.ld-dashboard-course-quizzes-assignment-progress span.select2.select2-container.select2-container--default {
+    width: 100% !important;
+    margin: 10px 0;
+}
+
+.ld-dashboard-course-progress h3.ldid-dashboard-title {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+    color: #3a3a46;
+    margin: 0 0 10px;
+}
+
+.ld-dashboard-student-course-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    margin-bottom: 12px;
+    display: flex;
+    -ms-flex-flow: wrap;
+    gap: 1.5%;
+    flex-flow: wrap;
+}
+
+.ld-dashbord-student-progress-item {
+    width: 32.33%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.05);
+    padding: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(94, 92, 154, 0.1);
+}
+
+.ld-dashbord-student-particulars {
+    padding: 0 10px 5px;
+    display: block;
+}
+
+.ld-dashbord-student-progress-item .ld-dashboard-summery-right-entry {
+    font-size: 16px;
+    margin: 3px 0;
+    justify-content: space-between;
+}
+
+.ld-dashbord-student-progress-item .ld-dashboard-summary-amount {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+span.ld-dashboard-export {
+    display: block;
+    margin-top: 10px;
+}
+
+.ins-cw-earning-table {
+    min-height: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.ld-dashboard-student-courses li a,
+.ld-dashboard-info-table td a {
+    color: #3e3f5e;
+    font-size: 16px;
+}
+
+ul.ld-dashboard-student-courses {
+    margin: 0 !important;
+    padding: 20px !important;
+    list-style: none !important;
+    background: #fff;
+}
+
+ul.ld-dashboard-student-courses li {
+    margin: 0;
+    padding: 0;
+}
+
+ul.ld-dashboard-student-courses li+li {
+    margin-top: 15px;
+}
+
+.ld-dashboard-student-courses strong {
+    font-weight: 500;
+}
+
+
+/* Course Progress Bar Style */
+
+.ld-dashboard-course-quizzes-assignment-progress,
+.ld-dashboard-course-progress {
+    margin-bottom: 20px;
+}
+
+.ld-dashboard-course-progress {
+    background: #fff;
+    padding: 15px;
+}
+
+.ld-dashboard-course-progress ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+.ld-dashboard-course-progress ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.ld-dashboard-course-progress ul li+li {
+    margin-top: 20px;
+}
+
+.ld-dashboard-course-progress ul li strong {
+    width: 100%;
+    font-weight: normal;
+    display: block;
+}
+
+.ld-dashboard-course-progress ul li strong span,
+.ld-dashboard-student-courses li strong span {
+    float: right;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.ld-dashboard-progress.progress_bar_wrap {
+    background-color: rgba(191, 191, 191, 0.26);
+    border-radius: 25px;
+}
+
+.ld-dashboard-progressbar {
+    height: 6px;
+    border-radius: inherit;
+}
+
+
+/* Loader Style */
+
+.ld-dashboard-loader,
+.ld-dashboard-student-loader {
+    width: 100%;
+    background: transparent !important;
+    margin-bottom: 20px;
+    padding: 9px;
+    border: none !important;
+    height: auto;
+    box-shadow: none !important;
+    padding: 0;
+}
+
+.ld-dashboard-loader img,
+.ld-dashboard-student-loader img {
+    float: left;
+    margin-right: 10px;
+    width: 32px;
+}
+
+.ld-dashboard-loader p,
+.ld-dashboard-student-loader p {
+    margin: 0;
+    padding-top: 5px;
+    font-style: italic;
+    /* color: #156AE9 !important; */
+}
+
+
+/* Sections box shadow for white background */
+
+.ld-dashboard-feed .activity-item,
+#ld-dashboard-instructor-highchart-student-progress,
+.ld-dashboard-overview-course-students,
+#ld-dashboard-student-course-progress-highchart,
+#ld-dashboard-student-course-assignment-progress-highchart,
+#ld-dashboard-student-course-quizze-progress-highchart,
+ul.ld-dashboard-student-courses,
+.ld-dashboard-course-quizzes-assignment-progress #course_container,
+.ld-dashboard-course-progress,
+.ld-dashboard-loader,
+.ld-dashboard-student-loader,
+.ld-dashboard-info,
+.ld-dashboard-email-content,
+.ld-dashboard-buddypress-message-content,
+table.ld-dashboard-info-table {
+    -webkit-box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.05);
+    -moz-box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.05);
+    -ms-box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.05);
+    -o-box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.05);
+    box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.05);
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid rgba(94, 92, 154, 0.1);
+}
+
+canvas#ld-dashboard-instructor-highchart-student-progress {
+    padding: 15px;
+}
+
+.ins-earning-available {
+    width: 100%;
+    height: 400px;
+}
+
+.ld-dashboard-instructor-earning {
+    background: #fff;
+    padding: 15px;
+}
+
+.ld-dashboard-loader {
+    background: #f4f4f8;
+    border: none;
+    border-radius: 0;
+    height: auto;
+    padding: 0;
+}
+
+.ld-dashboard-overview-course-students .ld-dashboard-loader {
+    margin: 10px 15px;
+    width: auto;
+    border-radius: 0;
+    height: auto;
+    padding: 0;
+    background: white;
+    align-items: center;
+    box-shadow: none;
+}
+
+
+/* Course to-do */
+
+#ldid-show-course-todo {
+    width: 100%;
+}
+
+.render-course-group-to-do-list {
+    background: #fff;
+}
+
+.render-course-group-to-do-list .fa-spin {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.render-course-group-to-do-list .bp-to-do-actions .fa-spin {
+    margin-bottom: 0;
+}
+
+
+/* Email and Messaging integration */
+
+.ld-dashboard-email-content,
+.ld-dashboard-buddypress-message-content {
+    background: #fff;
+    padding: 15px;
+    position: relative;
+    border: none;
+    z-index: 1;
+}
+
+.ld-dashboard-email-content .select2-container,
+.ld-dashboard-buddypress-message-content .select2-container {
+    width: 100% !important;
+}
+
+.ld-dashboard-email-content fieldset,
+.ld-dashboard-buddypress-message-content fieldset {
+    margin: 0;
+    padding: 10px 5px;
+    border: 0;
+    position: relative;
+}
+
+.ld-dashboard-email-content fieldset:last-child,
+.ld-dashboard-buddypress-message-content fieldset:last-child {
+    border: none;
+}
+
+input#ld-email-subject,
+input#ld-buddypress-message-subject {
+    width: 100%;
+    height: 52px;
+    font-size: 16px;
+}
+
+.select2-dropdown.select2-dropdown {
+    border: 1px solid #d5d5d5;
+    margin-top: 30px;
+}
+
+.ld-dashboard-wrapper .select2-container.select2-container {
+    z-index: 1;
+}
+
+.ld-dashboard-email-content .wp-core-ui input[type="button"]:hover,
+.ld-dashboard-buddypress-message-content .wp-core-ui input[type="button"]:hover {
+    border: 1px solid #999 !important;
+}
+
+#ld-email-cource-loader img,
+#ld-email-student-loader img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    z-index: 100;
+    background: #fff;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+#ld-email-student-loader img {
+    top: 50px;
+}
+
+#ld-email-loader img {
+    width: 24px;
+    height: 24px;
+    z-index: 100;
+    background: #fff;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+button#ld-buddypress-message-send,
+button#ld-email-send {
+    border: none;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+/* Instructor Registration */
+
+form#ld-instructor-reg-form {
+    width: 900px;
+    margin: 15px auto;
+    padding: 30px 20px;
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+}
+
+#ld-instructor-reg-form .ld-dashboard-form-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ld-dashboard-form-col-6 {
+    padding: 0 10px;
+    width: 50%;
+}
+
+#ld-instructor-reg-form .ld-dashboard-form-group label {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+}
+
+#ld-instructor-reg-form .ld-dashboard-form-group input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#ld-instructor-reg-form .ld-dashboard-form-group input::placeholder {
+    font-size: 14px;
+    color: #999;
+}
+
+#ld-instructor-reg-form .ld-dashboard-form-group button.ld-dashboard-button {
+    margin-left: 10px;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.ld-dashboard-alert-warning {
+    width: 100%;
+    margin: 0;
+    padding: 15px !important;
+}
+
+.status-instructor-wrap.ld-dashboard-alert-warning h2 {
+    margin: 20px 0 10px;
+    font-size: 35px;
+    display: block;
+    color: #1d42cb;
+    text-transform: capitalize;
+    line-height: 1;
+}
+
+.ld-dashboard-instructor-error {
+    margin: 15px auto;
+    display: block;
+    background: #ffcbcc;
+    width: 900px;
+    border-radius: 5px;
+    color: #ad0001;
+    padding: 8px 15px;
+    border-left: 3px solid #ad0001;
+}
+
+#ld-instructor-reg-form .ld-dashboard-form-group:not(.ld-dashboard-reg-form-btn-wrap) {
+    margin: 0 0 20px;
+}
+
+#ld-instructor-reg-form p.ld-dashboard-error {
+    margin: 0;
+    font-size: 14px;
+    color: red;
+    margin-top: 5px;
+}
+
+.wbcom-ld-dashboard h1.entry-title {
+    text-align: center;
+}
+
+.status-instructor-wrap.ld-dashboard-alert-warning.ld-dashboard-instructor-alert {
+    max-width: 700px;
+    margin: 50px auto;
+    border-radius: 8px;
+    background: #fff;
+    text-align: center;
+    padding: 50px 20px !important;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 25px 40px #f0f3f7;
+}
+
+.status-instructor-wrap.ld-dashboard-alert-warning p {
+    margin: 0;
+}
+
+.status-instructor-wrap .status-instructor-alert strong.pending {
+    background: #f02a2a;
+    color: #fff;
+    padding: 4px 25px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: normal;
+    border-radius: 100px;
+    margin-top: 10px;
+}
+
+.status-instructor-wrap .status-instructor-alert strong.approved {
+    background: #1dcb7f;
+}
+
+.status-instructor-wrap.ld-dashboard-alert-warning.ld-dashboard-instructor-alert img {
+    display: inline-block;
+}
+
+.ld-dashboard-form-group button[value="apply"] {
+    margin: 0 auto;
+    border-radius: 5px;
+    max-width: 280px;
+    width: 100%;
+    padding: 10px;
+    display: inherit;
+}
+
+/*Elementor Support Shortcode*/
+.elementor-column form#ld-instructor-reg-form {
+    width: 100%;
+}
+
+
+
+
+
+/* Export Button */
+
+.ld-dashboard-btn {
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.8;
+    margin: 5px 15px 0px 0;
+    padding: 0.5em 1.2em;
+    display: inline-block;
+    border: 0;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.ld-dashboard-student-courses span.ld-dashboard-export {
+    padding: 0;
+}
+
+.ld-dashboard-btn:hover {
+    background: #1564bd;
+    color: #fff;
+}
+
+.ld-dashboard-pagination {
+    margin-top: 15px;
+}
+
+
+/* Dashboard My Profile */
+
+.ld-dashboard-my-profile table.table_content_ld {
+    background: #fff;
+    width: 100%;
+}
+
+h3.ld-dashboard-tab-heading {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+table.table_content_ld {
+    border: 1px solid #eee;
+}
+
+.table_content_ld tr:nth-child(2n + 2) {
+    background: #f8f8f8;
+}
+
+.ld-dashboard-my-profile .table_content_ld tr:nth-child(2n + 2) {
+    background: #f8f8f8;
+}
+
+.table_content_ld tr td {
+    padding: 15px;
+}
+
+.ld-dashboard-my-profile table.table_content_ld tr td:first-child {
+    width: 22%;
+    line-height: 1.2;
+    vertical-align: text-bottom;
+}
+
+
+/* Completed Course */
+
+.ld-dashboard-inline-links {
+    margin-bottom: 30px;
+}
+
+.ld-dashboard-inline-links ul {
+    padding: 0;
+    align-items: center;
+    margin: 0 !important;
+    display: flex;
+    border-bottom: 2px solid #dcdfe5;
+}
+
+.ld-dashboard-inline-links ul li {
+    display: block;
+    transition: all 0.3s;
+    position: relative;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+}
+
+.ld-dashboard-inline-links ul li a {
+    color: #333;
+    transition: all 0.3s;
+    display: block;
+    padding: 0px 25px 5px;
+    font-size: 16px;
+}
+
+.ld-dashboard-segment-title {
+    font-size: 16px;
+}
+
+.ld-dashboard-inline-links ul li.course-nav-active a,
+.ld-dashboard-inline-links ul li:hover a {}
+
+.ld-dashboard-inline-links ul li.course-nav-active:before,
+.ld-dashboard-inline-links ul li.course-nav-active:after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: solid #0000;
+    content: "";
+    pointer-events: none;
+}
+
+.ld-dashboard-inline-links ul li.course-nav-active:before {
+    margin-left: -8px;
+    border-width: 8px;
+    /* border-top-color: #156AE9; */
+}
+
+.ld-dashboard-inline-links ul li.course-nav-active:after {
+    margin-left: -5px;
+    border-width: 5px;
+}
+
+.ld-dashboard-inline-links ul li.course-nav-active {
+    /* border-color: #156AE9; */
+}
+
+.ld-completed-course-content {
+    padding: 25px 0;
+}
+
+.ld-dashboard-progress-bar-wrap span.ld-dashboard-progress-percent {
+    font-size: 14px;
+}
+
+
+/* Course Filter */
+
+.ld-dashboard-course-filter {
+    background: #fff;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-shadow: 0 5px 30px 0 rgba(94, 92, 154, 0.08);
+}
+
+.ld-dashboard-course-filter.my-lessons-filter {
+    justify-content: flex-start;
+}
+
+.ld-dashboard-content .ld-dashboard-course-filter .select2-container .select2-selection--single .select2-selection__rendered {
+    background: none;
+    box-shadow: none;
+    font-size: 16px;
+    border-color: #d5d5d5;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+
+.ld-dashboard-content .ld-dashboard-course-filter .ld-dashboard-actions-iteam span.select2-selection__placeholder {
+    color: #444;
+}
+
+.ld-dashboard-course-filter button.ld-dashboard-course-filter-submit {
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 25px;
+    cursor: pointer;
+    min-width: 80px;
+    line-height: 30px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.ld-dashboard-course-filter-reset {
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 25px;
+    cursor: pointer;
+    min-width: 80px;
+    line-height: 30px;
+    transition: all 0.3s;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.ld-dashboard-course-filter span.select2.select2-container.select2-container--default {
+    margin: 0;
+}
+
+.ld-dashboard-content .ld-dashboard-course-filter .select2-container.select2-container {
+    width: 100% !important;
+    /*   height: 40px;   */
+}
+
+.ld-dashboard-content .ld-dashboard-course-filter .ld-dashboard-actions-iteam {
+    position: relative;
+    width: 42% !important;
+    margin: 0 10px 0 0px;
+}
+
+.ld-dashboard-content .ld-dashboard-course-filter .ld-dashboard-actions-iteam label {
+    padding: 0;
+    background: #fff;
+    color: #9d9d9d;
+    font-size: 14px;
+    display: block;
+    line-height: 1.2;
+}
+
+.ld-dasboard-my-filter.ld-dashboard-course-filter {
+    justify-content: space-between;
+}
+
+.ld-dasboard-my-question-filter.ld-dashboard-course-filter .ld-dashboard-actions-iteam {
+    width: 27.5% !important;
+}
+
+.custom-learndash-pagination-nav button.ld-dashboard-pagination-btn {
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.08);
+    font-size: 25px;
+    padding: 0px 12px;
+    line-height: 42px;
+    font-weight: normal;
+    color: #153045;
+    transition: all 0.3s;
+}
+
+.custom-learndash-pagination-nav li.custom-learndash-pagination-pagedisplay {
+    font-size: 18px;
+}
+
+
+/* My Courses Tab */
+
+.ld-dashboard-content .learndash-wrapper .ld-profile-summary .ld-profile-card {
+    margin: 0;
+}
+
+.ld-dashboard-content .ld-profile-avatar,
+.ld-dashboard-content .ld-profile-heading,
+.ld-dashboard-content .ld-profile-edit-link {
+    display: none;
+}
+
+.ld-dashboard-content .ld-profile-stats {
+    padding: 10px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.ld-dashboard-email-content .select2-container--default.select2-container--focus .select2-selection--multiple {
+    border-color: #888888;
+    min-height: 45px;
+}
+
+.ld-dashboard-content.instructor-courses-list {
+    max-width: 100%;
+}
+
+.instructor-courses-list .ld-mycourse-wrap {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.08);
+}
+
+.ld-mycourse-thumbnail {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 250px;
+    flex: 0 0 250px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.my-courses.ld-dashboard-enrolled-course-wrap .ld-mycourse-thumbnail {
+    flex: 0 0 270px;
+    height: 190px;
+}
+
+.ld-mycourse-thumbnail img.attachment-thumbnail.size-thumbnail {
+    /* width: 100%;
+    height: 200px;
+    object-fit: cover; */
+}
+
+.ld-meta.ld-course-metadata {
+    margin: 0 0 5px;
+}
+
+.ld-mycourse-content {
+    padding: 20px 22px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.custom-learndash-my-courses-list .my-courses .ld-mycourse-content,
+.my-courses.ld-dashboard-enrolled-course-wrap .ld-mycourse-content {
+    padding: 15px 20px;
+}
+
+.ld-dashboard-enrolled-course-status {
+    display: inline-block;
+    background: #ff703d;
+    color: #fff;
+    font-size: 13px;
+    margin-bottom: 8px;
+    padding: 4px 15px;
+    border-radius: 80px;
+    line-height: 1;
+}
+
+.ld-dashboard-enrolled-course-status.complete {
+    background: #0dbf8d;
+}
+
+.ld-dashboard-enrolled-course-status.in-progress {
+    /* background: #156ae9; */
+}
+
+.ld-mycourse-content h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.ld-mycourse-content h3 a {
+    color: #333;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    display: block;
+    text-decoration: none !important;
+}
+
+.ld-mycourse-content h3 a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    max-width: 800px;
+}
+
+.ld-mycourse-content .ld-meta.ld-course-metadata ul {
+    margin: 0 0 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.ld-meta.ld-course-metadata.ld-course-metadata-item {
+    padding-top: 8px;
+}
+
+.ld-mycourse-content .ld-meta.ld-course-metadata ul li {
+    display: inline-block;
+    color: #9aa0af;
+    font-size: 16px;
+    border-right: 1px solid #ccc;
+    margin: 0 15px 0 0;
+    padding-right: 15px;
+    line-height: 1;
+}
+
+.ld-mycourse-content .ld-meta.ld-course-metadata ul li:last-child {
+    border-right: 0;
+}
+
+.ld-mycourse-content .ld-meta.ld-course-metadata ul li span {
+    color: #333;
+    text-transform: capitalize;
+    margin-left: 3px;
+}
+
+.ld-mycourse-content .mycourse-footer {
+    margin-top: 15px;
+}
+
+.ld-dashboard-last-activity {
+    font-size: 15px;
+}
+
+.ld-meta.ld-course-metadata.ld-course-metadata-item .mycourse-footer {
+    margin: 0;
+}
+
+.ld-meta.ld-course-metadata.ld-course-metadata-item ul li {
+    line-height: 1;
+}
+
+.ld-mycourse-content .ld-mycourses-stats {
+    display: flex;
+    align-items: center;
+}
+
+.ld-mycourse-content span.woocommerce-Price-amount.amount {
+    margin-right: 15px;
+    line-height: 15px;
+}
+
+.ld-mycourse-content .mycourse-footer a {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    line-height: 15px;
+    color: #487dfb;
+    transition: all 0.3s;
+}
+
+span.ld-dashboard-price-amount.amount {
+    margin-right: 15px;
+}
+
+.ld-mycourse-content .mycourse-footer a:hover {
+    color: #333;
+}
+
+.ld-mycourse-content .mycourse-footer a img {
+    width: 16px;
+    display: inline-block;
+    margin-right: 5px;
+    filter: invert(42%) sepia(50%) saturate(1352%) hue-rotate(203deg) brightness(119%) contrast(119%);
+}
+
+.ld-mycourse-content .mycourse-footer a:hover img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: url(desaturate.svg#greyscale);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+}
+
+.ld-mycourse-content .mycourse-footer a.ld-dashboard-element-delete-btn {
+    color: #fb0101;
+}
+
+.my-quiz-attempts-wrapper .ld-dashboard-section-head-title {
+    margin-bottom: 10px;
+}
+
+.ld-dashborad-add-edit-course div#message.updated p {
+    background: #d9f1e5;
+    color: green;
+    display: block;
+    padding: 6px 15px;
+    border-left: 3px solid;
+    text-transform: capitalize;
+}
+
+.ld-dashboard-enrolled-course-author-content-user {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.ld-dashboard-enrolled-course-author-content-user img.ld-dashboard-course-author-avatar {
+    max-width: 30px;
+    margin-right: 10px;
+    border-radius: 100px;
+}
+
+.ld-dashboard-enrolled-course-author-content-user span.ld-dashboard-course-author-name {
+    font-size: 16px;
+}
+
+
+/*My Quiz Attempts*/
+
+.ld-quiz-progress-content-container p {
+    padding: 15px 20px;
+    margin: 15px 0 0;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #e7e9ee;
+}
+
+.ld-quiz-progress-content-container .quiz_progress_details h4 {
+    margin-bottom: 0;
+}
+
+.my-quiz-attempts-wrapper-view .ld-dashboard-content-inner {
+    width: 300px;
+}
+
+.my-quiz-attempts-wrapper-view .ld-dashboard-section-head-title {
+    align-items: center;
+}
+
+.ld-dashboard-content .my-quiz-attempts-wrapper-view .select2-container.select2-container {
+    width: 100% !important;
+    margin: 0;
+}
+
+.my-quiz-attempts-wrapper #quiz_progress_details h4 {
+    margin: 0;
+}
+
+.ld-quiz-progress-content-container p strong a {
+    color: #000;
+    margin-right: 0;
+}
+
+.ld-quiz-progress-content-container p a {
+    margin-right: 10px;
+}
+
+.custom-learndash-course-form.ld-dashboard-form-settings-data-tab.ld-dashboard-quiz-time-limit-field-timer.ld-dashboard-group-field-single {
+    clear: none;
+    width: 33.33%;
+    float: left;
+}
+
+.custom-learndash-course-form.ld-dashboard-form-settings-data-tab.ld-dashboard-quiz-time-limit-field-timer.ld-dashboard-group-field-single[data-name="quiz_timeLimit_timer_min"] {
+    padding: 15px;
+}
+
+
+/*Setting Tab*/
+
+.ld-dashboard-profile-form input[type="text"],
+.ld-dashboard-profile-form input[type="email"],
+.ld-dashboard-profile-form input[type="url"],
+.ld-dashboard-profile-form input[type="password"],
+.ld-dashboard-profile-form input[type="search"],
+.ld-dashboard-profile-form input[type="tel"],
+.ld-dashboard-profile-form input[type="number"],
+.ld-dashboard-profile-form-field input[type="password"] {
+    height: 45px;
+    border-radius: 5px !important;
+    width: 100%;
+    padding: 0 2%;
+    font-size: 15px;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    border: 1px solid #d5d5d5;
+}
+
+.ld-dashboard-profile-form input[type="text"]:focus,
+.ld-dashboard-profile-form input[type="email"]:focus,
+.ld-dashboard-profile-form input[type="url"]:focus,
+.ld-dashboard-profile-form input[type="password"]:focus,
+.ld-dashboard-profile-form input[type="search"]:focus,
+.ld-dashboard-profile-form input[type="tel"]:focus,
+.ld-dashboard-profile-form input[type="number"]:focus,
+.ld-dashboard-profile-form input[type="text"]:focus-visible,
+.ld-dashboard-profile-form input[type="email"]:focus-visible,
+.ld-dashboard-profile-form input[type="url"]:focus-visible,
+.ld-dashboard-profile-form input[type="password"]:focus-visible,
+.ld-dashboard-profile-form input[type="search"]:focus-visible,
+.ld-dashboard-profile-form input[type="tel"]:focus-visible,
+.ld-dashboard-profile-form input[type="number"]:focus-visible,
+.ld-dashboard-profile-form textarea:focus-visible,
+.ld-dashboard-profile-form-field input[type="password"]:focus-visible,
+.ld-dashboard-profile-form select:focus {
+    /* border: 1px solid #156AE9; */
+    box-shadow: none;
+    outline: none;
+}
+
+.display-name-publicly select[name="display_name"] {
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 5px !important;
+}
+
+.ld-dashboard-profile-form textarea {
+    border-radius: 5px !important;
+    width: 100%;
+    height: 110px;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.ld-dashboard-profile-form-field.ld-dashboard-avatar-field.form-avatar {
+    display: flex;
+    margin-bottom: 25px;
+    position: relative;
+    max-width: 150px;
+    align-items: center;
+}
+
+.ld-dashboard-profile-form-field img.ld-dashboard-user-avatar {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.upload-delete-avatar-button {
+    margin-left: 25px;
+}
+
+.ld-dashboard-profile-form-field button.ld-dashboard-profile-settings {
+    background-color: #3e3f5e;
+    color: #fff;
+    background-size: 20px !important;
+    border: none;
+    width: 160px;
+    font-weight: 500;
+    padding: 8px 10px 12px;
+    transition: all 0.3s ease-in-out 0s;
+    background-repeat: no-repeat !important;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.ld-dashboard-profile-form-field button.ld-dashboard-profile-settings:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icons/camera-plus.svg);
+    position: relative;
+    display: inline-block;
+    top: 3px;
+    margin-right: 5px;
+}
+
+.ld-dashboard-profile-form-field button.ld-dashboard-profile-settings.delete-avatar:before {
+    background-image: url(../img/icons/trash-alt-user.svg);
+}
+
+.ld-dashboard-profile-form-field button.ld-dashboard-profile-settings.delete-avatar {
+    background: #f30101;
+}
+
+.ld-dashboard-profile-form-field-list label {
+    margin-bottom: 5px;
+    display: block;
+    font-size: 15px;
+}
+
+.ld-dashboard-profile-form-field-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ld-dashboard-profile-form-field,
+.ld-dashboard-profile-form-field.form-email.display-name-publicly {
+    width: 48%;
+    margin: 1.5% 1%;
+}
+
+.ld-dashboard-profile-form-field.form-email,
+.ld-dashboard-profile-form-field.form-textarea,
+.ld-dashboard-profile-form-field.field-full-width,
+.ld-dashboard-profile-form-field.social-media-url,
+.ld-dashboard-profile-form-field.form-password.repeat-new-nassword {
+    width: 100%;
+}
+
+.ld-dashboard-profile-form-field-list .form-submit {
+    padding: 1.3% 1%;
+    width: 30%;
+}
+
+.ld-dashboard-profile-form-field-list .form-submit .submit,
+.ld-dashboard-profile-form input[type=submit].submit.button.ld-dashboard-btn-bg {
+    border-radius: 5px !important;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    height: auto;
+    /* background: #156AE9;
+    border-color: #156AE9; */
+    color: #fff;
+    border: none;
+}
+
+.ld-dashboard-profile-form input[type=submit].submit.button.ld-dashboard-btn-bg {
+    max-width: 250px;
+}
+
+.ld-dashboard-section-head-title {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.ld-dashboard-section-head-title h3 {
+    margin: 0;
+    font-size: 20px;
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+.ld-dashboard-section-head-title .ld-dashboard-header-button .ld-dashboard-add-course {
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-transform: none;
+    overflow: hidden;
+}
+
+.ld-dashboard-section-head-title .ld-dashboard-header-button .ld-dashboard-add-course .add-icon {
+    font-size: 18px;
+}
+
+span.ld-icons.ld-icon-add-line.edit_square {
+    font-size: 18px;
+    /* margin-right: 6px; */
+}
+
+.ld-dashboard-course-content .ld-dashboard-section-head-title,
+.my-announcements-wrapper .ld-dashboard-section-head-title {
+    justify-content: space-between;
+}
+
+.ld-dashboard-list-view .ld-meta.ld-course-metadata {
+    display: flex;
+    align-items: center;
+}
+
+.ld-dashboard-list-view .mycourse-footer {
+    margin-top: 0;
+}
+
+ul.custom-learndash-pagination {
+    display: flex;
+    padding: 0;
+    margin: 0 !important;
+    justify-content: space-between;
+    padding-top: 10px;
+    gap: 10px;
+    align-items: center;
+}
+
+.custom-learndash-pagination li {
+    list-style: none;
+}
+
+.custom-learndash-pagination li a {
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.08);
+    font-size: 25px;
+    padding: 0px 12px;
+    line-height: 42px;
+    font-weight: normal;
+}
+
+.ld-dashboard-warning {
+    background: #fbeded;
+    padding: 8px 15px;
+    border-left: 3px solid #eb0000;
+    display: block;
+    color: #eb0000 !important;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.ld-dashboard-success {
+    background: #e4ffb3;
+    width: 100%;
+    padding: 8px 15px;
+    border-left: 3px solid #51ba10;
+    color: #51ba10 !important;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+
+/*Enrolled Courses*/
+
+.ld-dashboard-progress-bar-wrap .ld-dashboard-progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #f2f6fd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.ld-dashboard-progress-bar .ld-dashboard-progress-filled {
+    height: 10px;
+    border-radius: 20px;
+    background: #03a05c;
+}
+
+
+/* Add Courses Form*/
+
+.ld-dashboard-content.ld-dashborad-add-edit-course form#acf-form {
+    background: #fff;
+    padding: 15px 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(94, 92, 154, 0.05);
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-field {
+    padding-left: 0px;
+    padding-right: 0px;
+    border: none;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-label label {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+    margin-bottom: 15px;
+    color: #444;
+    position: relative;
+    background-color: #ebebeb;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-label label::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: -14px;
+    border-style: solid;
+    border-width: 7px;
+    border-color: #ebebeb transparent transparent transparent;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-radio-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-radio-list li {
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-radio-list li label {
+    position: relative;
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 24px;
+    cursor: pointer;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-radio-list li input[type="radio"] {
+    display: none;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-radio-list li label:before {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border: solid 5px rgba(0, 0, 0, 0.18);
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-radio-list li label.selected:before {
+    /* border-color: #156AE9; */
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-true-false label {
+    position: relative;
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 45px;
+    padding-top: 3px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-true-false label .message {
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 10px;
+    padding-top: 1px;
+    margin: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-true-false input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    height: 20px;
+    width: 40px;
+    z-index: 1;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: 0px;
+    border: 1px solid #c9c9c9;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 100px;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-true-false input[type="checkbox"]:checked {
+    /* background-color: #156AE9;
+    border-color: #156AE9 !important; */
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-true-false input[type="checkbox"]:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    background: #a5a5a5;
+    left: 3px;
+    top: 2px;
+    border-radius: 100px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-true-false input[type="checkbox"]:checked::before {
+    background: #ffffff;
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+    margin: 0;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-true-false input[type="checkbox"]:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    width: 2px;
+    height: 8px;
+    border-radius: 10px;
+    background: #a5a5a5;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-true-false input[type="checkbox"]:checked::after {
+    content: "";
+    right: 25px;
+    width: 2px;
+    border-radius: 10px;
+    height: 8px;
+    background: #f3f8fe;
+}
+
+.ld-dashboard-billing-cycle-field .acf-fields {
+    border: none !important;
+    background: none !important;
+}
+
+.ld-dashboard-billing-cycle-field .acf-field {
+    padding: 15px 0 0 !important;
+}
+
+.ld-dashboard-billing-cycle-field .acf-field:before {
+    display: none !important;
+}
+
+.ld-dashboard-billing-cycle-field .acf-input {
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+.ld-dashborad-add-edit-course .acf-form-submit input.acf-button {
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+}
+
+.ld-dashborad-add-edit-course .acf-field .acf-label {
+    margin: 0 0 0;
+}
+
+.ld-dashboard-content form#acf-form .acf-field input[type="text"],
+.ld-dashboard-content form#acf-form .acf-field input[type="password"],
+.ld-dashboard-content form#acf-form .acf-field input[type="date"],
+.ld-dashboard-content form#acf-form .acf-field input[type="datetime"],
+.ld-dashboard-content form#acf-form .acf-field input[type="datetime-local"],
+.ld-dashboard-content form#acf-form .acf-field input[type="email"],
+.ld-dashboard-content form#acf-form .acf-field input[type="month"],
+.ld-dashboard-content form#acf-form .acf-field input[type="number"],
+.ld-dashboard-content form#acf-form .acf-field input[type="search"],
+.ld-dashboard-content form#acf-form .acf-field input[type="tel"],
+.ld-dashboard-content form#acf-form .acf-field input[type="time"],
+.ld-dashboard-content form#acf-form .acf-field input[type="url"],
+.ld-dashboard-content form#acf-form .acf-field input[type="week"],
+.ld-dashboard-content form#acf-form .acf-field textarea,
+.ld-dashboard-content form#acf-form .acf-field select {
+    height: 46px;
+    border-radius: 5px !important;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 15px;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    background-color: #fff;
+    border: 1px solid #d5d5d5;
+}
+
+.ld-dashboard-content form#acf-form .acf-field textarea {
+    height: 150px;
+}
+
+.ld-dashboard-content form#acf-form .select2-container.select2-container {
+    width: 100% !important;
+    margin: 0;
+}
+
+.acf-taxonomy-field[data-taxonomy="ld_course_tag"] .acf-actions.ldd-custom-zindex {
+    top: 8px;
+    right: 5px;
+}
+
+.ld-dashboard-content form#acf-form .add-course-featured-img .acf-image-uploader .acf-button,
+.ld-dashboard-content form#acf-form .add-course-cover-img .acf-image-uploader .acf-button{
+    background: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    box-shadow: none !important;
+    font-weight: bold;
+}
+
+.ld-dashborad-add-edit-course .acf-field.custom-learndash-course-sub-form {
+    background: #f8f8fb;
+    padding: 25px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.ld-dashborad-add-edit-course .acf-field.ld-dashboard-form-settings-data-tab[data-type="wysiwyg"] {
+    background: transparent;
+    padding: 0;
+}
+
+.ld-dashborad-add-edit-course .acf-input .acf-input-append {
+    color: #fff;
+    border: none;
+    border-radius: 0px 6px 6px 0px;
+    padding: 0 15px;
+    margin-left: -5px;
+    z-index: 99;
+    line-height: 46px;
+    font-size: 14px;
+    height: 46px;
+    position: relative;
+}
+
+.custom-learndash-course-sub-form .acf-input .acf-url i {
+    top: 14px;
+}
+
+.ld-dashboard-content .acf-field p.description {
+    font-size: 90%;
+    margin-bottom: 5px;
+}
+
+.ld-dashboard-content .acf-notice.-error.-dismiss p {
+    color: #fff;
+    font-size: 15px;
+}
+
+.ld-dashboard-content .acf-notice.-error p {
+    color: #d94f4f;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-field.ld_dashboard_sfwd-question_answer_type .acf-radio-list li {
+    width: 50%;
+    padding: 0 15px 10px 0;
+    margin: 0px !important;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-field.ld_dashboard_sfwd-question_answer_type .acf-radio-list li label {
+    border-radius: 5px;
+    border: 1px #e8e8e8 solid;
+    padding: 10px 10px 10px 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-field.ld_dashboard_sfwd-question_answer_type .acf-radio-list li label:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    border: none;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    background: #1b52d8 url(../img/icons/check-white.svg) no-repeat center center;
+    background-size: 18px !important;
+    border-radius: 4px;
+    height: 26px;
+    width: 26px;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-field.ld_dashboard_sfwd-question_answer_type .acf-radio-list li:nth-child(1n) label:before {
+    background: #1b52d8 url(../img/icons/toggle-off.svg) no-repeat center center;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-field.ld_dashboard_sfwd-question_answer_type .acf-radio-list li:nth-child(2n) label:before {
+    background: #00b890 url(../img/icons/check-white.svg) no-repeat center center;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-field.ld_dashboard_sfwd-question_answer_type .acf-radio-list li:nth-child(3n) label:before {
+    background: #9034a9 url(../img/icons/text-size.svg) no-repeat center center;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-field.ld_dashboard_sfwd-question_answer_type .acf-radio-list li:nth-child(4n) label:before {
+    background: #fe3129 url(../img/icons/sort-amount-up.svg) no-repeat center center;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-field.ld_dashboard_sfwd-question_answer_type .acf-radio-list li:nth-child(5n) label:before {
+    background: #ffbf00 url(../img/icons/exchange.svg) no-repeat center center;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-field.ld_dashboard_sfwd-question_answer_type .acf-radio-list li:nth-child(6n) label:before {
+    background: #f37512 url(../img/icons/file.svg) no-repeat center center;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-field.ld_dashboard_sfwd-question_answer_type .acf-radio-list li:nth-child(7n) label:before {
+    background: #8a4a1b url(../img/icons/files-landscapes-alt.svg) no-repeat center center;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-field.ld_dashboard_sfwd-question_answer_type .acf-radio-list li:nth-child(8n) label:before {
+    background: #a322f9 url(../img/icons/compress.svg) no-repeat center center;
+}
+
+.ld-dashborad-add-edit-course .acf-form .acf-field.ld_dashboard_sfwd-question_answer_type .acf-radio-list li label.selected,
+.ld-dashborad-add-edit-course .acf-form .acf-field.ld_dashboard_sfwd-question_answer_type .acf-radio-list li label:hover {
+    border-color: #1b52d8;
+}
+
+.ld-dashboard-question-answer-box {
+    background: #f8f8fb;
+    padding: 0;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px #e7e5e5 solid;
+}
+
+.ld-dashboard-question-answer-box .correct-singleContent-answer-input {
+    display: flex;
+    border-bottom: 1px #e7e5e5 solid;
+}
+
+.ld-dashboard-question-answer-box .correct-singleContent-answer-input .correct-singleContent {
+    width: 200px;
+    padding: 10px;
+    margin-right: 0;
+    border-right: 1px #e7e5e5 solid;
+}
+
+.ld-dashboard-question-answer-box .correct-singleContent-answer-input .answer-input {
+    width: 100%;
+    padding: 10px;
+}
+
+.ld-dashboard-question-answer-box .correct-singleContent label {
+    display: block;
+    font-size: 14px;
+    margin: 0 0 6px;
+    line-height: 18px;
+}
+
+.ld-dashboard-question-answer-box .correct-singleContent label input {
+    vertical-align: top;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+
+.ld-dashboard-question-answer-box .correct-singleContent--options,
+.ld-dashboard-question-answer-box .correct-singleContent-answer-input .answer-input label {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.ld-dashboard-content.ld-dashborad-add-edit-course form#acf-form .acf-field textarea {
+    height: auto;
+    min-height: 80px;
+}
+
+.correct-singleContent-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.correct-singleContent-bottom .delete-ques-ans,
+.correct-singleContent-bottom .add-media-ques-ans,
+.correct-singleContent-bottom .move-ques-ans {
+    font-size: 13px;
+    font-weight: bold;
+    background: none;
+    /* border: 1px #156AE9 solid !important;
+    color: #156AE9; */
+    line-height: 1.5;
+    border-radius: 4px;
+    padding: 7px 12px;
+}
+
+.correct-singleContent-bottom .delete-ques-ans {
+    color: #fff;
+    background: #d51f1f;
+    border: 1px #d51f1f solid !important;
+}
+
+.correct-singleContent-bottom .add-media-ques-ans {
+    margin: 0 5px;
+}
+
+.sfwd-answer-input-type .add-new-ques-btn {
+    font-size: 13px;
+    font-weight: bold;
+    background: #019e0d;
+    border: 1px #019e0d solid !important;
+    color: #fff;
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 7px 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sfwd-answer-input-type .add-new-ques-btn:before {
+    content: "";
+    background: url(../img/icons/plus-white.svg) no-repeat center center;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.ld-dashboard-question-answer-box.ld_dashboard_matrix_sort_answer .correct-singleContent--options,
+.ld-dashboard-question-answer-box.ld_dashboard_matrix_sort_answer .correct-singleContent-answer-input label {
+    margin: 0 0 5px;
+    font-weight: bold;
+}
+
+.ld-dashboard-question-answer-box.ld_dashboard_matrix_sort_answer .correct-singleContent-answer-input label input,
+.ld-dashboard-question-answer-box .correct-singleContent input[type="checkbox"],
+.ld-dashboard-question-answer-box .answer-input input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.ld-dashboard-question-answer-box .correct-singleContent {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.ld-dashboard-question-answer-box.ld_dashboard_matrix_sort_answer .correct-singleContent-answer-input .correct-singleContent {
+    width: 50%;
+}
+
+.ld-dashboard-content .assessment_answer,
+.ld-dashboard-content .easy_open_ans {
+    font-size: 15px;
+}
+
+.ld-dashboard-content .appendsingleContent.easy_open_ans label,
+.ld-dashboard-content .appendsingleContent.easy_open_ans select {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.ld-dashboard-content-wrapper .wp-media-buttons button.button.insert-media.add_media,
+.ld-dashboard-content-wrapper .wp-media-buttons button#insert-media-button,
+.ld-dashboard-content-wrapper .wp-media-buttons a.thickbox.button.super-duper-content-open {
+    background: #eee !important;
+    border: 1px solid #ccd0d4 !important;
+    color: #373838 !important;
+    padding: 7px 10px !important;
+    border-radius: 0;
+    border-bottom: 0 !important;
+    line-height: 0;
+    margin-bottom: 0 !important;
+}
+
+.ld-dashboard-content-wrapper .quicktags-toolbar input.button.button-small {
+    border: 1px solid !important;
+}
+
+.ld-dashboard-content-wrapper form#acf-form .acf-field .wp-editor-container textarea {
+    border: none;
+}
+
+.ld-dashboard-content-wrapper .acf-field-wysiwyg .acf-input .wp-editor-wrap {
+    border: none !important;
+}
+
+.ld-dashboard-content-wrapper .wp-editor-wrap .wp-switch-editor.switch-html,
+.ld-dashboard-content-wrapper .wp-editor-wrap .wp-switch-editor.switch-tmce {
+    border-radius: 0;
+}
+
+.ld-dashboard-content-wrapper .mce-widget.mce-btn[aria-label="LearnDash Shortcodes"] i.mce-ico.mce-i-icon.dashicons-desktop {
+    font-family: 'dashicons';
+    font-size: 20px;
+}
+
+.ld-dashboard-group-field-single.ldd-hide-label .acf-label {
+    display: none !important;
+}
+
+
+/* Course Builder */
+
+.ld-dashboard-course-builder-wrapper .ld-dashboard-course-builder-lesson {
+    border: 1px #dcdfe5 solid;
+    background: #fff;
+    padding: 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.ld-dashboard-course-builder-wrapper .ld-dashboard-course-builder-lesson .ld-dashboard-course-builder-section-title {
+    padding: 12px 75px 12px 72px;
+    position: relative;
+    background: #eff0f3;
+    border-radius: 4px !important;
+}
+
+.ld-dashboard-course-builder-wrapper .ld-dashboard-course-builder-lesson .ld-dashboard-course-builder-lesson-title {
+    padding: 15px 160px 15px 72px;
+    position: relative;
+}
+
+.ld-dashboard-course-builder-wrapper .ld-dashboard-course-builder-lesson .ld-dashboard-course-builder-section-title {
+    padding-left: 42px;
+}
+
+.ld-dashboard-course-builder-wrapper .ld-dashboard-course-builder-lesson .ld-dashboard-course-builder-lesson-title h4,
+.ld-dashboard-course-builder-wrapper .ld-dashboard-course-builder-lesson .ld-dashboard-course-builder-section-title h4 {
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.ld-dashboard-course-builder-wrapper .ld-dashboard-course-builder-lesson .ld-dashboard-course-builder-lesson-dropdown {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ld-dashboard-course-builder-wrapper .ld-dashboard-course-builder-lesson-dropdown .ld-dashboard-accordian-icon {
+    position: relative;
+    top: -3px;
+}
+
+.ld-dashboard-course-builder-wrapper .ld-dashboard-course-builder-lesson-dropdown .ld-dashboard-accordian-icon:before {
+    content: "";
+    background: url(../img/icons/plus.svg) no-repeat center center;
+    opacity: 0.8;
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+
+.ld-dashboard-course-builder-wrapper .ld-dashboard-course-builder-lesson-dropdown .ld-dashboard-accordian-icon.ld-dashboard-accordian-close:before {
+    background: url(../img/icons/minus.svg) no-repeat center center;
+}
+
+.ld-dashboard-lesson-builder-wrapper {
+    border-top: 1px #dcdfe5 solid;
+}
+
+.ld-dashboard-course-lesson-builder-topic-wrapper,
+.ld-dashboard-course-lesson-builder-quiz-wrapper {
+    padding: 15px;
+    font-size: 15px;
+}
+
+.ld-dashboard-course-lesson-builder-quiz-wrapper {
+    border-top: 1px #dcdfe5 solid;
+}
+
+.ld-dashboard-course-builder-topic-header h4,
+.ld-dashboard-course-builder-topic-header h4 {
+    margin: 0px;
+    font-size: 18px;
+}
+
+.ld-dashboard-course-builder-lesson .ld-dashboard-course-builder-topic-header h4 {
+    font-size: 16px;
+}
+
+.ld-dashboard-course-builder-lesson .ld-dashboard-crate-topics-quiz {
+    padding: 15px;
+}
+
+.ld-dashboard-single-wrap.ld-dashboard-course-builder-lesson .ld-dashboard-crate-topics-quiz button,
+.ld-dashboard-crate-lesson button.ld_dashboard_builder_new_lesson,
+.ld-dashboard-crate-lesson button.ld_dashboard_builder_new_section_heading {
+    color: #fff !important;
+    border: none;
+    padding: 6px 18px !important;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.ld-dashboard-crate-lesson button.ld_dashboard_builder_new_lesson,
+.ld-dashboard-single-wrap.ld-dashboard-course-builder-lesson .ld-dashboard-crate-topics-quiz button,
+.ld-dashboard-crate-lesson button.ld_dashboard_builder_new_section_heading {
+    padding: 0 0 0 25px;
+    margin: 0 10px 10px 0;
+    background-color: transparent;
+    background-image: url(../img/icons/plus-circle.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 20px;
+}
+
+.ld-dashboard-single-wrap.ld-dashboard-course-builder-lesson .ld-dashboard-crate-topics-quiz button {
+    margin-right: 15px;
+}
+
+.ld-dashboard-single-wrap.ld-dashboard-course-builder-lesson .ld-dashboard-crate-topics-quiz span input[type="submit"],
+.ld-dashboard-single-wrap.ld-dashboard-course-builder-lesson .ld-dashboard-crate-topics-quiz span input[type="button"],
+.ld-dashboard-crate-lesson span input[type="submit"],
+.ld-dashboard-crate-lesson span input[type="button"] {
+    padding: 7px 15px;
+    border-radius: 5px;
+    margin: 8px 0px 8px;
+    display: inline-block;
+    /* background: #156AE9;
+    border-color: #156AE9; */
+    font-size: 15px;
+}
+
+.ld-dashboard-single-wrap.ld-dashboard-course-builder-lesson .ld-dashboard-crate-topics-quiz span input[type="button"],
+.ld-dashboard-crate-lesson span input[type="button"] {
+    background: #8f8f8f;
+    border-color: #8f8f8f;
+    margin-left: 10px;
+}
+
+.ld-dashboard-course-lesson-builder-topic-single,
+.ld-dashboard-course-lesson-builder-quiz-single,
+.ld-dashboard-quiz-builder-list-wrapper li {
+    padding: 12px 20px 12px 80px;
+    font-size: 15px;
+    background: #f8f8fb;
+    margin-top: 3px;
+    display: flex;
+    position: relative;
+    border-radius: 2px;
+}
+
+.ld-dashboard-course-lesson-builder-topic-single .ld-dashboard-course-builder-topic-title,
+.ld-dashboard-course-lesson-builder-quiz-content .ld-dashboard-course-builder-quiz-title,
+.ld-dashboard-quiz-builder-list-wrapper .ld-dashboard-course-builder-question-single {
+    width: 100%;
+    font-size: 16px;
+}
+
+.ld-dashboard-course-lesson-builder-topic-single .ld-dashboard-course-builder-topic-title:before,
+.ld-dashboard-course-lesson-builder-quiz-content .ld-dashboard-course-builder-quiz-title:before,
+.ld-dashboard-assigned-questions-list .ld-dashboard-course-builder-question-single:before,
+.ld-dashboard-course-builder-wrapper .ld-dashboard-course-builder-lesson .ld-dashboard-course-builder-lesson-title:before {
+    content: "T";
+    font-size: 16px;
+    background: #e33f00;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 44px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100px;
+    font-family: auto;
+}
+
+.ld-dashboard-course-lesson-builder-quiz-content .ld-dashboard-course-builder-quiz-title:before,
+.ld-dashboard-assigned-questions-list .ld-dashboard-course-builder-question-single:before {
+    content: "Q";
+    background: #8350c7;
+}
+
+.ld-dashboard-course-builder-wrapper .ld-dashboard-course-builder-lesson .ld-dashboard-course-builder-lesson-title:before {
+    content: "L";
+    background: #467500;
+    top: 50%;
+    margin-top: -12px;
+    left: 40px;
+    font-size: 14px;
+}
+
+.ld-dashboard-course-builder-lesson .ld-dashboard-sortable-input,
+.ld-dashboard-course-builder-lesson .ld-dashboard-course-lesson-builder-topic-single .ld-dashboard-sortable-input,
+.ld-dashboard-course-builder-lesson .ld-dashboard-course-lesson-builder-quiz-single .ld-dashboard-sortable-input,
+.ld-dashboard-quiz-builder-wrapper .ld-dashboard-quiz-builder-list-wrapper .ld-dashboard-sortable-input,
+.ld-dashboard-course-builder-wrapper .ld-dashboard-course-builder-lesson .ld-dashboard-sortable-input-section {
+    background: url(../img/icons/dragable.svg) no-repeat center center;
+    height: 18px;
+    width: 18px;
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 17px;
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    opacity: 0.8;
+    cursor: move;
+    z-index: 1;
+}
+
+.ld-dashboard-course-builder-wrapper .ld-dashboard-course-builder-lesson:hover {
+    /* border-color: #156AE9; */
+}
+
+.ld-dashboard-quiz-builder-wrapper .ld-dashboard-quiz-builder-list-wrapper .remove-question {
+    background: url(../img/icons/trash-alt.svg) no-repeat center center;
+    height: 16px;
+    width: 16px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.ld-dashboard-course-builder-wrapper .ld-dashboard-is-sortable {
+    min-height: 15px;
+}
+
+.ld-dashboard-quiz-builder-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ld-dashboard-assigned-questions-wrapper,
+.ld-dashboard-quiz-builder-question {
+    width: 48%;
+    padding: 0;
+    margin-bottom: 10px;
+    position: relative;
+    border: 1px #dcdfe5 solid;
+    border-radius: 5px;
+}
+
+.ld-dashboard-assigned-questions-wrapper {
+    width: 60%;
+    margin-right: 10px;
+    padding-bottom: 46px;
+}
+
+.ld-dashboard-assigned-question-default {
+    border: 2px #dcdfe5 dashed;
+    background: #f7f7fb;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 46px;
+    line-height: 34px;
+}
+
+.ld-dashboard-quiz-builder-list-wrapper {
+    list-style: none;
+    margin: 0px !important;
+    padding: 0px;
+    position: relative;
+}
+
+.ld-dashboard-quiz-builder-list-wrapper li {
+    position: relative;
+    padding-right: 30px;
+    margin: 0;
+    border-bottom: 1px #dcdfe5 solid;
+    width: 100%;
+}
+
+.ld-dashboard-quiz-builder-list-wrapper.ld-dashboard-questions-list li {
+    padding-left: 46px;
+}
+
+.ld-dashboard-share-post-single {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    background: #fefefe;
+    border-radius: 5px;
+    padding: 7px 7px 7px 15px;
+    border: 1px solid #ebebeb;
+}
+
+.ld-dashboard-share-post-single span {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    line-height: 1;
+    -webkit-box-orient: vertical;
+}
+
+.ld-dashboard-share-topic-wrapper {
+    margin: 15px 0;
+}
+
+.ld-dashboard-share-course-toggle-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #ebebeb;
+    padding: 12px 15px;
+    justify-content: space-between;
+}
+
+.ld-dashboard-share-course-toggle-wrapper H6 {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    color: #333;
+}
+
+.ld-dashboard-share-lesson-wrapper,
+.ld-dashboard-share-topic-wrapper,
+.ld-dashboard-share-quiz-wrapper {
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.ld-dashboard-share-course-toggle-content {
+    cursor: pointer;
+    line-height: 15px;
+}
+
+.ld-dashboard-share-toggle-content {
+    padding: 12px 15px;
+}
+
+button.ld-dashboard-share-post-add {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.ld-dashboard-quiz-time-limit-field thead {
+    display: none !important;
+}
+
+td.ld-dashboard-form-settings-data-tab.ld-dashboard-quiz-time-limit-field-timer {
+    padding: 10px !important;
+}
+
+.ld-dashboard-course-builder-topic-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    padding-right: 100px;
+}
+
+.ld-dashboard-lesson-builder-wrapper .ld-dashboard-course-lesson-builder-topic-wrapper .ld-dashboard-edit-remove-link-action {
+    right: 15px;
+}
+
+.ld-dashboard-remove-wrapper.ld-dashboard-course-lesson-topic-remove {
+    right: 25px;
+}
+
+.acf-field.ld-dashboard-group-field.ld-dashboard-billing-cycle-field,
+.acf-field.ld-dashboard-group-field.ld-dashboard-trial-duration-field {
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+.acf-field.custom-learndash-course-sub-form.ld-dashboard-group-field-single {
+    padding-top: 0;
+    width: 50%;
+    float: left;
+    clear: none;
+}
+
+.acf-field.custom-learndash-course-sub-form.ld-dashboard-group-field-single[data-type="number"] {
+    padding-right: 10px;
+}
+
+.acf-field.custom-learndash-course-sub-form.ld-dashboard-group-field-single[data-type="select"] {
+    padding-left: 10px;
+}
+
+
+/*Submitted Essays*/
+
+.ld-dashboard-student-submitted-essays-container {
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #dcdfe5;
+}
+
+.ld-dashboard-student-submitted-essays-container table {
+    border: none;
+    margin: 0;
+}
+
+.ld-dashboard-student-submitted-essays-container thead th:nth-child(1) {
+    width: 40%;
+}
+
+.ld-dashboard-student-submitted-essays-container thead th:nth-child(2) {
+    width: 15%;
+}
+
+.ld-dashboard-student-submitted-essays-container thead th:nth-child(3) {
+    width: 25%;
+}
+
+.ld-dashboard-student-submitted-essays-container thead th:nth-child(4) {
+    width: 20%;
+}
+
+.ld-dashboard-student-submitted-essays-container td,
+.ld-dashboard-student-submitted-essays-container th {
+    border: none;
+    padding: 10px 15px !important;
+    font-size: 15px;
+    text-align: left;
+}
+
+.ld-dashboard-student-submitted-essays-container thead th,
+.ld-dashboard-student-submitted-essays-container tfoot th {
+    background: #f4f4f4;
+    border-bottom: 1px solid #dcdfe5;
+}
+
+.ld-dashboard-student-submitted-essays-container tbody td:nth-child(1) {
+    line-height: 1.5;
+    display: block;
+}
+
+.ld-dashboard-student-submitted-essays-container tfoot th {
+    border-top: 1px solid #dcdfe5;
+    border-bottom: none;
+}
+
+.ld-dashboard-student-submitted-essays-container tbody tr:nth-child(2n+2) {
+    background-color: rgba(220, 223, 229, 0.25);
+    border-bottom: 1px solid;
+}
+
+.ld-dashboard-student-submitted-essays-container .ld-approval-points input.small-text.learndash-award-points {
+    padding: 5px;
+    min-height: 30px;
+    height: 30px;
+    border-color: #ddd;
+    width: 75px;
+}
+
+.ld-dashboard-student-submitted-essays-container .ld-approval-points {
+    margin: 5px 0 0;
+    line-height: 1.1;
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.ld-dashboard-student-submitted-essays-container .ld-approval-action {
+    margin-top: 8px;
+}
+
+.ld-dashboard-student-submitted-essays-container .ld-approval-action button.small.essay_approve_single {
+    border: none;
+    color: #fff;
+    padding: 5px 18px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.ld-dashboard-student-submitted-essays-container .ld-approval-status {
+    line-height: 1;
+}
+
+.ld-dashboard-student-submitted-essays-container .custom-learndash-pagination-nav {
+    margin-top: 5px;
+    justify-content: flex-end;
+}
+
+.ld-dashboard-student-submitted-essays-container ul.custom-learndash-pagination.course-pagination-wrapper {
+    justify-content: space-between;
+    padding: 0px 0 10px;
+}
+
+.ld-dashboard-student-submitted-essays-container td:last-child a {
+    line-height: 1.3;
+    display: block;
+}
+
+
+/* Responsiveness */
+@media (max-width: 1023px) {
+    .ld-dashboard-sidebar-left {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    .ld-live-feed-hide .ld-dashboard-content,
+    .ld-dashboard-content {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 70%;
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+
+    .ld-dashboard-sidebar-right {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .ld-dashboard-statistics {
+        width: calc(50% - 20px);
+    }
+
+    .ld-dashboard-student-submitted-essays-container table,
+    .ld-dashboard-student-submitted-essays-container thead,
+    .ld-dashboard-student-submitted-essays-container tbody,
+    .ld-dashboard-student-submitted-essays-container th,
+    .ld-dashboard-student-submitted-essays-container td,
+    .ld-dashboard-student-submitted-essays-container tr {
+        display: block;
+    }
+
+    .ld-dashboard-student-submitted-essays-container thead tr,
+    .ld-dashboard-student-submitted-essays-container tfoot th {
+        position: absolute;
+        top: -9999px;
+        display: none;
+        left: -9999px;
+    }
+
+    .ld-dashboard-student-submitted-essays-container td {
+        position: relative;
+        padding-left: 50% !important;
+    }
+
+    .ld-dashboard-student-submitted-essays-container td:before {
+        position: absolute;
+        top: 8px;
+        left: 10px;
+        font-weight: bold;
+        width: 48%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    .ld-dashboard-student-submitted-essays-container td:nth-of-type(1):before {
+        content: "Essay Question title";
+    }
+
+    .ld-dashboard-student-submitted-essays-container td:nth-of-type(2):before {
+        content: "Submited By";
+    }
+
+    .ld-dashboard-student-submitted-essays-container td:nth-of-type(3):before {
+        content: "Status/Points";
+    }
+
+    .ld-dashboard-student-submitted-essays-container td:nth-of-type(4):before {
+        content: "Assigned Quiz";
+    }
+}
+
+@media (max-width: 543px) {
+    .ld-dashboard-statistics {
+        width: 100%;
+    }
+
+    .statistics-inner .learndash-statistics,
+    .statistics-inner .statistics {
+        /*margin-left: 35%;*/
+    }
+}
+
+@media (min-width: 992px) {
+    .ins-cw-earning-wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: wrap;
+        flex-flow: wrap;
+        margin-top: 20px;
+    }
+
+    .ins-cw-earning-table {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 48%;
+        flex: 0 0 48%;
+        max-width: 48%;
+        margin-right: 2%;
+    }
+
+    #ins-cw-earning-chart {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 48%;
+        flex: 0 0 48%;
+        max-width: 48%;
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 475px) {
+
+    /* .select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+    width: 100%;
+  }*/
+    .select2-container .select2-search--inline .select2-search__field {
+        width: 100% !important;
+    }
+
+    select#ld-dashboard-courses-id {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    #ld-instructor-reg-form .ld-dashboard-form-group label {
+        float: none;
+        margin-bottom: 3px;
+    }
+
+    #ld-instructor-reg-form .ld-dashboard-form-group input {
+        width: 100%;
+    }
+
+    .ld-dashboard-form-group .ld-dashboard-form-group input {
+        display: inline-block;
+        width: 200px;
+    }
+
+    .ld-dashboard-profile-avatar img {
+        margin: 0 auto;
+    }
+
+    .ld-dashboard-social-media-url {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .ld-dashboard-profile-avatar img {
+        width: 80px;
+        margin: 0 auto;
+        height: 80px;
+    }
+
+    .ld-dashboard-profile-summary .ld-dashboard-profile {
+        justify-content: center;
+    }
+
+    .ld-dashboard-profile-summary {
+        padding: 35px 15px;
+    }
+
+    .ld-dashboard-header-button .ld-dashboard-add-course {
+        letter-spacing: 0.3px;
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+
+    .ld-dashboard-profile-summary .ld-dashboard-display-name h4 {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .ld-dashboard-content-wrapper {
+        display: block;
+        padding: 15px;
+    }
+
+    .ld-dashboard-sidebar-left {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        box-shadow: 0 0 20px #f9f4f4;
+        flex: 0 0 100%;
+        padding: 0;
+        background-color: #fff;
+        max-width: 100%;
+    }
+
+    #ld-dashboard-profile {
+        margin-bottom: 25px;
+    }
+
+    .ld-dashboard-statistics {
+        margin: 5px 0.5%;
+    }
+
+    .ld-live-feed-hide .ld-dashboard-content,
+    .ld-dashboard-content {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        padding: 0;
+        max-width: 100%;
+        border: none;
+    }
+
+    .ld-dashboard-location {
+        border-right: none;
+        padding-bottom: 0;
+    }
+
+    .ld-dashboard-landing-cover {
+        padding-top: 40%;
+    }
+
+    .ld-dashboard-menu-divider {
+        margin: 10px 0 !important;
+    }
+
+    .ld-dashboard-content-wrapper.ld-live-feed-enabled .ld-dashboard-content {
+        flex: 0 0 100%;
+        padding-right: 18px;
+        max-width: 100%;
+    }
+
+    .ld-dashboard-sidebar-right {
+        padding-right: 18px;
+    }
+
+    .ld-dashboard-sidebar-right.live-course-activity {
+        padding-right: 0;
+    }
+
+    .ld-dashboard-content-wrapper.ld-live-feed-enabled .instructor-courses-list .ld-mycourse-wrap,
+    .instructor-courses-list .ld-mycourse-wrap {
+        display: block;
+    }
+
+    .ld-dashboard-seperator span {
+        font-size: 16px;
+    }
+
+    .ld-dashboard-landing-text {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .ld-mycourse-thumbnail {
+        height: 200px;
+    }
+
+    .custom-learndash-my-courses-list .my-courses .ld-mycourse-content,
+    .my-courses.ld-dashboard-enrolled-course-wrap .ld-mycourse-content {
+        padding: 15px;
+    }
+
+    .ld-dashboard-section-head-title {
+        display: block !important;
+    }
+
+    .ld-dashboard-course-content .ld-dashboard-section-head-title {
+        display: flex !important;
+    }
+
+    .ld-dashboard-course-content .ld-dashboard-section-head-title .ld-dashboard-header-button {
+        width: auto;
+    }
+
+    .ld-dashboard-section-head-title h3 {
+        margin: 0 0 10px !important;
+    }
+
+    .ld-dashboard-inline-links ul li a {
+        padding: 8px;
+        line-height: 1.4;
+        font-size: 14px;
+    }
+
+    .ld-mycourse-content h3 a {
+        font-size: 20px;
+    }
+
+    .ld-mycourse-content h3 {
+        margin: 0 0 10px;
+    }
+
+    .statistics-inner .learndash-statistics,
+    .statistics-inner .statistics {
+        font-size: 32px;
+    }
+
+    /* ld-dashboard-info-table */
+    .ld-dashboard-info-table table,
+    .ld-dashboard-info-table thead,
+    .ld-dashboard-info-table tbody,
+    .ld-dashboard-info-table th,
+    .ld-dashboard-info-table td,
+    .ld-dashboard-info-table tr {
+        display: block;
+    }
+
+    table.ld-dashboard-info-table {
+        border: none;
+        border-top: 1px solid #dcdfe5;
+    }
+
+    .ld-dashboard-info-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .ld-dashboard-info-table tr {
+        border: 1px solid #dcdfe5;
+        border-bottom: none;
+        border-top: none;
+    }
+
+    .ld-dashboard-info-table td {
+        border: none;
+        border-bottom: 1px solid #dcdfe5;
+        position: relative;
+        padding-left: 38% !important;
+    }
+
+    .ld-dashboard-info-table td:before {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 30%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    .ld-dashboard-info-table td:nth-of-type(1):before {
+        content: "Course Name";
+    }
+
+    .ld-dashboard-info-table td:nth-of-type(2):before {
+        content: "Enrolled";
+    }
+
+    .ld-dashboard-info-table td:nth-of-type(3):before {
+        content: "Status";
+    }
+
+    table.ld-dashboard-info-table small.label-course-status.label-course-publish {
+        display: inline-block;
+        padding: 3px 35px;
+    }
+
+    .ld-dashboard-profile-setting-view .ld-dashboard-inline-links ul li a {
+        font-size: 15px;
+    }
+
+    .ld-dashboard-profile-form-field img.ld-dashboard-user-avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .ld-dashboard-profile-form-field button.ld-dashboard-profile-settings {
+        width: 136px;
+        font-size: 13px;
+    }
+
+    .upload-delete-avatar-button {
+        margin-left: 10px;
+    }
+
+    .ld-dashboard-quiz-builder-content {
+        flex-wrap: wrap;
+    }
+
+    .ld-dashboard-assigned-questions-wrapper.ui-droppable.ui-sortable,
+    .ld-dashboard-quiz-builder-question {
+        width: 100%;
+        margin: 0 0 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .ld-dashboard-profile-summary .ld-dashboard-profile {
+        flex-wrap: wrap;
+    }
+
+    .ld-dashboard-profile-avatar,
+    .ld-dashboard-profile-summary .ld-dashboard-profile-info,
+    .ld-dashboard-header-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ld-dashboard-course-filter,
+    .ld-dasboard-my-filter.ld-dashboard-course-filter,
+    .ld-dashboard-course-filter.my-lessons-filter {
+        flex-wrap: wrap;
+    }
+
+    .ld-dashboard-content .ld-dashboard-course-filter .ld-dashboard-actions-iteam {
+        width: 100% !important;
+        margin: 0 0 10px;
+    }
+
+    .ld-dashboard-course-filter button.ld-dashboard-course-filter-submit {
+        width: 100%;
+    }
+
+    .ld-meta.ld-course-metadata.ld-course-metadata-item {
+        flex-wrap: wrap;
+    }
+
+    .ld-mycourse-content .ld-meta.ld-course-metadata ul,
+    .ld-meta.ld-course-metadata.ld-course-metadata-item .mycourse-footer {
+        margin-bottom: 10px;
+    }
+
+    .ld-dashboard-question-answer-box .correct-singleContent-answer-input {
+        flex-wrap: wrap;
+    }
+
+    .ld-dashboard-question-answer-box .correct-singleContent-answer-input .correct-singleContent {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        border: none;
+    }
+
+    .ld-dashboard-question-answer-box .correct-singleContent--options,
+    .ld-dashboard-question-answer-box.ld_dashboard_matrix_sort_answer .correct-singleContent-answer-input .correct-singleContent {
+        width: 100%;
+    }
+
+    .ld-dashboard-question-answer-box .correct-singleContent label {
+        margin: 0 10px 0 0;
+    }
+
+    .correct-singleContent-bottom .delete-ques-ans,
+    .correct-singleContent-bottom .add-media-ques-ans,
+    .correct-singleContent-bottom .move-ques-ans {
+        padding: 5px 10px;
+        margin: 3px !important;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .ld-dashborad-add-edit-course .acf-form .acf-field.ld_dashboard_sfwd-question_answer_type .acf-radio-list li {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 318px) and (max-width: 479px) {
+
+    .ld-dashboard-profile-form-field,
+    .ld-dashboard-profile-form-field.form-email.display-name-publicly {
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    .custom-learndash-course-form.ld-dashboard-form-settings-data-tab.ld-dashboard-quiz-time-limit-field-timer.ld-dashboard-group-field-single {
+        width: 100%;
+        padding: 8px 0 !important;
+    }
+}
+
+@media only screen and (min-width: 318px) and (max-width: 349px) {
+    .ld-dashboard-profile-summary .ld-dashboard-profile-info {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+    .ld-mycourse-thumbnail {
+        height: 200px;
+    }
+
+    .custom-learndash-my-courses-list .my-courses .ld-mycourse-content,
+    .my-courses.ld-dashboard-enrolled-course-wrap .ld-mycourse-content {
+        padding: 20px;
+    }
+
+    .instructor-courses-list .ld-mycourse-wrap {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1179px) {
+    .ld-dashboard-profile-summary {
+        padding: 30px 20px;
+    }
+
+    .ld-dashboard-profile-avatar img {
+        width: 100px;
+    }
+
+    .ld-live-feed-hide .ld-dashboard-content,
+    .ld-dashboard-content {
+        padding-right: 20px;
+    }
+
+    .ld-dashboard-feed .activity-item p {
+        line-height: 1.2;
+    }
+
+    .ld-dashboard-sidebar-right {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 1;
+        max-width: 100%;
+        width: 100%;
+        padding-right: 12px;
+        clear: both;
+    }
+
+    .ld-dashboard-landing-cover {
+        padding-top: 40%;
+    }
+
+    .ld-dashboard-content-wrapper.ld-live-feed-enabled .instructor-courses-list .ld-mycourse-wrap {
+        display: block;
+    }
+
+    .ld-mycourse-thumbnail {
+        height: 210px;
+    }
+
+    h2.statistics-label {
+        max-width: 60%;
+    }
+
+    .ld-mycourse-content h3 {
+        margin: 0px 0 10px;
+    }
+
+    .ld-mycourse-content h3 a {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1179px) {
+
+    .statistics-inner .learndash-statistics,
+    .statistics-inner .statistics {
+        font-size: 25px;
+    }
+
+    .ld-dashboard-icons img {
+        width: 30px;
+    }
+
+    .ld-dashboard-statistics {
+        width: 49%;
+    }
+
+    .ld-dashboard-icons {
+        max-width: 63%;
+    }
+}
+
+.ld-mycourse-content .ld-meta.ld-course-metadata ul li span.ld-dashboard-assignment-status {
+    color: #ffffff;
+    padding: 3px 10px;
+    text-transform: capitalize;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 10px;
+    background: #d72020;
+}
+
+.ld-dashboard-assignment-status-wrapper.assignment-approved-wrapper {
+    background: #afe3a9;
+    border-radius: 10px;
+}
+
+.ld-mycourse-content .ld-meta.ld-course-metadata ul li span.ld-dashboard-assignment-status.assignment-approved {
+    background: #0fb587;
+}
+
+.ld-dashboard-assignment-content ul.post_status li {
+    display: flex !important;
+    align-items: center;
+}
+
+.ld-dashboard-no-access-page {
+    text-align: center;
+}
+
+.ld-dashboard-home-btn-container {
+    text-align: center;
+}
+
+.ld-dashboard-home-btn-container a.ld-dashboard-home-btn {
+    padding: 14px 35px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50px;
+    font-weight: 500;
+    line-height: 1;
+    display: inline-block;
+}
+
+
+/*Announcement Tab*/
+
+.ld-dashboard-announcement-fields-wrapper {
+    width: 100%;
+    background: #fff;
+    padding: 10px 25px 25px;
+}
+
+.ld-dashboard-announcement-field-single label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.ld-dashboard-announcement-field-single {
+    margin-top: 15px;
+}
+
+.ld-dashboard-announcement-field-single input[type="text"],
+.ld-dashboard-announcement-field-single textarea {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.ld-dashboard-announcement-field-single textarea {
+    height: 130px;
+}
+
+.ld-dashboard-announcement-field-single button.ld-dashboard-create-announcement-btn {
+    color: #fff !important;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-transform: none;
+    overflow: hidden;
+    border: none;
+    border-radius: 5px;
+    font-weight: normal;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+span.ld-dashboard-msg-box.announcement-submit.ld-dashboard-announcement-msg-submit {
+    display: block;
+    margin-top: 15px;
+    color: #1f9b1f;
+    font-size: 15px;
+}
+
+.ld-dashboard-announcement-content-wrapper {
+    visibility: hidden;
+    line-height: 1;
+    position: fixed;
+    z-index: 88888;
+    inset: 0px;
+    zoom: 1;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 0.15s linear;
+    opacity: 0;
+    transition: transform 0.4s ease-in-out 0s, opacity 0.4s ease-in-out 0s, visibility 0.4s ease-in-out 0s;
+}
+
+.ld-announcement-content-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    display: block;
+    left: 50%;
+    margin-left: -275px;
+    border-radius: 8px;
+    background: #fff;
+    padding: 25px;
+    z-index: 9999;
+    max-width: 550px;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    -webkit-transform: translate(0, -80px);
+    transform: translate(0, -80px);
+    visibility: hidden;
+}
+
+.ld-dashboard-announcement-content-wrapper.ldd-show-popup {
+    visibility: visible;
+    opacity: 1 !important;
+}
+
+.ld-dashboard-announcement-content-wrapper.ldd-show-popup .ld-announcement-content-wrapper {
+    visibility: visible;
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+}
+
+span.ld-dashboard-announcement-content-close {
+    position: absolute !important;
+    cursor: pointer !important;
+    border: none !important;
+    background-color: #e40707 !important;
+    padding: 8px !important;
+    display: block;
+    width: 30px;
+    text-align: center;
+    top: -12px;
+    height: 30px;
+    right: -15px;
+    border-radius: 8px !important;
+    min-width: auto !important;
+    line-height: 14px;
+}
+
+span.ld-dashboard-announcement-content-close::before {
+    content: "x";
+    color: #fff;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.ld-dashboard-announcement-single {
+    padding: 12px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #e7e9ee;
+    cursor: pointer;
+    font-size: 16px;
+    background-image: url(../img/icons/course.svg);
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: 18px center;
+    padding-left: 50px;
+    transition: all 0.3s;
+    color: #000;
+}
+
+.ld-dashboard-announcement-single:hover {
+    border-color: #ccc;
+}
+
+.ld-dashboard-announcement-single-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.ld-dashboard-announcement-content-header h4 {
+    margin: -25px -25px 15px;
+    line-height: 1.2;
+    font-size: 20px;
+    background: #ebebeb;
+    padding: 15px 25px;
+    border-radius: 8px 8px 0 0;
+}
+
+.ld-dashboard-announcement-content-body {
+    line-height: 1.4;
+    overflow-y: scroll;
+    font-size: 15px;
+    max-height: 512px;
+    padding-top: 5px;
+}
+
+.ld-dashboard-announcement-content-body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.ld-dashboard-announcement-content-body::-webkit-scrollbar {
+    width: 8px;
+    background-color: #fff;
+}
+
+.ld-dashboard-announcement-content-body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #999;
+}
+
+span.ld-dashboard-msg-box.announcement-title.ld-dashboard-announcement-msg-title {
+    font-size: 15px;
+    color: red;
+}
+
+small.ldd-required-field {
+    color: red;
+    font-size: 100%;
+}
+
+
+/*Certificate*/
+
+.wbcom-ld-dashboard .ui-dialog.ld-shortcodes {
+    z-index: 160000 !important;
+    max-width: 1000px;
+    left: 50% !important;
+    margin-left: -500px;
+}
+
+.wbcom-ld-dashboard .ui-dialog.ld-shortcodes>.ui-dialog-titlebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.wbcom-ld-dashboard .ui-dialog.ld-shortcodes>.ui-dialog-titlebar>.ui-button.ui-dialog-titlebar-close {
+    top: 7px;
+}
+
+.wbcom-ld-dashboard div#learndash_shortcodes {
+    padding: 0;
+}
+
+.wbcom-ld-dashboard #learndash_shortcodes_wrap {
+    position: relative;
+    margin: 0;
+    height: 100%;
+}
+
+.wbcom-ld-dashboard .sfwd.sfwd_options.learndash_shortcodes_section {
+    margin-bottom: 15px;
+}
+
+.wbcom-ld-dashboard #learndash_shortcodes_sections {
+    padding: 20px;
+}
+
+.wbcom-ld-dashboard .learndash_shortcodes_section input[type="number"],
+.wbcom-ld-dashboard .learndash_shortcodes_section select {
+    width: 100%;
+}
+
+div.ld-dashboard-submit-msg-wrapper {
+    position: fixed;
+    bottom: 10px;
+    left: -300px;
+    opacity: 1;
+    background: #000000db;
+    padding: 13px 25px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    z-index: 99999;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
+}
+
+span.ld-dashboard-submit-msg-text {
+    color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.ld-dashboard-submit-msg-wrapper .ld-dashboard-submit-msg-content span.ld-dashboard-submit-msg-text {
+    color: #fff;
+    font-size: 15px;
+    text-transform: unset;
+}
+
+.ld-dashboard-submit-msg-link {
+    margin-left: 25px;
+    color: #fff !important;
+    padding: 0;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+
+/* Withdraw tab */
+
+.ld-dashboard-add-withdraw-method-head-content {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.ld-dashboard-withdraw-method-container {
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 30px;
+}
+
+.ld-dashboard-withdraw-method-single {
+    align-items: center;
+    display: flex;
+    padding: 13px;
+    border-radius: 6px;
+    border: 1px solid #cdcfd5;
+    background: #fff;
+    transition: all 0.3s;
+    margin: 0 1%;
+    width: 31.33%;
+    overflow: hidden;
+    position: relative;
+}
+
+.ld-dashboard-withdraw-method-single .ld-dashboard-withdraw-method-content {
+    padding-left: 15px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #696969;
+}
+
+.ld-dashboard-withdraw-method-single span.ld-dashboard-withdraw-method-title {
+    display: block;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000;
+}
+
+.ld-dashboard-withdraw-method-single input.ld-dashboard-withdraw-method-radio {
+    height: 100%;
+    width: 100%;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-print-color-adjust: exact;
+    cursor: pointer;
+    transition: 300ms;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+}
+
+.ld-dashboard-withdraw-method-container .ld-dashboard-withdraw-method-single:hover {
+    box-shadow: 0 10px 20px #ddd;
+}
+
+.ld-dashboard-withdraw-method-single:before,
+.ld-dashboard-withdraw-method-single.ld-dashboard-withdraw-method-active::after {
+    content: "";
+    left: 0;
+    top: 50%;
+    height: 20px;
+    width: 20px;
+    border: 3px solid #cdcfd5;
+    border-radius: 100%;
+}
+
+.ld-dashboard-withdraw-method-single.ld-dashboard-withdraw-method-active::after {
+    left: 14px;
+    position: absolute;
+    top: 24px;
+    border: 5px solid #3e64de;
+    background: #fff;
+    height: 18px;
+    width: 18px;
+}
+
+.ld-dashboard-withdraw-method-single.ld-dashboard-withdraw-method-active::before {
+    border-color: #3e64de;
+    box-shadow: 0 0px 0 5px #ebeffe;
+}
+
+.ld-dashboard-withdraw-method-fields {
+    display: flex;
+    margin: 0 -8px;
+    flex-wrap: wrap;
+}
+
+.ld-dashboard-withdraw-method-fields label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.ld-dashboard-withdraw-method-fields input[type=number],
+.ld-dashboard-withdraw-method-fields input[type=text],
+.ld-dashboard-withdraw-method-fields input[type=email]
+.ld-dashboard-withdraw-method-fields input[type=url] {
+    width: 100%;
+    transition: 300ms;
+}
+
+.ld-dashboard-withdraw-method-fields input[type="number"]:focus-visible,
+.ld-dashboard-withdraw-method-fields input[type="text"]:focus-visible,
+.ld-dashboard-withdraw-method-fields input[type=email]:focus-visible,
+.ld-dashboard-withdraw-method-fields input[type=url]:focus-visible {
+    /* border: 1px solid #156AE9; */
+    box-shadow: none;
+    outline: none;
+}
+
+.ld-dashboard-withdraw-method-fields small {
+    color: #5b616f;
+    font-size: 14px;
+    margin: 10px 0;
+    display: block;
+}
+
+.ld-dashboard-add-withdraw-method-form form#add_withdraw button#ldd_save_withdraw_method {
+    border-radius: 5px !important;
+    font-size: 15px;
+    padding: 12px 30px;
+    height: auto;
+    /* background: #156AE9;
+    border-color: #156AE9; */
+    color: #fff;
+    border: none;
+}
+
+.ld-dashboard-withdrawal-content {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #dcdfe5;
+    background: #fff;
+    justify-content: space-between;
+}
+
+.ld-dashboard-withdraw-img-wrapper {
+    width: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background: #bbd4ef;
+    height: 60px;
+    text-align: center;
+}
+
+span.ld-dashboard-withdraw-wallet-img.ld-icon-wallet-2-line {
+    font-size: 35px;
+    line-height: 0;
+    color: #000000;
+}
+
+span.ld-dashboard-withdraw-wallet-img.ld-icon-wallet-2-line:before {
+    margin: 0;
+}
+
+.ld-dashboard-current-balance {
+    display: flex;
+    align-items: center;
+}
+
+.current-balance {
+    margin-right: 50px;
+}
+
+.current-balance span {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+}
+
+.current-balance p {
+    margin: 2px 0 0;
+    color: #555;
+    font-size: 14px;
+}
+
+button.ld-dashboard-withdraw-modal-btn {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.ld-dashboard-withdrawal-preference-content p {
+    margin: 0 0 0 6px;
+    font-size: 14px;
+}
+
+.ld-dashboard-withdrawal-preference-content {
+    display: flex;
+    padding: 18px 0;
+    align-items: center;
+}
+
+.ld-dashboard-withdrawal-status-single.ld-dashboard-withdrawal-pending {
+    padding: 4px 15px 5px;
+    background: #fbefcb;
+    border-radius: 50px;
+    text-align: center;
+    color: #cb8824;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid;
+    display: inline-block;
+    max-width: 100px;
+    width: 100%;
+}
+
+.ld-dashboard-withdrawal-status-single.ld-dashboard-withdrawal-approved {
+    padding: 4px 15px 5px;
+    background: #d9fcdc;
+    border-radius: 50px;
+    text-align: center;
+    color: #3ca845;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    max-width: 100px;
+    width: 100%;
+    border: 1px solid;
+}
+
+.ld-dashboard-withdrawal-status-single.ld-dashboard-withdrawal-rejected {
+    background: #ffcece;
+    padding: 4px 15px 5px;
+    border-radius: 50px;
+    text-align: center;
+    color: #cf1616;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    max-width: 100px;
+    width: 100%;
+    border: 1px solid;
+}
+
+.ld-dashboard-bak-instructions {
+    margin: 0 0px 8px 8px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.ld-dashboard-add-withdraw-method-form .ld-dashboard-withdraw-messages {
+    padding: 5px 12px;
+    background: #eef1f4;
+    font-size: 15px;
+    /* border-left: 3px solid #156AE9; */
+}
+
+
+/*Withdrawal History*/
+
+.ld-dashboard-withdrawal-history-wrapper {
+    margin-top: 20px;
+}
+
+.ld-dashboard-withdrawal-history-head h4 {
+    font-size: 18px;
+}
+
+.ld-dashboard-withdrawal-history-content-table {
+    border: 1px solid #dcdfe5;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.ld-dashboard-withdrawal-history-content-table table {
+    margin: 0;
+    border-radius: 6px;
+    border: none;
+    overflow: hidden;
+    background: #f4f4f7;
+}
+
+.ld-dashboard-withdrawal-history-content-table th {
+    padding: 12px 15px !important;
+    background: #ebecee;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    border: none !important;
+}
+
+.ld-dashboard-withdrawal-history-content-table td {
+    padding: 13px 15px !important;
+    font-size: 14px;
+    border: none !important;
+    line-height: 1;
+}
+
+.ld-dashboard-withdrawal-preference-content a {
+    text-decoration: underline;
+}
+
+.ld-dashboard-withdrawal-history-content-table .ld-dashboard-withdrawal-list:nth-child(2n+2) {
+    background: #fff;
+}
+
+.ld-dashboard-withdrawal-history-content-table span.ld-dashboard-withdrawal-method-label {
+    font-weight: bold;
+}
+
+
+/*Withdrawal PopUP*/
+
+.ld-dashboard-withdrawal-pop-up-wrapper {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    transition: opacity 1s;
+    left: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.ld-dashboard-withdrawal-pop-up-section {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: -270px auto auto;
+    width: 100%;
+    max-height: 540px;
+    top: 50%;
+    z-index: 999999;
+    position: relative;
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+    -webkit-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+}
+
+.ld-dashboard-withdrawal-pop-up-wrapper.ld-dashboard-popup-active .ld-dashboard-withdrawal-pop-up-section {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.ld-dashboard-withdrawal-popup-overlap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: block;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.ld-dashboard-pop-up-details h4 {
+    font-size: 22px;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.ld-dashboard-pop-up-details p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.ld-dashboard-withdrawal-request-balance {
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0 35px;
+}
+
+.ld-dashboard-request-balance {
+    margin-right: 20px;
+}
+
+.ld-dashboard-request-balance strong {
+    display: block;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #000;
+}
+
+.ld-dashboard-withdrawal-form-content {
+    background: #f1f4f7;
+    padding: 40px;
+    margin: 0 -40px -40px;
+    border-radius: 0 0 8px 8px;
+}
+
+.ld-dashboard-withdrawal-form-field-amount {
+    position: relative;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.ld-dashboard-withdrawal-form-field-amount input.ld-dashboard-withdrawal-amount {
+    width: 100%;
+    border-radius: 8px;
+    border: none !important;
+    height: 40px;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.ld-dashboard-withdrawal-form-field-amount input.ld-dashboard-withdrawal-amount:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.ld-dashboard-withdrawal-form-field-amount:before {
+    content: "$";
+    position: absolute;
+    top: -1px;
+    font-size: 20px;
+    background: #cdcdcd;
+    border-radius: 8px 0px 0px 8px;
+    height: 42px;
+    width: 40px;
+    left: -1px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.ld-dashboard-withdrawal-form-field .ld-dashboard-withdrawal-preference-content {
+    font-weight: bold;
+}
+
+.ld-dashboard-withdrawal-form-submit-field {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+button.ld-dashboard-submit-withdrawal-request,
+button.ld-dashboard-cancel-withdrawal-request {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 12px 30px;
+    font-size: 15px;
+}
+
+button.ld-dashboard-cancel-withdrawal-request {
+    background: #c3c5c7;
+}
+
+span.ld-dashboard-close-withdrawal-popup {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    padding: 5px;
+    width: 35px;
+    line-height: 1;
+    text-align: center;
+    height: 35px;
+    background: #e00404;
+    border-radius: 8px;
+}
+
+.ld-dashboard-no-withdrawal-history-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 50px;
+}
+
+.ld-dashboard-withdrawal-form-field label {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 0 5px;
+    display: block;
+}
+
+.ld-dashboard-no-withdrawal-history-message {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #000;
+}
+
+
+/*Instructor Earning*/
+
+h3.ld-dashboard-instructor-earning-title {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 600;
+    color: #3a3a46;
+    text-transform: uppercase;
+}
+
+.ld-dashboard-instructor-earning-filter-wrapper ul.ld-dashboard-instructor-earning-filters-list {
+    margin: 15px -15px !important;
+    border-top: 1px solid #dcdfe5;
+    border-bottom: 1px solid #dcdfe5;
+}
+
+ul.ld-dashboard-instructor-earning-filters-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.ld-dashboard-instructor-earning-filters-list li.ld-dashboard-instructor-earning-filters-link {
+    margin: 0;
+    width: 24.9%;
+    text-align: center;
+    transition: box-shadow .1s linear;
+    padding: 12px 15px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-bottom: -1px;
+}
+
+ul.ld-dashboard-instructor-earning-filters-list li.ld-dashboard-instructor-earning-filters-link.filter-selected,
+ul.ld-dashboard-instructor-earning-filters-list li.ld-dashboard-instructor-earning-filters-link:hover {
+    /* box-shadow: inset 0 -3px 0 0 #156AE9; */
+    position: relative;
+}
+
+.ld-dashboard-withdrawal-pending-msg {
+    color: black;
+    padding: 5px;
+    background: #dbdbdb;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.ld-dashboard-withdrawal-history-content-table {
+    border: 1px solid #dcdfe5;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.ld-dashboard-withdrawal-history-content-table tr:nth-child(2n+2) {
+    background: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .ld-announcement-content-wrapper {
+        width: auto;
+        max-width: initial;
+        left: 0;
+        margin: 0 15px;
+        border: 5px solid #cbcbcb;
+        padding: 20px;
+        top: 25%;
+    }
+
+    .ld-dashboard-withdraw-method-single {
+        margin: 3% 1%;
+        width: 98%;
+    }
+
+    .ld-dashboard-withdraw-method-container {
+        display: block;
+        margin: 0 -5px;
+    }
+
+    .ld-dashboard-withdraw-method-fields {
+        margin: 0;
+    }
+
+    .ld-dashboard-withdrawal-content {
+        display: block;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .ld-dashboard-current-balance {
+        display: block;
+    }
+
+    .ld-dashboard-withdraw-img-wrapper {
+        margin: 0 auto;
+    }
+
+    .current-balance {
+        margin: 15px 0;
+    }
+
+    /* Withdraw Listing */
+    .ld-dashboard-withdrawal-history-content-table table,
+    .ld-dashboard-withdrawal-history-content-table tbody,
+    .ld-dashboard-withdrawal-history-content-table td,
+    .ld-dashboard-withdrawal-history-content-table tr {
+        display: block;
+    }
+
+    .ld-dashboard-withdrawal-history-content-table th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .ld-dashboard-withdrawal-history-content-table td {
+        border: none;
+        position: relative;
+        padding-left: 50% !important;
+        border-bottom: 1px solid #eee !important;
+    }
+
+    .ld-dashboard-withdrawal-history-content-tabletr tr.ld-dashboard-withdrawal-list {
+        padding: 5px 0;
+    }
+
+    .ld-dashboard-withdrawal-history-content-table td:before {
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        width: 47%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .ld-dashboard-withdrawal-history-content-table td:nth-of-type(1):before {
+        content: "Withdrawal Method";
+    }
+
+    .ld-dashboard-withdrawal-history-content-table td:nth-of-type(2):before {
+        content: "Requested On";
+    }
+
+    .ld-dashboard-withdrawal-history-content-table td:nth-of-type(3):before {
+        content: "Amount";
+    }
+
+    .ld-dashboard-withdrawal-history-content-table td:nth-of-type(4):before {
+        content: "Status";
+    }
+
+    .ld-dashboard-pop-up-details {
+        text-align: center;
+    }
+
+    .ld-dashboard-withdrawal-request-balance {
+        justify-content: center;
+    }
+
+    .ld-dashboard-withdrawal-pop-up-section {
+        max-width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px;
+        width: auto;
+    }
+
+    .ld-dashboard-withdrawal-form-content {
+        padding: 20px;
+        margin: 0 -20px -20px;
+    }
+
+    .ld-dashboard-withdrawal-request-balance {
+        margin: 10px 0 20px;
+    }
+
+    .ld-dashboard-pop-up-details h4 {
+        margin: 10px 0;
+    }
+
+    .ld-dashboard-instructor-earning-filter-wrapper ul.ld-dashboard-instructor-earning-filters-list {
+        border-bottom: none;
+    }
+
+    ul.ld-dashboard-instructor-earning-filters-list li.ld-dashboard-instructor-earning-filters-link {
+        margin: 0;
+        width: 50%;
+        box-shadow: inset 0 -1px 0 0 #e3e3e3;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .wbcom-ld-dashboard .ui-dialog.ld-shortcodes {
+        max-width: initial;
+        left: initial !important;
+        margin: 0 20px;
+    }
+}
+
+
+/* Earning Logs */
+
+.ld-dashboard-earning-logs-head {
+    margin: 0 0 30px;
+}
+
+.ld-dashboard-earning-logs-head::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.ld-dashboard-earning-logs-head form[method="get"] {
+    overflow: hidden;
+}
+
+.ld-dashboard-earning-logs-head .ld-dashboard-search-field .ld-dashboard-date-picker {
+    height: 40px;
+    float: left;
+}
+
+.ld-dashboard-earning-logs-head .ld-dashboard-search-field .ld-dashboard-date-picker:first-child {
+    margin-right: 10px;
+}
+
+.ld-dashboard-earning-logs-head .ld-dashboard-search-field {
+    margin: 0 10px 10px 0;
+    float: left;
+    display: flex;
+}
+
+.ld-dashboard-search-field.ld-dashboard-export-btn {
+    margin-right: 0;
+    display: flex;
+}
+
+.ld-dashboard-earning-logs-head .ld-dashboard-search-field input[type="submit"],
+.ld-dashboard-earning-logs-head .ld-dashboard-search-field a.button.ld-dashboard-export-csv {
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+    padding: 11px 25px;
+    cursor: pointer;
+    min-width: 80px;
+    line-height: 1.2;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.ld-dashboard-earning-logs-head .ld-dashboard-search-field input[type="submit"]:hover,
+.ld-dashboard-earning-logs-head .ld-dashboard-search-field a.button.ld-dashboard-export-csv:hover {
+    background: #1564bd;
+}
+
+.ld-dashboard-earning-logs-head .ld-dashboard-search-field a.button.ld-dashboard-export-csv {
+    text-align: center;
+    margin-left: 6px;
+}
+
+.custom-learndash-pagination-nav {
+    display: flex;
+    margin-top: 20px;
+    padding-left: 0;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.custom-learndash-pagination-nav .page-numbers {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .custom-learndash-pagination-nav .page-numbers {
+        transition: none;
+    }
+}
+
+.custom-learndash-pagination-nav .page-numbers:hover {
+    z-index: 2;
+    color: #1564bd;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+
+.custom-learndash-pagination-nav .page-numbers:focus {
+    z-index: 3;
+    color: #1564bd;
+    background-color: #e9ecef;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.custom-learndash-pagination-nav .page-numbers:not(:first-child) {
+    margin-left: -1px;
+}
+
+.custom-learndash-pagination-nav .page-numbers.current {
+    z-index: 3;
+    color: #fff;
+    /* background-color: #156AE9;
+    border-color: #156AE9; */
+}
+
+.custom-learndash-pagination-nav .page-numbers {
+    padding: 0.375rem 0.75rem;
+}
+
+.custom-learndash-pagination-nav .page-numbers:first-child {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.custom-learndash-pagination-nav .page-numbers:last-child {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.ld-dashboard-instrcutor-earnings-data.ld-dashboard-withdrawal-history-content,
+.ld-dashboard-instrcutor-earnings-data.ld-dashboard-withdrawal-history-content table {
+    border-radius: 4px;
+}
+
+.ld-dashboard-instrcutor-earnings-data.ld-dashboard-withdrawal-history-content th {
+    padding: 10px 8px !important;
+    line-height: 1.2;
+}
+
+.ld-dashboard-instrcutor-earnings-data.ld-dashboard-withdrawal-history-content td {
+    padding: 12px 8px !important;
+    line-height: 1.1;
+}
+
+.ld-dashboard-instrcutor-earnings-data.ld-dashboard-withdrawal-history-content tr:nth-child(2n+2) {
+    background: #fff;
+}
+
+.ld-dashboard-earning-logs-head .ld-dashboard-search-field select[name="payment-mode"] {
+    margin-right: 0;
+    margin-left: 10px;
+    width: auto;
+}
+
+
+/* Courses Groups */
+.ld-dashboard-single-group-wrapper {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: space-around;
+    border: 1px solid #e7e9ee;
+    border-radius: 5px;
+    margin: 0px 0px 10px 0px;
+    background: #fff;
+    transition: all 0.3s;
+    align-items: center;
+}
+
+.ld-dashboard-single-group-wrapper:hover {
+    box-shadow: 0 5px 15px #eaeaea;
+}
+
+.ld-dashboard-single-group-title h4 {
+    margin: 0;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    max-width: 650px;
+}
+
+.ld-dashboard-single-group-actions span.ld-dashboard-single-group-edit a,
+.ld-dashboard-group-back-btn-wrapper a.ld-dashboard-group-back-btn {
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    line-height: 1.2;
+    display: block;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.ld-dashboard-single-group-actions span.ld-dashboard-single-group-edit a:hover,
+.ld-dashboard-group-back-btn-wrapper a.ld-dashboard-group-back-btn:hover {
+    background: #166bcb;
+}
+
+.ld-dashboard-group-back-btn-wrapper a.ld-dashboard-group-back-btn {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+}
+
+.ld-dashboard-groups-content-wrapper .ld-dashboard-group-edit-heading h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.ld-dashboard-groups-courses-listing .ld-dashboard-single-course-wrapper {
+    padding: 15px;
+    display: block;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: space-around;
+    border: 1px solid #e7e9ee;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+    background: #fff;
+    transition: all 0.3s;
+    align-items: center;
+}
+
+.ld-dashboard-groups-courses-listing .ld-dashboard-single-course-wrapper:hover {
+    box-shadow: 0 5px 15px #eaeaea;
+}
+
+.ld-dashboard-groups-courses-listing .ld-dashboard-single-course-title h5 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.ld-dashboard-groups-list-wrapper .ld-dashboard-single-group-actions {
+    display: flex;
+    align-items: center;
+}
+
+.ld-dashboard-groups-list-wrapper span.ld-dashboard-single-group-edit {
+    margin-left: 10px;
+}
+
+.ld-dashboard-group-leader .ld-dashboard-student-lists {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/*PlayList Video*/
+.ld-dashboard-create-video-playlist-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+div#ld-course-wizard_ld_cw_process p {
+    margin-bottom: 5px;
+}
+
+.ld-container.ld-mx-auto p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.ld-container.ld-mx-auto input[type="url"] {
+    height: 45px;
+    border-radius: 5px !important;
+    padding: 0 2%;
+    font-size: 15px;
+    width: 100%;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    border: 1px solid #d5d5d5;
+}
+
+.ld-container.ld-mx-auto button.button.button-primary,
+.ld-container.ld-mx-auto input.button.button-primary {
+    border-radius: 5px !important;
+    font-size: 16px;
+    padding: 12px 30px;
+    height: auto;
+    text-transform: capitalize;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+}
+
+form.ld-dashboard-playlist-url-wrap {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ld-dashboard-video-playlist-notice-section .notice.notice-error p {
+    color: #e91616;
+}
+
+.ld-dashboard-video-playlist-create-course-form form#ld_cw_create_course_form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.ld-dashboard-video-playlist-process-data-title {
+    background: #DCFCE7;
+    padding: 20px 25px;
+    color: #31a651;
+    border-radius: 8px;
+}
+
+.ld-dashboard-video-playlist-select-wrap-section {
+    margin-top: 30px;
+    border-bottom: 1px solid #dcdfe5;
+    padding-bottom: 15px;
+}
+
+.ld-dashboard-video-playlist-select-wrap-section:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+
+.ld-dashboard-video-playlist-type-heading strong {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.ld-dashboard-video-playlist-type-heading {
+    margin-bottom: 12px;
+    display: block;
+}
+
+.ld-dashboard-video-playlist-select-item input[type=radio] {
+    border: 1px solid #8c8f94;
+    border-radius: 100px;
+    background: #fff;
+    color: #50575e;
+    clear: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 0;
+    height: 28px;
+    margin-right: 3px;
+    outline: 0;
+    padding: 0 !important;
+    text-align: center;
+    vertical-align: middle;
+    width: 28px;
+    position: absolute;
+    left: 0;
+    min-width: 28px;
+    -webkit-appearance: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    transition: .05s border-color ease-in-out;
+}
+
+.ld-dashboard-video-playlist-select-item input[type=radio]:checked::before {
+    content: "";
+    border-radius: 50%;
+    width: 18px;
+    display: inline-block;
+    height: 18px;
+    margin: 4px;
+    background-color: #3582c4;
+    line-height: 25px;
+}
+
+.ld-dashboard-video-playlist-select-item label.ld-font-bold {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.ld-dashboard-video-playlist-select-item small {
+    display: block;
+    font-size: 15px;
+    margin-top: 5px;
+    line-height: 18px;
+}
+
+.ld-dashboard-video-playlist-select-item {
+    margin-bottom: 20px;
+    padding-left: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*Invite New Students*/
+.ld-dashboard-invite-students p.description {
+    margin: 5px 0 0;
+    line-height: 1;
+}
+#ld-dashboard-invite-students-steps p.ld-dashboard-error.error.email-invite-error {
+    margin: 0;
+    color: red;
+}
+.ld-dashboard-invite-content-wrap ol#ld-dashboard-invite-students-steps {
+    display: block;
+    margin: 20px 0 0;
+    padding: 0;
+}
+.ld-dashboard-invite-content-wrap ol#ld-dashboard-invite-students-steps li {
+    display: block;
+    margin-bottom: 12px;
+}
+.ld-dashboard-invite-content-wrap ol#ld-dashboard-invite-students-steps li p.description {
+    margin: 0 0 10px;
+    color: #777;
+    font-size: 14px;
+}
+.ld-dashboard-invite-content-wrap ol#ld-dashboard-invite-students-steps li textarea{
+    height: 120px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.ld-dashboard-invite-content-wrap ol#ld-dashboard-invite-students-steps fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.ld-dashboard-invite-content-wrap ol#ld-dashboard-invite-students-steps ul#ld-dashboard-group-list {
+    padding: 0;
+    margin: 10px 0 0;
+}
+.ld-dashboard-invite-content-wrap ol#ld-dashboard-invite-students-steps li ul#ld-dashboard-group-list li {
+    margin-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+.ld-dashboard-invite-content-wrap ol#ld-dashboard-invite-students-steps li ul#ld-dashboard-group-list li [type=checkbox] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.ld-dashboard-invite-content-wrap input#ld-dashboard-invite-student-submit{
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+}
+.ld-dashboard-invite-students.ld-dashboard-section-head-title{
+    margin: 0;
+    display: block;
+}
+.ld-dashboard-invite-students.ld-dashboard-section-head-title h3 {
+    margin: 0;
+    line-height: 1;
+}
+.ld-dashboard-sent-invites-details .ld-dashboard-pagination {
+    margin: 0 0 15px;
+}
+.ld-dashboard-sent-invites-details .ld-dashboard--pagination.pagination-bottom {
+    text-align: right;
+}
+.ld-dashboard-sent-invites-details a.prev.page-numbers,
+.ld-dashboard-sent-invites-details a.next.page-numbers {
+    display: inline-flex;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+    font-size: 20px;
+    padding: 5px 10px;
+    height: 35px;
+    align-items: center;
+    font-weight: normal;
+    color: #153045;
+    width: 35px;
+    justify-content: center;
+    margin-right: 10px;
+}
+.ld-dashboard-sent-invites-details .page-numbers {
+    margin: 0 3px;
+    font-size: 18px;
+}
+.ld-dashboard-sent-invites-details a.next.page-numbers{
+    margin-right: 0;
+    margin-left: 5px;
+}
+.ld-dashboard-sent-invites-details table.invite-anyone-sent-invites thead {
+    background: #f3f3f3;
+}
+.ld-dashboard-sent-invites-details table.invite-anyone-sent-invites{
+    border: 1px solid;
+}
+.ld-dashboard-sent-invites-details table.invite-anyone-sent-invites td,
+.ld-dashboard-sent-invites-details table.invite-anyone-sent-invites th {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    text-align: left;
+    padding: 12px;
+    line-height: 1;
+}
+.ld-dashboard-sent-invites-details table.invite-anyone-sent-invites td{
+    padding: 3px 12px;
+}
+.ld-dashboard-sent-invites-details table.invite-anyone-sent-invites td.col-group-invitations ul {
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+.ld-dashboard-sent-invites-details table.invite-anyone-sent-invites{
+    margin-top: 20px;
+}
+.ld-dashboard-sent-invites-details table.invite-anyone-sent-invites td.col-group-invitations li {
+    margin: 8px 0;
+    line-height: 1;
+}
+.ld-dashboard-sent-invites-details table.invite-anyone-sent-invites td{
+    border-right: 1px solid;
+}
+.ld-dashboard-sent-invites-details table.invite-anyone-sent-invites td:last-child{
+    border-right: 0;
+}
+.ld-dashboard-sent-invites-details table.invite-anyone-sent-invites td.col-date-invited,
+.ld-dashboard-sent-invites-details table.invite-anyone-sent-invites td.date-joined.col-date-joined{
+    font-size: 15px;
+}
+.ld-dashboard-sent-invites-details table.invite-anyone-sent-invites tr:nth-child(2n+2) {
+    background: #f6f5f5;
+}
+.ld-dashboard-sent-invites-details table.invite-anyone-sent-invites .no-invite-accepted-email {
+    color: red;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+}
+.ld-dashboard-sent-invites-details table.invite-anyone-sent-invites th.col-status {
+    width: 14%;
+}
+.ld-dashboard-sent-invites-details table.invite-anyone-sent-invites th.col-group-invitations,
+.ld-dashboard-sent-invites-details table.invite-anyone-sent-invites th.col-email {
+    width: 30%;
+}
+.ld-dashboard-invite-content-wrap th.col-date-invited,
+.ld-dashboard-invite-content-wrap th.col-date-joined{
+    width: 13%;
+}
+.ld-dashboard-student .ld-dashboard-invite-students.ld-dashboard-section-head-title {
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 898px) {
+
+    .ld-dashboard-invite-students.ld-dashboard-section-head-title {
+        display: block !important;
+    }
+    .ld-dashboard-invite-students.ld-dashboard-section-head-title h3 {
+        margin: 0 !important;
+    }
+    .ld-dashboard-sent-invites-details a.prev.page-numbers, .ld-dashboard-sent-invites-details a.next.page-numbers {
+         box-shadow: none; 
+        font-size: 18px;
+        height: 32px;
+        width: 32px;
+        border: 1px solid #ddd;
+    }
+    table.invite-anyone-sent-invites,
+    table.invite-anyone-sent-invites thead,
+    table.invite-anyone-sent-invites tbody, 
+    table.invite-anyone-sent-invites th, 
+    table.invite-anyone-sent-invites td, 
+    table.invite-anyone-sent-invites tr { 
+        display: block; 
+        font-size: 15px;
+    }    
+    .ld-dashboard-sent-invites-details table.invite-anyone-sent-invites{
+        border-top: 0;
+    }
+    table.invite-anyone-sent-invites thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .ld-dashboard-sent-invites-details table.invite-anyone-sent-invites td {
+        padding: 12px 10px;
+        border-bottom: none;
+        border-right: 0 !important;
+    }
+    .ld-dashboard-sent-invites-details table.invite-anyone-sent-invites td {
+        border-left: 0;
+        border-bottom: none;
+        position: relative;
+        padding-left: 50%;
+    }   
+    table.invite-anyone-sent-invites td:before { 
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+    }    
+    table.invite-anyone-sent-invites td.col-email,
+    table.invite-anyone-sent-invites td.col-group-invitations {
+        padding-left: 10px !important;
+    }
+    .ld-dashboard-sent-invites-details table.invite-anyone-sent-invites tr:nth-child(2n+2) {
+        background: #f4f4f4;
+    }
+
+    /*Label the data*/
+    table.invite-anyone-sent-invites td:nth-of-type(1):before {
+        content: attr(data-title);
+        display: block;
+        position: unset;
+        width: 100%;
+        font-weight: bold;
+        padding: 0 0 8px;
+    }
+    table.invite-anyone-sent-invites td:nth-of-type(2):before { content: attr(data-title);font-weight: bold; }
+    table.invite-anyone-sent-invites td:nth-of-type(3):before {
+        content: attr(data-title);
+        display: block;
+        position: unset;
+        font-weight: bold;
+        width: 100%;
+        padding: 0;
+    }
+    table.invite-anyone-sent-invites td:nth-of-type(4):before { content: attr(data-title);font-weight: bold; }
+    table.invite-anyone-sent-invites td:nth-of-type(5):before { content: attr(data-title);font-weight: bold; }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .ld-dashboard-earning-logs-head .ld-dashboard-search-field {
+        float: none;
+        margin: 0 0 10px;
+        width: 100%;
+    }
+
+    .ld-dashboard-earning-logs-head .ld-dashboard-search-field .ld-dashboard-date-picker {
+        width: 100%;
+    }
+
+    .ld-dashboard-earning-logs-head .ld-dashboard-search-field .ld-dashboard-date-picker:first-child {
+        margin: 0 10px 0 0px;
+    }
+
+    .ld-dashboard-earning-logs-head .ld-dashboard-search-field input[type="submit"],
+    .ld-dashboard-earning-logs-head .ld-dashboard-search-field a.button.ld-dashboard-export-csv {
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    .ld-dashboard-earning-logs-head .ld-dashboard-search-field a.button.ld-dashboard-export-csv {
+        margin: 0;
+    }
+
+    .ld-dashboard-search-field.ld-dashboard-export-btn {
+        margin: 10px 0 0;
+    }
+
+    .ld-dashboard-course-filter-reset {
+        margin-top: 10px;
+    }
+
+    .ld-dashboard-earning-logs-head form[method="get"] {
+        display: block;
+    }
+
+    .ld-dashboard-instrcutor-earnings-data.ld-dashboard-withdrawal-history-content td {
+        padding-left: 35% !important;
+    }
+
+    .ld-dashboard-instrcutor-earnings-data.ld-dashboard-withdrawal-history-content td::before {
+        content: attr(data-attr) !important;
+        width: 33% !important;
+        top: 8px;
+    }
+
+    .ld-dashboard-single-group-wrapper {
+        display: block;
+    }
+
+    .ld-dashboard-single-group-title h4 {
+        margin: 0 0 10px;
+        overflow: unset;
+        text-overflow: unset;
+        -webkit-line-clamp: unset;
+        line-clamp: unset;
+        max-width: 100%;
+    }
+
+    .ld-dashboard-single-group-actions span.ld-dashboard-single-group-edit a {
+        display: inline-block;
+    }
+
+    form.ld-dashboard-playlist-url-wrap {
+        display: block;
+    }
+
+    .ld-dashboard-video-playlist-type-heading strong {
+        line-height: 20px;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .ld-dashboard-video-playlist-process-data-title {
+        line-height: 22px;
+    }
+
+    .ld-dashboard-groups-list-wrapper span.ld-dashboard-single-group-edit {
+        margin: 0 10px 0px 0;
+    }
+
+}
+
+@media only screen and (min-width: 767px) and (max-width:959px) {
+
+    .ld-dashboard-earning-logs-head .ld-dashboard-search-field {
+        margin: 0 0px 10px 0;
+        width: 100%;
+    }
+
+    .ld-dashboard-earning-logs-head .ld-dashboard-search-field .ld-dashboard-date-picker {
+        height: 40px;
+        float: left;
+        width: 48%;
+    }
+
+    .ld-dashboard-payment-mode {
+        width: 48%;
+        margin-bottom: 10px;
+        float: left;
+    }
+
+    .ld-dashboard-search-field.ld-dashboard-export-btn {
+        width: auto;
+        margin-left: 10px;
+    }
+
+}
+
+/* Time Tracking Popup */
+.is-active-time-tracking-popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 999999;
+    display: none;
+}
+
+.is-active-time-tracking-popup.show-popup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.ld-dashboard-idle-message-wrap {
+    width: 100%;
+    padding: 50px 25px;
+    background-color: #fff;
+    max-width: 380px;
+    position: relative;
+    line-height: 1;
+    max-height: 100%;
+    overflow: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.ld-dashboard-idle-message-wrap span {
+    display: block;
+    margin: 0 0 30px;
+}
+.is-active-time-tracking-popup .ld-dashboard-idle-message-wrap .ld-dashboard-btn{
+    margin:0;
+}
+
+/******************************** Elementor Support ********************************/
+
+.elementor-template-full-width .ld-dashboard-main-wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: block;
+}
+
+.theme-buddyx.has-sidebar-right .ld-dashboard-earning-logs-head .ld-dashboard-search-field input[type="submit"],
+.theme-buddyx.has-sidebar-left .ld-dashboard-earning-logs-head .ld-dashboard-search-field a.button.ld-dashboard-export-csv,
+.theme-buddyx.has-sidebar-left .ld-dashboard-earning-logs-head .ld-dashboard-search-field input[type="submit"],
+.theme-buddyx.has-sidebar-right .ld-dashboard-earning-logs-head .ld-dashboard-search-field a.button.ld-dashboard-export-csv {
+    padding: 11px 15px;
+}
+
+.theme-buddyx.has-sidebar-right:not(.buddypress):not(.bbpress):not(.woocommerce):not(.woocommerce-page):not(.page-template-full-width-container):not(.post-template-post-full-large):not(.post-template-post-full-small):not(.mediapress) .site-wrapper .statistics-inner strong.learndash-statistics,
+.theme-buddyx.has-sidebar-right:not(.buddypress):not(.bbpress):not(.woocommerce):not(.woocommerce-page):not(.page-template-full-width-container):not(.post-template-post-full-large):not(.post-template-post-full-small):not(.mediapress) .site-wrapper .statistics-inner strong.statistics {
+    font-size: 20px;
+}
+
+.ld-dashboard-elementor-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #DDD;
+    background-color: #F7F7F7;
+    z-index: 999;
+}
+
+/******************************** BoddyBoss Theme ********************************/
+
+.buddyboss-theme table#ld-dashboard-overview-course-students {
+    border: none;
+    margin: .0;
+}
+
+.buddyboss-theme .ld-dashboard-question-answer-box .correct-singleContent--options,
+.buddyboss-theme .ld-dashboard-question-answer-box .correct-singleContent-answer-input .answer-input label {
+    margin: 5px 0;
+    line-height: 1.3;
+}
+
+.buddyboss-theme .ld-dashboard-withdraw-method-container {
+    margin-bottom: 10px;
+}
+
+.buddyboss-theme.wbcom-ld-dashboard.modal-open .media-modal-close {
+    background: #fff !important;
+    border: none !important;
+}
+
+.buddyboss-theme.wbcom-ld-dashboard.modal-open .media-modal-content .media-router .media-menu-item {
+    border-radius: 0 !important;
+    color: #000;
+}
+
+
+/******************************** KELO Theme ********************************/
+
+.kleo-desktop table#ld-dashboard-overview-course-students {
+    width: 100%;
+}
+
+/********************************  Mobile menu ********************************/
+.ld-dashboard-mobile-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 15px;
+    box-shadow: 0px 0px 16px rgb(176 182 209 / 18%);
+    z-index: 9999999;
+    text-align: center;
+}
+
+.mobile-menu-link img {
+    max-width: 25px;
+    display: inline-block;
+}
+
+.mobile-menu-link span {
+    font-size: 15px;
+    color: #333;
+}
+
+.ld-dashboard-mobile-wrap .mobile-menu-link a {
+    text-align: center;
+}
+
+.ld-dashboard-mobile-wrap .mobile-menu-link span {
+    font-size: 15px;
+    color: #333;
+    display: block;
+    line-height: 1;
+    padding-top: 5px;
+}
+
+.ld-dashboard-location.ld-dashboard-show-mobile-menu {
+    display: block;
+}
+
+.ld-dashboard-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .ld-dashboard-location {
+        display: none;
+    }
+
+    .ld-dashboard-mobile {
+        display: block;
+    }
+
+    .ld-dashboard-header-button.ld-dashboard-add-new-button-container {
+        text-align: left;
+    }
+
+    .ld-dashboard-sidebar-right.live-course-activity .ld-dashboard-courses {
+        width: 100%;
+    }
+
+}

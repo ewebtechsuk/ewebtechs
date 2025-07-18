@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="47px" viewBox="0 0 54 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>black-list</title>
+    <g id="Deposit-rules" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Deposit-rules---Empty-state" transform="translate(-563.000000, -269.000000)" stroke="#333333" stroke-width="1.44">
+            <g id="black-list" transform="translate(564.000000, 270.000000)">
+                <g id="Group">
+                    <rect id="Rectangle" x="0" y="0" width="52" height="34.9208973"></rect>
+                    <polyline id="Path" points="47.4376321 26.8288076 47.4376321 30.7933884 43.6448203 30.7933884"></polyline>
+                    <polyline id="Path" points="4.56236786 8.74380165 4.56236786 4.12750885 9.50951374 4.12750885"></polyline>
+                    <polygon id="Path" points="34.6849894 43.2845336 17.205074 43.2845336 19.2938689 34.9208973 32.5961945 34.9208973"></polygon>
+                    <line x1="13.0274841" y1="43.2845336" x2="38.807611" y2="43.2845336" id="Path"></line>
+                </g>
+                <g id="Group" transform="translate(16.000000, 8.000000)">
+                    <ellipse id="Oval" cx="9" cy="4.39156627" rx="4.28823529" ry="4.39156627"></ellipse>
+                    <path d="M18,18 C18,12.9036145 13.9764706,8.78313253 9,8.78313253 C4.02352941,8.78313253 0,12.9036145 0,18 L18,18 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

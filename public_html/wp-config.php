@@ -1,7 +1,11 @@
 <?php
 define( 'WP_CACHE', true );
 
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 63e2eb06 (Add site files)
 /**
  * The base configuration for WordPress
  *
@@ -91,4 +95,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
 /** Sets up WordPress vars and included files. */
+<<<<<<< HEAD
 require_once ABSPATH . 'wp-settings.php';
+=======
+require_once ABSPATH . 'wp-settings.php';
+>>>>>>> 63e2eb06 (Add site files)

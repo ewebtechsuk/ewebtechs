@@ -1,0 +1,1605 @@
+/*============================
+Zoom Meeting
+============================*/
+.zoom-meeting-wrapper {
+    position: relative;
+}
+.zoom-meeting-filter-link {
+    padding:40px 25px;
+    margin: -20px -20px 0;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.zoom-meeting-filter-link a.ld-dashboard-meeting-filter {
+    font-size: 17px;
+    margin-right:40px;
+    display: inline-block;
+}
+.zoom-meeting-filter-link a.create-meeting.ld-create-meeting-btn {
+    font-size: 16px;
+    /* background: #156AE9; */
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+.zoom-meeting-filter-link a.create-meeting.ld-create-meeting-btn {
+    font-size: 16px;
+    /* background-color: #156AE9; */
+    color: #fff;
+    padding: 13px 22px 13px 50px;
+    border-radius: 5px;
+    background-image: url(../img/zoom-icon.png);
+    background-repeat: no-repeat;
+    background-position: 18px center;
+    transition: all 0.3s;
+}
+.zoom-meeting-filter-link a.create-meeting.ld-create-meeting-btn:hover {
+    background-color: #181b2a;
+}
+.zoom-meeting-filter-link a.ld-dashboard-meeting-filter.ld-dashboard-meeting-filter-active {
+    /* color: #156ae9; */
+}
+
+/*========================================
+Upcoming Meetings List
+========================================*/
+.ld-dashboard-meeting-error-msg {
+    background: #fff0f0;
+    color: red;
+    padding: 6px 15px;
+    font-size: 16px;
+    border-left: 3px solid;
+    margin: 20px  25px;
+}
+.ld-dashboard-meeting-listing-wrapper {
+    z-index: 9;
+    position: relative;
+}
+.zoom-meeting-left-inner {
+    width: 72%;
+}
+.zoom-meeting-list-wrap {
+    margin: 0 -20px;
+    border-bottom: 1px solid #e7e9ee;
+}
+.zoom-meeting-inner-list {
+    position: relative;
+    padding: 20px 25px;
+    border-top: 1px solid #e7e9ee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.zoom-meeting-list-wrap .zoom-meeting-inner-list:nth-child(2n+2) {
+    background: #fff;
+}
+.zoom-meeting-left-inner h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    line-height: 1.3;
+    font-weight: 500;
+    position: relative;
+}
+.ld-dashboard-meeting-shortcode-copy {
+    display: inline-block;
+    position: relative;
+}
+.zoom-meeting-meta {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.zoom-meeting-meta span {
+    margin-right: 30px;
+    font-size: 15px;
+}
+.zoom-meeting-meta span.meeting-status,
+.zoom-meeting-meta span.meeting-status-past {
+    text-indent: -99999px;
+    overflow: hidden;
+    width: 11px;
+    margin: 0;
+    font-size: 0;
+    height: 11px;
+    background: #05c74f;
+    border-radius: 100px;
+}
+.zoom-meeting-meta span.meeting-status-past {
+    background: #ff7a00;
+}
+.start-zoom-meeting-view{
+  width: 35px;
+}
+.zoom-meeting-start-wrap .start-zoom-meeting-view a {
+    max-width: 35px;
+    width: 100%;
+}
+.zoom-meeting-start-wrap .start-zoom-meeting-view img {
+    max-width: 32px;
+    opacity: 0.6;
+}
+.zoom-meeting-start-wrap .start-zoom-meeting-view:hover img{
+    opacity: 0.8;
+}
+.zoom-meeting-start-toltip {
+    position: absolute;
+    top: 0;
+    background: #3e3f5e;
+    right: 10px;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0 !important;
+    padding:3px 15px;
+    border-radius: 100px;
+    font-size: 13px;
+    transition: transform 0.3s ease-in-out 0s, opacity 0.3s ease-in-out 0s, visibility 0.3s ease-in-out 0s;
+    transform: translate(0px, -15px);
+    z-index: 9;
+    line-height: 1.7;
+}
+.start-zoom-meeting-view:hover .zoom-meeting-start-toltip {
+    transition: transform 0.3s ease-in-out 0s, opacity 0.3s ease-in-out 0s, visibility 0.3s ease-in-out 0s;
+    transform: translate(0px, 0px);
+    opacity: 1 !important;
+    visibility: visible;
+    display: inherit !important;
+}
+.zoom-meeting-start-toltip:after {
+    width: 5px;
+    height: 5px;
+    content: "";
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #3e3f5e;
+    position: absolute;
+    left: 60%;
+    bottom: -7px;
+}
+.edit-delete-meeting-zoom {
+    opacity: 0;
+    transition: all 0.3s;
+}
+.edit-delete-meeting-zoom a.ld-create-meeting-action,
+.edit-delete-meeting-zoom a.ld-delete-meeting-action{
+    margin: 0 10px;
+		font-size:16px;
+}
+.edit-delete-meeting-zoom a.ld-delete-meeting-action{
+  color:#e70000;
+}
+.zoom-meeting-inner-list:hover .edit-delete-meeting-zoom{
+  opacity: 1;
+}
+.ld-dashboard-meeting-shortcode {
+    background: #ddd;
+    display: inline-block;
+    color: #000000c9;
+    font-size: 14px;
+    padding: 5px;
+    line-height: 1;
+    margin-left: 10px;
+    cursor: copy;
+}
+.ld-dashboard-tooltip {
+    position: absolute;
+    top: -45px;
+    right: -15px;
+    min-width: 60px;
+    padding: 5px 10px;
+    text-align: center;
+    background-color: #39394d;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 0;
+    line-height: 20px;
+}
+.ld-dashboard-tooltip:before {
+    border: solid;
+    border-color: #444 transparent;
+    border-width: 8px 7px 0 7px;
+    content: "";
+    left: 42%;
+    bottom: -8px;
+    position: absolute;
+}
+.ld-dashboard-tooltip:after {
+    content: attr(title);
+}
+
+.zoom-meeting-join-link-wrapper {
+    margin-top: 5px;
+}
+span.ld-dashboard-copy-join-link-message {
+    color: #079130;
+    font-size: 15px;
+    position: absolute;
+    bottom: -15px;
+    left: 25px;
+    border: 1px solid #b8d7c1;
+    background: #fff;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+div#join_url_link {
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 3px 10px;
+    background: #efefef;
+    border-radius: 4px;
+}
+
+.ld-dashboard-zoom-meeting-link-wrapper {
+    display: flex;
+    gap: 10px;
+}
+.ld-dashboard-zoom-meeting-link-wrapper .ld-dashboard-meeting-action.browser-join {
+    margin-top: 5px;
+}
+.ld-dashboard-zoom-meeting-link-wrapper .ld-dashboard-meeting-action.browser-join a {
+    color: #fff;
+    gap: 8px;
+    font-size: 15px;
+    align-items: center;
+    line-height: 1;
+    justify-content: center;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background: #156ae9;
+}
+.ld-dashboard-zoom-meeting-link-wrapper .zoom-meeting-join-link-wrapper button.ld-dashboard-copy-join-link {
+    padding: 7px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+/*========================================
+Create Meeting Form
+========================================*/
+.ld-dashboard-content.ld-dashborad-add-edit-course {
+    overflow: hidden;
+}
+.ld-dashboard-create-meeting-wrap {
+    max-width: 520px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out 0s, opacity 0.3s ease-in-out 0s, visibility 0.3s ease-in-out 0s;
+    position: absolute !important;
+    top: 0 !important;
+    transform: translate(1050px, 0);
+    opacity: 0 !important;
+    right: 0;
+    z-index: 99;
+    justify-content: space-between;
+}
+
+.ld-dashboard-create-meeting-wrap.create-meeting-form-open {
+    transition: transform 0.5s ease-out 0s, opacity 0.5s ease-out 0s, visibility 0.5s ease-out 0s;
+    transform: translate(20px, 0);
+    opacity: 1 !important;
+    visibility: visible;
+}
+.ld-dashboard-create-meeting-wrap.create-meeting-form-open:after{
+    background: rgba(0, 0, 0, 0.4);
+    content: "";
+    left: -95%;
+    top: 0;
+    position: absolute;
+    width: 250%;
+    z-index: -9;
+    height: 500%;
+}
+.ld-dashboard-create-meeting-wrap.create-meeting-form-open .ld-dashboard-create-meeting-inner {
+    z-index: 99;
+    background: #fff;
+    position: relative;
+    overflow-y: scroll;
+    height: 750px;
+    border-left: 1px solid #dfe1e8;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+.ld-dashboard-create-meeting-wrap.create-meeting-form-open .ld-dashboard-create-meeting-inner::-webkit-scrollbar-track{
+	background-color: #fff;
+}
+
+.ld-dashboard-create-meeting-wrap.create-meeting-form-open .ld-dashboard-create-meeting-inner::-webkit-scrollbar{
+	width: 6px;
+	background-color: #fff;
+}
+
+.ld-dashboard-create-meeting-wrap.create-meeting-form-open .ld-dashboard-create-meeting-inner::-webkit-scrollbar-thumb{
+	background-color: #ddd;
+}
+
+.ld-dashboard-create-meeting-inner .ld-dashboard-create-meeting-form-head,
+.ld-dashboard-create-meeting-inner .ld-dashboard-create-meeting-form-row {
+    padding:25px;
+    position: relative;
+    border-bottom: 1px solid #dfe1e8;
+}
+.ld-dashboard-create-meeting-inner .ld-dashboard-create-meeting-form-row {
+    padding:15px 25px 20px;
+}
+.ld-dashboard-create-meeting-form-row.ld-create-meeting-btn {
+    display: flex;
+    align-items: center;
+}
+.ld-dashboard-create-meeting-inner .ld-dashboard-create-meeting-form-head h3 {
+    margin: 0;
+    font-size: 20px;
+}
+.ld-dashboard-create-meeting-inner .ld-dashboard-create-meeting-close-btn {
+    position: absolute;
+    right: 22px;
+    top: 24px;
+    background: #FF1212;
+    color: #fff;
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 100px;
+}
+.ld-dashboard-create-meeting-inner img.emoji {
+    filter: brightness(0) invert(1);
+    width: 12px !important;
+    height: 12px !important;
+}
+.ld-dashboard-create-meeting-inner .ld-dashboard-form-group-row{
+  padding:8px 0;
+}
+.ld-dashboard-create-meeting-inner .ld-dashboard-form-group-row label {
+    display: block;
+    font-size: 15px;
+    margin-bottom:8px;
+}
+.ld-dashboard-create-meeting-form-row .ld-dashboard-form-group-row input[type=text],
+.ld-dashboard-create-meeting-form-row .ld-dashboard-form-group-row input[type=password],
+.ld-dashboard-create-meeting-form-row .ld-dashboard-form-group-row input[type=datetime-local],
+.ld-dashboard-create-meeting-form-row .ld-dashboard-form-group-row input[type=datetime-local],
+.ld-dashboard-create-meeting-form-row .ld-dashboard-form-group-row input[type=number],
+.ld-dashboard-create-meeting-form-row .ld-dashboard-form-group-row select,
+.ld-dashboard-create-meeting-form-row .ld-dashboard-form-group-row textarea {
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 6px;
+  padding:5px 15px;
+  border:1px solid #dfe1e8;
+}
+.ld-dashboard-create-meeting-form-row .ld-dashboard-form-group-row textarea{
+  height: 80px;
+}
+.ld-dashboard-create-meeting-form-row .meeting-row-group {
+    display: flex;
+    margin: 0 -8px;
+}
+.ld-dashboard-create-meeting-form-row .meeting-time {
+    margin: 0 8px;
+    width: 50%;
+}
+
+/* Zoom Meeting Option */
+.ld-dashboard-create-meeting-inner .ld-dashboard-form-group-row h5 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.ld-dashboard-form-group-row .ld-dashboard-meeting-row-group {
+    overflow: hidden;
+    margin-top:15px;
+}
+.ld-dashboard-create-meeting-inner .ld-dashboard-form-group-row .ld-dashboard-meeting-row-group label {
+    margin-bottom: 0;
+    margin-top: 3px;
+    float: left;
+    margin-left: 15px;
+}
+.ld-dashboard-form-group-row .ld-dashboard-meeting-row-group input[type="checkbox"]{
+    width: 55px;
+    box-shadow: none;
+    height: 26px;
+    position: relative;
+    float: left;
+    border-radius: 80px;
+    transition: 0.3s;
+    -webkit-appearance: none;
+    cursor: pointer;
+    line-height: 1.1;
+    -moz-appearance: none;
+    border: 1px solid #b8b9ba;
+}
+.ld-dashboard-form-group-row .ld-dashboard-meeting-row-group input[type=checkbox]:checked {
+    /* background-color:#156ae9;
+    border-color:#156ae9; */
+}
+.ld-dashboard-form-group-row .ld-dashboard-meeting-row-group input[type=checkbox]:checked::before {
+    content: "Yes";
+    top: 5px;
+    font-size: 12px;
+    position: relative;
+    right: -8px;
+    font-weight: 500;
+    color: #fff;
+}
+.ld-dashboard-form-group-row .ld-dashboard-meeting-row-group input[type=checkbox]::before {
+    content: "No";
+    top: 5px;
+    font-size: 13px;
+    position: relative;
+    right: -28px;
+    font-weight: 500;
+}
+.ld-dashboard-form-group-row .ld-dashboard-meeting-row-group input[type="checkbox"]:after {
+    content: "";
+    background:#8c8f94;
+    width: 18px;
+    height: 18px;
+    display: block;
+    border-radius: 100px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: all 0.3s;
+}
+.ld-dashboard-form-group-row .ld-dashboard-meeting-row-group input[type=checkbox]:checked::after {
+    -webkit-transform: translateX(28px);
+    -ms-transform: translateX(28px);
+    transform: translateX(28px);
+    background: #ffffff !important;
+}
+.ld-dashboard-meeting-option-tooltip {
+    position: absolute;
+    right: 20px;
+    max-width: 30px;
+}
+.ld-dashboard-meeting-option-tooltip img {
+    width: 23px;
+    cursor: pointer;
+}
+.ld-dashboard-option-tooltip {
+    white-space: nowrap;
+    position: absolute;
+    z-index: 99999;
+    top: -25px;
+    left: 50%;
+    margin-left: -200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0px, 10px);
+    padding: 0 12px;
+    border-radius: 100px;
+    background-color: #3e3f5e;
+    transition: all 0.3s ease-in-out 0s;
+    max-width: 220px;
+    text-align: center;
+}
+.ld-dashboard-option-tooltip span {
+    color: #fff;
+    font-size: 12px;
+    line-height: 25px;
+    overflow-x: scroll;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.ld-dashboard-option-tooltip span::-webkit-scrollbar-track{
+  	background-color: #3e3f5e;
+}
+.ld-dashboard-option-tooltip span::-webkit-scrollbar{
+  	width: 6px;
+    height: 5px;
+  	background-color:#3e3f5e;
+}
+.ld-dashboard-option-tooltip span::-webkit-scrollbar-thumb{
+	 background-color: #66678e;
+}
+
+.ld-dashboard-option-sub-option {
+    margin-top: 5px;
+}
+.ld-dashboard-meeting-option-tooltip:hover .ld-dashboard-option-tooltip{
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+}
+.ld-dashboard-form-group-row.ld-auto-recording {
+    padding: 0;
+}
+.ld-dashboard-form-group-row.ld-auto-recording .ld-dashboard-meeting-row-group {
+    margin: 0;
+}
+.ld-dashboard-create-meeting-form-row.ld-create-meeting-btn input[type="submit"] {
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    font-size: 15px;
+    /* background: #156ae9; */
+    transition: all 0.3s;
+    padding: 13px 30px;
+}
+.ld-dashboard-create-meeting-form-row.ld-create-meeting-btn input[type="submit"]:hover {
+    background: #181b2a;
+}
+
+/* Meeting Recordings */
+.ld-dashboard-meeting-recordings-btn {
+    margin: 5px 0 0;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    padding: 2px 5px 3px 10px;
+    border: 1px solid #d4d7df;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    align-items: center;
+    line-height: 20px;
+    white-space: nowrap;
+}
+.ld-dashboard-meeting-recordings-btn img {
+    width: 20px;
+    float: right;
+    margin-left: 2px;
+    transition: all 0.3s;
+}
+.zoom-meeting-inner-list.recordings-content-open .ld-dashboard-meeting-recordings-btn img {
+    transform: rotate(0.5turn);
+    transition: all 0.3s;
+}
+.ld-dashboard-meeting-recording-content {
+    width: 150px;
+    align-items: center;
+    position: relative;
+    border: 1px solid #d4d7df;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+    background: #fff;
+    overflow: hidden;
+    transition: all 0.3s;
+    top: 3px;
+}
+.ld-dashboard-meeting-recordings-wrapper {
+    width: auto;
+    position: absolute;
+    z-index: -9;
+    transition: all 0.3s;
+}
+.ld-dashboard-meeting-recording-single {
+    position: relative;
+    width: 100%;
+    padding: 10px !important;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    border-bottom: 1px solid #d4d7df;
+    align-items: center;
+    display: flex;
+    line-height: 22px;
+    white-space: nowrap;
+    justify-content: space-between;
+    transition: all 0.3s;
+}
+.ld-dashboard-meeting-recording-single a {
+    line-height: 1 !important;
+}
+.ld-dashboard-meeting-recording-single span {
+    line-height: 1;
+}
+.ld-dashboard-meeting-recording-single a img {
+    width: 17px;
+    opacity: 0.7;
+    height: 16px;
+}
+.ld-dashboard-meeting-recording-single a.play-meeting-recording {
+    margin: 0 5px;
+}
+.ld-dashboard-meeting-recording-single:hover {
+    background:#f8f8fb;
+}
+.ld-dashboard-meeting-recording-single:hover a img {
+    opacity: 0.9;
+}
+.zoom-meeting-inner-list.recordings-content-open .ld-dashboard-meeting-recordings-wrapper {
+    transition: all 0.3s;
+    z-index: 999;
+}
+.ld-dashboard-meeting-recording-content .ld-dashboard-meeting-recording-single:last-child {
+    border-bottom: none;
+}
+.ld-dashboard-meeting-form-loader {
+    padding-left: 25px;
+}
+
+
+/*===================================
+LD Dashboard Instructor List
+====================================*/
+.ld-dashboard-instructors-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: min-content;
+}
+.ld-dashboard-instructor-list-grid {
+    background: #fff;
+    border-radius: 8px;
+    transition: all 0.3s;
+    overflow: hidden;
+    border: 1px solid #dfe0e5;
+}
+.ld-dashboard-instructor-cover-bg {
+    height: 100px;
+    background: #eeeeee;
+}
+.ld-dashboard-instructor-profile-photo {
+    max-width: 100%;
+    margin: 0 0 22px;
+    position: relative;
+    padding-top: 80%;
+    overflow: hidden;
+    display: block;
+}
+.ld-dashboard-instructor-profile-photo img.avatar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 0;
+    min-height: 100%;
+    width: auto;
+    min-width: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+.ld-dashboard-instructor-card-body {
+    text-align: center;
+    padding: 0 25px 30px;
+}
+.ld-dashboard-instructor-card-body h4.ld-dashboard-instructor-name {
+    margin:0px 0 10px;
+    font-size: 22px;
+}
+.ld-dashboard-instructor-course-count {
+    font-size: 17px;
+    color: #666;
+}
+.ld-dashboard-instructor-course-count span.ld-dashboard-ins-course-count{
+  font-weight: 500;
+  color: #212327;
+}
+.ld-dashboard-instructor-list-grid:hover{
+  box-shadow: 0 4px 32px 0 rgba(18, 43, 70, 0.10);
+}
+
+/*===================================
+Single Instructor Profile
+===================================*/
+.ld-dashboard-instructor-profile-area {
+    padding: 15px 15px 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 10px 40px #f3f3f4;
+    overflow: hidden;
+}
+.ld-dashboard-single-instructor-toparea {
+    background: #f6f7fa;
+    margin: -15px -15px 25px;
+    padding: 20px;
+}
+.ld-dashboard-instructor-details-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.zoom-meeting-inner-list.recordings-content-open .ld-dashboard-meeting-recordings-btn {
+    background: #f1f3f8;
+}
+.ld-dashboard-instructor-display-name small {
+    font-size: 13px;
+    text-transform: uppercase;
+    background: #e9ebff;
+    padding: 5px 18px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    border-radius: 100px;
+    line-height: 1;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+.ld-dashboard-instructor-display-name h2 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    line-height: 1;
+}
+.ld-dashboard-instructor-details-item {
+    display: flex;
+    align-items: center;
+}
+
+.ld-dashboard-instructor-details-item .instructor-details-item {
+    margin-right: 30px;
+}
+.instructor-details-item span {
+    display: block;
+    line-height: 1;
+}
+.instructor-details-item strong {
+    display: block;
+    line-height: 1;
+    font-size: 25px;
+    color: #000;
+    margin-top: 5px;
+}
+.ld-dashboard-container-instructor-biography-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:10px 5px 20px;
+    align-items: center;
+}
+.ld-dashboard-instructor-biography h3,
+.ld-dashboard-instructor-profile-courses-content h3 {
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+
+/* Instructor Social Media */
+.ld-dashboard-instructor-profile-social-links {
+    display: flex;
+    justify-content: space-between;
+}
+.ld-dashboard-instructor-profile-social-links a {
+    padding:0;
+    transition: all 0.3s;
+    position: relative;
+}
+.ld-dashboard-instructor-profile-social-links a img {
+    width: 20px;
+    margin: 0 auto;
+}
+
+.ld-dashboard-instructor-profile-pic {
+    max-width: 160px;
+    order: 2;
+}
+.ld-dashboard-instructor-profile-pic img {
+    border-radius:8px;
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ld-dashboard-instructor-course-listing-grid .ld-dashboard-warning {
+    width: 100%;
+    margin: 0 15px 30px;
+}
+
+/* Courses List Instructor Profile*/
+
+.ld-dashboard-instructor-course-container {
+    padding: 0 5px;
+}
+.ld-dashboard-instructor-course-listing-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+}
+.ld-dashboard-instructor-profile-courses-content .ld-dashboard-instructor-course-listing-grid,
+.ld-dashboard-instructor-profile-courses-content div#lm-course-archive-data.lm-grid-view {
+    margin: 0;
+    display: block;
+}
+
+div#lm-course-archive-data.lm-grid-view.lm-ld-grid-view {
+    margin: 0;
+    display: block;
+}
+.ld-dashboard-instructor-course-listing-grid-item {
+    width: 33.33%;
+    padding: 0 12px 25px;
+    transition: all 0.3s;
+}
+.ld-dashboard-instructor-course-listing-inner {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: all 0.3s;
+    background: #fff;
+}
+.ld-dashboard-instructor-course-listing-inner:hover {
+    box-shadow: 0 4px 32px 0 rgba(18, 43, 70, 0.10);
+}
+
+a.ld-dashboard-instructor-course-listing-image {
+    display: block;
+}
+a.ld-dashboard-instructor-course-listing-image img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+.ld-dashboard-instructor-course-listing-content {
+    padding: 20px;
+}
+.ld-dashboard-instructor-course-listing-content h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    height: 50px;
+    -webkit-box-orient: vertical;
+}
+.ld-dashboard-instructor-item-meta-list {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+.ld-dashboard-instructor-item-meta-list span {
+    font-size: 16px;
+    line-height: 1;
+}
+.ld-dashboard-instructor-item-meta-list img {
+    width: 15px;
+    opacity: 0.6;
+    margin-right: 8px;
+}
+.ld-dashboard-instructor-avatar {
+    display: flex;
+    align-items: center;
+}
+.ld-dashboard-instructor-avatar img {
+    width: 40px;
+    border-radius: 100px;
+    margin-right: 10px;
+    height: 40px;
+}
+.ld-dashboard-instructor-avatar span.ld-dashboard-instructor-display-avatar-name {
+    font-size: 15px;
+}
+.ld-dashboard-instructor-item-meta {
+    padding: 2px 0 15px;
+}
+a.ld-dashboard-btn.instructor-course-enroll-btn {
+    margin: 2px 20px 20px;
+    width: auto;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+
+/*===================================
+ Create Meeting Details
+ ===================================*/
+
+ .ld-dashboard-create-zoom-meeting-model-main {
+     transition: all 0.3s ease-in-out;
+     position: fixed;
+     z-index: 9999;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(21, 17, 17, 0.60);
+     display: flex;
+     align-items: center;
+ }
+.ld-dashboard-create-zoom-meeting-model-inner {
+    background: #fff;
+    width:25%;
+    margin: auto;
+    padding: 25px;
+    position: relative;
+    border: none;
+}
+.ld-dashboard-create-zoom-meeting-close-btn.close-set-cred-modal {
+    background: #e00000;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 99;
+    line-height: 30px;
+    font-size: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+}
+.ld-dashboard-create-zoom-meeting-pop-up-content {
+    line-height: 22px;
+    font-size: 18px;
+    color: #181313;
+}
+.ld-dashboard-create-zoom-meeting-pop-up-content a{
+    color:#e20000;
+}
+
+/*===================================
+ Zoom Meeting Details Shortcode
+ ===================================*/
+
+.ld-dashboard-single-meeting-shortcode-wrapper{
+  justify-content: space-between;
+}
+.single.single-zoom_meet .ld-dashboard-single-meeting-shortcode-wrapper{
+  display: flex;
+}
+.ld-dashboard-single-meeting-shortcode-header h2 {
+    margin: 0 0 10px;
+    line-height: 1.1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.ld-dashboard-single-meeting-shortcode-content-left-area {
+    max-width: 65%;
+    width: 100%;
+    display: none;
+}
+.single.single-zoom_meet .ld-dashboard-single-meeting-shortcode-content-left-area {
+    display: block;
+    margin-right: 35px;
+}
+
+.single.single-zoom_meet .ld-dashboard-single-meeting-shortcode-content-right-area {
+    max-width: 35%;
+    width: 100%;
+}
+
+.ld-dashboard-single-meeting-shortcode-content-left-area p.ld-dashboard-meeting-description {
+    line-height: 1.5;
+}
+
+.ld-dashboard-meeting-hosted-by-list-wrap {
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 10px 28px #eee;
+}
+.ld-dashboard-single-meeting-shortcode-content-right-area .ld-dashboard-meeting-sidebar-tile {
+    background: #1d2327;
+    padding:5px 18px;
+    border-radius: 5px 5px 0px 0px;
+}
+.ld-dashboard-meeting-sidebar-tile h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.8;
+}
+.ld-dashboard-meeting-hosted-details {
+    padding: 20px;
+}
+.ld-dashboard-meeting-hosted-by-list-item {
+    margin-bottom: 18px;
+    display: block;
+}
+.ld-dashboard-meeting-hosted-by-list-item span {
+    display: block;
+    line-height: 1.2;
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+.ld-dashboard-meeting-hosted-by-list-item span strong{
+	 text-transform: uppercase;
+}
+.ld-dashboard-meeting-actions-button {
+    padding: 20px;
+    margin: 0 -20px -20px;
+    background: #f2f3f8;
+}
+.ld-dashboard-meeting-hosted-details .ld-dashboard-meeting-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.ld-dashboard-meeting-hosted-details .ld-dashboard-meeting-actions .ld-dashboard-meeting-action {
+    width: 48%;
+    text-align: center;
+}
+.ld-dashboard-meeting-hosted-details .ld-dashboard-meeting-action a {
+    display: block;
+    padding: 15px 35px;
+    line-height: 1.2;
+    background: #1dab54;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    text-align: center;
+}
+.ld-dashboard-meeting-hosted-details .ld-dashboard-meeting-action:last-child a {
+    background: #0A5AFC;
+}
+.ld-dashboard-meeting-hosted-details .ld-dashboard-meeting-action a:hover {
+    background: #3a3a3a;
+}
+.ld-dashboard-meeting-action.browser-join a {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.widget .ld-dashboard-meeting-sidebar-tile {
+    display: none;
+}
+.widget .ld-dashboard-meeting-hosted-by-list-wrap {
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+}
+.widget .ld-dashboard-meeting-hosted-details {
+    padding: 0;
+}
+.widget .ld-dashboard-meeting-hosted-details .ld-dashboard-meeting-actions {
+    gap: 1%;
+    flex-wrap: wrap;
+}
+.widget .ld-dashboard-meeting-action.browser-join {
+    width: 100% !important;
+    margin-top: 12px;
+}
+.ld-dashboard-single-meeting-shortcode-content .ld-dashboard-meeting-actions {
+    gap: 15px;
+}
+.single.single-zoom_meet .widget .ld-dashboard-single-meeting-shortcode-content-right-area {
+    max-width: 100% !important;
+}
+
+
+/* Single Meeting CountDown */
+.ld-dashboard-single-meeting-shortcode-content .ld-dashboard-meeting-countdown-wrapper.ldd-meeting-countdown {
+    height: auto;
+}
+.ld-dashboard-single-meeting-shortcode-content div#ldd-meeting-timer {
+    gap: 8px;
+    margin: 0 0 15px;
+    max-width: 100%;
+}
+.ld-dashboard-single-meeting-shortcode-content .ldd-timer-cell {
+    width: 25%;
+    height: auto;
+    padding: 2px;
+    border-radius: 11px;    
+}
+.ld-dashboard-single-meeting-shortcode-content .ldd-timer-cell-inner {
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    padding: 15px 5px 0;
+    overflow: hidden;
+}
+.ld-dashboard-single-meeting-shortcode-content .ldd-timer-cell-number div {
+    color: #000;
+    font-size: 38px;
+    line-height: 45px;
+}
+.ld-dashboard-single-meeting-shortcode-content .ldd-timer-cell-string {
+    font-size: 14px;
+    color: #fff;
+    background: #3c3c3c;
+    padding: 10px 100% 12px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 659px) {
+
+  .zoom-meeting-list-wrap{
+    margin: 0;
+  }
+  .zoom-meeting-filter-link {
+      padding: 15px;
+      margin: 0;
+      text-align: center;
+      display: block;
+  }
+  .zoom-meeting-filter-link a.ld-dashboard-meeting-filter {
+      font-size: 16px;
+      margin: 0 7px;
+  }
+  .zoom-meeting-filter-link a.ld-dashboard-meeting-filter:last-child{
+      margin: 0 !important;
+  }
+  .zoom-meeting-filter-link a.create-meeting.ld-create-meeting-btn {
+      padding: 12px 22px 11px 50px;
+      border-radius:5px;
+      display: inline-block;
+      margin-top:6px;
+  }
+  .zoom-meeting-inner-list {
+      padding: 15px;
+      border: 1px solid #e7e9ee;
+      border-bottom: none;
+      display: block;
+  }
+  .edit-delete-meeting-zoom {
+      opacity: 1;
+      margin-bottom: -38px;
+      padding: 10px 45px;
+  }
+  .edit-delete-meeting-zoom a.ld-create-meeting-action,
+  .edit-delete-meeting-zoom a.ld-delete-meeting-action {
+      margin: 0 10px 0 0;
+      font-size: 16px;
+  }
+  .zoom-meeting-start-toltip {
+      top: -33px;
+      right: -70px;
+      width: 110px;
+      text-align: center;
+      padding-bottom: 5px;
+  }
+  .zoom-meeting-start-toltip:after,
+  .ld-dashboard-meeting-recording-content {
+      left: 15px;
+  }
+  .start-zoom-meeting-view {
+      position: relative;
+  }
+  .zoom-meeting-meta span {
+      margin-right: 0;
+      width: 100%;
+  }
+  .zoom-meeting-meta {
+      flex-wrap: wrap;
+      padding-left: 14px;
+  }
+  .zoom-meeting-meta span.meeting-status, .zoom-meeting-meta span.meeting-status-past {
+      width: 8px;
+      position: absolute;
+      height: 8px;
+      top: 20px;
+      left:15px;
+  }
+  .zoom-meeting-left-inner h4 {
+      font-size: 18px;
+      padding-left: 14px;
+      line-height: 1.1;
+      margin-bottom: 2px;
+  }
+  .ld-dashboard-meeting-recordings-btn,
+  .zoom-meeting-start-wrap{
+    margin-left: 14px;
+  }
+  .zoom-meeting-start-wrap {
+      margin-top: 0;
+      margin-left: 0;
+  }
+  .ld-dashboard-meeting-shortcode {
+      margin: 5px 0;
+  }
+
+  .ld-dashboard-instructors-list{
+      grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .ld-dashboard-instructor-profile-photo img.avatar {
+      height: 170px;
+  }
+  .ld-dashboard-instructor-card-body h4.ld-dashboard-instructor-name {
+      margin: 0 0 5px;
+      font-size: 20px;
+  }
+  .ld-dashboard-single-meeting-shortcode-wrapper,
+  .single.single-zoom_meet .ld-dashboard-single-meeting-shortcode-wrapper{
+      display: block;
+  }
+  .single.single-zoom_meet article.type-zoom_meet h1.entry-title {
+      line-height: 1.2;
+      font-size: 25px;
+  }
+  .ld-dashboard-single-meeting-shortcode-content-left-area,
+  .ld-dashboard-single-meeting-shortcode-content-right-area,
+  .single.single-zoom_meet .ld-dashboard-single-meeting-shortcode-content-right-area {
+      max-width: 100% !important;
+      margin-bottom: 20px;
+  }
+  .ld-dashboard-single-meeting-shortcode-header h2 {
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      font-size: 22px;
+  }
+  .ld-dashboard-instructor-biography {
+      width: 100%;
+      order: 2;
+      padding:0;
+  }
+  .ld-dashboard-instructor-profile-social-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:center;
+  }
+  .ld-dashboard-instructor-profile-social-links a {
+      padding:9px 12px;
+      margin: 1%;
+  }
+  .ld-dashboard-instructor-course-listing-grid-item {
+      width: 100%;
+  }
+  .ld-dashboard-create-zoom-meeting-model-inner{
+      width:60%;
+  }
+  .ld-dashboard-single-meeting-shortcode-content .ld-dashboard-meeting-actions {
+    gap: 1%;
+    flex-wrap: wrap;
+  }
+  .ld-dashboard-single-meeting-shortcode-content .ld-dashboard-meeting-action.browser-join{
+        width: 100% !important;
+        margin-top: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+.ld-dashboard-instructors-list{
+    grid-template-columns: repeat(1, 1fr) !important;
+}
+.ld-dashboard-instructor-profile-photo img.avatar {
+    height: auto;
+}
+.zoom-meeting-wrapper {
+    position: unset;
+}
+.ld-dashboard-create-meeting-wrap {
+    top: 0% !important;
+    transform: translate(0px, -10000px);
+    border: none;
+    height: 100%;
+    padding-bottom: 0;
+    max-width: 100%;
+    z-index: 99999;
+    overflow: hidden;
+    background: #00000052 !important;
+    position: fixed !important;
+}
+.ld-dashboard-create-meeting-wrap.create-meeting-form-open .ld-dashboard-create-meeting-inner {
+    height: 560px;
+    padding: 0%;
+    overflow-y: scroll;
+    top: 50%;
+    margin: -60% 20px 0;
+    border-radius: 8px;
+}
+.ld-dashboard-create-meeting-wrap.create-meeting-form-open {
+    transition: transform 0.5s ease-out 0s, opacity 0.5s ease-out 0s, visibility 0.5s ease-out 0s;
+    transform: translate(0, 0);
+    overflow: visible;
+}
+.ld-dashboard-create-meeting-wrap.create-meeting-form-open:after{
+  display: none !important;
+}
+.ld-dashboard-instructor-details-wrap {
+    display: block;
+    text-align: center;
+}
+.ld-dashboard-instructor-profile-pic {
+    max-width: 130px;
+    margin: 0 auto 18px;
+}
+.ld-dashboard-instructor-details-item {
+    justify-content: center;
+}
+.ld-dashboard-instructor-profile-pic img {
+    height: 120px;
+}
+.ld-dashboard-create-zoom-meeting-model-inner{
+    width: 90%;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+.zoom-meeting-wrapper {
+    position: unset;
+}
+.ld-dashboard-create-meeting-wrap {
+    top: 0% !important;
+    transform: translate(0px, -10000px);
+    border: none;
+    height: 100%;
+    padding-bottom: 0;
+    max-width: 100%;
+    z-index: 99999;
+    overflow: hidden;
+    background: #00000052 !important;
+    position: fixed !important;
+}
+.ld-dashboard-create-meeting-wrap.create-meeting-form-open .ld-dashboard-create-meeting-inner {
+    height: 560px;
+    padding: 0%;
+    overflow-y: scroll;
+    top: 50%;
+    margin:0 20px;
+    margin-top:-230px;
+    border-radius: 8px;
+}
+.ld-dashboard-create-meeting-wrap.create-meeting-form-open {
+    transition: transform 0.5s ease-out 0s, opacity 0.5s ease-out 0s, visibility 0.5s ease-out 0s;
+    transform: translate(0, 0);
+    overflow: visible;
+}
+.ld-dashboard-create-meeting-wrap.create-meeting-form-open:after{
+  display: none !important;
+}
+.ld-dashboard-single-meeting-shortcode-content .ldd-timer-cell{
+    margin: 0;
+}
+.ld-dashboard-single-meeting-shortcode-content div#ldd-meeting-timer {
+    gap: 5px;
+    padding: 0;
+}
+.ld-dashboard-single-meeting-shortcode-content .ldd-timer-cell {
+    width: 23.5%;
+}
+.ld-dashboard-single-meeting-shortcode-content .ld-dashboard-meeting-countdown-wrapper.ldd-meeting-countdown {
+    margin: 0;
+}
+
+}
+
+@media only screen and (min-width: 659px) and (max-width:1020px ) {
+
+.ld-dashboard-instructors-list{
+    grid-template-columns: repeat(2, 1fr) !important;
+}
+.ld-dashboard-create-zoom-meeting-model-inner{
+    width:60%;
+}
+
+}
+
+@media only screen and (min-width: 659px) and (max-width:1024px ) {
+
+  .ld-dashboard-instructor-course-listing-grid-item {
+      width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 659px) and (max-width:919px ) {
+
+.zoom-meeting-filter-link {
+    justify-content: center;
+}
+.zoom-meeting-filter-link a.create-meeting.ld-create-meeting-btn{
+  margin:0
+}
+.zoom-meeting-filter-link a.create-meeting.ld-create-meeting-btn {
+    font-size: 15px;
+    padding: 13px 15px 13px 50px;
+    line-height: 1.1;
+}
+.zoom-meeting-filter-link a.ld-dashboard-meeting-filter {
+    font-size: 16px;
+    margin-right: 10px;
+}
+.zoom-meeting-filter-link {
+    padding: 40px 20px;
+}
+
+
+
+}
+
+
+/*Embed Browser Meeting*/
+body.ld-dashboard-join-meeting{
+    background: #000;
+}
+div#ldd-zoom-browser-meeting {
+    max-width: 100%;
+    /* margin: 0 auto; */
+    /* top: 50%; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 100%;
+    /* margin-top: -25%; */
+    /* left: 50%; */
+    /* margin-left: -325px; */
+    position: relative !important;
+}
+div#ldd-zoom-browser-meeting--container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 710px;
+    width: 100%;
+    margin: 0 auto;
+    top: 50%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 440px;
+    margin-top: -220px;
+    left: 50%;
+    margin-left: -355px;
+}
+p.alert-message {
+    margin-bottom: 20px;
+    font-size: 15px;
+    display: block;
+}
+.ldd-zoom-browser-meeting--info__browser ul {
+    padding: 0;
+    margin: 0 18px 20px;
+}
+.ldd-zoom-browser-meeting--meeting-form button#ldd-zoom-browser-meeting-join-mtg {
+    font-weight: bold;
+    padding: 8px 25px;
+    border-radius: 5px;
+}
+
+/*Meeting Countdown*/
+.ld-dashboard-meeting-countdown-wrapper.ldd-meeting-countdown {
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+}
+h2.ldd-meeting-countdown-title {
+    text-transform: capitalize;
+    font-size: 40px;
+    margin: 0 0 10px;
+}
+div#ldd-meeting-timer {
+    max-width: 900px;
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.ldd-timer-cell {
+    background: rgb(255,144,104);
+    background: -moz-linear-gradient(180deg, rgba(255,144,104,1) 0%, rgba(255,118,125,1) 48%, rgba(253,72,175,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,144,104,1) 0%, rgba(255,118,125,1) 48%, rgba(253,72,175,1) 100%);
+    background: linear-gradient(180deg, rgba(255,144,104,1) 0%, rgba(255,118,125,1) 48%, rgba(253,72,175,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff9068",endColorstr="#fd48af",GradientType=1);
+    width: 160px;
+    padding: 8px;
+    height: 160px;
+    text-align: center;
+    border-radius: 150px;
+    overflow: hidden;
+}
+.ldd-timer-cell.ldd-timer-hours{
+    background: rgb(170,44,213);
+    background: -moz-linear-gradient(180deg, rgba(170,44,213,1) 0%, rgba(148,62,247,1) 48%, rgba(4,151,246,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(170,44,213,1) 0%, rgba(148,62,247,1) 48%, rgba(4,151,246,1) 100%);
+    background: linear-gradient(180deg, rgba(170,44,213,1) 0%, rgba(148,62,247,1) 48%, rgba(4,151,246,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aa2cd5",endColorstr="#0497f6",GradientType=1);
+}
+.ldd-timer-cell.ldd-timer-minutes{
+    background: rgb(10,252,129);
+    background: -moz-linear-gradient(180deg, rgba(10,252,129,1) 0%, rgba(6,227,186,1) 48%, rgba(4,191,222,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(10,252,129,1) 0%, rgba(6,227,186,1) 48%, rgba(4,191,222,1) 100%);
+    background: linear-gradient(180deg, rgba(10,252,129,1) 0%, rgba(6,227,186,1) 48%, rgba(4,191,222,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0afc81",endColorstr="#04bfde",GradientType=1);
+}
+.ldd-timer-cell.ldd-timer-seconds{
+    background: rgb(248,215,74);
+    background: -moz-linear-gradient(180deg, rgba(248,215,74,1) 0%, rgba(251,162,58,1) 48%, rgba(253,126,49,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(248,215,74,1) 0%, rgba(251,162,58,1) 48%, rgba(253,126,49,1) 100%);
+    background: linear-gradient(180deg, rgba(248,215,74,1) 0%, rgba(251,162,58,1) 48%, rgba(253,126,49,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8d74a",endColorstr="#fd7e31",GradientType=1);
+}
+.ldd-timer-cell-inner {
+    background: #fff;
+    border-radius: 150px;
+    width: 144px;
+    height: 144px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.10);
+}
+.ldd-timer-cell-number div {
+    color: #000;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 70px;
+}
+.ldd-timer-cell-string {
+    font-weight: 500;
+    display: block;
+    font-size: 18px;
+    padding: 0 5px;
+    line-height: 1;
+    color: #000;
+}
+.ld-dashboard-meeting-iframe-wrapper.zoom-window-wrap iframe {
+    position: relative;
+    border: none;
+    height: 85vh !important;
+}
+
+.ld-dashboard-zoom-setting-fields form.ld-dashboard-profile-form .ld-dashboard-zoom-setting-fields{
+    position: relative;
+}
+
+.ld-dashboard-zoom-setting-fields .ld-dashboard-zoom-setting-fields span.ld-dashboard-password-toggle.dashicons {
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    top: 5px;
+    background: #fff;
+    width: 34px;
+    height: 35px;
+    line-height: 36px;
+}
+
+
+@media only screen and (max-width: 619px) {
+
+    .ld-dashboard-meeting-countdown-wrapper.ldd-meeting-countdown {
+        margin: 50px 0;
+        height: auto;
+    }
+    div#ldd-meeting-timer {
+        gap: 0;
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+    .ldd-timer-cell {
+        width: 44%;
+        text-align: center;
+        margin: 3%;
+    }
+    .ldd-timer-cell .ldd-timer-cell-number {
+        margin: 0 auto;
+    }
+    .zoom-meeting-left-inner{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1132px) {
+
+div#ldd-zoom-browser-meeting--container {
+    max-width: 100%;
+    position: unset;
+    height: auto;
+    margin: 20px;
+}
+div#ldd-zoom-browser-meeting {
+    max-width: 100%;
+    height: 100%;
+    position: absolute !important;
+}
+
+
+}

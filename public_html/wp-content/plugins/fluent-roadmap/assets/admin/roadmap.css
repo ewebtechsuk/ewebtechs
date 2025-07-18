@@ -1,0 +1,29 @@
+#wpwrap {
+  height: calc(100vh - 40px);
+  overflow: hidden;
+}
+#wpwrap #adminmenuwrap {
+  max-height: calc(100vh - 40px);
+  overflow-x: hidden;
+}
+
+#wpbody {
+  height: calc(100vh - 40px);
+}
+#wpbody .fc_tasks_app,
+#wpbody .fc_tasks_app > *,
+#wpbody .fluentcrm_app_wrapper,
+#wpbody #wpbody-content {
+  height: 100%;
+}
+#wpbody .fluentcrm_databox,
+#wpbody .fluentcrm_app_wrapper {
+  height: calc(100% - 60px);
+}
+#wpbody .fluentcrm_databox {
+  padding: 0;
+  background: none;
+}
+#wpbody .fluentcrm_databox #fct_tasks_wrapper {
+  height: calc(100% - 50px);
+}

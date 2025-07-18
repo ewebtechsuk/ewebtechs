@@ -1,0 +1,75 @@
+<?php
+
+namespace FluentRoadmap\App\Services;
+
+
+class TransStrings
+{
+    public static function getStrings()
+    {
+        return [
+            'Submit Idea'                                         => __('Submit Idea', 'fluent-roadmap'),
+            'Please enter a keyword'                              => __('Please enter a keyword', 'fluent-roadmap'),
+            'Submit Your Feature Idea'                            => __('Submit Your Feature Idea', 'fluent-roadmap'),
+            'Login / Signup'                                      => __('Login / Signup', 'fluent-roadmap'),
+            'Please login/signup to add your feature request'     => __('Please login/signup to add your feature request', 'fluent-roadmap'),
+            'Back to Ideas'                                       => __('Back to Ideas', 'fluent-roadmap'),
+            'Please read before submit a feature request'         => __('Please read before submit a feature request', 'fluent-roadmap'),
+            'Before you submit a feature request, please make sure that you have checked the following:' => __('Before you submit a feature request, please make sure that you have checked the following:', 'fluent-roadmap'),
+            'Make sure that the feature you are requesting is not already in the roadmap.'               => __('Make sure that the feature you are requesting is not already in the roadmap.', 'fluent-roadmap'),
+            'Make sure it\'s relevant'                            => __('Make sure it\'s relevant', 'fluent-roadmap'),
+            'Please do not spam'                                  => __('Please do not spam', 'fluent-roadmap'),
+            'Your Feature Title *'                                => __('Your Feature Title *', 'fluent-roadmap'),
+            'Enter your idea title'                               => __('Enter your idea title', 'fluent-roadmap'),
+            'Details of this feature *'                           => __('Details of this feature *', 'fluent-roadmap'),
+            'Your Name *'                                         => __('Your Name *', 'fluent-roadmap'),
+            'Enter your name'                                     => __('Enter your name', 'fluent-roadmap'),
+            'Your Email *'                                        => __('Your Email *', 'fluent-roadmap'),
+            'Enter your email'                                    => __('Enter your email', 'fluent-roadmap'),
+            'Submit Feature Request'                              => __('Submit Feature Request', 'fluent-roadmap'),
+            'Cancel'                                              => __('Cancel', 'fluent-roadmap'),
+            'Confirm'                                             => __('Confirm', 'fluent-roadmap'),
+            'cancel'                                              => __('cancel', 'fluent-roadmap'),
+            'confirm'                                             => __('confirm', 'fluent-roadmap'),
+            'Registration Form'                                   => __('Registration Form', 'fluent-roadmap'),
+            'Upvote Received'                                     => __('Upvote Received', 'fluent-roadmap'),
+            'Upvote for this idea'                                => __('Upvote for this idea', 'fluent-roadmap'),
+            'You need to login to vote for this idea.'            => __('You need to login to vote for this idea.', 'fluent-roadmap'),
+            'No stage found for this board'                       => __('No stage found for this board', 'fluent-roadmap'),
+            'Sorry no feature request items found based on your filter' => __('Sorry no feature request items found based on your filter', 'fluent-roadmap'),
+            'guest'                                               => __('guest', 'fluent-roadmap'),
+            'Delete'                                              => __('Delete', 'fluent-roadmap'),
+            'No Comments Found!'                                  => __('No Comments Found!', 'fluent-roadmap'),
+            'Please login/signup to add your comment to this idea' => __('Please login/signup to add your comment to this idea', 'fluent-roadmap'),
+            'Write your thoughts?'                                => __('Write your thoughts?', 'fluent-roadmap'),
+            'Your Full Name'                                      => __('Your Full Name', 'fluent-roadmap'),
+            'Your Email Address'                                  => __('Your Email Address', 'fluent-roadmap'),
+            'Comment'                                             => __('Comment', 'fluent-roadmap'),
+            'Comments'                                            => __('Comments', 'fluent-roadmap'),
+            'Stage'                                               => __('Stage', 'fluent-roadmap'),
+            'Posted on'                                           => __('Posted on', 'fluent-roadmap'),
+            'Last Updated'                                        => __('Last Updated', 'fluent-roadmap'),
+            'Posted by'                                           => __('Posted by', 'fluent-roadmap'),
+            'Are you sure you want to delete?'                    => __('Are you sure you want to delete?', 'fluent-roadmap'),
+            'see more'                                            => __('see more', 'fluent-roadmap'),
+            'see less'                                            => __('see less', 'fluent-roadmap'),
+            'Reply'                                               => __('Reply', 'fluent-roadmap'),
+            'Save'                                                => __('Reply', 'fluent-roadmap'),
+            'Upvote'                                              => __('Reply', 'fluent-roadmap'),
+            'Your comment can ignite a revolution!'               => __('Your comment can ignite a revolution!', 'fluent-roadmap'),
+            'Add Idea'                                            => __('Add Idea', 'fluent-roadmap'),
+            'No feedback Yet'                                     => __('No feedback Yet', 'fluent-roadmap'),
+            'replies'                                             => __('Reply', 'fluent-roadmap'),
+            'Submit a idea'                                       => __('Submit a idea', 'fluent-roadmap'),
+            'Login'                                               => __('Login', 'fluent-roadmap'),
+            'Signup/Login'                                        => __('Signup/Login', 'fluent-roadmap'),
+            'Loading'                                             => __('Loading', 'fluent-roadmap'),
+            'Request Feature'                                     => __('Request Feature', 'fluent-roadmap'),
+            'Let us know what ideas you\'d like to see on the Fluent Roadmap!' => __('Let us know what ideas you\'d like to see on the Fluent Roadmap!', 'fluent-roadmap'),
+            'Short Title, Big Impact'                             => __('Short Title, Big Impact', 'fluent-roadmap'),
+            'Let your words weave the magic...'                   => __('Let your words weave the magic...', 'fluent-roadmap'),
+            'Name'                                                => __('Name', 'fluent-roadmap'),
+            'Email'                                               => __('Email', 'fluent-roadmap')
+        ];
+    }
+}

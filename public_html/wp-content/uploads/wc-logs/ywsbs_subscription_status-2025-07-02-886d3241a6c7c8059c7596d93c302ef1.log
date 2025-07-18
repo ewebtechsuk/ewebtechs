@@ -1,0 +1,21 @@
+2025-07-02T00:58:45+00:00 NOTICE Created via backend a new subscription 3194 for order: 3193 CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE Start check subscriptions that should change status after the payment due date at 2025-07-02 02:00:02 CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE Search subscriptions with Payment due date < 2025-07-02 01:59:14 CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE Start expired cron at 2025-07-02 02:00:02 CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE Search subscription with expired date < 2025-07-02 02:00:02 CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE Start resume orders cron at 2025-07-02 02:00:02 CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE Search subscriptions to resume with expired pause date <  2025-07-02 01:00:02 CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE Start check suspended subscription at 2025-07-02 02:00:02 CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE Search suspended subscriptions with Payment due date < 2025-06-12 02:00:02 CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-07-02T01:00:02+00:00 NOTICE ================ CONTEXT: {"_legacy":true}

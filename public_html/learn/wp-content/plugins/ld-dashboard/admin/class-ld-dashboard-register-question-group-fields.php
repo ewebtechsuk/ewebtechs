@@ -1,0 +1,386 @@
+<?php
+/**
+ * The public-facing functionality of the plugin.
+ *
+ * Defines the plugin name, version, and two examples hooks for how to
+ * enqueue the public-facing stylesheet and JavaScript.
+ *
+ * @package    Custom_Learndash
+ * @subpackage Custom_Learndash/public
+ * @author     Wbcom Designs <admin@wbcomdesigns.com>
+ */
+class Ld_Dashboard_Register_Question_Group_Fields {
+	public function __construct() {
+		if ( function_exists( 'acf_add_local_field_group' ) ) :
+			$question_label = LearnDash_Custom_Label::get_label( 'question' );
+			$fields         = array(
+				array(
+					'key'                         => 'field_61c02f72a9f61',
+					'label'                       => sprintf( esc_html__( '%s Title', 'ld-dashboard' ), $question_label ),
+					'name'                        => 'ldd_post_title',
+					'type'                        => 'text',
+					'instructions'                => '',
+					'required'                    => 1,
+					'conditional_logic'           => 0,
+					'wrapper'                     => array(
+						'width' => '',
+						'class' => 'custom-learndash-course-form ld-dashboard-form-post-data-tab',
+						'id'    => '',
+					),
+					'frontend_admin_display_mode' => 'edit',
+					'only_front'                  => 0,
+					'readonly'                    => 0,
+					'default_value'               => '',
+					'placeholder'                 => '',
+					'prepend'                     => '',
+					'append'                      => '',
+					'maxlength'                   => '',
+				),
+				array(
+					'key'                         => 'field_61c030b7a9f62',
+					'label'                       => sprintf( esc_html__( '%s Content', 'ld-dashboard' ), $question_label ),
+					'name'                        => 'ldd_post_content',
+					'type'                        => 'wysiwyg',
+					'instructions'                => '',
+					'required'                    => 1,
+					'conditional_logic'           => 0,
+					'wrapper'                     => array(
+						'width' => '',
+						'class' => 'custom-learndash-course-form ld-dashboard-form-post-data-tab',
+						'id'    => '',
+					),
+					'frontend_admin_display_mode' => 'edit',
+					'only_front'                  => 1,
+					'readonly'                    => 0,
+					'default_value'               => '',
+					'tabs'                        => 'all',
+					'toolbar'                     => 'full',
+					'media_upload'                => 1,
+				),
+				array(
+					'key'               => 'field_61fqq121wz',
+					'label'             => esc_html__( 'Featured Image', 'ld-dashboard' ),
+					'name'              => '_thumbnail_id',
+					'type'              => 'image',
+					'instructions'      => '',
+					'required'          => 0,
+					'conditional_logic' => 0,
+					'wrapper'           => array(
+						'width' => '',
+						'class' => 'custom-learndash-course-form add-course-featured-img ld-dashboard-form-post-data-tab',
+						'id'    => '',
+					),
+					'return_format'     => 'id',
+					'preview_size'      => 'medium',
+					'library'           => 'uploadedTo',
+					'min_width'         => '',
+					'min_height'        => '',
+					'min_size'          => '',
+					'max_width'         => '',
+					'max_height'        => '',
+					'max_size'          => '',
+					'mime_types'        => '',
+				),
+				array(
+					'key'                         => 'field_61c030e4a9f63',
+					'label'                       => esc_html__( 'Answer Type', 'ld-dashboard' ),
+					'name'                        => 'sfwd-question_answer_type',
+					'type'                        => 'radio',
+					'instructions'                => '',
+					'required'                    => 0,
+					'conditional_logic'           => 0,
+					'wrapper'                     => array(
+						'width' => '',
+						'class' => 'custom-learndash-course-form ld_dashboard_sfwd-question_answer_type ld-dashboard-form-post-data-tab',
+						'id'    => '',
+					),
+					'frontend_admin_display_mode' => 'edit',
+					'only_front'                  => 0,
+					'choices'                     => array(
+						'single'             => esc_html__( 'Single Choice', 'ld-dashboard' ),
+						'multiple'           => esc_html__( 'Multiple Choice', 'ld-dashboard' ),
+						'free_answer'        => esc_html__( '"Free" Choice', 'ld-dashboard' ),
+						'sort_answer'        => esc_html__( '"Sorting" Choice', 'ld-dashboard' ),
+						'matrix_sort_answer' => esc_html__( '"Matrix Sorting" Choice', 'ld-dashboard' ),
+						'cloze_answer'       => esc_html__( 'Fill in The Blank', 'ld-dashboard' ),
+						'assessment_answer'  => esc_html__( 'Assessment', 'ld-dashboard' ),
+						'essay'              => esc_html__( 'Essay / Open Answer', 'ld-dashboard' ),
+					),
+					'allow_null'                  => 0,
+					'other_choice'                => 0,
+					'default_value'               => '',
+					'layout'                      => 'vertical',
+					'return_format'               => 'value',
+					'save_other_choice'           => 0,
+				),
+				array(
+					'key'                         => 'field_61c03f745cb04',
+					'label'                       => esc_html__( 'Answer', 'ld-dashboard' ),
+					'name'                        => 'sfwd-question_answer_cld',
+					'type'                        => 'text',
+					'instructions'                => '',
+					'required'                    => 0,
+					'conditional_logic'           => 0,
+					'wrapper'                     => array(
+						'width' => '',
+						'class' => 'sfwd-answer-input-type custom-learndash-course-form ld-dashboard-form-post-data-tab',
+						'id'    => '',
+					),
+					'frontend_admin_display_mode' => 'edit',
+					'only_front'                  => 0,
+					'readonly'                    => 0,
+					'default_value'               => '',
+					'placeholder'                 => '',
+					'prepend'                     => '',
+					'append'                      => '',
+					'maxlength'                   => '',
+				),
+				array(
+					'key'                         => 'field_61c032a3a9f64',
+					'label'                       => esc_html__( 'Points', 'ld-dashboard' ),
+					'name'                        => 'sfwd-question_points_cld',
+					'type'                        => 'text',
+					'instructions'                => '',
+					'required'                    => 0,
+					'conditional_logic'           => array(
+						array(
+							array(
+								'field'    => 'field_61c032eba9f66',
+								'operator' => '!=',
+								'value'    => 'on',
+							),
+						),
+					),
+					'wrapper'                     => array(
+						'width' => '',
+						'class' => 'custom-learndash-course-form ld-dashboard-form-settings-data-tab',
+						'id'    => '',
+					),
+					'frontend_admin_display_mode' => 'edit',
+					'only_front'                  => 0,
+					'readonly'                    => 0,
+					'default_value'               => 1,
+					'placeholder'                 => '',
+					'prepend'                     => '',
+					'append'                      => 'Points',
+					'maxlength'                   => '',
+				),
+				array(
+					'key'                         => 'field_61c032eba9f66',
+					'label'                       => esc_html__( 'Points type', 'ld-dashboard' ),
+					'name'                        => '',
+					'type'                        => 'checkbox',
+					'instructions'                => esc_html__( 'If you enable this option, you can enter different points for every answer.', 'ld-dashboard' ),
+					'required'                    => 0,
+					'conditional_logic'           => 0,
+					'wrapper'                     => array(
+						'width' => '',
+						'class' => 'custom-learndash-course-form ld-dashboard-form-settings-data-tab ldd-hide-label',
+						'id'    => '',
+					),
+					'frontend_admin_display_mode' => 'edit',
+					'only_front'                  => 0,
+					'choices'                     => array(
+						'on' => esc_html__( 'Different points for each answer', 'ld-dashboard' ),
+					),
+					'allow_custom'                => 0,
+					'default_value'               => array(),
+					'layout'                      => 'vertical',
+					'toggle'                      => 0,
+					'return_format'               => 'value',
+					'save_custom'                 => 0,
+				),
+				array(
+					'key'                         => 'field_61c032cda9f65',
+					'label'                       => esc_html__( 'Display points scored in message', 'ld-dashboard' ),
+					'name'                        => '',
+					'type'                        => 'checkbox',
+					'instructions'                => '',
+					'required'                    => 0,
+					'conditional_logic'           => array(
+						array(
+							array(
+								'field'    => 'field_61c032eba9f66',
+								'operator' => '==',
+								'value'    => 'on',
+							),
+						),
+					),
+					'wrapper'                     => array(
+						'width' => '',
+						'class' => 'custom-learndash-course-form ld-dashboard-form-settings-data-tab ldd-hide-label',
+						'id'    => '',
+					),
+					'frontend_admin_display_mode' => 'edit',
+					'only_front'                  => 0,
+					'choices'                     => array(
+						'on' => esc_html__( 'Show reached points in the correct- and incorrect message?', 'ld-dashboard' ),
+					),
+					'allow_custom'                => 0,
+					'default_value'               => array(),
+					'layout'                      => 'vertical',
+					'toggle'                      => 0,
+					'return_format'               => 'value',
+					'save_custom'                 => 0,
+				),
+				array(
+					'key'                         => 'field_61c036017c96f',
+					'label'                       => esc_html__( 'Message with correct answer (optional)', 'ld-dashboard' ),
+					'name'                        => 'sfwd-question_correct_answer_cld',
+					'type'                        => 'wysiwyg',
+					'instructions'                => '',
+					'required'                    => 0,
+					'conditional_logic'           => 0,
+					'wrapper'                     => array(
+						'width' => '',
+						'class' => 'custom-learndash-course-form ld-dashboard-form-settings-data-tab',
+						'id'    => '',
+					),
+					'frontend_admin_display_mode' => 'edit',
+					'only_front'                  => 0,
+					'default_value'               => '',
+					'tabs'                        => 'all',
+					'toolbar'                     => 'full',
+					'media_upload'                => 1,
+					'delay'                       => 0,
+				),
+				array(
+					'key'                         => 'field_61c037e5b9ca4',
+					'label'                       => esc_html__( 'Message with incorrect answer (optional)', 'ld-dashboard' ),
+					'name'                        => 'sfwd-question_incorrect_answer_cld',
+					'type'                        => 'wysiwyg',
+					'instructions'                => '',
+					'required'                    => 0,
+					'conditional_logic'           => 0,
+					'wrapper'                     => array(
+						'width' => '',
+						'class' => 'custom-learndash-course-form ld-dashboard-form-settings-data-tab',
+						'id'    => '',
+					),
+					'frontend_admin_display_mode' => 'edit',
+					'only_front'                  => 0,
+					'default_value'               => '',
+					'tabs'                        => 'all',
+					'toolbar'                     => 'full',
+					'media_upload'                => 1,
+					'delay'                       => 0,
+				),
+				array(
+					'key'                         => 'field_61c0365f6f1bf',
+					'label'                       => esc_html__( 'Hint (optional)', 'ld-dashboard' ),
+					'name'                        => 'sfwd-question_hint_optional_cld',
+					'type'                        => 'checkbox',
+					'instructions'                => esc_html__( 'Here you can enter solution hint.', 'ld-dashboard' ),
+					'required'                    => 0,
+					'conditional_logic'           => 0,
+					'wrapper'                     => array(
+						'width' => '',
+						'class' => 'custom-learndash-course-form ld-dashboard-form-settings-data-tab',
+						'id'    => '',
+					),
+					'frontend_admin_display_mode' => 'edit',
+					'only_front'                  => 0,
+					'choices'                     => array(
+						'on' => 'Activate hint for this ' . $question_label . '?',
+					),
+					'allow_custom'                => 0,
+					'default_value'               => array(),
+					'layout'                      => 'vertical',
+					'toggle'                      => 0,
+					'return_format'               => 'value',
+					'save_custom'                 => 0,
+				),
+				array(
+					'key'                         => 'field_61c036af6f1c0',
+					'label'                       => esc_html__( 'Hint content', 'ld-dashboard' ),
+					'name'                        => 'sfwd-question_hint_optional_content_cld',
+					'type'                        => 'wysiwyg',
+					'instructions'                => '',
+					'required'                    => 0,
+					'conditional_logic'           => array(
+						array(
+							array(
+								'field'    => 'field_61c0365f6f1bf',
+								'operator' => '==',
+								'value'    => 'on',
+							),
+						),
+					),
+					'wrapper'                     => array(
+						'width' => '',
+						'class' => 'custom-learndash-course-form ld-dashboard-form-settings-data-tab ldd-hide-label',
+						'id'    => '',
+					),
+					'frontend_admin_display_mode' => 'edit',
+					'only_front'                  => 0,
+					'default_value'               => '',
+					'tabs'                        => 'all',
+					'toolbar'                     => 'full',
+					'media_upload'                => 1,
+					'delay'                       => 0,
+				),
+				array(
+					'key'                         => 'field_61c55098dc3c6',
+					'label'                       => sprintf( esc_html__( 'Associated %s', 'ld-dashboard' ), LearnDash_Custom_Label::get_label( 'quiz' ) ),
+					'name'                        => 'sfwd-question_quiz_cld',
+					'type'                        => 'post_object',
+					'instructions'                => '',
+					'required'                    => 0,
+					'conditional_logic'           => 0,
+					'wrapper'                     => array(
+						'width' => '',
+						'class' => 'custom-learndash-course-form ld-dashboard-form-settings-data-tab',
+						'id'    => '',
+					),
+					'frontend_admin_display_mode' => 'edit',
+					'only_front'                  => 0,
+					'post_type'                   => array(
+						0 => 'sfwd-quiz',
+					),
+					'taxonomy'                    => '',
+					'allow_null'                  => 0,
+					'multiple'                    => 0,
+					'return_format'               => 'id',
+					'ui'                          => 1,
+				),
+			);
+
+			// Add/Edit question form fields for frontend.
+			$fields = apply_filters( 'ld_dashboard_question_form_fields', $fields );
+
+			// Register question form fields for frontend.
+			acf_add_local_field_group(
+				array(
+					'key'                   => 'question-field-group',
+					'title'                 => esc_html__( 'Question', 'ld-dashboard' ),
+					'fields'                => $fields,
+					'location'              => array(
+						array(
+							array(
+								'param'    => 'page',
+								'operator' => '==',
+								'value'    => Ld_Dashboard_Functions::instance()->ld_dashboard_get_page_id( 'dashboard' ),
+							),
+							array(
+								'param'    => 'current_user',
+								'operator' => '==',
+								'value'    => 'viewing_front',
+							),
+						),
+					),
+					'menu_order'            => 0,
+					'position'              => 'normal',
+					'style'                 => 'default',
+					'label_placement'       => 'top',
+					'instruction_placement' => 'label',
+					'hide_on_screen'        => '',
+					'active'                => true,
+					'description'           => '',
+				)
+			);
+
+			endif;
+	}
+}
+
+

@@ -1,0 +1,7 @@
+<wpml-config>
+    <admin-texts>
+		<key name="ld_dashboard_welcome_screen">
+            <key name="welcome-message" />
+        </key>		
+    </admin-texts>
+</wpml-config>

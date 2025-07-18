@@ -1,0 +1,3981 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Learndash Dashboard\n"
+"POT-Creation-Date: 2022-06-01 23:48+0530\n"
+"PO-Revision-Date: 2022-06-01 23:48+0530\n"
+"Last-Translator: Varun Dubey <varun@wbcomdesigns.com>\n"
+"Language-Team: Varun Dubey <varun@wbcomdesigns.com>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: ld-dashboard.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+
+#: admin/class-ld-dashboard-admin.php:242
+msgid "LearnDash Dashboard Profile Menu"
+msgstr ""
+
+#: admin/class-ld-dashboard-admin.php:251
+msgid "WB Plugins"
+msgstr "WB Plugins"
+
+#: admin/class-ld-dashboard-admin.php:252
+#: admin/class-ld-dashboard-admin.php:682
+msgid "General"
+msgstr "General"
+
+#: admin/class-ld-dashboard-admin.php:254
+msgid "LearnDash Dashboard"
+msgstr ""
+
+#: admin/class-ld-dashboard-admin.php:319
+#: templates/ld-dashboard-withdrawal-content.php:119
+#: templates/ld-dashboard-withdrawal-content.php:203
+msgid "Amount"
+msgstr "Cantidad"
+
+#: admin/class-ld-dashboard-admin.php:320
+msgid "Withdraw Method"
+msgstr "Retiro de Dinero"
+
+#: admin/class-ld-dashboard-admin.php:321
+#: admin/wbcom/templates/wbcom-license-page.php:13
+#: admin/wbcom/templates/wbcom-license-page.php:25
+#: edd-license/edd-plugin-license.php:416
+#: templates/ld-dashboard-content.php:527
+#: templates/ld-dashboard-withdrawal-content.php:120
+msgid "Status"
+msgstr "Estado"
+
+#: admin/class-ld-dashboard-admin.php:329
+#: admin/partials/ld-dashboard-monetization-setting.php:170
+#: templates/ld-dashboard-withdraw-settings-tab.php:43
+#: templates/ld-dashboard-withdrawal-content.php:22
+msgid "Bank Transfer"
+msgstr "Transferencia bancaria"
+
+#: admin/class-ld-dashboard-admin.php:330
+#: admin/partials/ld-dashboard-monetization-setting.php:179
+#: templates/ld-dashboard-withdraw-settings-tab.php:52
+#: templates/ld-dashboard-withdrawal-content.php:23
+msgid "E-Check"
+msgstr "E-Check"
+
+#: admin/class-ld-dashboard-admin.php:331
+#: admin/partials/ld-dashboard-monetization-setting.php:188
+#: templates/ld-dashboard-withdraw-settings-tab.php:61
+#: templates/ld-dashboard-withdrawal-content.php:24
+msgid "Paypal"
+msgstr "Paypal"
+
+#: admin/class-ld-dashboard-admin.php:332
+#: templates/ld-dashboard-withdraw-settings-tab.php:72
+msgid "Account Name"
+msgstr "Nombre de la cuenta"
+
+#: admin/class-ld-dashboard-admin.php:333
+#: templates/ld-dashboard-withdraw-settings-tab.php:76
+msgid "Account Number"
+msgstr "Número de cuenta"
+
+#: admin/class-ld-dashboard-admin.php:334
+#: templates/ld-dashboard-withdraw-settings-tab.php:80
+msgid "Bank Name"
+msgstr "Nombre del banco"
+
+#: admin/class-ld-dashboard-admin.php:335
+#: templates/ld-dashboard-withdraw-settings-tab.php:84
+msgid "IBAN"
+msgstr ""
+
+#: admin/class-ld-dashboard-admin.php:336
+#: templates/ld-dashboard-withdraw-settings-tab.php:88
+msgid "BIC / SWIFT"
+msgstr "BIC / SWIFT"
+
+#: admin/class-ld-dashboard-admin.php:337
+msgid "Physical Addesss"
+msgstr ""
+
+#: admin/class-ld-dashboard-admin.php:338
+msgid "Paypal Email"
+msgstr "Email de PayPal"
+
+#: admin/class-ld-dashboard-admin.php:365
+#: admin/partials/ld-dashboard-instructors-setting.php:67
+#: templates/ld-instructor-registration.php:128
+msgid "Approved"
+msgstr "Aprobado"
+
+#: admin/class-ld-dashboard-admin.php:369
+#: admin/partials/ld-dashboard-instructors-setting.php:68
+#: templates/ld-instructor-registration.php:126
+msgid "Pending"
+msgstr "Pendiente"
+
+#: admin/class-ld-dashboard-admin.php:373
+msgid "Rejected"
+msgstr "Rechazado"
+
+#: admin/class-ld-dashboard-admin.php:386
+#: admin/partials/ld-dashboard-instructors-setting.php:145
+msgid "Approve"
+msgstr "Aprobar"
+
+#: admin/class-ld-dashboard-admin.php:390
+#: admin/partials/ld-dashboard-instructors-setting.php:145
+msgid "Reject"
+msgstr "Rechazar"
+
+#: admin/class-ld-dashboard-admin.php:624
+#: admin/partials/ld-dashboard-commission-report.php:118
+#: public/class-ld-dashboard-public.php:4491
+#: public/class-ld-dashboard-public.php:4698
+#: templates/ld-dashboard-earnings-content.php:91
+msgid "Export CSV"
+msgstr "Exportar CSV"
+
+#: admin/class-ld-dashboard-admin.php:638
+#, php-format
+msgid "No %s has been purchased yet"
+msgstr ""
+
+#: admin/class-ld-dashboard-admin.php:681
+msgid "Welcome"
+msgstr "Bienvenido"
+
+#: admin/class-ld-dashboard-admin.php:685
+#: admin/partials/ld-dashboard-tiles-options.php:30
+msgid "Dashboard Tiles"
+msgstr ""
+
+#: admin/class-ld-dashboard-admin.php:688
+#: admin/partials/ld-dashboard-feed-settings.php:35
+msgid "Student Activity"
+msgstr "Actividad del Estudiante"
+
+#: admin/class-ld-dashboard-admin.php:690
+msgid "Fields Restrictions"
+msgstr ""
+
+#: admin/class-ld-dashboard-admin.php:692
+msgid "Instructors"
+msgstr "Profesores"
+
+#: admin/class-ld-dashboard-admin.php:695
+#: admin/partials/ld-dashboard-general-settings.php:211
+msgid "Monetization"
+msgstr "Monetización"
+
+#: admin/class-ld-dashboard-admin.php:697
+msgid "Commission Report"
+msgstr "Informe de comisión"
+
+#: admin/class-ld-dashboard-admin.php:698
+#: admin/partials/ld-dashboard-email-logs.php:39
+msgid "Email Logs"
+msgstr "Registros de correo electrónico"
+
+#: admin/class-ld-dashboard-admin.php:699
+#: admin/wbcom/templates/wbcom-support-page.php:5
+#: admin/wbcom/wbcom-admin-settings.php:473
+#: admin/wbcom/wbcom-admin-settings.php:474
+#: admin/wbcom/wbcom-admin-settings.php:567
+msgid "Support"
+msgstr "Soporte"
+
+#: admin/class-ld-dashboard-admin.php:758
+msgid "LearnDash Dashboard Settings"
+msgstr ""
+
+#: admin/class-ld-dashboard-admin.php:980
+#: admin/class-ld-dashboard-admin.php:990
+#: admin/class-ld-dashboard-admin.php:1000
+#: admin/class-ld-dashboard-admin.php:1010
+#: admin/class-ld-dashboard-admin.php:1020
+#, php-format
+msgid "<a href=\"%s\""
+msgstr "< a href = \" %s\""
+
+#: admin/class-ld-dashboard-admin.php:1041
+msgid "LD Instructors"
+msgstr ""
+
+#: admin/class-ld-dashboard-admin.php:1084
+msgid "Add More Instructors"
+msgstr "Añadir más profesores"
+
+#: admin/class-ld-dashboard-admin.php:1091
+msgid "Add instructors"
+msgstr "Añadir profesores"
+
+#: admin/class-ld-dashboard-admin.php:1100
+msgid "Search instructors..."
+msgstr "Buscar profesores..."
+
+#: admin/class-ld-dashboard-admin.php:1105
+msgid "Add Instructors"
+msgstr "Añadir profesores"
+
+#: admin/class-ld-dashboard-admin.php:1147
+msgid "No instructors available or you have already added maximum instructors"
+msgstr ""
+
+#: admin/class-ld-dashboard-register-course-group-fields.php:157
+#, php-format
+msgid "Any content added below is displayed on the main %s page"
+msgstr ""
+"Cualquier contenido agregado a continuación se muestra en la página "
+"principal % s"
+
+#: admin/class-ld-dashboard-register-course-group-fields.php:258
+#, php-format
+msgid ""
+"Customize the pagination options for this %1$s content table and %2$s "
+"navigation widget."
+msgstr ""
+
+#: admin/class-ld-dashboard-register-course-group-fields.php:353
+#, php-format
+msgid ""
+"The %1$s is protected via the LearnDash built-in PayPal and/or Stripe. Users "
+"need to purchase the %2$s (one-time fee) in order to gain access."
+msgstr ""
+"El %1$s está a disposición del usuario a través del sistema de pagos. Los "
+"usuarios deben invertir (tarifa única) para poder acceder al %2$s."
+
+#: admin/class-ld-dashboard-register-course-group-fields.php:543
+#, php-format
+msgid ""
+"The length of the trial period, after the trial is over, the normal %s price "
+"billing goes into effect."
+msgstr ""
+"La duración del período de prueba, una vez finalizada la prueba, entra en "
+"vigor la facturación del precio normal de %s."
+
+#: admin/class-ld-dashboard-register-course-group-fields.php:654
+#: admin/class-ld-dashboard-register-course-group-fields.php:678
+#, php-format
+msgid ""
+"Enter the URL of the page you want to redirect your enrollees after signing "
+"up for this specific %s"
+msgstr ""
+"Ingrese la URL de la página a la que desea redirigir a sus afiliados después "
+"de registrarse para este %s específico"
+
+#: admin/class-ld-dashboard-register-course-group-fields.php:712
+#, php-format
+msgid "Enable prerequisites for this %s"
+msgstr ""
+
+#: admin/class-ld-dashboard-register-course-group-fields.php:742
+#, php-format
+msgid ""
+"All Selected (The user must complete all selected %1$s in order to access "
+"this %2$s)"
+msgstr ""
+
+#: admin/class-ld-dashboard-register-course-group-fields.php:743
+#, php-format
+msgid ""
+"Any Selected (The user must complete any one of the selected %1$s in order "
+"to access this %2$s)"
+msgstr ""
+
+#: admin/class-ld-dashboard-register-course-group-fields.php:806
+#, php-format
+msgid "Enable %s points."
+msgstr ""
+
+#: admin/class-ld-dashboard-register-course-group-fields.php:837
+#, php-format
+msgid "Number of points required in order to gain access to this %s."
+msgstr "Número de puntos necesarios para acceder a este %s."
+
+#: admin/class-ld-dashboard-register-course-group-fields.php:869
+#, php-format
+msgid "Number of points awarded for completing this %s."
+msgstr "Número de puntos obtenidos al completar este %s."
+
+#: admin/class-ld-dashboard-register-course-group-fields.php:891
+#, php-format
+msgid "Enable %s access expiration."
+msgstr ""
+
+#: admin/class-ld-dashboard-register-course-group-fields.php:922
+#, php-format
+msgid ""
+"Set the number of days a user will have access to the %s from enrollment "
+"date."
+msgstr ""
+"Establece el número de días que un usuario tendrá acceso al %s desde la "
+"fecha de inscripción."
+
+#: admin/class-ld-dashboard-register-course-group-fields.php:950
+#, php-format
+msgid "All user %s data will be deleted upon access expiration."
+msgstr ""
+
+#: admin/class-ld-dashboard-register-course-group-fields.php:972
+#, php-format
+msgid ""
+"Linear (Requires the user to progress through the %s in the designated step "
+"sequence)"
+msgstr ""
+
+#: admin/class-ld-dashboard-register-course-group-fields.php:973
+#, php-format
+msgid ""
+"Free form (Allows the user to move freely through the %s without following "
+"the designated step sequence)"
+msgstr ""
+
+#: admin/class-ld-dashboard-register-lesson-group-fields.php:575
+#, php-format
+msgid "The %s cannot be marked as completed until the set time has elapsed."
+msgstr ""
+"El %s no se puede marcar como completado hasta que haya transcurrido el "
+"tiempo establecido."
+
+#: admin/class-ld-dashboard-register-quiz-group-fields.php:468
+#, php-format
+msgid ""
+"List and display support materials for the %1$s. This is visible to any user "
+"having access to the %2$s."
+msgstr ""
+"Enumera y visualiza los materiales de soporte para %1$s. Esto es visible "
+"para cualquier usuario que tenga acceso a %2$s."
+
+#: admin/js/ld-dashboard-admin.js:7
+msgid "Select user role"
+msgstr "Seleccionar rol de usuario"
+
+#: admin/js/ld-dashboard-admin.js:40 admin/js/ld-dashboard-admin.js:353
+#: public/js/ld-dashboard-public.js:1026
+msgid "Are you sure?"
+msgstr "¿Estás seguro?"
+
+#: admin/js/ld-dashboard-admin.js:105
+msgid "Please wait "
+msgstr ""
+
+#: admin/js/ld-dashboard-admin.js:247
+#: admin/partials/ld-dashboard-instructors-setting.php:160
+msgid "Set %"
+msgstr ""
+
+#: admin/js/ld-dashboard-admin.js:269
+msgid "Please enter a valid number"
+msgstr "Por favor escriba un número válido"
+
+#: admin/js/ld-dashboard-admin.js:288
+msgid "Invalid email"
+msgstr "Email no válido"
+
+#: admin/js/ld-dashboard-admin.js:292
+msgid "Password did not match."
+msgstr ""
+
+#: admin/js/ld-dashboard-admin.js:311
+msgid "Instructor created successfully."
+msgstr ""
+
+#: admin/partials/ld-dashboard-commission-report.php:90
+msgid "Instructor Commission Report"
+msgstr ""
+
+#: admin/partials/ld-dashboard-commission-report.php:101
+msgid "Select Instructor"
+msgstr "Selecciona docente"
+
+#: admin/partials/ld-dashboard-commission-report.php:110
+#: templates/ld-dashboard-earnings-content.php:74
+msgid "Select start date "
+msgstr ""
+
+#: admin/partials/ld-dashboard-commission-report.php:111
+#: templates/ld-dashboard-earnings-content.php:75
+msgid "Select end date "
+msgstr ""
+
+#: admin/partials/ld-dashboard-commission-report.php:114
+#: templates/ld-dashboard-content-section.php:125
+#: templates/ld-dashboard-content-section.php:178
+#: templates/ld-dashboard-content-section.php:219
+#: templates/ld-dashboard-content-section.php:260
+#: templates/ld-dashboard-content-section.php:301
+#: templates/ld-dashboard-content-section.php:366
+#: templates/ld-dashboard-earnings-content.php:90
+msgid "Submit"
+msgstr "Enviar"
+
+#: admin/partials/ld-dashboard-commission-report.php:116
+#: public/js/ld-dashboard-public.js:507
+msgid "Reset"
+msgstr "Reiniciar"
+
+#: admin/partials/ld-dashboard-commission-report.php:132
+msgid "Select instructor to display commission report."
+msgstr ""
+
+#: admin/partials/ld-dashboard-commission-report.php:137
+#: templates/ld-dashboard-earnings-content.php:102
+msgid "ID"
+msgstr "ID"
+
+#: admin/partials/ld-dashboard-commission-report.php:138
+#: templates/ld-dashboard-earnings-content.php:103
+msgid "Date"
+msgstr "Fecha"
+
+#: admin/partials/ld-dashboard-commission-report.php:140
+#: templates/ld-dashboard-earnings-content.php:105
+#: templates/ld-dashboard-instructor-courses.php:92
+#: templates/ld-dashboard-instructor-courses.php:97
+#: templates/ld-dashboard-instructor-courses.php:102
+msgid "Price"
+msgstr "Precio"
+
+#: admin/partials/ld-dashboard-commission-report.php:141
+#: public/class-ld-dashboard-public.php:321
+#: templates/ld-dashboard-earnings-content.php:106
+msgid "Earning"
+msgstr "Ganancia"
+
+#: admin/partials/ld-dashboard-commission-report.php:142
+#: templates/ld-dashboard-earnings-content.php:107
+msgid "% Share"
+msgstr ""
+
+#: admin/partials/ld-dashboard-commission-report.php:143
+#: templates/ld-dashboard-earnings-content.php:108
+msgid "Fee"
+msgstr "Cuota"
+
+#: admin/partials/ld-dashboard-commission-report.php:144
+#: templates/ld-dashboard-earnings-content.php:109
+msgid "Mode"
+msgstr "Modo"
+
+#: admin/partials/ld-dashboard-commission-report.php:145
+#: templates/ld-dashboard-earnings-content.php:110
+msgid "Reference"
+msgstr "Referencia"
+
+#: admin/partials/ld-dashboard-commission-report.php:222
+msgid "No records found."
+msgstr "No se encontraron registros."
+
+#: admin/partials/ld-dashboard-commission-report.php:248
+msgid "No instructors registered in the site"
+msgstr ""
+
+#: admin/partials/ld-dashboard-commission-report.php:254
+msgid "Instructor Data"
+msgstr ""
+
+#: admin/partials/ld-dashboard-commission-report.php:260
+msgid "Paid Earning"
+msgstr ""
+
+#: admin/partials/ld-dashboard-commission-report.php:264
+msgid "Unpaid Earning"
+msgstr ""
+
+#: admin/partials/ld-dashboard-commission-report.php:268
+msgid "Enter amount"
+msgstr "Introduce importe"
+
+#: admin/partials/ld-dashboard-commission-report.php:278
+msgid "Please enter an amount less than unpaid amount."
+msgstr ""
+
+#: admin/partials/ld-dashboard-commission-report.php:284
+msgid "Pay"
+msgstr "Pagar"
+
+#: admin/partials/ld-dashboard-commission-report.php:289
+#: public/js/ld-dashboard-public.js:1815 public/js/ld-dashboard-public.js:1863
+#: public/js/ld-dashboard-public.js:1912 public/js/ld-dashboard-public.js:1975
+#: templates/ld-dashboard-withdrawal-content.php:219
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: admin/partials/ld-dashboard-email-logs.php:45
+msgid "Search By User"
+msgstr "Buscar por usuario"
+
+#: admin/partials/ld-dashboard-email-logs.php:58
+msgid "Email Subject"
+msgstr "Asunto del email"
+
+#: admin/partials/ld-dashboard-email-logs.php:59
+msgid "Scheduled By"
+msgstr "Agendado por"
+
+#: admin/partials/ld-dashboard-email-logs.php:60
+#, php-format
+msgid "%s Name"
+msgstr "%s Nombre"
+
+#: admin/partials/ld-dashboard-email-logs.php:62
+msgid "Total Student"
+msgstr "Total estudiantes"
+
+#: admin/partials/ld-dashboard-email-logs.php:63
+msgid "Schedule Run Date"
+msgstr ""
+
+#: admin/partials/ld-dashboard-email-logs.php:110
+msgid "You have no email logs."
+msgstr ""
+
+#: admin/partials/ld-dashboard-feed-settings.php:38
+#, php-format
+msgid "Disable live %s activity? "
+msgstr ""
+
+#: admin/partials/ld-dashboard-feed-settings.php:45
+#, php-format
+msgid "Enable this option to hide live %s activity for all users."
+msgstr ""
+
+#: admin/partials/ld-dashboard-feed-settings.php:54
+#, php-format
+msgid "Disable user role-wise live %s activity? "
+msgstr ""
+
+#: admin/partials/ld-dashboard-feed-settings.php:69
+#, php-format
+msgid ""
+"Select user roles to hide live %s activity for particular users role-wise."
+msgstr ""
+
+#: admin/partials/ld-dashboard-frontend-fields-setting.php:37
+msgid "Select Field Group"
+msgstr ""
+
+#: admin/partials/ld-dashboard-frontend-fields-setting.php:54
+#: admin/partials/ld-dashboard-frontend-fields-setting.php:109
+#: admin/partials/ld-dashboard-frontend-fields-setting.php:164
+#: admin/partials/ld-dashboard-frontend-fields-setting.php:220
+#: admin/partials/ld-dashboard-frontend-fields-setting.php:276
+msgid "Field Group"
+msgstr "Grupo de campos"
+
+#: admin/partials/ld-dashboard-frontend-fields-setting.php:57
+#: admin/partials/ld-dashboard-frontend-fields-setting.php:112
+#: admin/partials/ld-dashboard-frontend-fields-setting.php:167
+#: admin/partials/ld-dashboard-frontend-fields-setting.php:223
+#: admin/partials/ld-dashboard-frontend-fields-setting.php:279
+msgid "Enable/Disable All Fields"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:29
+msgid "General Settings"
+msgstr "Configuración general"
+
+#: admin/partials/ld-dashboard-general-settings.php:32
+msgid "Welcome Screen Message"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:39
+msgid ""
+"Enable this option if you want to show the welcome screen on my dashboard "
+"page."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:44
+msgid "Statistics Tiles"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:51
+msgid "Enable this option if you want to show Statistics on dashboard page."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:56
+#: public/class-ld-dashboard-public.php:322
+#: public/class-ld-dashboard-public.php:323
+#: public/js/ld-dashboard-public.js:1255 public/js/ld-dashboard-public.js:1700
+#: templates/ld-dashboard-student-course-report.php:37
+#, javascript-format, php-format
+msgid "%s Progress"
+msgstr "%s Progreso"
+
+#: admin/partials/ld-dashboard-general-settings.php:63
+#, php-format
+msgid "Enable this option if you want to show %s progress."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:68
+#: templates/ld-dashboard-student-status.php:120
+msgid "Student Details"
+msgstr "Detalles del Estudiante"
+
+#: admin/partials/ld-dashboard-general-settings.php:75
+msgid "Enable this option if you want to show student details."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:81 ld-dashboard.php:118
+#: templates/ld-dashboard-announcements-content.php:3
+#: templates/ld-dashboard-profile.php:137
+msgid "Announcements"
+msgstr "Anuncios"
+
+#: admin/partials/ld-dashboard-general-settings.php:88
+msgid "Enable this option if you want to enable the announcement feature."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:94
+#: templates/ld-dashboard-content.php:516
+#, php-format
+msgid "Most Popular %s"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:101
+#, php-format
+msgid "Enable this option if you want to display most popular %s report."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:109
+#, php-format
+msgid "%s Completion chart"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:116
+#, php-format
+msgid "Enable this option if you want to display %s completion report."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:122
+#, php-format
+msgid "Top %s Chart"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:129
+#, php-format
+msgid "Enable this option if you want to display the top %s report."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:135
+msgid "Email integration"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:142
+#: admin/partials/ld-dashboard-integration.php:39
+msgid "Enable this option if you want to enable email integration."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:148
+msgid "BuddyPress Messaging integration"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:155
+#: admin/partials/ld-dashboard-integration.php:52
+msgid ""
+"Enable this option if you want to enable BuddyPress messaging integration."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:161
+#, php-format
+msgid "Allow instructors to publish %s"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:168
+#, php-format
+msgid "Enable this option if you want to allow instructors to publish %s."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:173
+#, php-format
+msgid "Allow instructors to create %s tags"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:180
+#, php-format
+msgid "Enable this option if you want to allow instructors to create %s tags."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:186
+#: admin/partials/ld-dashboard-integration.php:60
+#, php-format
+msgid "Display %s To Do"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:193
+#: admin/partials/ld-dashboard-integration.php:67
+msgid ""
+"Enable this option if you want to display To Do widget at dashboard page."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:199
+msgid "Become Instructor Button"
+msgstr "Botón para convertirse en profesor"
+
+#: admin/partials/ld-dashboard-general-settings.php:206
+msgid "Enable this option to display the button on the student dashboard."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:218
+#, php-format
+msgid ""
+"Allow revenue generated from selling %1$1s to be shared with %2$2s creators."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:223
+msgid "Instructor Earning Logs"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:230
+msgid "Allow instructor earining logs on instructor dashboard."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:235
+msgid "Number of Students"
+msgstr "Número de alumnos"
+
+#: admin/partials/ld-dashboard-general-settings.php:241
+msgid ""
+"Set students per page in Student Information section on Instructor dashboard."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:247
+msgid "User Avatar"
+msgstr "Avatar de Usuario"
+
+#: admin/partials/ld-dashboard-general-settings.php:254
+msgid "Set BuddyPress/BuddyBoss avatar as default."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:263
+#, php-format
+msgid "Popular %s Settings"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:266
+#, php-format
+msgid "Popular %s Tag"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:270
+msgid " Select Tag "
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:291
+#, php-format
+msgid "Enable Most Popular %s For"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:296
+msgid "Students"
+msgstr "Alumnos"
+
+#: admin/partials/ld-dashboard-general-settings.php:310
+#, php-format
+msgid "Manage who can view most popular %s by enabling."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:319
+msgid "Welcome Screen Settings"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:322
+#: admin/partials/ld-dashboard-welcome-screen.php:32
+msgid "Welcome Message"
+msgstr "Mensaje de bienvenida"
+
+#: admin/partials/ld-dashboard-general-settings.php:330
+#: admin/partials/ld-dashboard-welcome-screen.php:40
+msgid "Welcome Screen Cover Image"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:335
+#: admin/partials/ld-dashboard-welcome-screen.php:45
+msgid "Upload Welcome Cover Image"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:338
+#: admin/partials/ld-dashboard-welcome-screen.php:48
+msgid "Change Image For Welcome cover Message."
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:361
+msgid "Page Mapping Settings"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:364
+#: admin/partials/ld-dashboard-page-mapping.php:32
+msgid "My Dashboard Page"
+msgstr "Mi página de escritorio"
+
+#: admin/partials/ld-dashboard-general-settings.php:389
+#: admin/partials/ld-dashboard-general-settings.php:423
+#: admin/partials/ld-dashboard-page-mapping.php:57
+#: admin/partials/ld-dashboard-page-mapping.php:91
+#: admin/wbcom/templates/wbcom-plugins-page.php:29
+#: admin/wbcom/templates/wbcom-plugins-page.php:43
+#: admin/wbcom/templates/wbcom-themes-page.php:118
+#: admin/wbcom/templates/wbcom-themes-page.php:139
+#: public/class-ld-dashboard-public.php:1001
+#: public/class-ld-dashboard-public.php:1073
+#: public/class-ld-dashboard-public.php:1144
+#: templates/ld-dashboard-groups-content.php:110
+#: templates/ld-dashboard-instructor-courses.php:129
+msgid "View"
+msgstr "Ver"
+
+#: admin/partials/ld-dashboard-general-settings.php:391
+#: admin/partials/ld-dashboard-general-settings.php:425
+#: admin/partials/ld-dashboard-page-mapping.php:59
+#: admin/partials/ld-dashboard-page-mapping.php:93
+msgid "(opens in a new tab)"
+msgstr "(se abre en una pestaña nueva)"
+
+#: admin/partials/ld-dashboard-general-settings.php:394
+#: admin/partials/ld-dashboard-page-mapping.php:62
+msgid ""
+"It will set the page used for the LearnDash user dashboard. This page should "
+"contain the following shortcode. [ld_dashboard]"
+msgstr ""
+
+#: admin/partials/ld-dashboard-general-settings.php:399
+#: admin/partials/ld-dashboard-page-mapping.php:67
+msgid "Instructor Registration Page"
+msgstr "Página de registro para profesores"
+
+#: admin/partials/ld-dashboard-general-settings.php:429
+#: admin/partials/ld-dashboard-page-mapping.php:97
+msgid ""
+"It will set the page used to register the Instructor user. This page should "
+"contain the following shortcode. [ld_instructor_registration]"
+msgstr ""
+
+#: admin/partials/ld-dashboard-instructors-setting.php:66
+#: templates/ld-dashboard-student-status.php:128
+msgid "All"
+msgstr "Todo"
+
+#: admin/partials/ld-dashboard-instructors-setting.php:149
+msgid "Remove instructor"
+msgstr ""
+
+#: admin/partials/ld-dashboard-instructors-setting.php:162
+#: public/js/ld-dashboard-public.js:427
+#: templates/ld-dashboard-share-courses-builder.php:48
+#: templates/ld-dashboard-share-courses-builder.php:68
+#: templates/ld-dashboard-share-courses-builder.php:88
+msgid "Add"
+msgstr "Añadir"
+
+#: admin/partials/ld-dashboard-instructors-setting.php:229
+#: admin/partials/ld-dashboard-instructors-setting.php:235
+msgid "Add New Instructor"
+msgstr "Añadir nuevo instructor"
+
+#: admin/partials/ld-dashboard-instructors-setting.php:231
+msgid "All Instructors"
+msgstr "Todos los instructores"
+
+#: admin/partials/ld-dashboard-instructors-setting.php:251
+#: templates/ld-dashboard-profile-settings-tab.php:88
+#: templates/ld-instructor-registration.php:27
+#: templates/ld-instructor-registration.php:28
+msgid "First Name"
+msgstr "Nombre"
+
+#: admin/partials/ld-dashboard-instructors-setting.php:255
+#: templates/ld-dashboard-profile-settings-tab.php:96
+#: templates/ld-instructor-registration.php:34
+#: templates/ld-instructor-registration.php:35
+msgid "Last Name"
+msgstr "Apellido"
+
+#: admin/partials/ld-dashboard-instructors-setting.php:261
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: admin/partials/ld-dashboard-instructors-setting.php:265
+#: templates/ld-dashboard-email-integration.php:118
+msgid "Email"
+msgstr "Email"
+
+#: admin/partials/ld-dashboard-instructors-setting.php:271
+#: templates/ld-instructor-registration.php:63
+#: templates/ld-instructor-registration.php:64
+msgid "Password"
+msgstr "Contraseña"
+
+#: admin/partials/ld-dashboard-instructors-setting.php:275
+msgid "Confirm Password"
+msgstr "Confirmar contraseña"
+
+#: admin/partials/ld-dashboard-instructors-setting.php:281
+msgid "Biographical Info"
+msgstr "Información biográfica"
+
+#: admin/partials/ld-dashboard-instructors-setting.php:286
+msgid "Add Instructor"
+msgstr "Añadir Instructor"
+
+#: admin/partials/ld-dashboard-integration.php:32
+msgid "LearnDash Email integration"
+msgstr ""
+
+#: admin/partials/ld-dashboard-integration.php:45
+msgid "LearnDash BuddyPress Messaging integration"
+msgstr ""
+
+#: admin/partials/ld-dashboard-monetization-setting.php:29
+#: public/js/ld-dashboard-answers.js:30 public/js/ld-dashboard-answers.js:69
+#: public/js/ld-dashboard-answers.js:120
+msgid "Options"
+msgstr "Opciones"
+
+#: admin/partials/ld-dashboard-monetization-setting.php:33
+msgid "Enable Selling through WooCommerce"
+msgstr ""
+
+#: admin/partials/ld-dashboard-monetization-setting.php:40
+#, php-format
+msgid "Allow %s to sell through the WooCommerce marketplace."
+msgstr ""
+
+#: admin/partials/ld-dashboard-monetization-setting.php:46
+msgid "Sharing Percentage"
+msgstr "Porcentaje de reparto"
+
+#: admin/partials/ld-dashboard-monetization-setting.php:51
+msgid "Instructor Takes"
+msgstr ""
+
+#: admin/partials/ld-dashboard-monetization-setting.php:55
+msgid "Admin Takes"
+msgstr ""
+
+#: admin/partials/ld-dashboard-monetization-setting.php:59
+msgid "Set how the sales revenue will be shared among admins and instructors."
+msgstr ""
+"Establezca cómo se repartirán los ingresos de las ventas entre los "
+"administradores y los instructores."
+
+#: admin/partials/ld-dashboard-monetization-setting.php:64
+msgid "Show Statement Per Page"
+msgstr "Mostrar estado de cuenta por página"
+
+#: admin/partials/ld-dashboard-monetization-setting.php:68
+msgid "Define the number of statements to show."
+msgstr "Definir el número de extractos a mostrar."
+
+#: admin/partials/ld-dashboard-monetization-setting.php:73
+msgid "Instructor Earning Chart"
+msgstr ""
+
+#: admin/partials/ld-dashboard-monetization-setting.php:80
+msgid ""
+"Enable this option if you want to display the instructor earning report on "
+"dashboard."
+msgstr ""
+
+#: admin/partials/ld-dashboard-monetization-setting.php:87
+msgid "Fees"
+msgstr "Tarifas"
+
+#: admin/partials/ld-dashboard-monetization-setting.php:90
+msgid "Deduct Fees"
+msgstr ""
+
+#: admin/partials/ld-dashboard-monetization-setting.php:97
+msgid ""
+"Fees are charged from the entire sales amount. The remaining amount will be "
+"divided among admin and instructors."
+msgstr ""
+"Las cuotas se cobran del importe total de las ventas. La cantidad restante "
+"se dividirá entre el administrador y los profesores."
+
+#: admin/partials/ld-dashboard-monetization-setting.php:102
+msgid "Fee Description"
+msgstr "Descripción de la tasa"
+
+#: admin/partials/ld-dashboard-monetization-setting.php:106
+msgid ""
+"Set a description for the fee that you are deducting. Make sure to give a "
+"reasonable explanation to maintain transparency with your site`s instructors"
+msgstr ""
+
+#: admin/partials/ld-dashboard-monetization-setting.php:111
+msgid "Fee Amount & Type"
+msgstr "Importe y tipo de tasa"
+
+#: admin/partials/ld-dashboard-monetization-setting.php:117
+#: public/class-ld-dashboard-public.php:2604
+#: public/js/ld-dashboard-answers.js:237 public/js/ld-dashboard-answers.js:245
+#: public/js/ld-dashboard-public.js:533
+msgid "Select"
+msgstr "Seleccionar"
+
+#: admin/partials/ld-dashboard-monetization-setting.php:118
+msgid "Percent"
+msgstr "Porcentaje"
+
+#: admin/partials/ld-dashboard-monetization-setting.php:119
+msgid "Fixed"
+msgstr "Fijo"
+
+#: admin/partials/ld-dashboard-monetization-setting.php:127
+msgid "Select the fee type and add fee amount/percentage"
+msgstr "Seleccione el tipo de tasa y añada el importe/porcentaje de la tasa"
+
+#: admin/partials/ld-dashboard-monetization-setting.php:134
+#: templates/ld-dashboard-settings-content.php:26
+msgid "Withdraw"
+msgstr "Retirar"
+
+#: admin/partials/ld-dashboard-monetization-setting.php:137
+msgid "Minimum Withdrawal Amount"
+msgstr "Monto minimo para cobrar"
+
+#: admin/partials/ld-dashboard-monetization-setting.php:141
+msgid ""
+"Instructors should earn equal to or above this amount to make a withdrawal "
+"request."
+msgstr ""
+
+#: admin/partials/ld-dashboard-monetization-setting.php:159
+msgid "Enable Withdrawal Method"
+msgstr ""
+
+#: admin/partials/ld-dashboard-monetization-setting.php:191
+msgid "Set how you would like to withdraw money from the website."
+msgstr "Establezca cómo desea retirar el dinero del sitio web."
+
+#: admin/partials/ld-dashboard-monetization-setting.php:196
+msgid "Bank Instructions"
+msgstr "Instrucciones bancarias"
+
+#: admin/partials/ld-dashboard-monetization-setting.php:200
+msgid "Write bank instructions for the instructors to conduct withdrawals."
+msgstr ""
+"Escriba las instrucciones bancarias para que los instructores realicen los "
+"retiros."
+
+#: admin/partials/ld-dashboard-support.php:14
+msgid "FAQ(s) "
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:21
+msgid "List of available shortcodes with LearnDash Dashboard plugin."
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:25
+msgid "LearnDash Dashboard is providing following shortcodes"
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:41
+msgid "Can we use available shortcodes with elementor?"
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:45
+msgid "yes! you can use these shortcodes with any of the elementor pages."
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:53
+#, php-format
+msgid "What information will we get with %s details shortcode?"
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:57
+#, php-format
+msgid ""
+"You can use [ld_course_details] shortcode to display %s details on any of "
+"the WordPress posts/pages."
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:65
+msgid "What information will we get with student details shortcode?"
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:69
+msgid ""
+"You can use [ld_student_details] shortcode to display student details on any "
+"of the WordPress posts/pages."
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:77
+msgid "Can we send email to all students?"
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:81
+msgid ""
+"You can use the [ld_email] shortcode to display the email section on any of "
+"the WordPress posts/pages."
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:89
+msgid ""
+"Does LearnDash Dashboard offer message components native or it’s 3rd party "
+"component?"
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:93
+#, php-format
+msgid ""
+"We have an option to use BuddyPress messages which will allow us to send "
+"private mass messages to all students of the specific %s or individual "
+"student as well."
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:96
+msgid ""
+"Instructors can also use these features to send messages to their students."
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:99
+msgid ""
+"You can use the [ld_message] shortcode to display bp messaging sections on "
+"any of the WordPress posts/pages."
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:107
+msgid "Can we create a separate instructor registration page?"
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:111
+msgid ""
+"you can create an instructor registration page using "
+"[ld_instructor_registration] shortcode."
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:119
+msgid "How to display the LD dashboard on any page ?"
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:123
+msgid "you can create a My Dashboard page using [ld_dashboard] shortcode."
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:131
+msgid "Can we add any extra widgets or features on the LD dashboard page?"
+msgstr ""
+
+#: admin/partials/ld-dashboard-support.php:135
+msgid ""
+"LearnDash Dashboard is providing different hookable positions, by using "
+"these hooks, you can add extra sections on LD  dashboard page."
+msgstr ""
+
+#: admin/partials/ld-dashboard-tiles-options.php:33
+#, php-format
+msgid "%1s Count"
+msgstr ""
+
+#: admin/partials/ld-dashboard-tiles-options.php:42
+#: admin/partials/ld-dashboard-tiles-options.php:60
+#: admin/partials/ld-dashboard-tiles-options.php:124
+#: admin/partials/ld-dashboard-tiles-options.php:140
+#, php-format
+msgid "Enable this option if you want to show the total %s count."
+msgstr ""
+
+#: admin/partials/ld-dashboard-tiles-options.php:47
+#: admin/partials/ld-dashboard-tiles-options.php:64
+#: admin/partials/ld-dashboard-tiles-options.php:127
+#: admin/partials/ld-dashboard-tiles-options.php:143
+#, php-format
+msgid "%s Count Block Background Color"
+msgstr ""
+
+#: admin/partials/ld-dashboard-tiles-options.php:53
+#: admin/partials/ld-dashboard-tiles-options.php:117
+#: admin/partials/ld-dashboard-tiles-options.php:133
+#, php-format
+msgid "%s Count"
+msgstr "%s Recuento"
+
+#: admin/partials/ld-dashboard-tiles-options.php:71
+msgid "Assignments Count"
+msgstr "Recuento de asignaciones"
+
+#: admin/partials/ld-dashboard-tiles-options.php:78
+msgid "Enable this option if you want to show Assignments statistics."
+msgstr ""
+
+#: admin/partials/ld-dashboard-tiles-options.php:84
+msgid "Completed Assignments count"
+msgstr ""
+
+#: admin/partials/ld-dashboard-tiles-options.php:91
+msgid ""
+"Enable this option if you want to show the total Completed Assignments "
+"count. Otherwise, display total pending Assignments count."
+msgstr ""
+
+#: admin/partials/ld-dashboard-tiles-options.php:94
+msgid "Completed Assignments Count Block Background Color"
+msgstr ""
+
+#: admin/partials/ld-dashboard-tiles-options.php:101
+msgid "Essays Count"
+msgstr "Recuento de ensayos"
+
+#: admin/partials/ld-dashboard-tiles-options.php:108
+msgid "Enable this option if you want to show the total pending Essays count."
+msgstr ""
+
+#: admin/partials/ld-dashboard-tiles-options.php:111
+msgid "Essays Count Block Background Color"
+msgstr ""
+
+#: admin/partials/ld-dashboard-tiles-options.php:149
+msgid "Student Count"
+msgstr ""
+
+#: admin/partials/ld-dashboard-tiles-options.php:156
+msgid "Enable this option if you want to show the total Student count."
+msgstr ""
+
+#: admin/partials/ld-dashboard-tiles-options.php:159
+msgid "Total Student Count Block Background Color"
+msgstr ""
+
+#: admin/partials/ld-dashboard-tiles-options.php:213
+#: templates/ld-dashboard-content.php:440
+msgid "Total Earnings"
+msgstr "Ganancias totales"
+
+#: admin/partials/ld-dashboard-tiles-options.php:220
+msgid ""
+"Enable this option if you want to show the total earnings of the instructor."
+msgstr ""
+
+#: admin/partials/ld-dashboard-tiles-options.php:223
+msgid "Total Earnings Block Background Color"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: admin/partials/ld-dashboard-welcome-page.php:15
+msgid "Learndash Dashboard"
+msgstr ""
+
+#: admin/partials/ld-dashboard-welcome-page.php:16
+msgid ""
+"LearnDash Dashboard gives the admin, instructors, and students a dashboard "
+"of their own, where they can easily manage anything related to their "
+"courses, lessons, and contact others."
+msgstr ""
+
+#: admin/partials/ld-dashboard-welcome-page.php:17
+msgid ""
+"Website admin can adjust each block as per their requirements. If you want "
+"to disable some sections, the plugin setting offers you do it easily."
+msgstr ""
+
+#: admin/partials/ld-dashboard-welcome-page.php:18
+msgid ""
+"The plugin has inbuilt support for WooCommerce and Learndash WooCommerce add-"
+"on."
+msgstr ""
+
+#: admin/partials/ld-dashboard-welcome-page.php:24
+msgid "Help &amp; Support Resources"
+msgstr ""
+
+#: admin/partials/ld-dashboard-welcome-page.php:25
+msgid ""
+"Here are all the resources you may need to get help from us. Documentation "
+"is usually the best place to start. Should you require help anytime, our "
+"customer care team is available to assist you at the support center."
+msgstr ""
+
+#: admin/partials/ld-dashboard-welcome-page.php:31
+msgid "Documentation"
+msgstr "Documentación"
+
+#: admin/partials/ld-dashboard-welcome-page.php:32
+msgid ""
+"We have prepared an extensive guide on Learndash Dashboard to learn all "
+"aspects of the plugin. You will find most of your answers here."
+msgstr ""
+
+#: admin/partials/ld-dashboard-welcome-page.php:33
+msgid "Read Documentation"
+msgstr "Leer la documentación"
+
+#: admin/partials/ld-dashboard-welcome-page.php:37
+msgid "Support Center"
+msgstr "Centro de Soporte"
+
+#: admin/partials/ld-dashboard-welcome-page.php:38
+msgid ""
+"We strive to offer the best customer care via our support center. Once your "
+"theme is activated, you can ask us for help anytime."
+msgstr ""
+
+#: admin/partials/ld-dashboard-welcome-page.php:39
+msgid "Get Support"
+msgstr "Obtener Soporte"
+
+#: admin/partials/ld-dashboard-welcome-page.php:43
+msgid "Got Feedback?"
+msgstr ""
+
+#: admin/partials/ld-dashboard-welcome-page.php:44
+msgid ""
+"We want to hear about your experience with the plugin. We would also love to "
+"hear any suggestions you may for future updates."
+msgstr ""
+
+#: admin/partials/ld-dashboard-welcome-page.php:45
+msgid "Send Feedback"
+msgstr "Envía tu opinión"
+
+#: admin/wbcom/templates/wbcom-license-page.php:5
+msgid "Plugin License Settings"
+msgstr "Configuración de licencia de plugin"
+
+#: admin/wbcom/templates/wbcom-license-page.php:10
+#: admin/wbcom/templates/wbcom-license-page.php:22
+#: edd-license/edd-plugin-license.php:413
+msgid "Product"
+msgstr "Producto"
+
+#: admin/wbcom/templates/wbcom-license-page.php:11
+#: admin/wbcom/templates/wbcom-license-page.php:23
+#: edd-license/edd-plugin-license.php:414
+msgid "Version"
+msgstr "Versión"
+
+#: admin/wbcom/templates/wbcom-license-page.php:12
+#: admin/wbcom/templates/wbcom-license-page.php:24
+#: edd-license/edd-plugin-license.php:415
+msgid "Key"
+msgstr "Clave"
+
+#: admin/wbcom/templates/wbcom-license-page.php:14
+#: admin/wbcom/templates/wbcom-license-page.php:26
+#: edd-license/edd-plugin-license.php:417
+msgid "Action"
+msgstr "Acción"
+
+#: admin/wbcom/templates/wbcom-plugins-page.php:10
+msgid "Paid Addons"
+msgstr "Complementos de pago"
+
+#: admin/wbcom/templates/wbcom-plugins-page.php:38
+msgid "Free Addons"
+msgstr "Complementos gratuitos"
+
+#: admin/wbcom/templates/wbcom-support-page.php:7
+msgid "Having any question or issue ?"
+msgstr "¿Tiene alguna pregunta o problema?"
+
+#: admin/wbcom/templates/wbcom-support-page.php:9
+msgid ""
+"Our team is here to help you out at anytime. If you have any idea about how "
+"we could improve. You can share access to your site on our helpdesk if it "
+"can help getting faster. There are two ways to in touch with us :"
+msgstr ""
+"Nuestro equipo está aquí para ayudarle en cualquier momento. Si tienes "
+"alguna idea de cómo podríamos mejorar. Puede compartir el acceso a su sitio "
+"en nuestro servicio de asistencia si puede ayudar a ser más rápido. Hay dos "
+"maneras de ponerse en contacto con nosotros:"
+
+#: admin/wbcom/templates/wbcom-support-page.php:21
+msgid "Tickets Support"
+msgstr "Soporte de tickets"
+
+#: admin/wbcom/templates/wbcom-support-page.php:22
+msgid ""
+"Open a ticket on our helpdesk, we don't guarantee a fast response but within "
+"a week. Except if you've purchased one of our product we'll reply within 24 "
+"hours."
+msgstr ""
+"Abra un ticket en nuestra mesa de ayuda, no garantizamos una respuesta "
+"rápida pero si dentro de una semana. Excepto si ha adquirido uno de nuestros "
+"productos vamos a responder en 24 horas."
+
+#: admin/wbcom/templates/wbcom-support-page.php:26
+msgid "Open a ticket"
+msgstr "Abrir una consulta"
+
+#: admin/wbcom/templates/wbcom-support-page.php:41
+#: admin/wbcom/templates/wbcom-support-page.php:46
+msgid "Contact Us"
+msgstr "Contáctenos"
+
+#: admin/wbcom/templates/wbcom-support-page.php:42
+msgid ""
+"Create a new thread on our plugin page, participation is open to anyone from "
+"all around the world. We'll be there to help as well but can't guarantee any "
+"delay."
+msgstr ""
+"Crea un nuevo hilo en nuestra página de plugins, la participación está "
+"abierta a cualquier persona de todo el mundo. Estaremos allí para ayudar, "
+"pero no podemos garantizar ningún retraso."
+
+#: admin/wbcom/templates/wbcom-themes-page.php:13
+msgid "Reign Theme"
+msgstr ""
+
+#: admin/wbcom/templates/wbcom-themes-page.php:15
+msgid "Multiple Member Directory Layout"
+msgstr "Diseño de directorio de varios miembros"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:16
+msgid "Multiple Member Header Layout"
+msgstr "Diseño de encabezado de miembro múltiple"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:17
+msgid "Multiple Group Directory Layout"
+msgstr "Diseño de directorio de grupo múltiple"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:18
+msgid "Multiple Group Header Layout"
+msgstr "Diseño de encabezado de grupo múltiple"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:19
+msgid "BuddyPress Customization Options"
+msgstr "Opciones de personalización de BuddyPress"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:20
+msgid "BuddyPress Extra Widgets"
+msgstr "BuddyPress Extra Widgets"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:21
+msgid "Inbuilt Social Profile Module"
+msgstr "Módulo de perfil social incorporado"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:24
+#: admin/wbcom/templates/wbcom-themes-page.php:49
+#: admin/wbcom/templates/wbcom-themes-page.php:72
+#: admin/wbcom/templates/wbcom-themes-page.php:94
+msgid "Purchase"
+msgstr "Compra"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:25
+#: admin/wbcom/templates/wbcom-themes-page.php:50
+#: admin/wbcom/templates/wbcom-themes-page.php:73
+#: admin/wbcom/templates/wbcom-themes-page.php:95
+msgid "Preview"
+msgstr "Vista previa"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:38
+msgid "LearnMate Solution"
+msgstr "Solución LearnMate"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:40
+msgid "Add Review to your course"
+msgstr "Añadir opinión a su curso"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:41
+msgid "Course Coming Soon"
+msgstr "Curso próximo pronto"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:42
+#: admin/wbcom/templates/wbcom-themes-page.php:68
+msgid "Grid And List Layout"
+msgstr "Diseño de cuadrícula y lista"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:43
+msgid "Learndash/LifterLMS Extra Widgets"
+msgstr "Learndash/LifterLMS Widgets Adicionales"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:44
+msgid "Unparalleled Course Layout"
+msgstr "Diseño de curso sin igual"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:45
+msgid "Awesome Learndash/LifterLMS Pages"
+msgstr "Impresionantes páginas de Learndash/LifterLMS"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:46
+msgid "Distraction Free Reading"
+msgstr "Lectura libre de distracciones"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:63
+msgid "StoreMate Solution"
+msgstr "Solución StoreMate"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:65
+msgid "Dokan Extra Widgets"
+msgstr "Widgets adicionales de Dokan"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:66
+msgid "Unique Single Product Page Customization"
+msgstr "Personalización única de la página de un solo producto"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:67
+msgid "Awesome WooCommerce Pages"
+msgstr "Impresionantes páginas de WooCommerce"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:69
+msgid "Automated Mega Menu Support"
+msgstr "Soporte automatizado del menú Mega"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:86
+msgid "Jobmate Theme"
+msgstr ""
+
+#: admin/wbcom/templates/wbcom-themes-page.php:88
+msgid "Simple live searching and filtering"
+msgstr ""
+
+#: admin/wbcom/templates/wbcom-themes-page.php:89
+msgid "Unique Job listing Page"
+msgstr ""
+
+#: admin/wbcom/templates/wbcom-themes-page.php:90
+msgid "Awesome Resume list Page"
+msgstr ""
+
+#: admin/wbcom/templates/wbcom-themes-page.php:91
+msgid "Outstanding all job maanger pagesLayout"
+msgstr ""
+
+#: admin/wbcom/templates/wbcom-themes-page.php:108
+msgid "BuddyX Theme"
+msgstr "Tema BuddyX"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:110
+msgid "Responsive BuddyPress Theme"
+msgstr "Tema de BuddyPress responsivo"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:111
+#: admin/wbcom/templates/wbcom-themes-page.php:134
+msgid "Site Ready In One-Click"
+msgstr "Sitio listo con un solo clic"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:112
+msgid "Members and Groups Layout"
+msgstr "Diseño de miembros y grupos"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:113
+msgid "WooCommerce Ready"
+msgstr "WooCommerce Ready"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:114
+msgid "Supported Muitiple Plugins"
+msgstr "Plugins Muitiple compatibles"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:115
+#: admin/wbcom/templates/wbcom-themes-page.php:136
+msgid "Suitable for All Devices"
+msgstr "Adecuado para todos los dispositivos"
+
+#: admin/wbcom/templates/wbcom-themes-page.php:131
+msgid "KnowX Theme"
+msgstr ""
+
+#: admin/wbcom/templates/wbcom-themes-page.php:133
+msgid "Free WordPress Theme"
+msgstr ""
+
+#: admin/wbcom/templates/wbcom-themes-page.php:135
+msgid "Create Knowledge base"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:99
+msgid "Custom Font Uploader"
+msgstr "Cargador de fuentes personalizado"
+
+#: admin/wbcom/wbcom-admin-settings.php:101
+msgid ""
+"It also allows you to upload your own custom font to your site and use them "
+"using custom css."
+msgstr ""
+"También le permite cargar su propia fuente personalizada en su sitio y "
+"usarlas usando css personalizado."
+
+#: admin/wbcom/wbcom-admin-settings.php:107
+msgid "BuddyPress Activity Filter"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:109
+msgid ""
+"Admin can set default and customised activities to be listed on front-end."
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:115
+msgid "BuddyPress Activity Social Share"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:117
+msgid ""
+"This plugin allows anyone easily share BuddyPress Activites on major social "
+"media (Facebook, Twitter, Google+, Linkedin )."
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:123
+msgid "BuddyPress Create Group Type"
+msgstr "BuddyPress Crear tipo de grupo"
+
+#: admin/wbcom/wbcom-admin-settings.php:125
+msgid "It will help to create group type for BuddyPress Groups."
+msgstr "Ayudará a crear el tipo de grupo para BuddyPress Groups."
+
+#: admin/wbcom/wbcom-admin-settings.php:131
+msgid "BuddyPress Member Reviews"
+msgstr "Opiniones de miembros de BuddyPress"
+
+#: admin/wbcom/wbcom-admin-settings.php:133
+msgid ""
+"This plugin allows only site members to add reviews to the buddypress "
+"members on the site and even rate the member’s profile out of 5 points with "
+"multiple review criteria."
+msgstr ""
+"Este plugin permite que solo los miembros del sitio agreguen reseñas a los "
+"miembros de buddypress en el sitio e incluso califiquen el perfil del "
+"miembro de 5 puntos con múltiples criterios de revisión."
+
+#: admin/wbcom/wbcom-admin-settings.php:139
+msgid "BuddyPress Group Reviews"
+msgstr "Opiniones de BuddyPress Group"
+
+#: admin/wbcom/wbcom-admin-settings.php:141
+msgid ""
+"This plugin allows the BuddyPress Members to give reviews to the BuddyPress "
+"groups on the site. The review form allows the users to give text review, "
+"even rate the group on the basis of multiple criterias."
+msgstr ""
+"Este plugin permite a los miembros de BuddyPress dar reseñas a los grupos "
+"BuddyPress en el sitio. El formulario de revisión permite a los usuarios dar "
+"revisión de texto, incluso calificar el grupo sobre la base de múltiples "
+"criterios."
+
+#: admin/wbcom/wbcom-admin-settings.php:147
+msgid "BuddyPress Favorite Notification"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:149
+msgid ""
+"BuddyPress Favorite Notification adds a notification for BuddyPress activity."
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:155
+msgid "Custom Email Options"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:157
+msgid "Override default email options of Worpdress."
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:163
+msgid "BuddyPress Checkins"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:165
+msgid ""
+"This plugin allows BuddyPress members to share their location when they are "
+"posting activities, you can add places where you visited, nearby locations "
+"based on google places."
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:171
+msgid "BuddyPress Job Manager"
+msgstr "BuddyPress Job Manager"
+
+#: admin/wbcom/wbcom-admin-settings.php:173
+msgid ""
+"Incorporates BuddyPress with the WP Job Manager plugin by creating specific "
+"tabs in employer’s and candidate’s profiles."
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:179
+msgid "BuddyPress user ToDo List"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:181
+msgid ""
+"This plugin allows you to create your personal task list with timestamp. You "
+"can mark them complete when you are done with them. It will also send "
+"reminder when you have any overdue task."
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:187
+msgid "Shortcodes for BuddyPress"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:189
+msgid ""
+"This plugin will add an extended feature to the big name “BuddyPress” that "
+"will generate Shortcode for Listing Activity Streams , Members and Groups on "
+"any post/page in website."
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:195
+msgid "Woo Open Graph"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:197
+msgid ""
+"This plugin will add an extended feature to the big name “WooCommerce” that "
+"will adds well executed and accurate Open Graph Meta Tags to your site with "
+"title,description and WooCommerce featured image."
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:203
+msgid "BuddyPress Lock"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:205
+msgid ""
+"This plugin allows the administrator to lock the certain parts of their "
+"site. It help to create private BuddyPress community by locking certain "
+"BuddyPress Components, WordPress Pages, Custom Post Types for public view "
+"without using any membership plugin."
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:211
+msgid "Woo Audio Preview"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:213
+msgid ""
+"This plugin Allows playing the audio files in sample mode to prevent "
+"unauthorized downloading of the audio files. It helps to display sample "
+"files at single product page."
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:219
+msgid "WordPress System Log"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:221
+msgid ""
+"This plugin helps administrators of the site see their environment on which "
+"the site is currently running that includes WordPress environment, tha "
+"database it requires, Server Environment and the plugins installed and "
+"activated on the site."
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:227
+msgid "BP Post From Anywhere"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:229
+msgid ""
+"This plugin will generate shortcode and widgets for post updates section for "
+"activities so you can post update from anywhere, it might be sidebar, some "
+"page or any template file."
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:235
+msgid "Woo Document Preview"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:237
+msgid ""
+"This will allow you to add document preview at single product page. Which "
+"helps to offer more better idea when you are selling ebooks, pdf or some "
+"documents."
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:243
+msgid "WordPress Media Category"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:245
+#: admin/wbcom/wbcom-admin-settings.php:261
+msgid ""
+"This plugin helps administrators of the site categorize their wordpress "
+"media."
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:251
+msgid "Woo Price Quotes"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:253
+msgid ""
+"This plugin helps in quoting the products that admin wishes to hide its "
+"purchasing details."
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:259
+msgid "EDD Service Extended"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:267
+msgid "WB Ads Rotator with Split Test"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:269
+msgid ""
+"This plugin is designed for the SPLIT TESTING, you can check performance of "
+"your ads layout and on the basis of them you can select one of them for your "
+"regular use."
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:287
+msgid "BuddyPress Moderation Pro"
+msgstr "BuddyPress Moderation Pro"
+
+#: admin/wbcom/wbcom-admin-settings.php:288
+msgid ""
+"BuddyPress Community Moderation offers a solution for site owners to keep "
+"their communities straight. With community policing strategy, members of the "
+"community have an option for moderation sitewide by attaching flags to "
+"content created within the various components."
+msgstr ""
+"BuddyPress Community Moderation ofrece una solución para que los "
+"propietarios de sitios mantengan sus comunidades rectas. Con la estrategia "
+"de vigilancia de la comunidad, los miembros de la comunidad tienen una "
+"opción para moderación en todo el sitio mediante la colocación de "
+"indicadores al contenido creado dentro de los diversos componentes."
+
+#: admin/wbcom/wbcom-admin-settings.php:293
+msgid "BuddyPress Polls"
+msgstr "BuddyPress Polls"
+
+#: admin/wbcom/wbcom-admin-settings.php:294
+msgid ""
+"Use BuddyPress Polls plugin to create polls inside the activity, let your "
+"user response to your polls. Members can create pools like activities, "
+"easily votes on them."
+msgstr ""
+"Utilice BuddyPress Polls plugin para crear encuestas dentro de la actividad, "
+"deje que su usuario responder a sus encuestas. Los miembros pueden crear "
+"grupos como actividades, votar fácilmente sobre ellos."
+
+#: admin/wbcom/wbcom-admin-settings.php:299
+msgid "BuddyPress Resume Manager"
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:300
+msgid ""
+"BuddyPress Resume Manager adds a separate BuddyPress Resume menu at a user’s "
+"BuddyPress Profile Page to display individual member resume. We have added "
+"predefined fields for the resumes and site admin and enable and disable them."
+msgstr ""
+
+#: admin/wbcom/wbcom-admin-settings.php:305
+msgid "BuddyPress Profanity"
+msgstr "BuddyPress Profanity"
+
+#: admin/wbcom/wbcom-admin-settings.php:306
+msgid ""
+"Use BuddyPress Profanity plugin to censor content in your community! Easily "
+"Censor all the unwanted words in activities, private messages contents by "
+"specifying a list of keywords to be filtered."
+msgstr ""
+"¡Usa el plugin BuddyPress Profanity para censurar el contenido de tu "
+"comunidad! Censura fácilmente todas las palabras no deseadas en las "
+"actividades, el contenido de los mensajes privados especificando una lista "
+"de palabras clave que se filtrarán."
+
+#: admin/wbcom/wbcom-admin-settings.php:311
+msgid "BuddyPress Private Community Pro"
+msgstr "BuddyPress Comunidad Privada Pro"
+
+#: admin/wbcom/wbcom-admin-settings.php:312
+msgid ""
+"This plugin offers a lockdown for BuddyPress Component and will ask users to "
+"log in go further to check profile or any other protected details."
+msgstr ""
+"Este plugin ofrece un bloqueo para BuddyPress Component y pedirá a los "
+"usuarios que inicien sesión para ir más allá para comprobar el perfil o "
+"cualquier otro detalle protegido."
+
+#: admin/wbcom/wbcom-admin-settings.php:317
+msgid "BuddyPress Profile Pro"
+msgstr "BuddyPress Profile Pro"
+
+#: admin/wbcom/wbcom-admin-settings.php:318
+msgid ""
+"This plugin gives you the power to extend BuddyPress Profiles with repeater "
+"fields and groups. You can easily add multiple field groups and display them "
+"at member’s profile."
+msgstr ""
+"Este plugin te da el poder de extender BuddyPress Profiles con campos y "
+"grupos repetidores. Puede agregar fácilmente varios grupos de campos y "
+"mostrarlos en el perfil del miembro."
+
+#: admin/wbcom/wbcom-admin-settings.php:414
+msgid "Activate"
+msgstr "Activar"
+
+#: admin/wbcom/wbcom-admin-settings.php:415
+msgid "Deactivate"
+msgstr "Desactivar"
+
+#: admin/wbcom/wbcom-admin-settings.php:457
+#: admin/wbcom/wbcom-admin-settings.php:458
+#: admin/wbcom/wbcom-admin-settings.php:555
+msgid "Our Plugins"
+msgstr "Nuestros plugins"
+
+#: admin/wbcom/wbcom-admin-settings.php:465
+#: admin/wbcom/wbcom-admin-settings.php:466
+#: admin/wbcom/wbcom-admin-settings.php:561
+msgid "Our Themes"
+msgstr "Nuestros Temas"
+
+#: admin/wbcom/wbcom-admin-settings.php:549 ld-dashboard.php:327
+#: templates/ld-dashboard-content-section.php:57
+#: templates/ld-dashboard-profile.php:252
+#: templates/ld-dashboard-settings-content.php:18
+msgid "Settings"
+msgstr "Ajustes"
+
+#: admin/wbcom/wbcom-paid-plugin-settings.php:29
+#: admin/wbcom/wbcom-paid-plugin-settings.php:43
+#: edd-license/edd-plugin-license.php:45
+msgid "License"
+msgstr "Licencia"
+
+#: buddypress/ld-dashboard-todo-list.php:93
+#, php-format
+msgid "Sorry, no %1$s found."
+msgstr ""
+
+#: buddypress/ld-dashboard-todo-list.php:109
+#, php-format
+msgid "%1$s added successfully !"
+msgstr ""
+
+#: buddypress/ld-dashboard-todo-list.php:125
+#, php-format
+msgid "%1$s updated successfully !"
+msgstr ""
+
+#: buddypress/ld-dashboard-todo-list.php:132
+msgid "Task Progress"
+msgstr ""
+
+#: buddypress/ld-dashboard-todo-list.php:146
+#: buddypress/ld-dashboard-todo-list.php:211
+#: public/class-ld-dashboard-public.php:312
+msgid "Completed"
+msgstr "Completado"
+
+#: buddypress/ld-dashboard-todo-list.php:154
+#: templates/ld-dashboard-profile.php:106
+msgid "Dashboard"
+msgstr "Escritorio"
+
+#: buddypress/ld-dashboard-todo-list.php:160
+msgid "At a Glance"
+msgstr "De un vistazo"
+
+#: buddypress/ld-dashboard-todo-list.php:170
+#, php-format
+msgid "Total %1$s"
+msgstr ""
+
+#: buddypress/ld-dashboard-todo-list.php:184
+#: buddypress/ld-dashboard-todo-list.php:186
+#, php-format
+msgid "%1$s Remaining"
+msgstr ""
+
+#: buddypress/ld-dashboard-todo-list.php:199
+#, php-format
+msgid "%1$s Completed"
+msgstr ""
+
+#: buddypress/ld-dashboard-todo-list.php:209
+#, php-format
+msgid "All %1$s"
+msgstr "Todos %1$s"
+
+#: buddypress/ld-dashboard-todo-list.php:221
+#: buddypress/ld-dashboard-todo-list.php:598
+#: includes/ld-dashboard-functions.php:581
+msgid "Priority"
+msgstr "Prioridad"
+
+#: buddypress/ld-dashboard-todo-list.php:222
+#: buddypress/ld-dashboard-todo-list.php:599
+#: includes/ld-dashboard-functions.php:582
+msgid "Task"
+msgstr "Tarea"
+
+#: buddypress/ld-dashboard-todo-list.php:223
+#: includes/ld-dashboard-functions.php:583
+msgid "Due Date"
+msgstr "Fecha límite"
+
+#: buddypress/ld-dashboard-todo-list.php:224
+#: buddypress/ld-dashboard-todo-list.php:600
+#: includes/ld-dashboard-functions.php:584
+msgid "Actions"
+msgstr "Acciones"
+
+#: buddypress/ld-dashboard-todo-list.php:249
+#: buddypress/ld-dashboard-todo-list.php:336
+#: buddypress/ld-dashboard-todo-list.php:424
+#: buddypress/ld-dashboard-todo-list.php:512
+#: buddypress/ld-dashboard-todo-list.php:619
+#: includes/ld-dashboard-functions.php:240
+#: includes/ld-dashboard-functions.php:326
+#: includes/ld-dashboard-functions.php:413
+#: includes/ld-dashboard-functions.php:500
+#, php-format
+msgid "Expired %d days ago!"
+msgstr ""
+
+#: buddypress/ld-dashboard-todo-list.php:252
+#: buddypress/ld-dashboard-todo-list.php:339
+#: buddypress/ld-dashboard-todo-list.php:427
+#: buddypress/ld-dashboard-todo-list.php:515
+#: buddypress/ld-dashboard-todo-list.php:622
+#: includes/ld-dashboard-functions.php:243
+#: includes/ld-dashboard-functions.php:329
+#: includes/ld-dashboard-functions.php:416
+#: includes/ld-dashboard-functions.php:503
+msgid "Today is the last day to complete. Hurry Up!"
+msgstr ""
+
+#: buddypress/ld-dashboard-todo-list.php:256
+#: buddypress/ld-dashboard-todo-list.php:344
+#: buddypress/ld-dashboard-todo-list.php:432
+#: buddypress/ld-dashboard-todo-list.php:520
+#: buddypress/ld-dashboard-todo-list.php:627
+#: includes/ld-dashboard-functions.php:247
+#: includes/ld-dashboard-functions.php:334
+#: includes/ld-dashboard-functions.php:421
+#: includes/ld-dashboard-functions.php:508
+msgid "day"
+msgstr "día"
+
+#: buddypress/ld-dashboard-todo-list.php:258
+#: buddypress/ld-dashboard-todo-list.php:346
+#: buddypress/ld-dashboard-todo-list.php:434
+#: buddypress/ld-dashboard-todo-list.php:522
+#: buddypress/ld-dashboard-todo-list.php:629
+#: includes/ld-dashboard-functions.php:249
+#: includes/ld-dashboard-functions.php:336
+#: includes/ld-dashboard-functions.php:423
+#: includes/ld-dashboard-functions.php:510
+msgid "days"
+msgstr "dias"
+
+#: buddypress/ld-dashboard-todo-list.php:260
+#: buddypress/ld-dashboard-todo-list.php:348
+#: buddypress/ld-dashboard-todo-list.php:436
+#: buddypress/ld-dashboard-todo-list.php:524
+#: buddypress/ld-dashboard-todo-list.php:631
+#: includes/ld-dashboard-functions.php:251
+#: includes/ld-dashboard-functions.php:338
+#: includes/ld-dashboard-functions.php:425
+#: includes/ld-dashboard-functions.php:512
+#, php-format
+msgid "%1$d %2$s left to complete the task!"
+msgstr ""
+
+#: buddypress/ld-dashboard-todo-list.php:264
+#: buddypress/ld-dashboard-todo-list.php:352
+#: buddypress/ld-dashboard-todo-list.php:440
+#: buddypress/ld-dashboard-todo-list.php:528
+#: buddypress/ld-dashboard-todo-list.php:635
+#: includes/ld-dashboard-functions.php:255
+#: includes/ld-dashboard-functions.php:342
+#: includes/ld-dashboard-functions.php:429
+#: includes/ld-dashboard-functions.php:516
+msgid "Completed!"
+msgstr "¡Completado!"
+
+#: buddypress/ld-dashboard-todo-list.php:271
+#: buddypress/ld-dashboard-todo-list.php:359
+#: buddypress/ld-dashboard-todo-list.php:447
+#: buddypress/ld-dashboard-todo-list.php:535
+#: buddypress/ld-dashboard-todo-list.php:642
+#: includes/ld-dashboard-functions.php:262
+#: includes/ld-dashboard-functions.php:349
+#: includes/ld-dashboard-functions.php:436
+#: includes/ld-dashboard-functions.php:523
+msgid "Critical"
+msgstr "Crítica"
+
+#: buddypress/ld-dashboard-todo-list.php:274
+#: buddypress/ld-dashboard-todo-list.php:362
+#: buddypress/ld-dashboard-todo-list.php:450
+#: buddypress/ld-dashboard-todo-list.php:538
+#: buddypress/ld-dashboard-todo-list.php:645
+#: includes/ld-dashboard-functions.php:265
+#: includes/ld-dashboard-functions.php:352
+#: includes/ld-dashboard-functions.php:439
+#: includes/ld-dashboard-functions.php:526
+msgid "High"
+msgstr "Alto"
+
+#: buddypress/ld-dashboard-todo-list.php:277
+#: buddypress/ld-dashboard-todo-list.php:365
+#: buddypress/ld-dashboard-todo-list.php:453
+#: buddypress/ld-dashboard-todo-list.php:541
+#: buddypress/ld-dashboard-todo-list.php:648
+#: includes/ld-dashboard-functions.php:268
+#: includes/ld-dashboard-functions.php:355
+#: includes/ld-dashboard-functions.php:442
+#: includes/ld-dashboard-functions.php:529
+msgid "Normal"
+msgstr "Normal"
+
+#: buddypress/ld-dashboard-todo-list.php:295
+#: buddypress/ld-dashboard-todo-list.php:383
+#: buddypress/ld-dashboard-todo-list.php:559
+#: buddypress/ld-dashboard-todo-list.php:658
+#: includes/ld-dashboard-functions.php:292
+#: includes/ld-dashboard-functions.php:379
+#: includes/ld-dashboard-functions.php:553
+#, php-format
+msgid "Remove: %s"
+msgstr ""
+
+#: buddypress/ld-dashboard-todo-list.php:300
+#: buddypress/ld-dashboard-todo-list.php:387
+#: buddypress/ld-dashboard-todo-list.php:475
+#: buddypress/ld-dashboard-todo-list.php:563
+#: buddypress/ld-dashboard-todo-list.php:663
+#: includes/ld-dashboard-functions.php:297
+#: includes/ld-dashboard-functions.php:383
+#: includes/ld-dashboard-functions.php:470
+#: includes/ld-dashboard-functions.php:557
+#, php-format
+msgid "Edit: %s"
+msgstr "Editar: %s"
+
+#: buddypress/ld-dashboard-todo-list.php:302
+#: buddypress/ld-dashboard-todo-list.php:389
+#: buddypress/ld-dashboard-todo-list.php:477
+#: buddypress/ld-dashboard-todo-list.php:565
+#: buddypress/ld-dashboard-todo-list.php:665
+#: includes/ld-dashboard-functions.php:299
+#: includes/ld-dashboard-functions.php:385
+#: includes/ld-dashboard-functions.php:472
+#: includes/ld-dashboard-functions.php:559
+#, php-format
+msgid "Complete: %s"
+msgstr ""
+
+#: buddypress/ld-dashboard-todo-list.php:304
+#: buddypress/ld-dashboard-todo-list.php:391
+#: buddypress/ld-dashboard-todo-list.php:479
+#: buddypress/ld-dashboard-todo-list.php:567
+#: buddypress/ld-dashboard-todo-list.php:667
+#: includes/ld-dashboard-functions.php:301
+#: includes/ld-dashboard-functions.php:387
+#: includes/ld-dashboard-functions.php:474
+#: includes/ld-dashboard-functions.php:561
+#, php-format
+msgid "Undo Complete: %s"
+msgstr ""
+
+#: buddypress/ld-dashboard-todo-list.php:471
+#: includes/ld-dashboard-functions.php:466
+#, php-format
+msgid "Remove: %s "
+msgstr ""
+
+#: edd-license/EDD_LDD_Plugin_Updater.php:205
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr "Está disponible nueva versión de %1$s. %2$sVer los %3$s detalles%4$s."
+
+#: edd-license/EDD_LDD_Plugin_Updater.php:213
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s "
+"or %5$supdate now%6$s."
+msgstr ""
+"Hay una nueva versión de %1$s disponible. %2$s Ver versión %3$s detalles "
+"%4$s o %5$s actualiza ahora %6$s."
+
+#: edd-license/EDD_LDD_Plugin_Updater.php:407
+msgid "You do not have permission to install plugin updates"
+msgstr "No tiene permiso para instalar actualizaciones del plugin"
+
+#: edd-license/EDD_LDD_Plugin_Updater.php:407
+msgid "Error"
+msgstr ""
+
+#: edd-license/edd-plugin-license.php:55
+msgid "Plugin License Options"
+msgstr "Opciones de licencia del plugin"
+
+#: edd-license/edd-plugin-license.php:64
+msgid "License Key"
+msgstr "Clave de licencia"
+
+#: edd-license/edd-plugin-license.php:68
+msgid "Enter your license key"
+msgstr "Introduce tu clave de licencia"
+
+#: edd-license/edd-plugin-license.php:74
+msgid "License Status"
+msgstr "Estado de la licencia"
+
+#: edd-license/edd-plugin-license.php:78
+msgid "active"
+msgstr "activo"
+
+#: edd-license/edd-plugin-license.php:84 edd-license/edd-plugin-license.php:407
+msgid "Inactive"
+msgstr "Inactivo"
+
+#: edd-license/edd-plugin-license.php:91 edd-license/edd-plugin-license.php:94
+#: edd-license/edd-plugin-license.php:432
+msgid "Deactivate License"
+msgstr "Desactivar licencia"
+
+#: edd-license/edd-plugin-license.php:95
+msgid "Click for deactivate license."
+msgstr ""
+
+#: edd-license/edd-plugin-license.php:102
+#: edd-license/edd-plugin-license.php:105
+#: edd-license/edd-plugin-license.php:436
+msgid "Activate License"
+msgstr "Activar licencia"
+
+#: edd-license/edd-plugin-license.php:106
+msgid "Click for Aactivate license."
+msgstr ""
+
+#: edd-license/edd-plugin-license.php:178
+#: edd-license/edd-plugin-license.php:214
+#: edd-license/edd-plugin-license.php:289
+#: edd-license/edd-plugin-license.php:481
+#: edd-license/edd-plugin-license.php:517
+msgid "An error occurred, please try again."
+msgstr "Ha ocurrido un error, por favor inténtelo de nuevo."
+
+#: edd-license/edd-plugin-license.php:187
+#: edd-license/edd-plugin-license.php:490
+#, php-format
+msgid "Your license key expired on %s."
+msgstr "Su llave de licencia expira en %s."
+
+#: edd-license/edd-plugin-license.php:193
+#: edd-license/edd-plugin-license.php:496
+msgid "Your license key has been disabled."
+msgstr "Su clave de licencia ha sido deshabilitada."
+
+#: edd-license/edd-plugin-license.php:197
+#: edd-license/edd-plugin-license.php:500
+msgid "Invalid license."
+msgstr "Licencia no válida."
+
+#: edd-license/edd-plugin-license.php:202
+#: edd-license/edd-plugin-license.php:505
+msgid "Your license is not active for this URL."
+msgstr "Tu licencia no está activa para esta URL."
+
+#: edd-license/edd-plugin-license.php:206
+#: edd-license/edd-plugin-license.php:509
+#, php-format
+msgid "This appears to be an invalid license key for %s."
+msgstr "Esto parece ser una clave de licencia no válida para %s."
+
+#: edd-license/edd-plugin-license.php:210
+#: edd-license/edd-plugin-license.php:513
+msgid "Your license key has reached its activation limit."
+msgstr "Su clave de licencia ha alcanzado su límite de activación."
+
+#: edd-license/edd-plugin-license.php:404
+msgid "Active"
+msgstr "Activo"
+
+#: includes/class-ld-dashboard-activator.php:273
+#, php-format
+msgid "Forced %s time"
+msgstr ""
+
+#: includes/class-ld-dashboard-activator.php:274
+msgid "Number of Days"
+msgstr "Número de días"
+
+#: includes/class-ld-dashboard-activator.php:275
+#, php-format
+msgid "%s Material Content"
+msgstr ""
+
+#: includes/class-ld-dashboard-activator.php:276
+msgid "Display result position"
+msgstr ""
+
+#: includes/class-ld-dashboard-activator.php:277
+#, php-format
+msgid "%s per page"
+msgstr "%s por página"
+
+#: includes/class-ld-dashboard-activator.php:278
+msgid "Randomize order type"
+msgstr ""
+
+#: includes/class-ld-dashboard-activator.php:279
+#, php-format
+msgid "Number of %s in subset"
+msgstr ""
+
+#: includes/class-ld-dashboard-activator.php:280
+msgid "Leaderboard position"
+msgstr ""
+
+#: includes/class-ld-dashboard-activator.php:281
+msgid "Points type"
+msgstr ""
+
+#: includes/class-ld-dashboard-activator.php:282
+msgid "Display points scored in message"
+msgstr ""
+
+#: includes/class-ld-dashboard-activator.php:283
+msgid "Hint content"
+msgstr ""
+
+#: includes/class-ld-dashboard-activator.php:284
+msgid "Billing Cycle Number"
+msgstr ""
+
+#: includes/class-ld-dashboard-activator.php:285
+msgid "Billing Cycle Type"
+msgstr ""
+
+#: includes/class-ld-dashboard-activator.php:286
+msgid "Trial Duration Number"
+msgstr ""
+
+#: includes/class-ld-dashboard-activator.php:287
+msgid "Trial Duration Type"
+msgstr ""
+
+#: includes/class-ld-dashboard-functions.php:81
+#: templates/ld-dashboard-profile.php:87
+#, php-format
+msgid "Welcome back, %s"
+msgstr "Bienvenido de nuevo, %s"
+
+#: includes/class-ld-dashboard.php:413
+msgid "published."
+msgstr "publicado."
+
+#: includes/class-ld-dashboard.php:415
+msgid "saved."
+msgstr "guardado."
+
+#: includes/class-ld-dashboard.php:419
+msgid " View"
+msgstr " Vistas"
+
+#: includes/class-ld-dashboard.php:421
+msgid " Preview"
+msgstr " Vista previa"
+
+#. translators: If your word count is based on single characters (e.g. East Asian characters),
+#. enter 'characters_excluding_spaces' or 'characters_including_spaces'. Otherwise, enter 'words'.
+#. Do not translate into your own language.
+#.
+#: includes/ld-dashboard-functions.php:748
+msgctxt "Word count type. Do not translate!"
+msgid "words"
+msgstr "palabras"
+
+#: ld-dashboard.php:116
+msgctxt "Post Type General Name"
+msgid "Announcements"
+msgstr "Anuncios"
+
+#: ld-dashboard.php:117
+msgctxt "Post Type Singular Name"
+msgid "Announcement"
+msgstr "Anuncio"
+
+#: ld-dashboard.php:119
+msgid "Parent Movie"
+msgstr ""
+
+#: ld-dashboard.php:120
+msgid "All Announcements"
+msgstr "Todos los comunicados"
+
+#: ld-dashboard.php:121
+msgid "View Announcement"
+msgstr "Ver anuncio"
+
+#: ld-dashboard.php:122
+msgid "Add New Announcement"
+msgstr "Agregar nuevo anuncio"
+
+#: ld-dashboard.php:123 ld-dashboard.php:160
+msgid "Add New"
+msgstr "Añadir nuevo"
+
+#: ld-dashboard.php:124
+msgid "Edit Announcement"
+msgstr "Editar anuncio"
+
+#: ld-dashboard.php:125
+msgid "Update Announcement"
+msgstr "Actualizar anuncio"
+
+#: ld-dashboard.php:126
+msgid "Search Announcement"
+msgstr "Buscar Anuncio"
+
+#: ld-dashboard.php:127 ld-dashboard.php:164
+msgid "Not Found"
+msgstr "No encontrado"
+
+#: ld-dashboard.php:128 ld-dashboard.php:165
+msgid "Not found in Trash"
+msgstr "No encontrado en la papelera"
+
+#: ld-dashboard.php:132
+msgid "announcements"
+msgstr "anuncios"
+
+#: ld-dashboard.php:133
+msgid "Announcements for students"
+msgstr ""
+
+#: ld-dashboard.php:153
+msgctxt "Post Type General Name"
+msgid "Withdrawals"
+msgstr "Retiros"
+
+#: ld-dashboard.php:154
+msgctxt "Post Type Singular Name"
+msgid "Withdrawal"
+msgstr "Retiro"
+
+#: ld-dashboard.php:155 templates/ld-dashboard-profile.php:192
+msgid "Withdrawals"
+msgstr "Retiros"
+
+#: ld-dashboard.php:156
+msgid "Parent Withdrawal"
+msgstr ""
+
+#: ld-dashboard.php:157
+msgid "All Withdrawals"
+msgstr ""
+
+#: ld-dashboard.php:158
+msgid "View Withdrawal"
+msgstr "Ver retiro"
+
+#: ld-dashboard.php:159
+msgid "Add New Withdrawal Request"
+msgstr ""
+
+#: ld-dashboard.php:161
+msgid "Edit Withdrawal Request"
+msgstr ""
+
+#: ld-dashboard.php:162
+msgid "Update Withdrawal Request"
+msgstr ""
+
+#: ld-dashboard.php:163
+msgid "Search Withdrawal"
+msgstr ""
+
+#: ld-dashboard.php:169
+msgid "withdrawals"
+msgstr ""
+
+#: ld-dashboard.php:170
+msgid "Withdrawals requests"
+msgstr ""
+
+#: ld-dashboard.php:201
+#, php-format
+msgid ""
+"The %1$s plugin requires %2$s and %3$s plugin to be installed and active."
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:273
+#: public/js/ld-dashboard-public.js:144
+msgid "LearnDash Shortcodes"
+msgstr "Códigos cortos de LearnDash"
+
+#: public/class-ld-dashboard-public.php:310
+#: public/js/ld-dashboard-public.js:1259
+#: templates/ld-dashboard-activity-rows.php:135
+msgid "Not Started"
+msgstr "Sin Iniciar"
+
+#: public/class-ld-dashboard-public.php:311
+#: public/js/ld-dashboard-public.js:1259
+msgid "In Progress"
+msgstr "En Progreso"
+
+#: public/class-ld-dashboard-public.php:313
+msgid "Paid"
+msgstr "Pagado"
+
+#: public/class-ld-dashboard-public.php:314
+msgid "Unpaid"
+msgstr "No pagado"
+
+#: public/class-ld-dashboard-public.php:315
+#: public/js/ld-dashboard-public.js:1261
+msgid "Unapproved Assignment"
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:316
+#: public/js/ld-dashboard-public.js:1261
+msgid "Pending Assignment"
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:317
+#: public/js/ld-dashboard-public.js:1261
+msgid "Approved Assignment"
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:318
+#: public/js/ld-dashboard-public.js:1267 templates/ld-dashboard-content.php:353
+#: templates/ld-dashboard-enrolled-courses-content.php:14
+#: templates/ld-dashboard-enrolled-courses-content.php:24
+#, javascript-format, php-format
+msgid "Completed %s"
+msgstr "Completado %s"
+
+#: public/class-ld-dashboard-public.php:319
+#, php-format
+msgid "Uncompleted %s"
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:320
+#: public/js/ld-dashboard-public.js:1264
+#, javascript-format, php-format
+msgid "No %s Started"
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:324
+#: public/js/ld-dashboard-public.js:1700
+msgid "Assignment Progress"
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:325
+#, php-format
+msgid "%s Earnings"
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:326
+#: templates/ld-dashboard-instructor-chart-content.php:6
+#: widgets/class-ld-dashboard-earning-chart-widget.php:53
+msgid "Instructor Earning"
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:327
+msgid "Instructor earning during one year"
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:341
+#: public/class-ld-dashboard-public.php:3416
+msgid "Statistics"
+msgstr "Estadísticas"
+
+#: public/class-ld-dashboard-public.php:355
+msgid "Invalid nonce."
+msgstr "Mientras tanto no es válido."
+
+#: public/class-ld-dashboard-public.php:362
+msgid "Fields not found."
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:387
+msgid "Your password is updated."
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:389
+#: public/class-ld-dashboard-public.php:396
+msgid "The passwords you entered did not match. Your password was not updated."
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:793
+#: templates/ld-dashboard-my-quiz-attempts-content.php:23
+msgid "No"
+msgstr "No"
+
+#: public/class-ld-dashboard-public.php:793
+msgid "attempts found."
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:1003
+#: public/class-ld-dashboard-public.php:1075
+#: public/class-ld-dashboard-public.php:1146
+#: public/class-ld-dashboard-public.php:1207
+#: templates/ld-dashboard-instructor-certificates.php:61
+#: templates/ld-dashboard-instructor-courses.php:132
+msgid "Edit"
+msgstr "Editar"
+
+#: public/class-ld-dashboard-public.php:1005
+#: public/class-ld-dashboard-public.php:1077
+#: public/class-ld-dashboard-public.php:1148
+#: public/class-ld-dashboard-public.php:1209
+#: templates/ld-dashboard-instructor-certificates.php:64
+#: templates/ld-dashboard-instructor-courses.php:136
+msgid "Delete"
+msgstr "Borrar"
+
+#: public/class-ld-dashboard-public.php:1013
+#: public/class-ld-dashboard-public.php:1085
+#: public/class-ld-dashboard-public.php:1156
+#: public/class-ld-dashboard-public.php:1217
+#: public/class-ld-dashboard-public.php:2870
+#: templates/ld-dashboard-content.php:557
+#: templates/ld-dashboard-groups-content.php:67
+#: templates/ld-dashboard-groups-content.php:125
+#: templates/ld-dashboard-instructor-courses.php:148
+#, php-format
+msgid "No %s found."
+msgstr "No se han encontrado %s."
+
+#: public/class-ld-dashboard-public.php:1284
+msgid "No assignments found."
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:1355
+#: templates/ld-dashboard-assignments-content.php:28
+#: templates/ld-dashboard-email-integration.php:125
+#: templates/ld-dashboard-email-integration.php:126
+#: templates/ld-dashboard-email-integration.php:136
+#: templates/ld-dashboard-instructor-lessons.php:35
+#: templates/ld-dashboard-instructor-questions.php:34
+#: templates/ld-dashboard-instructor-quizzes.php:34
+#: templates/ld-dashboard-instructor-topics.php:34
+#: templates/ld-dashboard-message-integration.php:122
+#: templates/ld-dashboard-message-integration.php:123
+#: templates/ld-dashboard-message-integration.php:133
+#: templates/ld-dashboard-my-announcements-content.php:26
+#, php-format
+msgid "Select %s"
+msgstr "Seleccionar %s"
+
+#: public/class-ld-dashboard-public.php:2536
+msgid "Add new answer"
+msgstr "Añade una nueva respuesta"
+
+#: public/class-ld-dashboard-public.php:2659
+#: public/class-ld-dashboard-public.php:2674
+#: public/class-ld-dashboard-public.php:2700
+#: public/class-ld-dashboard-public.php:2729
+#: public/class-ld-dashboard-public.php:2765
+#: public/js/ld-dashboard-public.js:367 public/js/ld-dashboard-public.js:377
+#: public/js/ld-dashboard-public.js:384 public/js/ld-dashboard-public.js:1838
+#: public/js/ld-dashboard-public.js:1897 public/js/ld-dashboard-public.js:1958
+#: public/js/ld-dashboard-public.js:2022
+msgid "Remove"
+msgstr "Eliminar"
+
+#: public/class-ld-dashboard-public.php:2709
+#: public/class-ld-dashboard-public.php:2737
+#: public/js/ld-dashboard-public.js:367 public/js/ld-dashboard-public.js:1897
+#, javascript-format, php-format
+msgid "Drop %s Here"
+msgstr "Soltar %s Aquí"
+
+#: public/class-ld-dashboard-public.php:2742
+#, php-format
+msgid "Drop %1$1s or %2$2s Here"
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:2746
+#: public/class-ld-dashboard-public.php:2747
+msgid "New"
+msgstr "Nuevo"
+
+#: public/class-ld-dashboard-public.php:2773
+#: public/js/ld-dashboard-public.js:404
+#, javascript-format, php-format
+msgid "Add %s here."
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:2777
+#, php-format
+msgid ""
+"Please create the %1$1s and %2$2s by navigating to the respective sections."
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:2786
+#: public/js/ld-dashboard-public.js:367 public/js/ld-dashboard-public.js:1897
+#, javascript-format, php-format
+msgid "New %s"
+msgstr "Nuevo %s"
+
+#: public/class-ld-dashboard-public.php:2787
+msgid "New Section Heading"
+msgstr "Nuevo encabezado de sección"
+
+#: public/class-ld-dashboard-public.php:2843
+#, php-format
+msgid "Drop %s here"
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:3416
+#, php-format
+msgid "View %s Statistics"
+msgstr "Ver %s estadísticas"
+
+#: public/class-ld-dashboard-public.php:3725
+#, php-format
+msgid ""
+"Sorry, We are not able to find any %1$s related activities, Please complete "
+"some %2$s, %3$s or %4$s."
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:3728
+#: public/class-ld-dashboard-public.php:3761
+#, php-format
+msgid ""
+"Sorry, We are not able to find any %1$s related activities, Please encourage "
+"your students to complete some %2$s, %3$s or %4$s. "
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:3758
+msgid ""
+"Sorry, We are not able to find any %1$s related activities, Please complete "
+"some %2$s, %3$s or %."
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:3945
+msgid ""
+"Please try to login to website to access dashboard. Dashboard are disabled "
+"for logout members. "
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:4198
+msgid "Not Completed"
+msgstr "Sin completar"
+
+#: public/class-ld-dashboard-public.php:4445
+#: public/class-ld-dashboard-public.php:4661
+#: templates/ld-dashboard-course-report.php:70
+#: templates/ld-dashboard-student-course-report.php:30
+#: templates/ld-dashboard-student-status.php:142
+msgid "Please wait, while details are loading..."
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:4452
+#: public/class-ld-dashboard-public.php:4667
+msgid "&#171; prev"
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:4454
+#: public/class-ld-dashboard-public.php:4669
+#: templates/ld-dashboard-activity-pagination.php:28
+msgid "page"
+msgstr "página"
+
+#: public/class-ld-dashboard-public.php:4454
+#: public/class-ld-dashboard-public.php:4669
+msgid "from"
+msgstr "desde"
+
+#: public/class-ld-dashboard-public.php:4458
+#: public/class-ld-dashboard-public.php:4673
+msgid "next &#187;"
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:4476
+msgid "Student Information"
+msgstr "Información del Estudiante"
+
+#: public/class-ld-dashboard-public.php:4477
+msgid "Sort By..."
+msgstr "Ordenar por…"
+
+#: public/class-ld-dashboard-public.php:4477
+#: templates/ld-dashboard-activity-rows.php:24
+msgid "Completed Date"
+msgstr "Fecha Completada"
+
+#: public/class-ld-dashboard-public.php:4477
+#: public/class-ld-dashboard-public.php:4484
+msgid "Progress %"
+msgstr "Progreso %"
+
+#: public/class-ld-dashboard-public.php:4481
+#: templates/ld-dashboard-content.php:525
+#: templates/ld-dashboard-instructor-stats.php:14
+msgid "Name"
+msgstr "Nombre"
+
+#: public/class-ld-dashboard-public.php:4482
+msgid "Total Steps"
+msgstr "Pasos totales"
+
+#: public/class-ld-dashboard-public.php:4483
+msgid "Completed Steps"
+msgstr "Pasos completados"
+
+#: public/class-ld-dashboard-public.php:4485
+msgid "Completed On"
+msgstr "Completado en"
+
+#: public/class-ld-dashboard-public.php:4607
+#: templates/ld-dashboard-student-course-report.php:54
+#, php-format
+msgid ""
+"\n"
+"                %1$s%% Complete"
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:4615
+#: templates/ld-dashboard-student-course-report.php:66
+#, php-format
+msgid ""
+"\n"
+"                %1$s/%2$s Steps"
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:5095
+msgid "Please add email subject"
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:5105
+msgid "Please add email message"
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:5257
+msgid "Email Sent Successfully."
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:5279
+msgid "Please add at least one recipient."
+msgstr "Agregue al menos un destinatario."
+
+#: public/class-ld-dashboard-public.php:5288
+msgid "Please add a subject to your message."
+msgstr "Por favor, agregue un asunto a su mensaje."
+
+#: public/class-ld-dashboard-public.php:5298
+msgid "Please add some content to your message."
+msgstr "Agregue algo de contenido a su mensaje."
+
+#: public/class-ld-dashboard-public.php:5323
+msgid "Message successfully sent."
+msgstr "Mensaje enviado con éxito."
+
+#: public/class-ld-dashboard-public.php:5571
+msgid "Permission denied"
+msgstr "Permiso denegado"
+
+#: public/class-ld-dashboard-public.php:5597
+msgid "No users are enrolled"
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:5659
+#, php-format
+msgid ""
+"Please try to login to website to access %s details. This page are disabled "
+"for logout members. "
+msgstr ""
+
+#: public/class-ld-dashboard-public.php:5699
+msgid ""
+"Please try to login to website to access student details. This page are "
+"disabled for logout members. "
+msgstr ""
+
+#: public/js/ld-dashboard-answers.js:32 public/js/ld-dashboard-answers.js:71
+#: templates/ld-dashboard-multiple-answer-content.php:12
+#: templates/ld-dashboard-single-answer-content.php:12
+msgid "Correct"
+msgstr "Correcto"
+
+#: public/js/ld-dashboard-answers.js:36 public/js/ld-dashboard-answers.js:75
+#: public/js/ld-dashboard-answers.js:122 public/js/ld-dashboard-answers.js:157
+#: public/js/ld-dashboard-answers.js:168
+#: templates/ld-dashboard-matrix-sort-answer-content.php:14
+#: templates/ld-dashboard-matrix-sort-answer-content.php:19
+#: templates/ld-dashboard-multiple-answer-content.php:13
+#: templates/ld-dashboard-single-answer-content.php:13
+#: templates/ld-dashboard-sort-answer-content.php:11
+msgid "Allow HTML"
+msgstr "Permitir el HTML"
+
+#: public/js/ld-dashboard-answers.js:39 public/js/ld-dashboard-answers.js:78
+#: public/js/ld-dashboard-answers.js:125
+#: templates/ld-dashboard-multiple-answer-content.php:18
+#: templates/ld-dashboard-single-answer-content.php:18
+#: templates/ld-dashboard-sort-answer-content.php:15
+msgid "Answer"
+msgstr "Respuesta"
+
+#: public/js/ld-dashboard-answers.js:47 public/js/ld-dashboard-answers.js:86
+#: public/js/ld-dashboard-answers.js:133 public/js/ld-dashboard-answers.js:177
+msgid "Delete Answer"
+msgstr "Eliminar Respuesta"
+
+#: public/js/ld-dashboard-answers.js:51 public/js/ld-dashboard-answers.js:88
+#: public/js/ld-dashboard-answers.js:135 public/js/ld-dashboard-answers.js:179
+#: templates/ld-dashboard-matrix-sort-answer-content.php:25
+#: templates/ld-dashboard-multiple-answer-content.php:26
+#: templates/ld-dashboard-single-answer-content.php:26
+#: templates/ld-dashboard-sort-answer-content.php:22
+msgid "Add Media"
+msgstr "Agregar multimedia"
+
+#: public/js/ld-dashboard-answers.js:53 public/js/ld-dashboard-answers.js:90
+#: public/js/ld-dashboard-answers.js:137 public/js/ld-dashboard-answers.js:181
+#: templates/ld-dashboard-matrix-sort-answer-content.php:26
+#: templates/ld-dashboard-multiple-answer-content.php:27
+#: templates/ld-dashboard-single-answer-content.php:27
+#: templates/ld-dashboard-sort-answer-content.php:23
+msgid "Move"
+msgstr "Mover"
+
+#: public/js/ld-dashboard-answers.js:102
+#: templates/ld-dashboard-free-answer-content.php:7
+msgid ""
+"Correct answers (one per line) (answers will be converted to lower case)"
+msgstr ""
+
+#: public/js/ld-dashboard-answers.js:153
+#: templates/ld-dashboard-matrix-sort-answer-content.php:13
+msgid "Criterion"
+msgstr "Criterio"
+
+#: public/js/ld-dashboard-answers.js:164
+#: templates/ld-dashboard-matrix-sort-answer-content.php:18
+msgid "Sort elements"
+msgstr "Elemento a ordenar"
+
+#: public/js/ld-dashboard-answers.js:189
+#: templates/ld-dashboard-cloze-answer-content.php:7
+msgid ""
+"Enclose the searched words with { } e.g. \"I {play} soccer\". Capital and "
+"small letters will be ignored."
+msgstr ""
+"Encierra las palabras buscadas entre { } p.e. «Yo {juego} futbol». No "
+"importa si son mayúsculas o minúsculas."
+
+#: public/js/ld-dashboard-answers.js:189
+msgid ""
+"You can specify multiple options for a search word. Enclose the word with "
+"[ ] e.g."
+msgstr ""
+
+#: public/js/ld-dashboard-answers.js:189
+msgid ""
+"\"I {[play][love][hate]} soccer\"</span>. In this case answers play, love OR "
+"hate are correct.</p><p class=\"description\" style=\"margin-top: 10px;\">If "
+"mode \"Different points for every answer\" is activated, you can assign "
+"points with |POINTS. Otherwise 1 point will be awarded for every answer.</"
+"p><p class=\"description\">e.g. \"I {play} soccer, with a {ball|3}\" - \"play"
+"\" gives 1 point and \"ball\" 3 points."
+msgstr ""
+
+#: public/js/ld-dashboard-answers.js:208
+msgid "Here you can create an assessment "
+msgstr ""
+
+#: public/js/ld-dashboard-answers.js:208
+msgid ""
+".</p><p class=\"description\">Enclose a assesment with {}. The individual "
+"assessments are marked with [].<br>The number of options in the maximum "
+"score.</p><p>\tExamples:<br>* less true { [1] [2] [3] [4] [5] } more true</"
+"p><p>* less true { [a] [b] [c] } more true</p><p></p></div>"
+msgstr ""
+
+#: public/js/ld-dashboard-answers.js:235
+#: templates/ld-dashboard-essay-answer-content.php:8
+msgid "How should the user submit their answer?"
+msgstr "¿Cómo enviará el alumno su respuesta?"
+
+#: public/js/ld-dashboard-answers.js:237
+#: templates/ld-dashboard-essay-answer-content.php:11
+msgid "Text Box"
+msgstr "Caja de texto"
+
+#: public/js/ld-dashboard-answers.js:237
+#: templates/ld-dashboard-essay-answer-content.php:12
+msgid "Upload"
+msgstr "Subir"
+
+#: public/js/ld-dashboard-answers.js:239
+#, javascript-format
+msgid ""
+"This is a %s that can be graded and potentially prevent a user from "
+"progressing to the next step of the course."
+msgstr ""
+
+#: public/js/ld-dashboard-answers.js:241
+#: templates/ld-dashboard-essay-answer-content.php:16
+msgid ""
+"The user can only progress if the essay is marked as 'Graded' and if the "
+"user has enough points to move on."
+msgstr ""
+
+#: public/js/ld-dashboard-answers.js:243
+#, javascript-format
+msgid ""
+"How should the answer to this %s be marked and graded upon quiz submission?"
+msgstr ""
+
+#: public/js/ld-dashboard-answers.js:245
+#: templates/ld-dashboard-essay-answer-content.php:20
+msgid "Not Graded, No Points Awarded"
+msgstr "No calificado, sin puntos concedidos"
+
+#: public/js/ld-dashboard-answers.js:245
+#: templates/ld-dashboard-essay-answer-content.php:21
+msgid "Not Graded, Full Points Awarded"
+msgstr "No calificado, puntos completos otorgados"
+
+#: public/js/ld-dashboard-answers.js:245
+#: templates/ld-dashboard-essay-answer-content.php:22
+msgid "Graded, Full Points Awarded"
+msgstr "Calificado, Puntos Completos Otorgados"
+
+#: public/js/ld-dashboard-answers.js:387
+msgid "Select or Upload Media Of Your Chosen Persuasion"
+msgstr ""
+
+#: public/js/ld-dashboard-answers.js:389 public/js/ld-dashboard-public.js:11
+msgid "Use this media"
+msgstr "Usa este medio"
+
+#: public/js/ld-dashboard-charts.js:52
+msgid "Earnings"
+msgstr "Ganancias"
+
+#: public/js/ld-dashboard-charts.js:76 public/js/ld-dashboard-charts.js:100
+msgid "Total Completions"
+msgstr ""
+
+#: public/js/ld-dashboard-public.js:9
+msgid "Select or Upload Media"
+msgstr "Seleccionar o cargar medios"
+
+#: public/js/ld-dashboard-public.js:113
+msgid "Please enter an amount"
+msgstr "Por favor, ingrese el valor"
+
+#: public/js/ld-dashboard-public.js:116
+msgid "You don`t have sufficent funds."
+msgstr ""
+
+#: public/js/ld-dashboard-public.js:119
+msgid "Amount should be greater than "
+msgstr ""
+
+#: public/js/ld-dashboard-public.js:212
+msgid "Title cannot be empty."
+msgstr "El título no puede estar vacío"
+
+#: public/js/ld-dashboard-public.js:227
+msgid "Annoucement created successfully."
+msgstr ""
+
+#: public/js/ld-dashboard-public.js:390
+#, javascript-format
+msgid "Please select a %s"
+msgstr ""
+
+#: public/js/ld-dashboard-public.js:962
+#, javascript-format
+msgid "Are you sure you want to delete this %s?"
+msgstr "¿Está seguro que desea eliminar este %s?"
+
+#: public/js/ld-dashboard-public.js:1259
+msgid "Complete"
+msgstr "Completo"
+
+#: public/js/ld-dashboard-public.js:1267
+msgid "Uncompleted "
+msgstr ""
+
+#: public/js/ld-dashboard-public.js:1815 public/js/ld-dashboard-public.js:1863
+#: public/js/ld-dashboard-public.js:1912 public/js/ld-dashboard-public.js:1975
+msgid "Enter a title"
+msgstr "Introducir un título"
+
+#: public/js/ld-dashboard-public.js:1815
+msgid "Add Section heading"
+msgstr ""
+
+#: public/js/ld-dashboard-public.js:1897
+msgid "Drop "
+msgstr "Arrastrar "
+
+#: public/js/ld-dashboard-public.js:1975
+#, javascript-format
+msgid "Add %s"
+msgstr "Añadir %s"
+
+#: templates/ld-dashboard-activity-pagination.php:24
+msgid "First Page"
+msgstr "Primera página"
+
+#: templates/ld-dashboard-activity-pagination.php:25
+msgid "Previous Page"
+msgstr "Página anterior"
+
+#: templates/ld-dashboard-activity-pagination.php:31
+msgid "Next Page"
+msgstr "Siguiente página"
+
+#: templates/ld-dashboard-activity-pagination.php:32
+msgid "Last Page"
+msgstr "Última página"
+
+#: templates/ld-dashboard-activity-rows.php:22
+msgid "Completed Date (Duration)"
+msgstr "Fecha Completada (Duración)"
+
+#: templates/ld-dashboard-activity-rows.php:35
+msgid "Started Date (Duration)"
+msgstr "Fecha de Inicio (Duración)"
+
+#: templates/ld-dashboard-activity-rows.php:37
+msgid "Started Date"
+msgstr "Fecha de Inicio"
+
+#: templates/ld-dashboard-activity-rows.php:45
+#: templates/ld-dashboard-activity-rows.php:87
+#: templates/ld-dashboard-activity-rows.php:102
+#, php-format
+msgid "%1$s completed a %2$s %3$s of %4$s %5$s"
+msgstr ""
+
+#: templates/ld-dashboard-activity-rows.php:47
+#: templates/ld-dashboard-activity-rows.php:61
+#, php-format
+msgid "%1$s completed a %2$s %3$s"
+msgstr ""
+
+#: templates/ld-dashboard-activity-rows.php:50
+#: templates/ld-dashboard-activity-rows.php:72
+#: templates/ld-dashboard-activity-rows.php:88
+#: templates/ld-dashboard-activity-rows.php:103
+#, php-format
+msgid "%1$s ago"
+msgstr "Hace %1$s"
+
+#: templates/ld-dashboard-activity-rows.php:70
+#, php-format
+msgid "%1$s enrolled for a %2$s %3$s"
+msgstr ""
+
+#: templates/ld-dashboard-activity-rows.php:113
+msgid "See User Progress"
+msgstr "Ver Progreso del Usuario"
+
+#: templates/ld-dashboard-activity-rows.php:119
+#, php-format
+msgctxt "Course:"
+msgid "%s:"
+msgstr "%s:"
+
+#. translators: %s: Name of current post
+#: templates/ld-dashboard-activity-rows.php:124
+#, php-format
+msgid " (edit<span class=\"screen-reader-text\"> \"%s\"</span>)"
+msgstr " (editar<span class=\"screen-reader-text\"> \"%s\"</span>)"
+
+#: templates/ld-dashboard-activity-rows.php:135
+msgid "Result:"
+msgstr "Resultado:"
+
+#: templates/ld-dashboard-announcements-content.php:35
+#: templates/ld-dashboard-announcements-content.php:40
+msgid "No new announcements found."
+msgstr ""
+
+#: templates/ld-dashboard-assessment-answer-content.php:6
+#, php-format
+msgid "Here you can create an assessment %s."
+msgstr ""
+
+#: templates/ld-dashboard-assessment-answer-content.php:7
+msgid ""
+"Enclose a assesment with {}. The individual assessments are marked with []."
+msgstr ""
+"Defines una valoración encerrándola con {}. Los valores individuales se "
+"definen encerrando con []."
+
+#: templates/ld-dashboard-assessment-answer-content.php:9
+msgid "The number of options in the maximum score."
+msgstr "El número de opciones es la máxima puntuación."
+
+#: templates/ld-dashboard-assessment-answer-content.php:11
+msgid "Examples:"
+msgstr "Ejemplos:"
+
+#: templates/ld-dashboard-assessment-answer-content.php:12
+msgid "* less true { [1] [2] [3] [4] [5] } more true"
+msgstr ""
+
+#: templates/ld-dashboard-assessment-answer-content.php:13
+msgid "* less true { [a] [b] [c] } more true"
+msgstr ""
+
+#: templates/ld-dashboard-assignments-content.php:20
+#: templates/ld-dashboard-instructor-stats.php:19
+#: templates/ld-dashboard-profile.php:186
+msgid "Assignments"
+msgstr "Tareas"
+
+#: templates/ld-dashboard-assignments-content.php:26
+#: templates/ld-dashboard-assignments-content.php:32
+#: templates/ld-dashboard-enrolled-courses-content.php:8
+#: templates/ld-dashboard-enrolled-courses-content.php:22
+#: templates/ld-dashboard-instructor-lessons.php:33
+#: templates/ld-dashboard-instructor-questions.php:32
+#: templates/ld-dashboard-instructor-questions.php:38
+#: templates/ld-dashboard-instructor-questions.php:42
+#: templates/ld-dashboard-instructor-quizzes.php:32
+#: templates/ld-dashboard-instructor-quizzes.php:38
+#: templates/ld-dashboard-instructor-topics.php:32
+#: templates/ld-dashboard-instructor-topics.php:38
+#, php-format
+msgid "All %s"
+msgstr "Todos %s"
+
+#: templates/ld-dashboard-assignments-content.php:35
+#: templates/ld-dashboard-instructor-lessons.php:38
+#: templates/ld-dashboard-instructor-questions.php:45
+#: templates/ld-dashboard-instructor-quizzes.php:41
+#: templates/ld-dashboard-instructor-topics.php:41
+msgid "Filter"
+msgstr "Filtro"
+
+#: templates/ld-dashboard-cloze-answer-content.php:8
+msgid ""
+"You can specify multiple options for a search word. Enclose the word with "
+"[ ] e.g. <span style=\"font-style: normal; letter-spacing: 2px;\">\"I {[play]"
+"[love][hate]} soccer\"</span>. In this case answers play, love OR hate are "
+"correct."
+msgstr ""
+
+#: templates/ld-dashboard-cloze-answer-content.php:9
+msgid ""
+"If mode \"Different points for every answer\" is activated, you can assign "
+"points with |POINTS. Otherwise 1 point will be awarded for every answer."
+msgstr ""
+"Si activas el modo «Cada respuesta puntúa diferente», puedes asignar los "
+"puntos escribiendo |PUNTOS. Si no, se da 1 punto por cada respuesta correcta."
+
+#: templates/ld-dashboard-cloze-answer-content.php:10
+msgid ""
+"e.g. \"I {play} soccer, with a {ball|3}\" - \"play\" gives 1 point and \"ball"
+"\" 3 points."
+msgstr ""
+"p.e. «Yo {juego} fútbol con un {balón|3}» - «juego» da un punto y «balón» 3."
+
+#: templates/ld-dashboard-content-section.php:33
+#: templates/ld-dashboard-content-section.php:35
+#: templates/ld-dashboard-content-section.php:37
+#: templates/ld-dashboard-content-section.php:39
+#: templates/ld-dashboard-content-section.php:41
+#, php-format
+msgid "%s page"
+msgstr "%s página"
+
+#: templates/ld-dashboard-content-section.php:43
+msgid "Certificate"
+msgstr "Certificado"
+
+#: templates/ld-dashboard-content-section.php:52
+msgid "Builder"
+msgstr "Constructor"
+
+#: templates/ld-dashboard-content-section.php:121
+#: templates/ld-dashboard-content-section.php:174
+#: templates/ld-dashboard-content-section.php:215
+#: templates/ld-dashboard-content-section.php:256
+#: templates/ld-dashboard-content-section.php:297
+#: templates/ld-dashboard-content-section.php:362
+msgid "You do not have the required permissions."
+msgstr "No tienes los permisos necesarios."
+
+#: templates/ld-dashboard-content-section.php:133
+#: templates/ld-dashboard-content-section.php:186
+#: templates/ld-dashboard-content-section.php:227
+#: templates/ld-dashboard-content-section.php:268
+#: templates/ld-dashboard-content-section.php:309
+#: templates/ld-dashboard-content-section.php:374
+msgid "Update"
+msgstr "Actualizar"
+
+#: templates/ld-dashboard-content.php:107
+msgid "Assignments Completed"
+msgstr "Tareas Completas"
+
+#: templates/ld-dashboard-content.php:110
+msgid "Assignments Pending"
+msgstr "Asignaciones pendientes"
+
+#: templates/ld-dashboard-content.php:185
+msgid "Essays Pending"
+msgstr "Tests pendientes"
+
+#: templates/ld-dashboard-content.php:302
+#, php-format
+msgid "Enrolled %s"
+msgstr "Iniciar %s"
+
+#: templates/ld-dashboard-content.php:336
+#: templates/ld-dashboard-enrolled-courses-content.php:11
+#: templates/ld-dashboard-enrolled-courses-content.php:23
+#, php-format
+msgid "Active %s"
+msgstr "Activa %s"
+
+#: templates/ld-dashboard-content.php:415
+msgid "Total Students"
+msgstr "Total de Alumnos"
+
+#: templates/ld-dashboard-content.php:526
+#: templates/ld-dashboard-profile.php:118
+msgid "Enrolled"
+msgstr "Inscrito"
+
+#: templates/ld-dashboard-course-report.php:53
+msgid "Details"
+msgstr "Detalles"
+
+#: templates/ld-dashboard-course-report.php:78
+#, php-format
+msgid "create your first %s"
+msgstr ""
+
+#: templates/ld-dashboard-course-report.php:80
+#, php-format
+msgid "You have not created any %1$1s yet, %2$2s."
+msgstr ""
+
+#: templates/ld-dashboard-earnings-content.php:63
+msgid "Earnings History"
+msgstr ""
+
+#: templates/ld-dashboard-earnings-content.php:80
+msgid "Select payment mode"
+msgstr ""
+
+#: templates/ld-dashboard-earnings-content.php:81
+msgid "LearnDash"
+msgstr "LearnDash"
+
+#: templates/ld-dashboard-earnings-content.php:82
+msgid "WoCommerce"
+msgstr ""
+
+#: templates/ld-dashboard-earnings-content.php:158
+#: templates/ld-dashboard-withdrawal-content.php:170
+msgid "No Data Available in this Section"
+msgstr "No hay datos disponibles en esta sección"
+
+#: templates/ld-dashboard-email-integration.php:149
+#: templates/ld-dashboard-message-integration.php:145
+msgid "Select All Students"
+msgstr ""
+
+#: templates/ld-dashboard-email-integration.php:151
+#: templates/ld-dashboard-message-integration.php:147
+msgid "Select Students"
+msgstr "Elige Colaboradores"
+
+#: templates/ld-dashboard-email-integration.php:160
+msgid "Please enter email subject"
+msgstr ""
+
+#: templates/ld-dashboard-email-integration.php:178
+msgid "Send Email"
+msgstr "Enviar Email"
+
+#: templates/ld-dashboard-enrolled-courses-content.php:63
+#, php-format
+msgid "Total %s:"
+msgstr "Total de %s:"
+
+#: templates/ld-dashboard-enrolled-courses-content.php:64
+#, php-format
+msgid "Completed %s:"
+msgstr ""
+
+#: templates/ld-dashboard-enrolled-courses-content.php:68
+#, php-format
+msgid "%s Status"
+msgstr "%s estado"
+
+#: templates/ld-dashboard-enrolled-courses-content.php:79
+#, php-format
+msgid "You haven't purchased any %s."
+msgstr ""
+
+#: templates/ld-dashboard-essay-answer-content.php:10
+msgid " Select Type "
+msgstr ""
+
+#: templates/ld-dashboard-essay-answer-content.php:15
+#, php-format
+msgid ""
+"This is a %1$s that can be graded and potentially prevent a user from "
+"progressing to the next step of the %2$s."
+msgstr ""
+"Esta es una %1$s que se puede calificar y potencialmente impedir que un "
+"usuario progrese al siguiente paso del %2$s."
+
+#: templates/ld-dashboard-essay-answer-content.php:17
+#, php-format
+msgid ""
+"How should the answer to this %1$s be marked and graded upon %2$s submission?"
+msgstr ""
+"¿Cómo se debe marcar y calificar la respuesta a este %1$s al presentar el "
+"%2$s?"
+
+#: templates/ld-dashboard-essay-answer-content.php:19
+msgid " Select Progress "
+msgstr ""
+
+#: templates/ld-dashboard-feed-section.php:11
+#, php-format
+msgid "Live  %s Activity"
+msgstr ""
+
+#: templates/ld-dashboard-groups-content.php:23
+msgid "Groups"
+msgstr "Grupos"
+
+#: templates/ld-dashboard-groups-content.php:24
+msgid "Group Administrations"
+msgstr ""
+
+#: templates/ld-dashboard-groups-content.php:33
+#, php-format
+msgid "&#8592; Back to %s"
+msgstr ""
+
+#: templates/ld-dashboard-groups-content.php:58
+#, php-format
+msgid "View %s"
+msgstr "Ver %s"
+
+#: templates/ld-dashboard-groups-content.php:103
+#: templates/ld-dashboard-instructor-certificates.php:55
+#: templates/ld-dashboard-instructor-courses.php:114
+msgid "Status:"
+msgstr "Estado:"
+
+#: templates/ld-dashboard-groups-content.php:104
+#: templates/ld-dashboard-instructor-courses.php:115
+msgid "Students:"
+msgstr "Alumnos:"
+
+#: templates/ld-dashboard-instructor-certificates.php:32
+msgid "My Certificates"
+msgstr "Mis Certificados"
+
+#: templates/ld-dashboard-instructor-certificates.php:35
+msgid "Add A New Certificate"
+msgstr ""
+
+#: templates/ld-dashboard-instructor-certificates.php:75
+msgid "No certificates found."
+msgstr ""
+
+#: templates/ld-dashboard-instructor-chart-content.php:9
+#: templates/ld-dashboard-instructor-chart-content.php:28
+#: templates/ld-dashboard-instructor-chart-content.php:46
+#: widgets/class-ld-dashboard-earning-chart-widget.php:65
+msgid "Year"
+msgstr "Año"
+
+#: templates/ld-dashboard-instructor-chart-content.php:10
+#: templates/ld-dashboard-instructor-chart-content.php:29
+#: templates/ld-dashboard-instructor-chart-content.php:47
+#: widgets/class-ld-dashboard-earning-chart-widget.php:66
+msgid "Last Month"
+msgstr "Mes Pasado"
+
+#: templates/ld-dashboard-instructor-chart-content.php:11
+#: templates/ld-dashboard-instructor-chart-content.php:30
+#: templates/ld-dashboard-instructor-chart-content.php:48
+#: widgets/class-ld-dashboard-earning-chart-widget.php:67
+msgid "This Month"
+msgstr "Este mes"
+
+#: templates/ld-dashboard-instructor-chart-content.php:12
+#: templates/ld-dashboard-instructor-chart-content.php:31
+#: templates/ld-dashboard-instructor-chart-content.php:49
+#: widgets/class-ld-dashboard-earning-chart-widget.php:68
+msgid "Last 7 Days"
+msgstr "Últimos 7 Días"
+
+#: templates/ld-dashboard-instructor-chart-content.php:25
+msgid "Completion"
+msgstr "Finalización"
+
+#: templates/ld-dashboard-instructor-chart-content.php:43
+msgid "Top"
+msgstr "Arriba"
+
+#: templates/ld-dashboard-instructor-courses.php:57
+#: templates/ld-dashboard-instructor-lessons.php:22
+#: templates/ld-dashboard-instructor-questions.php:21
+#: templates/ld-dashboard-instructor-quizzes.php:21
+#: templates/ld-dashboard-instructor-topics.php:21
+#, php-format
+msgid "My %s"
+msgstr "Mis %s"
+
+#: templates/ld-dashboard-instructor-lessons.php:26
+#: templates/ld-dashboard-instructor-questions.php:25
+#: templates/ld-dashboard-instructor-quizzes.php:25
+#, php-format
+msgid "Add A New %s"
+msgstr ""
+
+#: templates/ld-dashboard-instructor-stats.php:52
+msgid "There is no instructors yet!"
+msgstr ""
+
+#: templates/ld-dashboard-instructor-topics.php:25
+#: templates/ld-dashboard-profile.php:64
+#, php-format
+msgid "Add a new %s"
+msgstr "Añadir una nueva %s"
+
+#: templates/ld-dashboard-matrix-sort-answer-content.php:24
+#: templates/ld-dashboard-multiple-answer-content.php:25
+#: templates/ld-dashboard-single-answer-content.php:25
+#: templates/ld-dashboard-sort-answer-content.php:21
+msgid "Delete answer"
+msgstr "Borrar respuesta"
+
+#: templates/ld-dashboard-message-integration.php:114
+msgid "Message"
+msgstr ""
+
+#: templates/ld-dashboard-message-integration.php:156
+msgid "Please enter message subject"
+msgstr ""
+
+#: templates/ld-dashboard-message-integration.php:174
+msgid "Send Message"
+msgstr "Enviar mensaje"
+
+#: templates/ld-dashboard-my-announcements-content.php:15
+#: templates/ld-dashboard-profile.php:212
+msgid "My Announcements"
+msgstr ""
+
+#: templates/ld-dashboard-my-announcements-content.php:36
+#: widgets/class-ld-dashboard-earning-chart-widget.php:97
+msgid "Title"
+msgstr "Título"
+
+#: templates/ld-dashboard-my-announcements-content.php:41
+msgid "Content"
+msgstr "Contenido"
+
+#: templates/ld-dashboard-my-announcements-content.php:45
+msgid "Create Announcement"
+msgstr "Crear anuncio"
+
+#: templates/ld-dashboard-my-quiz-attempts-content.php:3
+#: templates/ld-dashboard-profile.php:124
+#: templates/ld-dashboard-profile.php:130
+msgid "My"
+msgstr "Mi"
+
+#: templates/ld-dashboard-my-quiz-attempts-content.php:3
+#: templates/ld-dashboard-profile.php:124
+#: templates/ld-dashboard-profile.php:226
+msgid "Attempts"
+msgstr "Intentos"
+
+#: templates/ld-dashboard-my-quiz-attempts-content.php:23
+msgid "Attempts found."
+msgstr ""
+
+#: templates/ld-dashboard-password-settings-tab.php:8
+msgid "You must be logged in to change your password."
+msgstr ""
+
+#: templates/ld-dashboard-password-settings-tab.php:15
+msgid "Current Password"
+msgstr "Contraseña Actual"
+
+#: templates/ld-dashboard-password-settings-tab.php:19
+msgid "New Password *"
+msgstr "Nueva contraseña *"
+
+#: templates/ld-dashboard-password-settings-tab.php:23
+msgid "Repeat New Password *"
+msgstr ""
+
+#: templates/ld-dashboard-password-settings-tab.php:27
+#: templates/ld-dashboard-settings-content.php:24
+msgid "Reset Password"
+msgstr "Restablecer contraseña"
+
+#: templates/ld-dashboard-profile-content.php:15
+#: templates/ld-dashboard-profile.php:112
+msgid "My Profile"
+msgstr "Mi Perfil"
+
+#: templates/ld-dashboard-profile-content.php:18
+msgid "Edit Profile"
+msgstr "Editar Perfil"
+
+#: templates/ld-dashboard-profile-settings-tab.php:78
+msgid "You must be logged in to edit your profile."
+msgstr "Debes estar conectado para editar tu perfil."
+
+#: templates/ld-dashboard-profile-settings-tab.php:104
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#: templates/ld-dashboard-profile-settings-tab.php:119
+msgid "Website URL"
+msgstr "URL del Sitio Web"
+
+#: templates/ld-dashboard-profile-settings-tab.php:127
+msgid "Bio"
+msgstr "Bio"
+
+#: templates/ld-dashboard-profile-settings-tab.php:150
+msgid "Change Avatar"
+msgstr "Cambiar Avatar"
+
+#: templates/ld-dashboard-profile-settings-tab.php:151
+msgid "Delete Avatar"
+msgstr "Eliminar Avatar"
+
+#: templates/ld-dashboard-profile-settings-tab.php:171
+msgid "Update Profile"
+msgstr "Actualizar Perfil"
+
+#: templates/ld-dashboard-profile.php:47
+msgid "GitHub"
+msgstr "GitHub"
+
+#: templates/ld-dashboard-profile.php:50
+msgid "Facebook"
+msgstr "Facebook"
+
+#: templates/ld-dashboard-profile.php:53
+msgid "Twitter"
+msgstr "Twitter"
+
+#: templates/ld-dashboard-profile.php:56
+msgid "Linkdin"
+msgstr "Linkedin"
+
+#: templates/ld-dashboard-profile.php:72
+msgid "Become An Instructor"
+msgstr "Conviértete en un instructor"
+
+#: templates/ld-dashboard-profile.php:130
+msgid "Activity"
+msgstr "Actividad"
+
+#: templates/ld-dashboard-profile.php:161
+#: templates/ld-dashboard-profile.php:166
+#: templates/ld-dashboard-profile.php:171
+#: templates/ld-dashboard-profile.php:176
+#: templates/ld-dashboard-profile.php:181
+msgid "My "
+msgstr "Mi "
+
+#: templates/ld-dashboard-profile.php:200
+msgid "Earning Logs"
+msgstr ""
+
+#: templates/ld-dashboard-profile.php:206
+msgid "Certificates"
+msgstr "Certificados"
+
+#: templates/ld-dashboard-profile.php:232
+#, php-format
+msgid "%s Activity"
+msgstr "%s Actividad"
+
+#: templates/ld-dashboard-profile.php:239
+msgid "Send Mail"
+msgstr "Enviar correo"
+
+#: templates/ld-dashboard-profile.php:246
+msgid "Private Messages"
+msgstr "Mensajes Privados"
+
+#: templates/ld-dashboard-profile.php:257
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: templates/ld-dashboard-profile.php:281
+msgid "Instructor"
+msgstr "Instructor"
+
+#: templates/ld-dashboard-question-answer-content.php:1
+msgid "Question & Answer"
+msgstr "Pregunta y respuesta"
+
+#: templates/ld-dashboard-quiz-attempts-content.php:3
+#, php-format
+msgid "%s Attempts"
+msgstr "%s Intentos"
+
+#: templates/ld-dashboard-quiz-attempts-content.php:69
+msgid "No students found."
+msgstr "No se encontraron alumnos."
+
+#: templates/ld-dashboard-settings-content.php:23
+msgid "Profile"
+msgstr "Perfil"
+
+#: templates/ld-dashboard-student-course-report.php:22
+#, php-format
+msgid "No enrolled %s"
+msgstr ""
+
+#: templates/ld-dashboard-student-course-report.php:85
+#, php-format
+msgid "You are not enrolled in any %s."
+msgstr ""
+
+#: templates/ld-dashboard-student-status.php:150
+#, php-format
+msgid "Please make sure your %s is enrolled by students . "
+msgstr ""
+
+#: templates/ld-dashboard-student-status.php:152
+msgid "No registered student on the site . "
+msgstr ""
+
+#: templates/ld-dashboard-withdraw-settings-tab.php:23
+msgid "Min Withdraw "
+msgstr ""
+
+#: templates/ld-dashboard-withdraw-settings-tab.php:33
+msgid "Select a withdraw method"
+msgstr "Seleccione un método de retiro"
+
+#: templates/ld-dashboard-withdraw-settings-tab.php:94
+msgid "Your Physical Address"
+msgstr "Su dirección física"
+
+#: templates/ld-dashboard-withdraw-settings-tab.php:96
+msgid "We will send you an E-Check to this address directly."
+msgstr "Le enviaremos un E-Check directamente a esta dirección."
+
+#: templates/ld-dashboard-withdraw-settings-tab.php:101
+msgid "PayPal E-Mail Address"
+msgstr "Dirección de correo electrónico de PayPal"
+
+#: templates/ld-dashboard-withdraw-settings-tab.php:103
+msgid "We will use this email address to send the money to your Paypal account"
+msgstr ""
+
+#: templates/ld-dashboard-withdraw-settings-tab.php:107
+msgid "Save Withdrawal Account"
+msgstr ""
+
+#: templates/ld-dashboard-withdraw-settings-tab.php:114
+msgid ""
+"Seems there is not enable any withdrawal method, please contact the site "
+"admin."
+msgstr ""
+
+#: templates/ld-dashboard-withdrawal-content.php:56
+msgid "Withdrawal"
+msgstr "Retiro"
+
+#: templates/ld-dashboard-withdrawal-content.php:67
+#: templates/ld-dashboard-withdrawal-content.php:191
+msgid "Current Balance"
+msgstr "Saldo actual"
+
+#. translators: %d:
+#: templates/ld-dashboard-withdrawal-content.php:71
+#, php-format
+msgid "You currently have %1$s %2$s ready to withdraw."
+msgstr ""
+
+#: templates/ld-dashboard-withdrawal-content.php:77
+msgid "Withdraw Request"
+msgstr "Petición de Retiro"
+
+#. translators: %d:
+#: templates/ld-dashboard-withdrawal-content.php:86
+#, php-format
+msgid "The preferred payment method is selected as %s. "
+msgstr "El método de pago preferido está seleccionado como %s. "
+
+#: templates/ld-dashboard-withdrawal-content.php:88
+msgid "The preferred payment method is not selected. "
+msgstr ""
+
+#: templates/ld-dashboard-withdrawal-content.php:90
+msgid "You can change your "
+msgstr ""
+
+#: templates/ld-dashboard-withdrawal-content.php:91
+msgid "Withdraw Preference"
+msgstr ""
+
+#: templates/ld-dashboard-withdrawal-content.php:111
+msgid "Withdrawal History"
+msgstr "Historial de Retiros"
+
+#: templates/ld-dashboard-withdrawal-content.php:117
+msgid "Withdrawal Method"
+msgstr "Método para retirar dinero"
+
+#: templates/ld-dashboard-withdrawal-content.php:118
+msgid "Requested On"
+msgstr "Solicitado en"
+
+#: templates/ld-dashboard-withdrawal-content.php:182
+msgid "Withdrawal Request"
+msgstr "Solicitud de Retiro"
+
+#. translators: %d:
+#: templates/ld-dashboard-withdrawal-content.php:186
+msgid "Please enter withdrawal amount and click the submit request button"
+msgstr ""
+
+#: templates/ld-dashboard-withdrawal-content.php:195
+msgid "Selected Payment Method"
+msgstr ""
+
+#. translators: %d:
+#: templates/ld-dashboard-withdrawal-content.php:212
+#, php-format
+msgid "Minimum withdraw amount is %1$s %2$d. "
+msgstr ""
+
+#: templates/ld-dashboard-withdrawal-content.php:218
+msgid "Submit Request"
+msgstr "Enviar Solicitud"
+
+#: templates/ld-dashboard-withdrawal-content.php:222
+msgid "You have a pending withdrawal request."
+msgstr ""
+
+#: templates/ld-instructor-registration.php:29
+msgid "Enter your first name"
+msgstr "Introduce tu nombre"
+
+#: templates/ld-instructor-registration.php:36
+msgid "Enter your last name"
+msgstr "Escribe tu apellido"
+
+#: templates/ld-instructor-registration.php:44
+#: templates/ld-instructor-registration.php:45
+msgid "User Name"
+msgstr "Nombre de usuario"
+
+#: templates/ld-instructor-registration.php:46
+msgid "Enter your username"
+msgstr "Escriba su nombre de usuario"
+
+#: templates/ld-instructor-registration.php:52
+#: templates/ld-instructor-registration.php:53
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: templates/ld-instructor-registration.php:54
+msgid "Enter your email address"
+msgstr "Ingrese su dirección de correo electrónico"
+
+#: templates/ld-instructor-registration.php:55
+msgid "Enter your corrent email address"
+msgstr ""
+
+#: templates/ld-instructor-registration.php:65
+msgid "Enter your password"
+msgstr "Introduzca su contraseña"
+
+#: templates/ld-instructor-registration.php:71
+msgid "Password confirmation"
+msgstr "Confirmar Contraseña"
+
+#: templates/ld-instructor-registration.php:72
+msgid "Password Confirmation"
+msgstr "Confirmación de Contraseña"
+
+#: templates/ld-instructor-registration.php:73
+msgid "Enter your confirmation password"
+msgstr ""
+
+#: templates/ld-instructor-registration.php:74
+msgid "Password doesn't match"
+msgstr ""
+
+#: templates/ld-instructor-registration.php:82
+msgid "Register as instructor"
+msgstr "Registrarse como profesor"
+
+#: templates/ld-instructor-registration.php:97
+msgid "Access Denied"
+msgstr "Acceso denegado"
+
+#: templates/ld-instructor-registration.php:99
+msgid "Oooh! Access Denied"
+msgstr ""
+
+#: templates/ld-instructor-registration.php:102
+msgid ""
+"Sorry, Only registered users can apply for the instructor. Please login or "
+"signup to apply for instructor capabilities."
+msgstr ""
+
+#: templates/ld-instructor-registration.php:106
+msgid "Go To Home"
+msgstr "Ir al Inicio"
+
+#: templates/ld-instructor-registration.php:116
+msgid "You are instructor"
+msgstr "Usted es profesor"
+
+#: templates/ld-instructor-registration.php:119
+#, php-format
+msgid "Registered at : %1$s %2$s"
+msgstr ""
+
+#: templates/ld-instructor-registration.php:130
+#, php-format
+msgid "Status : %s"
+msgstr "Estado : %s"
+
+#: templates/ld-instructor-registration.php:142
+msgid "Apply to become an instructor"
+msgstr "Aplicar para ser profesor"
+
+#: templates/ld-instructor-registration.php:151
+msgid "You already have all the capabilities of an instructor."
+msgstr ""
+
+#: widgets/class-ld-dashboard-earning-chart-widget.php:36
+#: widgets/class-ld-dashboard-earning-chart-widget.php:38
+msgid "Learndash Dashboard Earning Chart Widget"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wbcomdesigns.com/downloads/learndash-dashboard/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"This plugin creates a dashboard panel for Learndash instructors and "
+"students. The instructors can manage the courses, view their courses "
+"progress and student logs."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Wbcom Designs"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wbcomdesigns.com/plugins"
+msgstr ""

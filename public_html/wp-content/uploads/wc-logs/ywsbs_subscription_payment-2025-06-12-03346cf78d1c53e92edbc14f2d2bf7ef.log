@@ -1,0 +1,226 @@
+2025-06-12T00:07:13+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T00:07:13+00:00 NOTICE Start renew order creation cron at 2025-06-12 01:07:13 CONTEXT: {"_legacy":true}
+2025-06-12T00:07:13+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 01:07:13 CONTEXT: {"_legacy":true}
+2025-06-12T00:07:13+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T00:07:13+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T00:07:13+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T00:07:13+00:00 NOTICE Start Payment Renews cron at 2025-06-12 01:07:13 CONTEXT: {"_legacy":true}
+2025-06-12T00:07:13+00:00 NOTICE Search renew order with date < 2025-06-11 01:07:13 CONTEXT: {"_legacy":true}
+2025-06-12T00:07:13+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T00:07:13+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T00:07:13+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T02:15:37+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T02:15:37+00:00 NOTICE Start Payment Renews cron at 2025-06-12 03:15:37 CONTEXT: {"_legacy":true}
+2025-06-12T02:15:37+00:00 NOTICE Search renew order with date < 2025-06-11 03:15:37 CONTEXT: {"_legacy":true}
+2025-06-12T02:15:37+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T02:15:37+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T02:15:37+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T02:15:37+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T02:15:37+00:00 NOTICE Start renew order creation cron at 2025-06-12 03:15:37 CONTEXT: {"_legacy":true}
+2025-06-12T02:15:37+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 03:15:37 CONTEXT: {"_legacy":true}
+2025-06-12T02:15:37+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T02:15:37+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T02:15:38+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T02:15:38+00:00 NOTICE Start Payment Renews cron at 2025-06-12 03:15:38 CONTEXT: {"_legacy":true}
+2025-06-12T02:15:38+00:00 NOTICE Search renew order with date < 2025-06-11 03:15:38 CONTEXT: {"_legacy":true}
+2025-06-12T02:15:38+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T02:15:38+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T02:15:38+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T03:28:35+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T03:28:35+00:00 NOTICE Start renew order creation cron at 2025-06-12 04:28:35 CONTEXT: {"_legacy":true}
+2025-06-12T03:28:35+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 04:28:35 CONTEXT: {"_legacy":true}
+2025-06-12T03:28:35+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T03:28:35+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T03:28:35+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T03:28:35+00:00 NOTICE Start Payment Renews cron at 2025-06-12 04:28:35 CONTEXT: {"_legacy":true}
+2025-06-12T03:28:35+00:00 NOTICE Search renew order with date < 2025-06-11 04:28:35 CONTEXT: {"_legacy":true}
+2025-06-12T03:28:35+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T03:28:35+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T03:28:35+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T05:11:17+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T05:11:17+00:00 NOTICE Start renew order creation cron at 2025-06-12 06:11:17 CONTEXT: {"_legacy":true}
+2025-06-12T05:11:17+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 06:11:17 CONTEXT: {"_legacy":true}
+2025-06-12T05:11:17+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T05:11:17+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T05:11:18+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T05:11:18+00:00 NOTICE Start Payment Renews cron at 2025-06-12 06:11:18 CONTEXT: {"_legacy":true}
+2025-06-12T05:11:18+00:00 NOTICE Search renew order with date < 2025-06-11 06:11:18 CONTEXT: {"_legacy":true}
+2025-06-12T05:11:18+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T05:11:18+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T05:11:18+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T06:25:13+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T06:25:13+00:00 NOTICE Start renew order creation cron at 2025-06-12 07:25:13 CONTEXT: {"_legacy":true}
+2025-06-12T06:25:13+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 07:25:13 CONTEXT: {"_legacy":true}
+2025-06-12T06:25:13+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T06:25:13+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T06:25:13+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T06:25:13+00:00 NOTICE Start Payment Renews cron at 2025-06-12 07:25:13 CONTEXT: {"_legacy":true}
+2025-06-12T06:25:13+00:00 NOTICE Search renew order with date < 2025-06-11 07:25:13 CONTEXT: {"_legacy":true}
+2025-06-12T06:25:13+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T06:25:13+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T06:25:13+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T07:00:00+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T07:00:00+00:00 NOTICE Start renew order creation cron at 2025-06-12 08:00:00 CONTEXT: {"_legacy":true}
+2025-06-12T07:00:00+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 08:00:00 CONTEXT: {"_legacy":true}
+2025-06-12T07:00:00+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T07:00:00+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T07:00:00+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T07:00:00+00:00 NOTICE Start Payment Renews cron at 2025-06-12 08:00:00 CONTEXT: {"_legacy":true}
+2025-06-12T07:00:00+00:00 NOTICE Search renew order with date < 2025-06-11 08:00:00 CONTEXT: {"_legacy":true}
+2025-06-12T07:00:00+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T07:00:00+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T07:00:00+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T08:21:59+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T08:21:59+00:00 NOTICE Start renew order creation cron at 2025-06-12 09:21:59 CONTEXT: {"_legacy":true}
+2025-06-12T08:21:59+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 09:21:59 CONTEXT: {"_legacy":true}
+2025-06-12T08:21:59+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T08:21:59+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T08:21:59+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T08:21:59+00:00 NOTICE Start Payment Renews cron at 2025-06-12 09:21:59 CONTEXT: {"_legacy":true}
+2025-06-12T08:21:59+00:00 NOTICE Search renew order with date < 2025-06-11 09:21:59 CONTEXT: {"_legacy":true}
+2025-06-12T08:21:59+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T08:21:59+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T08:21:59+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T09:16:15+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T09:16:15+00:00 NOTICE Start renew order creation cron at 2025-06-12 10:16:15 CONTEXT: {"_legacy":true}
+2025-06-12T09:16:15+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 10:16:15 CONTEXT: {"_legacy":true}
+2025-06-12T09:16:15+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T09:16:15+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T09:16:15+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T09:16:15+00:00 NOTICE Start Payment Renews cron at 2025-06-12 10:16:15 CONTEXT: {"_legacy":true}
+2025-06-12T09:16:15+00:00 NOTICE Search renew order with date < 2025-06-11 10:16:15 CONTEXT: {"_legacy":true}
+2025-06-12T09:16:15+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T09:16:15+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T09:16:15+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T10:17:29+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T10:17:29+00:00 NOTICE Start renew order creation cron at 2025-06-12 11:17:29 CONTEXT: {"_legacy":true}
+2025-06-12T10:17:29+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 11:17:29 CONTEXT: {"_legacy":true}
+2025-06-12T10:17:29+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T10:17:29+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T10:17:29+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T10:17:29+00:00 NOTICE Start Payment Renews cron at 2025-06-12 11:17:29 CONTEXT: {"_legacy":true}
+2025-06-12T10:17:29+00:00 NOTICE Search renew order with date < 2025-06-11 11:17:29 CONTEXT: {"_legacy":true}
+2025-06-12T10:17:29+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T10:17:29+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T10:17:29+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T11:20:04+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T11:20:04+00:00 NOTICE Start renew order creation cron at 2025-06-12 12:20:04 CONTEXT: {"_legacy":true}
+2025-06-12T11:20:04+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 12:20:04 CONTEXT: {"_legacy":true}
+2025-06-12T11:20:04+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T11:20:04+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T11:20:04+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T11:20:04+00:00 NOTICE Start Payment Renews cron at 2025-06-12 12:20:04 CONTEXT: {"_legacy":true}
+2025-06-12T11:20:04+00:00 NOTICE Search renew order with date < 2025-06-11 12:20:04 CONTEXT: {"_legacy":true}
+2025-06-12T11:20:04+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T11:20:04+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T11:20:04+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T13:25:32+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T13:25:32+00:00 NOTICE Start renew order creation cron at 2025-06-12 14:25:32 CONTEXT: {"_legacy":true}
+2025-06-12T13:25:32+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 14:25:32 CONTEXT: {"_legacy":true}
+2025-06-12T13:25:32+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T13:25:32+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T13:25:32+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T13:25:32+00:00 NOTICE Start Payment Renews cron at 2025-06-12 14:25:32 CONTEXT: {"_legacy":true}
+2025-06-12T13:25:32+00:00 NOTICE Search renew order with date < 2025-06-11 14:25:32 CONTEXT: {"_legacy":true}
+2025-06-12T13:25:32+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T13:25:32+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T13:25:32+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T14:59:19+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T14:59:19+00:00 NOTICE Start renew order creation cron at 2025-06-12 15:59:19 CONTEXT: {"_legacy":true}
+2025-06-12T14:59:19+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 15:59:19 CONTEXT: {"_legacy":true}
+2025-06-12T14:59:19+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T14:59:19+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T14:59:19+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T14:59:19+00:00 NOTICE Start Payment Renews cron at 2025-06-12 15:59:19 CONTEXT: {"_legacy":true}
+2025-06-12T14:59:19+00:00 NOTICE Search renew order with date < 2025-06-11 15:59:19 CONTEXT: {"_legacy":true}
+2025-06-12T14:59:19+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T14:59:19+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T14:59:19+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T15:20:37+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T15:20:37+00:00 NOTICE Start renew order creation cron at 2025-06-12 16:20:37 CONTEXT: {"_legacy":true}
+2025-06-12T15:20:37+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 16:20:37 CONTEXT: {"_legacy":true}
+2025-06-12T15:20:37+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T15:20:37+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T15:20:37+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T15:20:37+00:00 NOTICE Start Payment Renews cron at 2025-06-12 16:20:37 CONTEXT: {"_legacy":true}
+2025-06-12T15:20:37+00:00 NOTICE Search renew order with date < 2025-06-11 16:20:37 CONTEXT: {"_legacy":true}
+2025-06-12T15:20:37+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T15:20:37+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T15:20:37+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T16:21:11+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T16:21:11+00:00 NOTICE Start renew order creation cron at 2025-06-12 17:21:11 CONTEXT: {"_legacy":true}
+2025-06-12T16:21:11+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 17:21:11 CONTEXT: {"_legacy":true}
+2025-06-12T16:21:11+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T16:21:11+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T16:21:12+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T16:21:12+00:00 NOTICE Start Payment Renews cron at 2025-06-12 17:21:12 CONTEXT: {"_legacy":true}
+2025-06-12T16:21:12+00:00 NOTICE Search renew order with date < 2025-06-11 17:21:12 CONTEXT: {"_legacy":true}
+2025-06-12T16:21:12+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T16:21:12+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T16:21:12+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T18:34:08+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T18:34:08+00:00 NOTICE Start renew order creation cron at 2025-06-12 19:34:08 CONTEXT: {"_legacy":true}
+2025-06-12T18:34:08+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 19:34:08 CONTEXT: {"_legacy":true}
+2025-06-12T18:34:08+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T18:34:08+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T18:34:08+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T18:34:08+00:00 NOTICE Start Payment Renews cron at 2025-06-12 19:34:08 CONTEXT: {"_legacy":true}
+2025-06-12T18:34:08+00:00 NOTICE Search renew order with date < 2025-06-11 19:34:08 CONTEXT: {"_legacy":true}
+2025-06-12T18:34:08+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T18:34:08+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T18:34:08+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T19:34:18+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T19:34:18+00:00 NOTICE Start renew order creation cron at 2025-06-12 20:34:18 CONTEXT: {"_legacy":true}
+2025-06-12T19:34:18+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 20:34:18 CONTEXT: {"_legacy":true}
+2025-06-12T19:34:18+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T19:34:18+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T19:34:18+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T19:34:18+00:00 NOTICE Start Payment Renews cron at 2025-06-12 20:34:18 CONTEXT: {"_legacy":true}
+2025-06-12T19:34:18+00:00 NOTICE Search renew order with date < 2025-06-11 20:34:18 CONTEXT: {"_legacy":true}
+2025-06-12T19:34:18+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T19:34:18+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T19:34:18+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T20:13:31+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T20:13:31+00:00 NOTICE Start renew order creation cron at 2025-06-12 21:13:31 CONTEXT: {"_legacy":true}
+2025-06-12T20:13:31+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 21:13:31 CONTEXT: {"_legacy":true}
+2025-06-12T20:13:31+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T20:13:31+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T20:13:31+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T20:13:31+00:00 NOTICE Start Payment Renews cron at 2025-06-12 21:13:31 CONTEXT: {"_legacy":true}
+2025-06-12T20:13:31+00:00 NOTICE Search renew order with date < 2025-06-11 21:13:31 CONTEXT: {"_legacy":true}
+2025-06-12T20:13:31+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T20:13:31+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T20:13:31+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T21:14:33+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T21:14:33+00:00 NOTICE Start renew order creation cron at 2025-06-12 22:14:33 CONTEXT: {"_legacy":true}
+2025-06-12T21:14:33+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 22:14:33 CONTEXT: {"_legacy":true}
+2025-06-12T21:14:33+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T21:14:33+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T21:14:33+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T21:14:33+00:00 NOTICE Start Payment Renews cron at 2025-06-12 22:14:33 CONTEXT: {"_legacy":true}
+2025-06-12T21:14:33+00:00 NOTICE Search renew order with date < 2025-06-11 22:14:33 CONTEXT: {"_legacy":true}
+2025-06-12T21:14:33+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T21:14:33+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T21:14:33+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T22:04:11+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T22:04:11+00:00 NOTICE Start renew order creation cron at 2025-06-12 23:04:11 CONTEXT: {"_legacy":true}
+2025-06-12T22:04:11+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-13 23:04:11 CONTEXT: {"_legacy":true}
+2025-06-12T22:04:11+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T22:04:11+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T22:04:11+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T22:04:11+00:00 NOTICE Start Payment Renews cron at 2025-06-12 23:04:11 CONTEXT: {"_legacy":true}
+2025-06-12T22:04:11+00:00 NOTICE Search renew order with date < 2025-06-11 23:04:11 CONTEXT: {"_legacy":true}
+2025-06-12T22:04:11+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T22:04:11+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T22:04:11+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}
+2025-06-12T23:20:03+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T23:20:03+00:00 NOTICE Start renew order creation cron at 2025-06-13 00:20:03 CONTEXT: {"_legacy":true}
+2025-06-12T23:20:03+00:00 NOTICE Search subscriptions with Payment due date < 2025-06-14 00:20:03 CONTEXT: {"_legacy":true}
+2025-06-12T23:20:03+00:00 NOTICE Found 0 subscriptions CONTEXT: {"_legacy":true}
+2025-06-12T23:20:03+00:00 NOTICE ====================== CONTEXT: {"_legacy":true}
+2025-06-12T23:20:03+00:00 NOTICE =============== CONTEXT: {"_legacy":true}
+2025-06-12T23:20:03+00:00 NOTICE Start Payment Renews cron at 2025-06-13 00:20:03 CONTEXT: {"_legacy":true}
+2025-06-12T23:20:03+00:00 NOTICE Search renew order with date < 2025-06-12 00:20:03 CONTEXT: {"_legacy":true}
+2025-06-12T23:20:03+00:00 NOTICE Found 0 new renew orders CONTEXT: {"_legacy":true}
+2025-06-12T23:20:03+00:00 NOTICE Found 0 failed renew orders CONTEXT: {"_legacy":true}
+2025-06-12T23:20:03+00:00 NOTICE ======================= CONTEXT: {"_legacy":true}

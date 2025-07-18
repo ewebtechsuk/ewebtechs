@@ -1,0 +1,927 @@
+/*Top Report Filters*/
+
+#ld-dashboard-report-table_processing img{
+    padding: 18px 0 0;
+    margin-left: -35px;
+}
+.ld-dashboard-report-filters-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px 25px;
+}
+
+.ld-row.ld-select-filter {
+    width: 25%;
+    padding: 0 5px;
+}
+
+.ld-dashboard-report-filters-section.assignment-report .ld-row.ld-select-filter {
+    width: 33.33%;
+}
+
+.ld-dashboard-report-filters-section.quizz-report .ld-row.ld-select-filter{
+    width: 50%;
+}
+
+.ld-dashboard-datatable-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ld-dashboard-datatable-header div#ld-dashboard-report-table_filter label {
+    font-size: 0;
+    position: relative;
+    display: block;
+}
+
+.ld-dashboard-datatable-header div#ld-dashboard-report-table_filter label:after {
+    font-family: 'ld-icons';
+    content: '\F0D1';
+    font-size: 20px;
+    color: #777;
+    position: absolute;
+    left: 12px;
+    top: 7px;
+}
+
+#ld-dashboard-report .dataTables_wrapper .dataTables_filter input {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: transparent;
+    margin-left: 3px;
+    background: #fff;
+    width: 360px;
+    height: 42px;
+    padding-left: 30px;
+}
+
+#ld-dashboard-report .ld-dashboard-datatable-header div.dt-buttons {
+    display: flex;
+    margin-left: -3px;
+    align-items: center;
+}
+
+#ld-dashboard-report .ld-dashboard-datatable-header div.dt-buttons button.dt-button {
+    border: none !important;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 25px;
+    cursor: pointer;
+    min-width: 80px;
+    line-height: 30px;
+    margin: 3px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+#ld-dashboard-report td.dataTables_empty {
+    background: #fff;
+    border: none !important;
+    padding: 15px;
+    color: red;
+}
+
+.ld-groups-datatable-footer div#ld-dashboard-report-table_length label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#ld-dashboard-report  div#ld-dashboard-report-table_length select[name="ld-dashboard-report-table_length"] {
+    width: 80px !important;
+    border-radius: 5px !important;
+    background-color: #fff;
+    margin:0;
+    box-shadow: none !important;
+}
+
+/*Table Report Data*/
+#ld-dashboard-report .ld-dashboard-table.ld-dashboard-datatable {
+    margin: 20px 0 !important;
+}
+
+#ld-dashboard-report thead{
+    background: #ededed;
+}
+
+#ld-dashboard-report thead th {
+    border-top: 0 !important;
+    font-size: 15px;
+    border-right:0;
+    border-left: 1px solid #eee;
+}
+
+#ld-dashboard-report thead th:first-child {
+    border-left: 0 !important;
+}
+th.ldd-report-cell.ldd-report-essays-cell.ldd-report-essays-cell--title.sorting {
+    width: 45% !important;
+}
+
+th.ldd-report-cell.ldd-report-essays-cell.ldd-report-essays-cell--id.ldd__cell-checkbox.sorting {
+    width: 10% !important;
+}
+
+th.ldd-report-cell.ldd-report-essays-cell.ldd-report-essays-cell--author.sorting,
+th.ldd-report-cell.ldd-report-essays-cell.ldd-report-essays-cell--status.sorting,
+th.ldd-report-cell.ldd-report-essays-cell.ldd-report-essays-cell--action.sorting,
+th.ldd-report-cell.author-ld-report.ldd-report-assignment-cell--author.sorting,
+th.ldd-report-cell.points-ld-report.ldd-report-assignment-cell--points.sorting,
+th.ldd-report-cell.action-ld-report.ldd-report-assignment-cell--action.sorting,
+th.ldd-report-cell.ldd-report-essays-cell.ldd-report-essays-cell--points {
+    width: 15% !important;
+}
+
+th.ldd-report-cell.ldd-report-assignment-cell.ldd-report-assignment-cell--title.sorting {
+    width: 55% !important;
+}
+
+th.ldd-report-cell.ldd-report-quiz-cell.ldd-report-quiz-cell--author.sorting,
+th.ldd-report-cell.ldd-report-quiz-cell.ldd-report-quiz-cell--date.sorting,
+th.ldd-report-cell.ldd-report-quiz-cell.ldd-report-quiz-cell--action.sorting,
+th.ldd-report-cell.ldd-report-quiz-cell.ldd-report-quiz-cell--quiz-score.sorting{
+    width: 18% !important;
+}
+
+th.ldd-report-cell.ldd-report-quiz-cell.ldd-report-quiz-cell--email.sorting {
+    width: 28% !important;
+}
+
+td.ldd-report-cell.ldd-report-assignment-cell.ldd-report-assignment-cell--title a.edit_assignment_single {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 350px;
+    display: block;
+    overflow: hidden;
+}
+
+table#ld-dashboard-report-table[data-table="assignment-report"] td.ldd-report-cell.ldd-report-assignment-cell.ldd-report-assignment-cell--points,
+table#ld-dashboard-report-table[data-table="assignment-report"] td.ldd-report-cell.ldd-report-assignment-cell.ldd-report-assignment-cell--status {
+    width: 20%;
+}
+table#ld-dashboard-report-table[data-table="assignment-report"] td.ldd-report-cell input.small-text[type="number"] {
+    width: 30px !important;
+}
+
+td.ldd-report-cell.ldd-report-essays-cell.ldd-report-essays-cell--points {
+    text-align: center;
+}
+
+#ld-dashboard-report table.ld-dashboard-table td.ldd-report-cell input.small-text[type="number"] {
+    width: 40px;
+}
+
+#ld-dashboard-report .ld-dashboard-table.ld-dashboard-datatable {
+    margin: 20px 0 !important;
+    border-radius: 0;
+    border: 1px solid;
+    background: #fff;
+}
+#ld-dashboard-report table.ld-dashboard-table.ld-dashboard-datatable.dataTable.stripe>tbody>tr.odd>*,
+#ld-dashboard-report table.ld-dashboard-table.ld-dashboard-datatable.dataTable.hover>tbody>tr:hover>*,
+#ld-dashboard-report table.ld-dashboard-table.ld-dashboard-datatable.dataTable.display>tbody>tr:hover>*,
+#ld-dashboard-report table.ld-dashboard-table.ld-dashboard-datatable.dataTable.display>tbody>tr.odd>* {
+    box-shadow: none !important;
+}
+
+#ld-dashboard-report table.ld-dashboard-table.ld-dashboard-datatable.dataTable.display tbody td {
+    border-bottom: none;
+    line-height: 1.3;
+    font-size: 15px;
+    box-shadow: none;
+    border-left:1px solid;
+    border-right: 0;
+}
+
+#ld-dashboard-report table.ld-dashboard-table.ld-dashboard-datatable.dataTable.display tbody td:first-child {
+    border-left: none;
+}
+
+#ld-dashboard-report table.ld-dashboard-table .row-actions {
+    display: flex;
+    font-size: 13px;
+    margin-top: 5px;
+    gap: 5px;
+}
+
+#ld-dashboard-report table.ld-dashboard-table .row-actions a[target="_blank"] {
+    color: #156ae9;
+}
+
+#ld-dashboard-report table.ld-dashboard-table .row-actions span.trash a {
+    color: red;
+    font-size: 14px;
+}
+
+#ld-dashboard-report table.ld-dashboard-table td.ldd-report-cell input.small-text[type="number"],
+.wbcom-ld-dashboard.swal2-shown.swal2-height-auto input.small-text[type="number"] {
+    height: 25px;
+}
+
+
+/*==================================
+ Table Course Reports Data
+ ================================== */
+ #ld-dashboard-course-report .ld-row.ld-select-filter {
+    width: 50%;
+}
+ #ld-dashboard-course-report div#ld-dashboard-course-report-table_filter label {
+    font-size: 0;
+    position: relative;
+    display: block;
+}
+ #ld-dashboard-course-report #ld-dashboard-course-report-table_filter label input[type="search"] {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: transparent;
+    margin-left: 3px;
+    background: #fff;
+    width: 360px;
+    border-color: #dcdfe5 !important;
+    height: 42px;
+    padding-left: 30px;
+}
+ #ld-dashboard-course-report div#ld-dashboard-course-report-table_filter label:after {
+    font-family: 'ld-icons';
+    content: '\F0D1';
+    font-size: 20px;
+    color: #777;
+    position: absolute;
+    left: 12px;
+    top: 7px;
+}
+
+div#ld-dashboard-course-report-table_wrapper .dt-button {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: none !important;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 25px;
+    cursor: pointer;
+    min-width: 80px;
+    line-height: 30px;
+    margin: 3px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+table#ld-dashboard-course-report-table {
+    margin: 20px 0 !important;
+    border-radius: 0;
+    border: 1px solid;
+    background: #fff;
+}
+
+#ld-dashboard-course-report-table .ld-dashboard-table.ld-dashboard-datatable {
+    margin: 20px 0 !important;
+}
+
+#ld-dashboard-course-report-table thead {
+    background: #ededed;
+}
+
+#ld-dashboard-course-report-table thead th {
+    border-top: 0 !important;
+    font-size: 14px;
+    border-right:0;
+    line-height: 1;
+    border-left: 1px solid #eee;
+}
+
+#ld-dashboard-course-report-table thead th:first-child {
+    border-left: 0 !important;
+}
+
+
+#ld-dashboard-course-report-table.ld-dashboard-table td.ldd-report-cell input.small-text[type="number"] {
+    width: 40px;
+}
+
+#ld-dashboard-course-report-table .ld-dashboard-table.ld-dashboard-datatable {
+    margin: 20px 0 !important;
+    border-radius: 0;
+    border: 1px solid;
+    background: #fff;
+}
+#ld-dashboard-course-report-table.ld-dashboard-table.ld-dashboard-datatable.dataTable.stripe>tbody>tr.odd>*,
+#ld-dashboard-course-report-table.ld-dashboard-table.ld-dashboard-datatable.dataTable.hover>tbody>tr:hover>*,
+#ld-dashboard-course-report-table.ld-dashboard-table.ld-dashboard-datatable.dataTable.display>tbody>tr:hover>*,
+#ld-dashboard-course-report-table.ld-dashboard-table.ld-dashboard-datatable.dataTable.display>tbody>tr.odd>* {
+    box-shadow: none !important;
+}
+
+#ld-dashboard-course-report-table.ld-dashboard-table.ld-dashboard-datatable.dataTable.display tbody td {
+    border-bottom: none;
+    line-height: 1.3;
+    font-size: 15px;
+    box-shadow: none;
+    border-left:1px solid;
+    border-right: 0;
+}
+
+#ld-dashboard-course-report-table.ld-dashboard-table.ld-dashboard-datatable.dataTable.display tbody td:first-child {
+    border-left: none;
+}
+
+#ld-dashboard-course-report-table.ld-dashboard-table .row-actions {
+    display: flex;
+    font-size: 13px;
+    margin-top: 5px;
+    gap: 5px;
+}
+
+#ld-dashboard-course-report-table.ld-dashboard-table .row-actions a[target="_blank"] {
+    color: #156ae9;
+}
+
+#ld-dashboard-course-report-table.ld-dashboard-table .row-actions span.trash a {
+    color: red;
+    font-size: 14px;
+}
+
+#ld-dashboard-course-report-table.ld-dashboard-table tbody tr.even {
+    background-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+#ld-dashboard-course-report-table.ld-dashboard-table td.ldd-report-cell input.small-text[type="number"] {
+    height: 25px;
+}
+
+#ld-dashboard-course-report-table_length>label,
+.ld-dashboard-student-course-report-tabs .ld-groups-datatable-footer div.dataTables_length label {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+#ld-dashboard-course-report-table_length select,
+.ld-dashboard-student-course-report-tabs .ld-groups-datatable-footer div.dataTables_length select {
+    margin: 0 10px;
+    flex: 0 0 auto;
+    width: 80px !important;
+    border-radius: 5px !important;
+    background-color: #fff;
+    box-shadow: none !important;
+}
+.ld-dashboard-course-report-table-wrapper #ld-dashboard-course-report-table_paginate .paginate_button,
+.ld-dashboard-student-course-report-tabs .ld-groups-datatable-footer .dataTables_paginate.paging_simple_numbers .paginate_button {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.08);
+    font-size: 16px;
+    padding: 0px 15px;
+    line-height: 35px;
+    font-weight: normal;
+    margin: 0 4px;
+}
+.ld-dashboard-course-report-table-wrapper #ld-dashboard-course-report-table_paginate span a.paginate_button,
+.ld-dashboard-student-course-report-tabs .ld-groups-datatable-footer .dataTables_paginate.paging_simple_numbers span a.paginate_button {
+    background: #fff !important;
+}
+
+table#ld-dashboard-course-report-table.dataTable tbody tr.selected>* {
+    color: #000;
+}
+.ld-dashboard-table.ld-dashboard-datatable tr.odd.selected,
+.ld-dashboard-table.ld-dashboard-datatable tr.even.selected {
+    background: #f2f4f6;
+}
+table.ld-dashboard-table tbody tr.selected>* {
+    color: #000 !important;
+}
+.ld-dashboard-table  tr.odd.selected,
+.ld-dashboard-table  tr.even.selected,
+#ld-dashboard-course-report-table.ld-dashboard-table tr.even.selected,
+#ld-dashboard-report table.ld-dashboard-table tbody  tr.even.selected {
+    background: #f2f4f6 !important;
+}
+
+/*=======================================
+Course User Info
+=========================================*/
+.ld-dashboard-student-course-report-table-wrapper .ld-dashboard-student-course-report-tabs h3 {
+    font-size: 22px;
+}
+.ld-dashboard-student-course-report-table-wrapper table#ld-dashboard-student-course-report-table {
+    display: none;
+}
+.ld-dashboard-student-course-report-table-wrapper .ld-dashboard-user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.ld-dashboard-student-course-report-table-wrapper .ld-dashboard-user-avatar img {
+    border-radius: 8px;
+    width: 100px;
+}
+.ld-dashboard-student-course-report-table-wrapper .ld-dashboard-user-card-content p.ld-dashboard-user-name {
+    font-weight: 600;
+    margin: 0px 0 10px;
+}
+.ld-dashboard-student-course-report-table-wrapper .ld-dashboard-user-card-content p.ld-dashboard-user-email{
+    margin: 0;
+}
+.ld-dashboard-student-course-report-table-wrapper a.ld-dashboard-course-reports-link {
+    color: #fff;
+    padding: 10px 20px;
+    line-height: 1;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 6px;
+}
+.ld-dashboard-student-course-report-table-wrapper .ld-dashboard-inline-links,
+.ld-dashboard-student-course-report-table-wrapper .ld-dashboard-student-course-report-tabs h3  {
+    margin-bottom: 10px;
+}
+div.ld-dashboard-student-course-report-tabs .ld-dashboard-datatable-header{
+    margin-bottom: 20px;
+}
+div.ld-dashboard-student-course-report-tabs .ld-dashboard-datatable-header button.dt-button {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: none !important;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 25px;
+    cursor: pointer;
+    min-width: 80px;
+    line-height: 30px;
+    margin: 3px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+.ld-dashboard-student-course-report-table-wrapper .ld-dashboard-student-course-report-tabs .ld-dashboard-datatable-header label {
+    font-size: 0;
+    position: relative;
+    display: block;
+}
+.ld-dashboard-student-course-report-table-wrapper .ld-dashboard-student-course-report-tabs .ld-dashboard-datatable-header input[type="search"] {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: transparent;
+    margin-left: 3px;
+    background: #fff;
+    width: 350px;
+    border-color: #dcdfe5 !important;
+    height: 42px;
+    padding-left: 30px;
+}
+.ld-dashboard-student-course-report-table-wrapper .ld-dashboard-student-course-report-tabs .ld-dashboard-datatable-header label:after {
+    font-family: 'ld-icons';
+    content: '\F0D1';
+    font-size: 20px;
+    color: #777;
+    position: absolute;
+    left: 12px;
+    top: 7px;
+}
+.ld-dashboard-student-course-report-table-wrapper .ld-dashboard-student-course-report-tabs table thead {
+    background: #ededed;
+}
+.ld-dashboard-student-course-report-table-wrapper .ld-dashboard-student-course-report-tabs table {
+    margin: 20px 0 !important;
+    border-radius: 0;
+    border: 1px solid;
+    background: #fff;
+}
+.ld-dashboard-student-course-report-table-wrapper .ld-dashboard-student-course-report-tabs table tr.odd{
+    background: #fff;
+}
+#ld-dashboard-course-report table.dataTable.stripe>tbody>tr.odd>*,
+#ld-dashboard-course-report table.dataTable.display>tbody>tr.odd>* {
+    box-shadow: none !important;
+}
+#ld-dashboard-course-report table.dataTable thead th,
+#ld-dashboard-course-report table.dataTable tfoot th {
+   border: none;
+   font-size: 14px;
+   border-left: 1px solid;
+}
+#ld-dashboard-course-report thead th:first-child {
+    border-left: 0 !important;
+}
+
+.ld-dashboard-student-course-report-table-wrapper .ld-dashboard-student-course-report-tabs tbody td {
+    border-bottom: none;
+    line-height: 1.3;
+    font-size: 15px;
+    box-shadow: none;
+    border-left: 1px solid;
+    border-right: 0;
+}
+.ld-dashboard-student-course-report-table-wrapper .ld-dashboard-student-course-report-tabs tbody td:first-child {
+    border-left: none;
+}
+.ld-dashboard-student-course-report-table-wrapper .ld-dashboard-student-course-report-tabs table tbody tr.even {
+    background-color: rgba(0, 0, 0, 0.03) !important;
+}
+.ld-groups-datatable-footer div#ld-dashboard-course-report-table_info{
+    font-size: 15px;
+}
+.ld-dashboard-student-course-report-tabs table td.dataTables_empty {
+    color: red;
+}
+
+.ld-dashboard-student-course-report-tabs.active {
+    display: block;
+}
+
+.ld-dashboard-student-course-report-tabs {
+    display: none;
+}
+
+/*Essay Report*/
+#ld-dashboard-report-table td.ldd__cell-checkbox.ldd-report-cell.ldd-report-cell.ldd-report-essays-cell.ldd-report-essays-cell--id.dtr-control {
+    font-weight: bold;
+}
+#ld-dashboard-report-table td.ldd-report-cell.ldd-report-essays-cell.ldd-report-essays-cell--title a.edit_essay.edit_essay_single {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+#ld-dashboard-report-table td.ldd-report-cell.ldd-report-essays-cell.ldd-report-essays-cell--action,
+#ld-dashboard-report-table td.ldd-report-cell.ldd-report-essays-cell--status {
+    text-align: center;
+}
+#ld-dashboard-report-table td.ldd-report-cell.ldd-report-essays-cell--status button.small.essay_approve_single,
+#ld-dashboard-report-table td.ldd-report-cell.ldd-report-essays-cell--action a.ldd-report-view-more,
+.wbcom-ld-dashboard.swal2-shown div#swal2-html-container .small.essay_approve_single,
+#ld-dashboard-report-table td a.dt-button.button.ld-dashboard-btn-bg,
+.wbcom-ld-dashboard.swal2-shown div#swal2-html-container button.small.assignment_approve_single {
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin:0;
+    border-radius: 4px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.wbcom-ld-dashboard.swal2-shown div#swal2-html-container button.small.assignment_approve_single{
+    margin-left: 10px;
+}
+
+#ld-dashboard-report-table[data-table="quizz-report"] td.ldd-report-cell.ldd-report-quiz-cell.ldd-report-quiz-cell--date {
+    padding:10px 25px;
+}
+
+/*Popup Data*/
+.wbcom-ld-dashboard.swal2-shown.swal2-height-auto .swal2-popup.swal2-modal.swal2-show {
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+}
+.wbcom-ld-dashboard.swal2-shown.swal2-height-auto button.swal2-close {
+    display: block !important;
+    position: absolute;
+    background: red;
+    color: #fff;
+    border-radius:8px;
+    width: 40px;
+    top: -12px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 28px;
+    right: -12px;
+    border:none;
+}
+.wbcom-ld-dashboard.swal2-shown.swal2-height-auto button.swal2-close:focus{
+    box-shadow: none !important;
+}
+.wbcom-ld-dashboard.swal2-shown.swal2-height-auto .swal2-actions{
+    display: none !important;
+}
+.wbcom-ld-dashboard.swal2-shown.swal2-height-auto div#swal2-html-container {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.wbcom-ld-dashboard div#swal2-html-container ul {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    max-height: 650px;
+    overflow-y: scroll;
+}
+.wbcom-ld-dashboard div#swal2-html-container ul::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 100px;
+}
+.wbcom-ld-dashboard div#swal2-html-container ul::-webkit-scrollbar-track {
+  background: #fff; 
+}
+.wbcom-ld-dashboard div#swal2-html-container ul:hover::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 100px;
+}
+.wbcom-ld-dashboard div#swal2-html-container ul li {
+    display: flex;
+    font-size: 16px;
+    padding: 15px;
+    flex-wrap: wrap;    
+}
+.wbcom-ld-dashboard div#swal2-html-container ul li:nth-child(2n+2){
+    background: #f4f4f4;
+}
+.wbcom-ld-dashboard div#swal2-html-container ul li strong {
+    width: 20%;
+    text-align: left;
+}
+.wbcom-ld-dashboard div#swal2-html-container ul li span{
+    width: 80%;
+    text-align: left;
+    line-height: 1.3;
+}
+.wbcom-ld-dashboard div#swal2-html-container ul li span p,
+.wbcom-ld-dashboard div#swal2-html-container ul li span p strong{
+    margin:0;
+    font-weight: normal;
+}
+
+/*Footer Data Tabel*/
+#ld-dashboard-report-table_wrapper div#ld-dashboard-report-table_paginate {
+    display: none !important;
+}
+div#ld-dashboard-report-table_paginate .paginate_button {
+    font-size: 0;
+    padding: 8px 10px;
+    display: inline-block;
+    border-radius: 5px;
+    border:1px solid;
+    cursor: pointer;
+    background-color: #fff;
+    background-image: url(../img/angle-left-b.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 38px;
+    background-size: 25px;
+}
+
+div#ld-dashboard-report-table_paginate a.paginate_button.next{
+    background-image: url(../img/angle-right-b.svg);
+    margin-left: 5px;
+}
+
+div#ld-dashboard-report-table_paginate a.paginate_button.disabled{
+    display: none;
+}
+div#ld-dashboard-report-table_paginate span>a.paginate_button {
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+/*Resposive Report Table*/
+#ld-dashboard-report-table td.ldd-report-cell:after{
+    display: none;
+}
+@media only screen and (max-width: 736px) {
+
+.wbcom-ld-dashboard.swal2-shown .swal2-container.swal2-center.swal2-backdrop-show{
+    z-index: 99999;
+    padding: 20px;
+}
+.wbcom-ld-dashboard.swal2-shown.swal2-height-auto .swal2-popup.swal2-modal.swal2-show {
+    margin:15px;
+    padding: 0;
+}
+.wbcom-ld-dashboard div#swal2-html-container ul {
+    height: 450px;
+}
+.wbcom-ld-dashboard div#swal2-html-container ul li {
+    display: block; 
+}
+.wbcom-ld-dashboard div#swal2-html-container ul li strong{
+    margin-bottom: 5px;
+}
+.wbcom-ld-dashboard div#swal2-html-container ul li strong,
+.wbcom-ld-dashboard div#swal2-html-container ul li span{
+    width: 100%;
+    display: block;
+    text-align: left;
+}
+.wbcom-ld-dashboard div#swal2-html-container ul::-webkit-scrollbar-track {
+  background: #f6f6f6; 
+}
+
+#ld-dashboard-report .dataTables_wrapper .dataTables_filter input{
+    width: 100%;
+}
+#ld-dashboard-report .dataTables_wrapper .dataTables_filter {
+    margin: 2px 4px 0 0;
+    vertical-align: middle;
+    display: flex;
+}
+#ld-dashboard-course-report-table.ld-dashboard-table.ld-dashboard-datatable.dataTable.display tbody td {
+    border-bottom: 1px solid #ddd;
+}
+
+
+}
+
+@media only screen and (max-width: 1139px) {
+
+    .ld-row.ld-select-filter {
+        width: 50%;
+        padding:5px;
+    }
+
+}
+
+@media only screen and (max-width: 629px) {
+
+    .ld-row.ld-select-filter {
+        width: 100% !important;
+        padding:5px;
+    }
+    .ld-dashboard-report-filters-section {
+        margin: 0 -5px 10px;
+    }
+    div#ld-dashboard-report {
+        margin-top: -25px;
+    }
+    #ld-dashboard-course-report-table_wrapper .ld-dashboard-datatable-header,
+    div.ld-dashboard-student-course-report-tabs .ld-dashboard-datatable-header {
+        display: block !important;
+    }
+    #ld-dashboard-course-report #ld-dashboard-course-report-table_filter label input[type="search"],
+    .ld-dashboard-student-course-report-table-wrapper .ld-dashboard-student-course-report-tabs .ld-dashboard-datatable-header input[type="search"] {
+        width: 98%;
+    }
+    #ld-dashboard-course-report-table_length>label,
+    .ld-dashboard-student-course-report-tabs .ld-groups-datatable-footer div.dataTables_length label {
+        justify-content: center;
+    }
+    #ld-dashboard-course-report table.dataTable thead th, #ld-dashboard-course-report table.dataTable tfoot th {
+        line-height: 1;
+    }
+    .ld-dashboard-student-course-report-table-wrapper .ld-dashboard-user-card-content p.ld-dashboard-user-email {
+        margin: 0 0 12px;
+        font-size: 16px;
+    }
+    .ld-dashboard-student-course-report-table-wrapper .ld-dashboard-user-avatar img {
+        width: 100px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1024px)  {
+
+    #ld-dashboard-report table.dataTable tbody tr {
+        border-top: 1px solid;
+    }
+    #ld-dashboard-report table.dataTable tbody tr:first-child {
+        border-top: 0;
+    }
+
+    #ld-dashboard-report table.ld-dashboard-table.ld-dashboard-datatable.dataTable.display tbody td {
+        border-left: 0;
+        border-top: 1px solid;
+    }
+    #ld-dashboard-report table.ld-dashboard-table.ld-dashboard-datatable.dataTable.display tbody td:first-child {
+        border-top: 0;
+    }
+    #ld-dashboard-report table.ld-dashboard-table.ld-dashboard-datatable.dataTable.display tbody td.child {
+        padding: 0;
+    }
+
+    #ld-dashboard-report table, #ld-dashboard-report thead, 
+    #ld-dashboard-report tbody, #ld-dashboard-report th, 
+    #ld-dashboard-report td, #ld-dashboard-report tr { 
+        display: block; 
+    }
+
+    #ld-dashboard-report td.dataTables_empty:nth-of-type(1):after {
+        display: none !important;
+    }
+
+    td.ldd-report-cell.ldd-report-assignment-cell.ldd-report-assignment-cell--title a.edit_assignment_single {
+        width: 100%;
+    }
+    
+    #ld-dashboard-report thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    #ld-dashboard-report td { 
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 35%; 
+    }
+    
+    #ld-dashboard-report td:after { 
+        position: absolute;
+        top: 6px;
+        text-align: left;
+        left: 6px;
+        width: 45%;  
+        white-space: nowrap;
+    }
+    #ld-dashboard-report tr.child td.child {
+        padding: 0;
+    }
+    #ld-dashboard-report tr.child td.child:after{
+        display:none !important;
+    }
+    
+    /* Label the data */
+    #ld-dashboard-report-table td.ldd-report-cell:after{
+        display: block;
+    }
+    #ld-dashboard-report td:nth-of-type(4){ text-align: left !important; }
+    #ld-dashboard-report td:nth-of-type(5) { padding-left: 35%;text-align: left !important; }
+
+    /* Quizz Report */ 
+    #ld-dashboard-report-table[data-table="quizz-report"] td:nth-of-type(5),
+    #ld-dashboard-report-table[data-table="quizz-report"] td.ldd-report-cell.ldd-report-quiz-cell.ldd-report-quiz-cell--date { padding-left: 35%;}
+
+    /* Table Course Reports Data - Responsive */
+    table#ld-dashboard-course-report-table,
+    table#ld-dashboard-course-report-table thead,
+    table#ld-dashboard-course-report-table tbody,
+    table#ld-dashboard-course-report-table th,
+    table#ld-dashboard-course-report-table td,
+    table#ld-dashboard-course-report-table tr {
+        display: block;
+    }
+
+    table#ld-dashboard-course-report-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    table#ld-dashboard-course-report-table td {
+        border: none;
+        border-left: 0 !important;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    table#ld-dashboard-course-report-table td:before {
+        content: attr(data-title);
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 45%;
+        font-weight: 600;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    /* Course Student Course Report Table - Responsive */
+    .ld-dashboard-student-course-report-table-wrapper table.ld-dashboard-table.ld-dashboard-datatable,    
+    .ld-dashboard-student-course-report-table-wrapper table.ld-dashboard-table.ld-dashboard-datatable thead,
+    .ld-dashboard-student-course-report-table-wrapper table.ld-dashboard-table.ld-dashboard-datatable tbody,
+    .ld-dashboard-student-course-report-table-wrapper table.ld-dashboard-table.ld-dashboard-datatable th,
+    .ld-dashboard-student-course-report-table-wrapper table.ld-dashboard-table.ld-dashboard-datatable td,
+    .ld-dashboard-student-course-report-table-wrapper table.ld-dashboard-table.ld-dashboard-datatable tr {
+        display: block;
+    }
+
+    .ld-dashboard-student-course-report-table-wrapper table.ld-dashboard-table.ld-dashboard-datatable thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .ld-dashboard-student-course-report-table-wrapper table.ld-dashboard-table.ld-dashboard-datatable td {
+        border: none;
+        border-left: 0 !important;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .ld-dashboard-student-course-report-table-wrapper table.ld-dashboard-table.ld-dashboard-datatable td:before {
+        content: attr(data-title);
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 45%;
+        font-weight: 600;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+}
