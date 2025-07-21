@@ -1,17 +1,28 @@
-/thetripdealers
-/learn
-/wp-content/uploads
-/.env
-/.DS_Store
-/node_modules
-/.vscode
-/.idea
-/.cache
-/.history
-/.next
-/.nuxt
-/.sass-cache
-public_html.zip
-public_html/wp-content/ai1wm-backups/
-public_html.zip
-public_html/wp-content/ai1wm-backups/
+public_html/thetripdealers/
+public_html/learn/
+public_html/wp-content/uploads
+/public_html/.env
+/public_html/.DS_Store
+/public_html/node_modules
+/public_html/.vscode
+/public_html/.idea
+/public_html/.cache
+/public_html/.history
+/public_html/.next
+/public_html/.nuxt
+/public_html/.sass-cache
+/public_html.zip
+/public_html/wp-content/ai1wm-backups/
+# Ignore large files and backups
+public_html/wp-content/ai1wm-backups/*.wpress
+public_html/wp-content/ai1wm-backups/*.zip
+# Ignore specific directories
+public_html/wp-content/uploads/
+public_html/wp-content/cache/
+public_html/wp-content/backups/
+public_html/wp-content/backup-db/
+# Ignore IDE and editor specific files
+public_html/.vscode/
+public_html/.idea/
+public_html/.cache/
+public_html/.history/       
