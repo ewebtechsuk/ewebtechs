@@ -1125,6 +1125,13 @@ function fluentcrm_get_crm_profile_html($userIdOrEmail, $checkPermission = true,
                             style="color: #56960b; border-color: #d9e7c9; border-radius: 3px;"><?php _e('Lifetime Value', 'fluent-crm'); ?>: <?php echo esc_html($lifeTimeValue); ?></span>
                     </div>
                 <?php endif; ?>
+                <?php if (!empty($profile->phone)): ?>
+                    <p>
+                        <?php echo esc_html($profile->phone); ?>
+                        <a href="#" class="fcrm_sms_button" data-phone="<?php echo esc_attr($profile->phone); ?>">SMS</a>
+                        <a href="tel:<?php echo esc_attr($profile->phone); ?>" class="fcrm_call_button">Call</a>
+                    </p>
+                <?php endif; ?>
             </div>
             <div class="fc_tag_lists">
                 <div class="fc_stats" style="text-align: center">
