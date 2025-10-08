@@ -39,13 +39,21 @@ if ( ! isset( $wp_did_header ) ) {
 
     if ( $script_uri && preg_match( '/www\./', admin_url() ) && ! preg_match( '/www\.|preview-domain\.|hostingersite\./', $script_uri ) ) {
         $part   = parse_url( $script_uri );
+        if ( false === $part ) {
+            $part = [];
+        }
         $scheme = $part['scheme'] ?? 'https';
         $host   = $part['host'] ?? '';
         $path   = $part['path'] ?? '';
-        $link   = $scheme . '://www.' . $host . $path;
-        wp_redirect( $link );
 
-        exit();
+        if ( $host ) {
+            $query    = isset( $part['query'] ) ? '?' . $part['query'] : '';
+            $fragment = isset( $part['fragment'] ) ? '#' . $part['fragment'] : '';
+            $link     = $scheme . '://www.' . $host . $path . $query . $fragment;
+            wp_redirect( $link );
+
+            exit();
+        }
     }
 
     // Delete itself to make sure it is executed only once
