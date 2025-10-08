@@ -29,12 +29,31 @@ if ( ! isset( $wp_did_header ) ) {
     // Load the WordPress library.
     require_once( dirname( __FILE__ ) . '/wp-load.php' );
 
-    if ( preg_match( '/www\./', admin_url() ) && ! preg_match( '/www\.|preview-domain\.|hostingersite\./', $_SERVER['SCRIPT_URI'] ) ) {
-        $part = parse_url($_SERVER['SCRIPT_URI']);
-        $link = $part['scheme'] . '://www.' . $part['host'] . $part['path'];
-        wp_redirect( $link );
+    $script_uri = $_SERVER['SCRIPT_URI'] ?? '';
 
-        exit();
+    if ( ! $script_uri && ! empty( $_SERVER['HTTP_HOST'] ) ) {
+        $scheme = ! empty( $_SERVER['REQUEST_SCHEME'] ) ? $_SERVER['REQUEST_SCHEME'] : ( ! empty( $_SERVER['HTTPS'] ) && 'off' !== strtolower( $_SERVER['HTTPS'] ) ? 'https' : 'http' );
+        $path   = $_SERVER['REQUEST_URI'] ?? '';
+        $script_uri = $scheme . '://' . $_SERVER['HTTP_HOST'] . $path;
+    }
+
+    if ( $script_uri && preg_match( '/www\./', admin_url() ) && ! preg_match( '/www\.|preview-domain\.|hostingersite\./', $script_uri ) ) {
+        $part   = parse_url( $script_uri );
+        if ( false === $part ) {
+            $part = [];
+        }
+        $scheme = $part['scheme'] ?? 'https';
+        $host   = $part['host'] ?? '';
+        $path   = $part['path'] ?? '';
+
+        if ( $host ) {
+            $query    = isset( $part['query'] ) ? '?' . $part['query'] : '';
+            $fragment = isset( $part['fragment'] ) ? '#' . $part['fragment'] : '';
+            $link     = $scheme . '://www.' . $host . $path . $query . $fragment;
+            wp_redirect( $link );
+
+            exit();
+        }
     }
 
     // Delete itself to make sure it is executed only once
