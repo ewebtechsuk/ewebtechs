@@ -29,9 +29,20 @@ if ( ! isset( $wp_did_header ) ) {
     // Load the WordPress library.
     require_once( dirname( __FILE__ ) . '/wp-load.php' );
 
-    if ( preg_match( '/www\./', admin_url() ) && ! preg_match( '/www\.|preview-domain\.|hostingersite\./', $_SERVER['SCRIPT_URI'] ) ) {
-        $part = parse_url($_SERVER['SCRIPT_URI']);
-        $link = $part['scheme'] . '://www.' . $part['host'] . $part['path'];
+    $script_uri = $_SERVER['SCRIPT_URI'] ?? '';
+
+    if ( ! $script_uri && ! empty( $_SERVER['HTTP_HOST'] ) ) {
+        $scheme = ! empty( $_SERVER['REQUEST_SCHEME'] ) ? $_SERVER['REQUEST_SCHEME'] : ( ! empty( $_SERVER['HTTPS'] ) && 'off' !== strtolower( $_SERVER['HTTPS'] ) ? 'https' : 'http' );
+        $path   = $_SERVER['REQUEST_URI'] ?? '';
+        $script_uri = $scheme . '://' . $_SERVER['HTTP_HOST'] . $path;
+    }
+
+    if ( $script_uri && preg_match( '/www\./', admin_url() ) && ! preg_match( '/www\.|preview-domain\.|hostingersite\./', $script_uri ) ) {
+        $part   = parse_url( $script_uri );
+        $scheme = $part['scheme'] ?? 'https';
+        $host   = $part['host'] ?? '';
+        $path   = $part['path'] ?? '';
+        $link   = $scheme . '://www.' . $host . $path;
         wp_redirect( $link );
 
         exit();
