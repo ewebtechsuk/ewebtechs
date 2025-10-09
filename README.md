@@ -56,3 +56,39 @@ Then follow the commit steps above.
 This README was added from Codex environment which cannot connect to the
 original server or GitHub, so you must perform the above steps on a machine
 with network access.
+
+## Verify updates on Hostinger
+
+Because this environment cannot reach external networks, it cannot confirm
+whether the files currently in `public_html/` are live on Hostinger. To check
+from your own machine:
+
+1. SSH into the Hostinger account using the credentials visible in the SSH
+   Access panel (`82.219.189.219`, port `65002`, user `u758780474`):
+   ```bash
+   ssh -p 65002 u758780474@82.219.189.219
+   ```
+2. Navigate to the document root and list recently modified files to compare
+   timestamps with your local copy:
+   ```bash
+   cd /home/u758780474/public_html
+   find . -maxdepth 2 -type f -printf "%TY-%Tm-%Td %TH:%TM %p\n" | sort
+   ```
+3. Optionally download the file you expect to be updated and compare it with
+   your local version:
+   ```bash
+   scp -P 65002 u758780474@82.219.189.219:/home/u758780474/public_html/path/to/file ./remote-file
+   diff -u remote-file public_html/path/to/file
+   ```
+4. For a quick checksum comparison against multiple files at once, run the
+   helper script in this repository (from your local machine with network
+   access):
+   ```bash
+   ./scripts/compare-hostinger.sh path/to/file.php another/file.css
+   ```
+   The script uses MD5 hashes to report whether the remote and local versions
+   match. Override `REMOTE_HOST`, `REMOTE_PORT`, `REMOTE_USER`, or
+   `REMOTE_DIR` if your Hostinger settings change.
+
+If the timestamps or file contents do not match, adjust your deployment
+workflow so that changes from this repository are copied to the live server.
