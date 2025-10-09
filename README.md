@@ -56,3 +56,30 @@ Then follow the commit steps above.
 This README was added from Codex environment which cannot connect to the
 original server or GitHub, so you must perform the above steps on a machine
 with network access.
+
+## Verify updates on Hostinger
+
+Because this environment cannot reach external networks, it cannot confirm
+whether the files currently in `public_html/` are live on Hostinger. To check
+from your own machine:
+
+1. SSH into the Hostinger account:
+   ```bash
+   ssh <user>@<host>
+   ```
+2. Navigate to the document root and list recently modified files to compare
+   timestamps with your local copy:
+   ```bash
+   cd /home/<user>/public_html
+   find . -maxdepth 2 -type f -printf "%TY-%Tm-%Td %TH:%TM %p\n" | sort
+   ```
+3. Optionally download the file you expect to be updated and compare it with
+   your local version:
+   ```bash
+   scp <user>@<host>:/home/<user>/public_html/path/to/file ./remote-file
+   diff -u remote-file public_html/path/to/file
+   ```
+
+If the timestamps or file contents do not match, your deployment workflow may
+need to be updated so that changes are pushed from this repository to the live
+server.
