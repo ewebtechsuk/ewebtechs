@@ -24,7 +24,20 @@ get_header();
 
 				<?php do_action( 'kava-theme/site/main-before', 'index' ); ?>
 
-				<main id="main" class="site-main"><?php
+                                <main id="main" class="site-main">
+                                        <section class="home-hero">
+                                                <div class="home-hero__inner">
+                                                        <h1 class="home-hero__title"><?php esc_html_e( 'Welcome to Our Digital Studio', 'kava' ); ?></h1>
+                                                        <p class="home-hero__subtitle"><?php esc_html_e( 'We craft modern web experiences and share the latest insights from the world of design, development, and marketing.', 'kava' ); ?></p>
+                                                        <a class="home-hero__cta btn btn-primary" href="<?php echo esc_url( get_permalink( get_option( 'page_for_posts' ) ) ); ?>">
+                                                                <?php esc_html_e( 'Read the Latest Articles', 'kava' ); ?>
+                                                        </a>
+                                                </div>
+                                        </section>
+
+                                        <?php
+                                        if ( have_posts() ) :
+                                                if ( is_home() && ! is_front_page() ) : ?>
 					if ( have_posts() ) :
 
 						if ( is_home() && ! is_front_page() ) : ?>
