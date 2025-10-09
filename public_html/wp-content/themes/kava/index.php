@@ -13,35 +13,35 @@
  */
 get_header();
 
-	do_action( 'kava-theme/site/site-content-before', 'index' ); ?>
+        do_action( 'kava-theme/site/site-content-before', 'index' ); ?>
 
-	<div <?php kava_content_class() ?>>
-		<div class="row">
+        <div <?php kava_content_class() ?>>
+                <div class="row">
 
-			<?php do_action( 'kava-theme/site/primary-before', 'index' ); ?>
+                        <?php do_action( 'kava-theme/site/primary-before', 'index' ); ?>
 
-			<div id="primary" <?php kava_primary_content_class(); ?>>
+                        <div id="primary" <?php kava_primary_content_class(); ?>>
 
-				<?php do_action( 'kava-theme/site/main-before', 'index' ); ?>
+                                <?php do_action( 'kava-theme/site/main-before', 'index' ); ?>
 
-				<main id="main" class="site-main"><?php
-					if ( have_posts() ) :
+                                <main id="main" class="site-main"><?php
+                                        if ( have_posts() ) :
 
-						if ( is_home() && ! is_front_page() ) : ?>
-							<header>
-								<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-							</header>
+                                                if ( is_home() && ! is_front_page() ) : ?>
+                                                        <header>
+                                                                <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+                                                        </header>
 
-						<?php endif;
+                                                <?php endif;
 
-						kava_theme()->do_location( 'archive', 'template-parts/posts-loop' );
+                                                kava_theme()->do_location( 'archive', 'template-parts/posts-loop' );
 
-					else :
+                                        else :
 
-						get_template_part( 'template-parts/content', 'none' );
+                                                get_template_part( 'template-parts/content', 'none' );
 
-					endif;
-				?></main><!-- #main -->
+                                        endif;
+                                ?></main><!-- #main -->
 
 				<?php do_action( 'kava-theme/site/main-after', 'index' ); ?>
 
@@ -49,12 +49,12 @@ get_header();
 
 			<?php do_action( 'kava-theme/site/primary-after', 'index' ); ?>
 
-			<?php
-				get_sidebar(); // Loads the sidebar.php template.
-			?>
-		</div>
-	</div>
+                        <?php
+                                get_sidebar(); // Loads the sidebar.php template.
+                        ?>
+                </div>
+        </div>
 
-	<?php do_action( 'kava-theme/site/site-content-after', 'index' );
+        <?php do_action( 'kava-theme/site/site-content-after', 'index' );
 
 get_footer();
