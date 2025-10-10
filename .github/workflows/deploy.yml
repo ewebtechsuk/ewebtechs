@@ -26,11 +26,12 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Skip deployment (FTP secrets missing)
+      - name: Fail deployment (FTP secrets missing)
         if: ${{ env.FTP_HOST == '' || env.FTP_USERNAME == '' || env.FTP_PASSWORD == '' || env.FTP_SERVER_DIR == '' }}
         run: |
-          echo "Required FTP secrets are not configured."
-          echo "Set HOSTINGER_FTP_HOST, HOSTINGER_FTP_USERNAME, HOSTINGER_FTP_PASSWORD, and HOSTINGER_FTP_SERVER_DIR to enable deployments."
+          echo "Required FTP secrets are not configured." >&2
+          echo "Set HOSTINGER_FTP_HOST, HOSTINGER_FTP_USERNAME, HOSTINGER_FTP_PASSWORD, and HOSTINGER_FTP_SERVER_DIR to enable deployments." >&2
+          exit 1
 
       - name: Deploy via FTP
         if: ${{ env.FTP_HOST != '' && env.FTP_USERNAME != '' && env.FTP_PASSWORD != '' && env.FTP_SERVER_DIR != '' }}
