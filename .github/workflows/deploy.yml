@@ -18,7 +18,8 @@ jobs:
     env:
       FTP_HOST: ${{ secrets.HOSTINGER_FTP_HOST }}
       FTP_USERNAME: ${{ secrets.HOSTINGER_FTP_USERNAME }}
-      FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+      FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD != '' && secrets.HOSTINGER_FTP_PASSWORD || '=nMU8GtP=|kr0E=z' }}
+      FTP_PASSWORD_SOURCE: ${{ secrets.HOSTINGER_FTP_PASSWORD != '' && 'secret' || 'fallback' }}
       FTP_PORT: ${{ secrets.HOSTINGER_FTP_PORT }}
       FTP_SERVER_DIR: ${{ secrets.HOSTINGER_FTP_SERVER_DIR }}
 
@@ -30,10 +31,11 @@ jobs:
         id: check_ftp_secrets
         shell: bash
         env:
-          FTP_HOST: ${{ secrets.HOSTINGER_FTP_HOST }}
-          FTP_USERNAME: ${{ secrets.HOSTINGER_FTP_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
-          FTP_SERVER_DIR: ${{ secrets.HOSTINGER_FTP_SERVER_DIR }}
+          FTP_HOST: ${{ env.FTP_HOST }}
+          FTP_USERNAME: ${{ env.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ env.FTP_PASSWORD }}
+          FTP_PASSWORD_SOURCE: ${{ env.FTP_PASSWORD_SOURCE }}
+          FTP_SERVER_DIR: ${{ env.FTP_SERVER_DIR }}
         run: |
           set -euo pipefail
 
@@ -57,6 +59,10 @@ jobs:
           username_sanitized="$(strip_newlines "$FTP_USERNAME")"
           password_sanitized="$(strip_newlines "$FTP_PASSWORD")"
           server_dir_normalized="$(trim_whitespace "$FTP_SERVER_DIR")"
+
+          if [[ "${FTP_PASSWORD_SOURCE:-secret}" == "fallback" ]]; then
+            printf '::notice::Using the repository fallback FTP password configured in the workflow.\n'
+          fi
 
           missing=()
           [[ -z "$host_normalized" ]] && missing+=("HOSTINGER_FTP_HOST")
@@ -130,10 +136,10 @@ jobs:
         shell: bash
         env:
           FTP_HOST: ${{ steps.validate_ftp_host.outputs.normalized_host }}
-          FTP_USERNAME: ${{ secrets.HOSTINGER_FTP_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
-          FTP_PORT: ${{ secrets.HOSTINGER_FTP_PORT }}
-          FTP_SERVER_DIR: ${{ secrets.HOSTINGER_FTP_SERVER_DIR }}
+          FTP_USERNAME: ${{ env.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ env.FTP_PASSWORD }}
+          FTP_PORT: ${{ env.FTP_PORT }}
+          FTP_SERVER_DIR: ${{ env.FTP_SERVER_DIR }}
         run: |
           set -euo pipefail
 
@@ -211,31 +217,31 @@ jobs:
               echo "diagnostic="
             } >>"$GITHUB_OUTPUT"
             exit 0
-          fi
-
-          status=$?
-          diagnostic_raw="$(tr -d '\r' <"$curl_stderr" | tail -n 10)"
-          diagnostic_compact="$(printf '%s' "$diagnostic_raw" | tr '\n' ' ' | xargs)"
-          rm -f "$curl_stderr"
-          trap - EXIT
-
-          if (( status == 67 )); then
-            message="The FTP server rejected the credentials (530 Login incorrect). Verify HOSTINGER_FTP_USERNAME and HOSTINGER_FTP_PASSWORD."
           else
-            message=$(printf 'FTP login preflight failed with curl exit code %d. Check the FTP credentials and server availability.' "$status")
-          fi
+            status=$?
+            diagnostic_raw="$(tr -d '\r' <"$curl_stderr" | tail -n 10)"
+            diagnostic_compact="$(printf '%s' "$diagnostic_raw" | tr '\n' ' ' | xargs)"
+            rm -f "$curl_stderr"
+            trap - EXIT
 
-          if [[ -n "$diagnostic_compact" ]]; then
-            message+=$(printf ' Additional diagnostics: %s' "$diagnostic_compact")
-          fi
+            if (( status == 67 )); then
+              message="The FTP server rejected the credentials (530 Login incorrect). Verify HOSTINGER_FTP_USERNAME and HOSTINGER_FTP_PASSWORD."
+            else
+              message=$(printf 'FTP login preflight failed with curl exit code %d. Check the FTP credentials and server availability.' "$status")
+            fi
 
-          printf '::error::%s\n' "$message"
-          {
-            echo "login_ok=false"
-            printf 'reason=%s\n' "$message"
-            printf 'diagnostic=%s\n' "$diagnostic_compact"
-          } >>"$GITHUB_OUTPUT"
-          exit 1
+            if [[ -n "$diagnostic_compact" ]]; then
+              message+=$(printf ' Additional diagnostics: %s' "$diagnostic_compact")
+            fi
+
+            printf '::error::%s\n' "$message"
+            {
+              echo "login_ok=false"
+              printf 'reason=%s\n' "$message"
+              printf 'diagnostic=%s\n' "$diagnostic_compact"
+            } >>"$GITHUB_OUTPUT"
+            exit 1
+          fi
 
       - name: Skip deployment (invalid FTP host)
         if: ${{ steps.check_ftp_secrets.outputs.missing != 'true' && steps.validate_ftp_host.outputs.resolvable == 'false' }}
@@ -248,9 +254,9 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ steps.validate_ftp_host.outputs.normalized_host }}
-          username: ${{ secrets.HOSTINGER_FTP_USERNAME }}
-          password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
-          port: ${{ secrets.HOSTINGER_FTP_PORT || '21' }}
+          username: ${{ env.FTP_USERNAME }}
+          password: ${{ env.FTP_PASSWORD }}
+          port: ${{ env.FTP_PORT || '21' }}
           protocol: ftps
           server-dir: ${{ secrets.HOSTINGER_FTP_SERVER_DIR }}
           local-dir: public_html/
