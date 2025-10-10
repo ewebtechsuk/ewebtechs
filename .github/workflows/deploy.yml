@@ -197,9 +197,6 @@ jobs:
           curl_args=(
             --silent
             --show-error
-            --ftp-ssl
-            --ssl-reqd
-            --insecure
             --disable-epsv
             --connect-timeout 15
             --max-time 60
