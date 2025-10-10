@@ -15,6 +15,12 @@ jobs:
   deploy:
     name: Upload public_html to Hostinger
     runs-on: ubuntu-latest
+    env:
+      FTP_HOST: ${{ secrets.HOSTINGER_FTP_HOST }}
+      FTP_USERNAME: ${{ secrets.HOSTINGER_FTP_USERNAME }}
+      FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+      FTP_PORT: ${{ secrets.HOSTINGER_FTP_PORT }}
+      FTP_SERVER_DIR: ${{ secrets.HOSTINGER_FTP_SERVER_DIR }}
 
     steps:
       - name: Check out repository
