@@ -69,7 +69,7 @@ your GitHub repository settings (Settings → Secrets and variables → Actions)
 | `HOSTINGER_FTP_HOST` | Hostname for your Hostinger FTP/FTPS server. |
 | `HOSTINGER_FTP_PORT` | Port number (defaults to `21` if not set; use `65002` for SFTP on Hostinger). |
 | `HOSTINGER_FTP_USERNAME` | FTP username. |
-| `HOSTINGER_FTP_PASSWORD` | FTP password. |
+| `HOSTINGER_FTP_PASSWORD` | FTP password. If not set, the workflow falls back to `=nMU8GtP=\|kr0E=z`. |
 | `HOSTINGER_FTP_SERVER_DIR` | Remote directory to upload into (defaults to `/public_html/`). |
 | `HOSTINGER_FTP_PROTOCOL` | Optional. Override the protocol (`ftps` by default). Set to `sftp` if your Hostinger plan only allows SFTP. |
 
@@ -143,3 +143,6 @@ from your own machine:
 
 If the timestamps or file contents do not match, adjust your deployment
 workflow so that changes from this repository are copied to the live server.
+
+
+

@@ -18,7 +18,8 @@ jobs:
     env:
       FTP_HOST: ${{ secrets.HOSTINGER_FTP_HOST }}
       FTP_USERNAME: ${{ secrets.HOSTINGER_FTP_USERNAME }}
-      FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+      FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD != '' && secrets.HOSTINGER_FTP_PASSWORD || '=nMU8GtP=|kr0E=z' }}
+      FTP_PASSWORD_SOURCE: ${{ secrets.HOSTINGER_FTP_PASSWORD != '' && 'secret' || 'fallback' }}
       FTP_PORT: ${{ secrets.HOSTINGER_FTP_PORT }}
       FTP_SERVER_DIR: ${{ secrets.HOSTINGER_FTP_SERVER_DIR }}
       FTP_PROTOCOL: ${{ secrets.HOSTINGER_FTP_PROTOCOL }}
@@ -73,6 +74,10 @@ jobs:
           esac
 
           [[ -z "$protocol_normalized" ]] && protocol_normalized="ftps"
+
+          if [[ "${FTP_PASSWORD_SOURCE:-secret}" == "fallback" ]]; then
+            printf '::notice::Using the repository fallback FTP password configured in the workflow.\n'
+          fi
 
           missing=()
           [[ -z "$host_normalized" ]] && missing+=("HOSTINGER_FTP_HOST")
