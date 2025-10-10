@@ -254,7 +254,14 @@ jobs:
             exit 0
           fi
 
-          url="ftp://$host:$port/"
+          # Hostinger's FTPS endpoint expects the control connection to start as
+          # plain FTP and then upgrade via explicit TLS, so we intentionally use
+          # the ftp:// scheme for both FTP and FTPS while still enabling the TLS
+          # flags below. Keep the scheme explicit to avoid "unbound variable"
+          # errors when this script runs with `set -u`.
+          scheme="ftp"
+
+          url="$scheme://$host:$port/"
           if [[ -n "$base_path" ]]; then
             url="$scheme://$host:$port/${base_path}/"
           fi
