@@ -64,20 +64,20 @@ jobs:
           protocol_lower="$(printf '%s' "$protocol_candidate" | tr '[:upper:]' '[:lower:]')"
 
           case "$protocol_lower" in
-            ""|ftp|ftps|ftpes|sftp)
+            "")
+              protocol_normalized="ftps"
+              ;;
+            ftp|ftps|sftp)
               protocol_normalized="$protocol_lower"
+              ;;
+            ftpes)
+              protocol_normalized="ftps"
               ;;
             *)
               printf '::warning::Unrecognized FTP protocol "%s". Defaulting to ftps.\n' "$protocol_candidate"
               protocol_normalized="ftps"
               ;;
           esac
-
-          [[ -z "$protocol_normalized" ]] && protocol_normalized="ftps"
-
-          if [[ "${FTP_PASSWORD_SOURCE:-secret}" == "fallback" ]]; then
-            printf '::notice::Using the repository fallback FTP password configured in the workflow.\n'
-          fi
 
           missing=()
           [[ -z "$host_normalized" ]] && missing+=("HOSTINGER_FTP_HOST")
@@ -186,12 +186,15 @@ jobs:
           protocol="$(trim_edges "$FTP_PROTOCOL")"
           protocol="${protocol,,}"
 
-          if [[ -z "$protocol" ]]; then
-            protocol="ftps"
-          fi
-
           case "$protocol" in
-            ftp|ftps|ftpes|sftp)
+            "")
+              protocol="ftps"
+              ;;
+            ftp|ftps|sftp)
+              ;;
+            ftpes)
+              printf '::notice::Treating ftpes as explicit FTPS.\n'
+              protocol="ftps"
               ;;
             *)
               printf '::warning::Unknown FTP protocol "%s". Defaulting to ftps.\n' "$protocol"
@@ -251,12 +254,7 @@ jobs:
             exit 0
           fi
 
-          scheme="ftp"
-          if [[ "$protocol" == "ftps" || "$protocol" == "ftpes" ]]; then
-            scheme="ftps"
-          fi
-
-          url="$scheme://$host:$port/"
+          url="ftp://$host:$port/"
           if [[ -n "$base_path" ]]; then
             url="$scheme://$host:$port/${base_path}/"
           fi
@@ -269,7 +267,7 @@ jobs:
             --max-time 60
           )
 
-          if [[ "$protocol" == "ftps" || "$protocol" == "ftpes" ]]; then
+          if [[ "$protocol" == "ftps" ]]; then
             curl_args+=(
               --ftp-ssl
               --ssl-reqd
