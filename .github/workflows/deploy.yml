@@ -118,6 +118,7 @@ jobs:
             {
               echo "login_ok=false"
               printf 'reason=%s\n' "The FTP host resolved to an empty value after validation."
+              echo "diagnostic="
             } >>"$GITHUB_OUTPUT"
             exit 1
           fi
@@ -127,9 +128,13 @@ jobs:
             {
               echo "login_ok=false"
               printf 'reason=%s\n' "FTP credentials are empty after validation."
+              echo "diagnostic="
             } >>"$GITHUB_OUTPUT"
             exit 1
           fi
+
+          printf '::add-mask::%s\n' "$username"
+          printf '::add-mask::%s\n' "$password"
 
           base_path="${FTP_SERVER_DIR:-}"
           base_path="${base_path#/}"
@@ -152,25 +157,39 @@ jobs:
             "$url"
           )
 
-          if curl "${curl_args[@]}" --list-only >/dev/null 2>&1; then
+          curl_stderr="$(mktemp)"
+          trap 'rm -f "$curl_stderr"' EXIT
+
+          if curl "${curl_args[@]}" --list-only >/dev/null 2>"$curl_stderr"; then
             {
               echo "login_ok=true"
               printf 'reason=%s\n' ""
+              echo "diagnostic="
             } >>"$GITHUB_OUTPUT"
             exit 0
           fi
 
           status=$?
+          diagnostic_raw="$(tr -d '\r' <"$curl_stderr" | tail -n 10)"
+          diagnostic_compact="$(printf '%s' "$diagnostic_raw" | tr '\n' ' ' | xargs)"
+          rm -f "$curl_stderr"
+          trap - EXIT
+
           if (( status == 67 )); then
             message="The FTP server rejected the credentials (530 Login incorrect). Verify HOSTINGER_FTP_USERNAME and HOSTINGER_FTP_PASSWORD."
           else
             message=$(printf 'FTP login preflight failed with curl exit code %d. Check the FTP credentials and server availability.' "$status")
           fi
 
+          if [[ -n "$diagnostic_compact" ]]; then
+            message+=$(printf ' Additional diagnostics: %s' "$diagnostic_compact")
+          fi
+
           printf '::error::%s\n' "$message"
           {
             echo "login_ok=false"
             printf 'reason=%s\n' "$message"
+            printf 'diagnostic=%s\n' "$diagnostic_compact"
           } >>"$GITHUB_OUTPUT"
           exit 1
 
