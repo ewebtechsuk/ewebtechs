@@ -59,11 +59,26 @@ with network access.
 
 ## GitHub secrets
 
-This repository does not ship with any GitHub Actions workflows that require
-secrets. You only need to configure secrets on GitHub if you later add an
-automation that depends on sensitive values (for example, a deployment
-workflow that needs SSH credentials or API tokens). For the current setup of
-committing WordPress files directly, no additional GitHub secrets are needed.
+This repository now includes a GitHub Actions workflow that deploys the
+contents of `public_html/` to Hostinger whenever changes are pushed to the
+`main` branch. Before that automation can succeed, add the following secrets in
+your GitHub repository settings (Settings → Secrets and variables → Actions):
+
+| Secret name | Description |
+|-------------|-------------|
+| `HOSTINGER_FTP_HOST` | Hostname for your Hostinger FTP/FTPS server. |
+| `HOSTINGER_FTP_PORT` | Port number (usually `21` for FTPS or `65002` for SFTP on Hostinger). |
+| `HOSTINGER_FTP_USERNAME` | FTP username. |
+| `HOSTINGER_FTP_PASSWORD` | FTP password. |
+| `HOSTINGER_FTP_SERVER_DIR` | Remote directory to upload into (for example `/public_html/`). |
+
+> **Tip:** Hostinger typically recommends FTPS (explicit TLS) on port 21 for
+> GitHub Actions. If you must use SFTP on a non-standard port, update the
+> workflow's `protocol` and `port` values accordingly.
+
+Once the secrets are configured, every push that touches files under
+`public_html/` will trigger the deployment workflow. You can monitor the run on
+GitHub under the **Actions** tab.
 
 ## Verify updates on Hostinger
 
