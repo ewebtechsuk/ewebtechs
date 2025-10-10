@@ -15,10 +15,24 @@ jobs:
   deploy:
     name: Upload public_html to Hostinger
     runs-on: ubuntu-latest
+    concurrency:
+      group: hostinger-deploy
+      cancel-in-progress: false
+    env:
+      DEPLOY_PROTOCOL: ${{ secrets.HOSTINGER_FTP_PROTOCOL || 'ftps' }}
+      DEPLOY_PORT: ${{ secrets.HOSTINGER_FTP_PORT || '21' }}
+      DEPLOY_SERVER_DIR: ${{ secrets.HOSTINGER_FTP_SERVER_DIR || '/public_html/' }}
 
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+      - name: Ensure public_html exists
+        run: |
+          if [ ! -d "public_html" ]; then
+            echo "The public_html directory is missing."
+            exit 1
+          fi
 
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -26,8 +40,11 @@ jobs:
           server: ${{ secrets.HOSTINGER_FTP_HOST }}
           username: ${{ secrets.HOSTINGER_FTP_USERNAME }}
           password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
-          port: ${{ secrets.HOSTINGER_FTP_PORT }}
-          protocol: ftps
-          server-dir: ${{ secrets.HOSTINGER_FTP_SERVER_DIR }}
+          port: ${{ env.DEPLOY_PORT }}
+          protocol: ${{ env.DEPLOY_PROTOCOL }}
+          server-dir: ${{ env.DEPLOY_SERVER_DIR }}
           local-dir: public_html
-          git-ftp-args: --insecure
+          exclude: |
+            **/.git*
+            **/.github/**
+            **/.DS_Store

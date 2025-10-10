@@ -67,18 +67,22 @@ your GitHub repository settings (Settings → Secrets and variables → Actions)
 | Secret name | Description |
 |-------------|-------------|
 | `HOSTINGER_FTP_HOST` | Hostname for your Hostinger FTP/FTPS server. |
-| `HOSTINGER_FTP_PORT` | Port number (usually `21` for FTPS or `65002` for SFTP on Hostinger). |
+| `HOSTINGER_FTP_PORT` | Port number (defaults to `21` if not set; use `65002` for SFTP on Hostinger). |
 | `HOSTINGER_FTP_USERNAME` | FTP username. |
 | `HOSTINGER_FTP_PASSWORD` | FTP password. |
-| `HOSTINGER_FTP_SERVER_DIR` | Remote directory to upload into (for example `/public_html/`). |
+| `HOSTINGER_FTP_SERVER_DIR` | Remote directory to upload into (defaults to `/public_html/`). |
+| `HOSTINGER_FTP_PROTOCOL` | Optional. Override the protocol (`ftps` by default). Set to `sftp` if your Hostinger plan only allows SFTP. |
 
 > **Tip:** Hostinger typically recommends FTPS (explicit TLS) on port 21 for
-> GitHub Actions. If you must use SFTP on a non-standard port, update the
-> workflow's `protocol` and `port` values accordingly.
+> GitHub Actions. If you must use SFTP on port 65002, set the
+> `HOSTINGER_FTP_PROTOCOL` secret to `sftp` and the `HOSTINGER_FTP_PORT`
+> secret to `65002`.
 
 Once the secrets are configured, every push that touches files under
-`public_html/` will trigger the deployment workflow. You can monitor the run on
-GitHub under the **Actions** tab.
+`public_html/` will trigger the deployment workflow. The workflow validates that
+`public_html/` exists before deploying, and it defaults to FTPS on port 21 if no
+protocol or port secret is provided. You can monitor the run on GitHub under the
+**Actions** tab.
 
 ## Verify updates on Hostinger
 
