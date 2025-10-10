@@ -37,11 +37,32 @@ jobs:
         run: |
           set -euo pipefail
 
+          trim_whitespace() {
+            local value
+            value="${1:-}"
+            value="${value//$'\r'/}"
+            value="${value//$'\n'/}"
+            printf '%s' "$value" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'
+          }
+
+          strip_newlines() {
+            local value
+            value="${1:-}"
+            value="${value//$'\r'/}"
+            value="${value//$'\n'/}"
+            printf '%s' "$value"
+          }
+
+          host_normalized="$(trim_whitespace "$FTP_HOST")"
+          username_sanitized="$(strip_newlines "$FTP_USERNAME")"
+          password_sanitized="$(strip_newlines "$FTP_PASSWORD")"
+          server_dir_normalized="$(trim_whitespace "$FTP_SERVER_DIR")"
+
           missing=()
-          [[ -z "$FTP_HOST" ]] && missing+=("HOSTINGER_FTP_HOST")
-          [[ -z "$FTP_USERNAME" ]] && missing+=("HOSTINGER_FTP_USERNAME")
-          [[ -z "$FTP_PASSWORD" ]] && missing+=("HOSTINGER_FTP_PASSWORD")
-          [[ -z "$FTP_SERVER_DIR" ]] && missing+=("HOSTINGER_FTP_SERVER_DIR")
+          [[ -z "$host_normalized" ]] && missing+=("HOSTINGER_FTP_HOST")
+          [[ -z "${username_sanitized//[[:space:]]/}" ]] && missing+=("HOSTINGER_FTP_USERNAME")
+          [[ -z "${password_sanitized//[[:space:]]/}" ]] && missing+=("HOSTINGER_FTP_PASSWORD")
+          [[ -z "$server_dir_normalized" ]] && missing+=("HOSTINGER_FTP_SERVER_DIR")
 
           if ((${#missing[@]})); then
             missing_pretty=$(IFS=', '; printf '%s' "${missing[*]}")
@@ -70,7 +91,9 @@ jobs:
           set -euo pipefail
 
           host_raw="${FTP_HOST:-}"
-          host_trimmed="$(printf '%s' "$host_raw" | xargs)"
+          host_clean="${host_raw//$'\r'/}"
+          host_clean="${host_clean//$'\n'/}"
+          host_trimmed="$(printf '%s' "$host_clean" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
           reason=""
 
           if [[ -z "$host_trimmed" ]]; then
@@ -114,10 +137,25 @@ jobs:
         run: |
           set -euo pipefail
 
-          host="${FTP_HOST:-}"
-          username="${FTP_USERNAME:-}"
-          password="${FTP_PASSWORD:-}"
-          port="${FTP_PORT:-21}"
+          strip_newlines() {
+            local value
+            value="${1:-}"
+            value="${value//$'\r'/}"
+            value="${value//$'\n'/}"
+            printf '%s' "$value"
+          }
+
+          trim_edges() {
+            local value
+            value="$(strip_newlines "$1")"
+            printf '%s' "$value" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'
+          }
+
+          host="$(trim_edges "$FTP_HOST")"
+          username="$(strip_newlines "$FTP_USERNAME")"
+          password="$(strip_newlines "$FTP_PASSWORD")"
+          port="$(trim_edges "$FTP_PORT")"
+          [[ -z "$port" ]] && port=21
 
           if [[ -z "$host" ]]; then
             printf '::error::The FTP host is empty after validation.\n'
@@ -129,7 +167,7 @@ jobs:
             exit 1
           fi
 
-          if [[ -z "$username" || -z "$password" ]]; then
+          if [[ -z "${username//[[:space:]]/}" || -z "${password//[[:space:]]/}" ]]; then
             printf '::error::FTP credentials are missing after validation.\n'
             {
               echo "login_ok=false"
@@ -142,7 +180,7 @@ jobs:
           printf '::add-mask::%s\n' "$username"
           printf '::add-mask::%s\n' "$password"
 
-          base_path="${FTP_SERVER_DIR:-}"
+          base_path="$(trim_edges "$FTP_SERVER_DIR")"
           base_path="${base_path#/}"
           base_path="${base_path%/}"
           url="ftp://$host:$port/"
