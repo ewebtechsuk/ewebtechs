@@ -71,12 +71,24 @@ your GitHub repository settings (Settings → Secrets and variables → Actions)
 | `HOSTINGER_FTP_USERNAME` | FTP username. |
 | `HOSTINGER_FTP_PASSWORD` | FTP password. |
 | `HOSTINGER_FTP_SERVER_DIR` | Remote directory to upload into (defaults to `/public_html/`). |
-| `HOSTINGER_FTP_PROTOCOL` | Optional. Override the protocol (`ftps` by default). Set to `sftp` if your Hostinger plan only allows SFTP. |
+| `HOSTINGER_FTP_PROTOCOL` | Optional. Override the protocol (`ftps` explicit TLS by default). Accepts `ftp`, `ftps`, `ftpes`, or `sftp`. Set to `sftp` if your Hostinger plan only allows SFTP. |
 
 > **Tip:** Hostinger typically recommends FTPS (explicit TLS) on port 21 for
 > GitHub Actions. If you must use SFTP on port 65002, set the
 > `HOSTINGER_FTP_PROTOCOL` secret to `sftp` and the `HOSTINGER_FTP_PORT`
 > secret to `65002`.
+
+When `HOSTINGER_FTP_PROTOCOL` is omitted, the workflow performs an explicit FTPS
+preflight check on port 21 before deploying (the same approach Hostinger
+documents for GitHub Actions). Providing `ftp` disables TLS for hosts that only
+accept plain FTP. Specifying `ftpes` is treated as an alias for explicit FTPS.
+Choosing `sftp` skips the curl-based preflight test (SFTP requires an interactive
+client), defaults the port to 22 when none is specified, and relies on the
+deployment action itself to validate the credentials. In all cases the workflow
+trims whitespace from the configured server directory before uploading so stray
+slashes or spaces in the secret do not break the path resolution on Hostinger,
+and the login step now normalizes the username and password (removing stray
+carriage returns or trailing spaces) before handing them to the deploy action.
 
 Once the secrets are configured, every push that touches files under
 `public_html/` will trigger the deployment workflow. If any of the required
@@ -85,6 +97,19 @@ error so it is clear that no deployment occurred. When the secrets are present,
 the workflow validates that `public_html/` exists before deploying, and it
 defaults to FTPS on port 21 if no protocol or port secret is provided. You can
 monitor the run on GitHub under the **Actions** tab.
+
+> **Important:** Keep the `HOSTINGER_FTP_PASSWORD` secret up to date whenever
+> the credential changes. Update it immediately if Hostinger issues a new
+> password so automated deployments continue to work.
+
+### Update the FTP password secret
+
+1. Open your repository on GitHub and navigate to **Settings → Secrets and
+   variables → Actions**.
+2. Locate `HOSTINGER_FTP_PASSWORD` and choose **Update secret**.
+3. Paste the latest password provided by Hostinger and click **Save changes**.
+4. Re-run the latest failed workflow from the **Actions** tab to confirm the
+   deployment succeeds with the refreshed credential.
 
 ## Verify updates on Hostinger
 
