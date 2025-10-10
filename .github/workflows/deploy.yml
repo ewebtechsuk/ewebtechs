@@ -20,14 +20,49 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Check required FTP secrets
+        id: check_ftp_secrets
+        shell: bash
+        env:
+          FTP_HOST: ${{ secrets.HOSTINGER_FTP_HOST }}
+          FTP_USERNAME: ${{ secrets.HOSTINGER_FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+          FTP_SERVER_DIR: ${{ secrets.HOSTINGER_FTP_SERVER_DIR }}
+        run: |
+          set -euo pipefail
+
+          missing=()
+          [[ -z "$FTP_HOST" ]] && missing+=("HOSTINGER_FTP_HOST")
+          [[ -z "$FTP_USERNAME" ]] && missing+=("HOSTINGER_FTP_USERNAME")
+          [[ -z "$FTP_PASSWORD" ]] && missing+=("HOSTINGER_FTP_PASSWORD")
+          [[ -z "$FTP_SERVER_DIR" ]] && missing+=("HOSTINGER_FTP_SERVER_DIR")
+
+          if ((${#missing[@]})); then
+            missing_pretty=$(IFS=', '; printf '%s' "${missing[*]}")
+            printf '::notice::Skipping deployment because the following secrets are missing: %s\n' "$missing_pretty"
+            {
+              echo "missing=true"
+              echo "missing_list=$missing_pretty"
+            } >>"$GITHUB_OUTPUT"
+          else
+            echo "missing=false" >>"$GITHUB_OUTPUT"
+          fi
+
+      - name: Skip deployment (missing FTP secrets)
+        if: ${{ steps.check_ftp_secrets.outputs.missing == 'true' }}
+        run: |
+          echo "Required FTP secrets are not fully configured."
+          echo "Missing secrets: ${{ steps.check_ftp_secrets.outputs.missing_list }}"
+
       - name: Deploy via FTP
+        if: ${{ steps.check_ftp_secrets.outputs.missing != 'true' }}
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.HOSTINGER_FTP_HOST }}
           username: ${{ secrets.HOSTINGER_FTP_USERNAME }}
           password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
-          port: ${{ secrets.HOSTINGER_FTP_PORT }}
+          port: ${{ secrets.HOSTINGER_FTP_PORT || '21' }}
           protocol: ftps
           server-dir: ${{ secrets.HOSTINGER_FTP_SERVER_DIR }}
           local-dir: public_html
-          git-ftp-args: --insecure
+          security: loose
