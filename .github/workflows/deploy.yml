@@ -15,36 +15,32 @@ jobs:
   deploy:
     name: Upload public_html to Hostinger
     runs-on: ubuntu-latest
-    concurrency:
-      group: hostinger-deploy
-      cancel-in-progress: false
     env:
-      DEPLOY_PROTOCOL: ${{ secrets.HOSTINGER_FTP_PROTOCOL || 'ftps' }}
-      DEPLOY_PORT: ${{ secrets.HOSTINGER_FTP_PORT || '21' }}
-      DEPLOY_SERVER_DIR: ${{ secrets.HOSTINGER_FTP_SERVER_DIR || '/public_html/' }}
+      FTP_HOST: ${{ secrets.HOSTINGER_FTP_HOST }}
+      FTP_USERNAME: ${{ secrets.HOSTINGER_FTP_USERNAME }}
+      FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+      FTP_PORT: ${{ secrets.HOSTINGER_FTP_PORT }}
+      FTP_SERVER_DIR: ${{ secrets.HOSTINGER_FTP_SERVER_DIR }}
 
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Ensure public_html exists
+      - name: Skip deployment (FTP secrets missing)
+        if: ${{ env.FTP_HOST == '' || env.FTP_USERNAME == '' || env.FTP_PASSWORD == '' || env.FTP_SERVER_DIR == '' }}
         run: |
-          if [ ! -d "public_html" ]; then
-            echo "The public_html directory is missing."
-            exit 1
-          fi
+          echo "Required FTP secrets are not configured."
+          echo "Set HOSTINGER_FTP_HOST, HOSTINGER_FTP_USERNAME, HOSTINGER_FTP_PASSWORD, and HOSTINGER_FTP_SERVER_DIR to enable deployments."
 
       - name: Deploy via FTP
+        if: ${{ env.FTP_HOST != '' && env.FTP_USERNAME != '' && env.FTP_PASSWORD != '' && env.FTP_SERVER_DIR != '' }}
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.HOSTINGER_FTP_HOST }}
-          username: ${{ secrets.HOSTINGER_FTP_USERNAME }}
-          password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
-          port: ${{ env.DEPLOY_PORT }}
-          protocol: ${{ env.DEPLOY_PROTOCOL }}
-          server-dir: ${{ env.DEPLOY_SERVER_DIR }}
+          server: ${{ env.FTP_HOST }}
+          username: ${{ env.FTP_USERNAME }}
+          password: ${{ env.FTP_PASSWORD }}
+          port: ${{ env.FTP_PORT != '' && env.FTP_PORT || '21' }}
+          protocol: ftps
+          server-dir: ${{ env.FTP_SERVER_DIR }}
           local-dir: public_html
-          exclude: |
-            **/.git*
-            **/.github/**
-            **/.DS_Store
+          security: loose
