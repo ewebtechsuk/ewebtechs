@@ -57,6 +57,14 @@ This README was added from Codex environment which cannot connect to the
 original server or GitHub, so you must perform the above steps on a machine
 with network access.
 
+## GitHub secrets
+
+This repository does not ship with any GitHub Actions workflows that require
+secrets. You only need to configure secrets on GitHub if you later add an
+automation that depends on sensitive values (for example, a deployment
+workflow that needs SSH credentials or API tokens). For the current setup of
+committing WordPress files directly, no additional GitHub secrets are needed.
+
 ## Verify updates on Hostinger
 
 Because this environment cannot reach external networks, it cannot confirm
