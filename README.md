@@ -86,10 +86,18 @@ the workflow validates that `public_html/` exists before deploying, and it
 defaults to FTPS on port 21 if no protocol or port secret is provided. You can
 monitor the run on GitHub under the **Actions** tab.
 
-> **Important:** Replace the fallback password with a repository secret as soon
-> as possible to avoid storing credentials in workflow logs. Update the
-> `HOSTINGER_FTP_PASSWORD` secret to the current value (`=nMU8GtP=|kr0E=z`) so
-> deployments use the managed secret rather than the inline fallback.
+> **Important:** Keep the `HOSTINGER_FTP_PASSWORD` secret up to date whenever
+> the credential changes. Update it immediately if Hostinger issues a new
+> password so automated deployments continue to work.
+
+### Update the FTP password secret
+
+1. Open your repository on GitHub and navigate to **Settings → Secrets and
+   variables → Actions**.
+2. Locate `HOSTINGER_FTP_PASSWORD` and choose **Update secret**.
+3. Paste the latest password provided by Hostinger and click **Save changes**.
+4. Re-run the latest failed workflow from the **Actions** tab to confirm the
+   deployment succeeds with the refreshed credential.
 
 ## Verify updates on Hostinger
 

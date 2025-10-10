@@ -34,7 +34,6 @@ jobs:
           FTP_HOST: ${{ env.FTP_HOST }}
           FTP_USERNAME: ${{ env.FTP_USERNAME }}
           FTP_PASSWORD: ${{ env.FTP_PASSWORD }}
-          FTP_PASSWORD_SOURCE: ${{ env.FTP_PASSWORD_SOURCE }}
           FTP_SERVER_DIR: ${{ env.FTP_SERVER_DIR }}
         run: |
           set -euo pipefail
@@ -92,7 +91,7 @@ jobs:
         if: ${{ steps.check_ftp_secrets.outputs.missing != 'true' }}
         shell: bash
         env:
-          FTP_HOST: ${{ secrets.HOSTINGER_FTP_HOST }}
+          FTP_HOST: ${{ env.FTP_HOST }}
         run: |
           set -euo pipefail
 
