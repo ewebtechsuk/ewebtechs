@@ -22,6 +22,7 @@ jobs:
       FTP_PASSWORD_SOURCE: ${{ secrets.HOSTINGER_FTP_PASSWORD != '' && 'secret' || 'fallback' }}
       FTP_PORT: ${{ secrets.HOSTINGER_FTP_PORT }}
       FTP_SERVER_DIR: ${{ secrets.HOSTINGER_FTP_SERVER_DIR }}
+      FTP_PROTOCOL: ${{ secrets.HOSTINGER_FTP_PROTOCOL }}
 
     steps:
       - name: Check out repository
@@ -35,6 +36,7 @@ jobs:
           FTP_USERNAME: ${{ env.FTP_USERNAME }}
           FTP_PASSWORD: ${{ env.FTP_PASSWORD }}
           FTP_SERVER_DIR: ${{ env.FTP_SERVER_DIR }}
+          FTP_PROTOCOL: ${{ env.FTP_PROTOCOL }}
         run: |
           set -euo pipefail
 
@@ -58,6 +60,20 @@ jobs:
           username_sanitized="$(strip_newlines "$FTP_USERNAME")"
           password_sanitized="$(strip_newlines "$FTP_PASSWORD")"
           server_dir_normalized="$(trim_whitespace "$FTP_SERVER_DIR")"
+          protocol_candidate="$(trim_whitespace "${FTP_PROTOCOL:-}")"
+          protocol_lower="$(printf '%s' "$protocol_candidate" | tr '[:upper:]' '[:lower:]')"
+
+          case "$protocol_lower" in
+            ""|ftp|ftps|ftpes|sftp)
+              protocol_normalized="$protocol_lower"
+              ;;
+            *)
+              printf '::warning::Unrecognized FTP protocol "%s". Defaulting to ftps.\n' "$protocol_candidate"
+              protocol_normalized="ftps"
+              ;;
+          esac
+
+          [[ -z "$protocol_normalized" ]] && protocol_normalized="ftps"
 
           if [[ "${FTP_PASSWORD_SOURCE:-secret}" == "fallback" ]]; then
             printf '::notice::Using the repository fallback FTP password configured in the workflow.\n'
@@ -68,6 +84,12 @@ jobs:
           [[ -z "${username_sanitized//[[:space:]]/}" ]] && missing+=("HOSTINGER_FTP_USERNAME")
           [[ -z "${password_sanitized//[[:space:]]/}" ]] && missing+=("HOSTINGER_FTP_PASSWORD")
           [[ -z "$server_dir_normalized" ]] && missing+=("HOSTINGER_FTP_SERVER_DIR")
+
+          {
+            printf 'normalized_host=%s\n' "$host_normalized"
+            printf 'normalized_server_dir=%s\n' "$server_dir_normalized"
+            printf 'protocol=%s\n' "$protocol_normalized"
+          } >>"$GITHUB_OUTPUT"
 
           if ((${#missing[@]})); then
             missing_pretty=$(IFS=', '; printf '%s' "${missing[*]}")
@@ -91,7 +113,7 @@ jobs:
         if: ${{ steps.check_ftp_secrets.outputs.missing != 'true' }}
         shell: bash
         env:
-          FTP_HOST: ${{ env.FTP_HOST }}
+          FTP_HOST: ${{ steps.check_ftp_secrets.outputs.normalized_host || env.FTP_HOST }}
         run: |
           set -euo pipefail
 
@@ -138,7 +160,8 @@ jobs:
           FTP_USERNAME: ${{ env.FTP_USERNAME }}
           FTP_PASSWORD: ${{ env.FTP_PASSWORD }}
           FTP_PORT: ${{ env.FTP_PORT }}
-          FTP_SERVER_DIR: ${{ env.FTP_SERVER_DIR }}
+          FTP_SERVER_DIR: ${{ steps.check_ftp_secrets.outputs.normalized_server_dir || env.FTP_SERVER_DIR }}
+          FTP_PROTOCOL: ${{ steps.check_ftp_secrets.outputs.protocol || 'ftps' }}
         run: |
           set -euo pipefail
 
@@ -160,7 +183,29 @@ jobs:
           username="$(strip_newlines "$FTP_USERNAME")"
           password="$(strip_newlines "$FTP_PASSWORD")"
           port="$(trim_edges "$FTP_PORT")"
-          [[ -z "$port" ]] && port=21
+          protocol="$(trim_edges "$FTP_PROTOCOL")"
+          protocol="${protocol,,}"
+
+          if [[ -z "$protocol" ]]; then
+            protocol="ftps"
+          fi
+
+          case "$protocol" in
+            ftp|ftps|ftpes|sftp)
+              ;;
+            *)
+              printf '::warning::Unknown FTP protocol "%s". Defaulting to ftps.\n' "$protocol"
+              protocol="ftps"
+              ;;
+          esac
+
+          if [[ -z "$port" ]]; then
+            if [[ "$protocol" == "sftp" ]]; then
+              port=22
+            else
+              port=21
+            fi
+          fi
 
           if [[ -z "$host" ]]; then
             printf '::error::The FTP host is empty after validation.\n'
@@ -188,9 +233,32 @@ jobs:
           base_path="$(trim_edges "$FTP_SERVER_DIR")"
           base_path="${base_path#/}"
           base_path="${base_path%/}"
-          url="ftp://$host:$port/"
+          server_dir_output="./"
           if [[ -n "$base_path" ]]; then
-            url="ftp://$host:$port/${base_path}/"
+            server_dir_output="$base_path/"
+          fi
+
+          if [[ "$protocol" == "sftp" ]]; then
+            printf '::notice::Skipping FTP login preflight because SFTP requires an interactive client. The deployment step will verify the credentials.\n'
+            {
+              echo "login_ok=true"
+              printf 'reason=%s\n' ""
+              echo "diagnostic="
+              printf 'port=%s\n' "$port"
+              printf 'server_dir=%s\n' "$server_dir_output"
+              printf 'protocol=%s\n' "$protocol"
+            } >>"$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          scheme="ftp"
+          if [[ "$protocol" == "ftps" || "$protocol" == "ftpes" ]]; then
+            scheme="ftps"
+          fi
+
+          url="$scheme://$host:$port/"
+          if [[ -n "$base_path" ]]; then
+            url="$scheme://$host:$port/${base_path}/"
           fi
 
           curl_args=(
@@ -199,6 +267,17 @@ jobs:
             --disable-epsv
             --connect-timeout 15
             --max-time 60
+          )
+
+          if [[ "$protocol" == "ftps" || "$protocol" == "ftpes" ]]; then
+            curl_args+=(
+              --ftp-ssl
+              --ssl-reqd
+              --insecure
+            )
+          fi
+
+          curl_args+=(
             --user "$username:$password"
             "$url"
           )
@@ -211,6 +290,9 @@ jobs:
               echo "login_ok=true"
               printf 'reason=%s\n' ""
               echo "diagnostic="
+              printf 'port=%s\n' "$port"
+              printf 'server_dir=%s\n' "$server_dir_output"
+              printf 'protocol=%s\n' "$protocol"
             } >>"$GITHUB_OUTPUT"
             exit 0
           else
@@ -252,8 +334,8 @@ jobs:
           server: ${{ steps.validate_ftp_host.outputs.normalized_host }}
           username: ${{ env.FTP_USERNAME }}
           password: ${{ env.FTP_PASSWORD }}
-          port: ${{ env.FTP_PORT || '21' }}
-          protocol: ftps
-          server-dir: ${{ secrets.HOSTINGER_FTP_SERVER_DIR }}
+          port: ${{ steps.verify_ftp_credentials.outputs.port }}
+          protocol: ${{ steps.verify_ftp_credentials.outputs.protocol }}
+          server-dir: ${{ steps.verify_ftp_credentials.outputs.server_dir }}
           local-dir: public_html/
           security: loose

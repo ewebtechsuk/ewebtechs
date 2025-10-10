@@ -78,6 +78,15 @@ your GitHub repository settings (Settings → Secrets and variables → Actions)
 > `HOSTINGER_FTP_PROTOCOL` secret to `sftp` and the `HOSTINGER_FTP_PORT`
 > secret to `65002`.
 
+When `HOSTINGER_FTP_PROTOCOL` is omitted, the workflow performs a secure FTPS
+preflight check on port 21 before deploying. Providing `ftp` disables TLS for
+hosts that only accept plain FTP. Choosing `sftp` skips the curl-based preflight
+test (SFTP requires an interactive client), defaults the port to 22 when none is
+specified, and relies on the deployment action itself to validate the
+credentials. In all cases the workflow trims whitespace from the configured
+server directory before uploading so stray slashes or spaces in the secret do
+not break the path resolution on Hostinger.
+
 Once the secrets are configured, every push that touches files under
 `public_html/` will trigger the deployment workflow. If any of the required
 secrets are missing, the workflow now fails immediately with an explanatory
