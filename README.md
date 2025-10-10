@@ -79,10 +79,12 @@ your GitHub repository settings (Settings → Secrets and variables → Actions)
 > secret to `65002`.
 
 Once the secrets are configured, every push that touches files under
-`public_html/` will trigger the deployment workflow. The workflow validates that
-`public_html/` exists before deploying, and it defaults to FTPS on port 21 if no
-protocol or port secret is provided. You can monitor the run on GitHub under the
-**Actions** tab.
+`public_html/` will trigger the deployment workflow. If any of the required
+secrets are missing, the workflow now fails immediately with an explanatory
+error so it is clear that no deployment occurred. When the secrets are present,
+the workflow validates that `public_html/` exists before deploying, and it
+defaults to FTPS on port 21 if no protocol or port secret is provided. You can
+monitor the run on GitHub under the **Actions** tab.
 
 ## Verify updates on Hostinger
 
