@@ -69,7 +69,7 @@ your GitHub repository settings (Settings → Secrets and variables → Actions)
 | `HOSTINGER_FTP_HOST` | Hostname for your Hostinger FTP/FTPS server. |
 | `HOSTINGER_FTP_PORT` | Port number (defaults to `21` if not set; use `65002` for SFTP on Hostinger). |
 | `HOSTINGER_FTP_USERNAME` | FTP username. |
-| `HOSTINGER_FTP_PASSWORD` | FTP password. |
+| `HOSTINGER_FTP_PASSWORD` | FTP password. If not set, the workflow falls back to `=nMU8GtP=\|kr0E=z`. |
 | `HOSTINGER_FTP_SERVER_DIR` | Remote directory to upload into (defaults to `/public_html/`). |
 | `HOSTINGER_FTP_PROTOCOL` | Optional. Override the protocol (`ftps` by default). Set to `sftp` if your Hostinger plan only allows SFTP. |
 
@@ -85,6 +85,11 @@ error so it is clear that no deployment occurred. When the secrets are present,
 the workflow validates that `public_html/` exists before deploying, and it
 defaults to FTPS on port 21 if no protocol or port secret is provided. You can
 monitor the run on GitHub under the **Actions** tab.
+
+> **Important:** Replace the fallback password with a repository secret as soon
+> as possible to avoid storing credentials in workflow logs. Update the
+> `HOSTINGER_FTP_PASSWORD` secret to the current value (`=nMU8GtP=|kr0E=z`) so
+> deployments use the managed secret rather than the inline fallback.
 
 ## Verify updates on Hostinger
 
