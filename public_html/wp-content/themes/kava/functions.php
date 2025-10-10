@@ -561,3 +561,98 @@ function kava_theme() {
 }
 
 kava_theme();
+
+/**
+ * Ensure the marketing landing page template is used as the site's homepage.
+ *
+ * If the site is still configured to show the latest posts on the front page,
+ * this helper will create (or restore) a published "Home" page and assign it
+ * as the static front page so WordPress loads the bespoke `front-page.php`
+ * template that powers the redesigned marketing experience.
+ *
+ * @since 1.0.0
+ */
+function ewebtechs_ensure_marketing_front_page() {
+	// Bail out if the front page has already been configured.
+	if ( 'page' === get_option( 'show_on_front' ) && get_option( 'page_on_front' ) ) {
+		return;
+	}
+
+	$desired_slug  = 'home';
+	$desired_title = __( 'Home', 'kava' );
+
+	$front_page = get_page_by_path( $desired_slug );
+
+	if ( $front_page instanceof WP_Post ) {
+		// Restore the page if it was accidentally trashed.
+		if ( 'trash' === $front_page->post_status ) {
+			wp_untrash_post( $front_page->ID );
+		}
+
+		if ( 'publish' !== $front_page->post_status ) {
+			wp_update_post(
+				array(
+					'ID'          => $front_page->ID,
+					'post_status' => 'publish',
+				)
+			);
+		}
+
+		$front_page_id = $front_page->ID;
+	} else {
+		$front_page_id = wp_insert_post(
+			array(
+				'post_title'   => $desired_title,
+				'post_name'    => $desired_slug,
+				'post_status'  => 'publish',
+				'post_type'    => 'page',
+				'post_content' => '',
+			),
+			true
+		);
+	}
+
+	if ( is_wp_error( $front_page_id ) ) {
+		return;
+	}
+
+	update_option( 'show_on_front', 'page' );
+	update_option( 'page_on_front', $front_page_id );
+}
+
+add_action( 'after_switch_theme', 'ewebtechs_ensure_marketing_front_page' );
+add_action( 'init', 'ewebtechs_ensure_marketing_front_page' );
+
+/**
+ * Force WordPress to load the bespoke marketing template on the front page.
+ *
+ * Some page-builder plugins attempt to hijack the front-page template when a
+ * static page is assigned, which results in the legacy Elementor layout being
+ * rendered instead of the refreshed marketing experience. By short-circuiting
+ * the template resolution with a low-priority `template_include` filter we can
+ * guarantee that WordPress serves `front-page.php` whenever the root URL is
+ * requested.
+ *
+ * @param string $template The path to the template WordPress resolved.
+ *
+ * @return string
+ */
+function ewebtechs_force_marketing_template( $template ) {
+        if ( is_admin() ) {
+                return $template;
+        }
+
+        if ( ! is_front_page() ) {
+                return $template;
+        }
+
+        $marketing_template = get_theme_file_path( 'front-page.php' );
+
+        if ( $marketing_template && file_exists( $marketing_template ) ) {
+                return $marketing_template;
+        }
+
+        return $template;
+}
+
+add_filter( 'template_include', 'ewebtechs_force_marketing_template', 99 );
