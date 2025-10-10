@@ -164,20 +164,20 @@ jobs:
               printf 'reason=%s\n' ""
             } >>"$GITHUB_OUTPUT"
             exit 0
-          fi
-
-          status=$?
-          if (( status == 67 )); then
-            message="The FTP server rejected the credentials (530 Login incorrect). Verify HOSTINGER_FTP_USERNAME and HOSTINGER_FTP_PASSWORD."
           else
-            message=$(printf 'FTP login preflight failed with curl exit code %d. Check the FTP credentials and server availability.' "$status")
-          fi
+            status=$?
+            if (( status == 67 )); then
+              message="The FTP server rejected the credentials (530 Login incorrect). Verify HOSTINGER_FTP_USERNAME and HOSTINGER_FTP_PASSWORD."
+            else
+              message=$(printf 'FTP login preflight failed with curl exit code %d. Check the FTP credentials and server availability.' "$status")
+            fi
 
-          printf '::error::%s\n' "$message"
-          {
-            echo "login_ok=false"
-            printf 'reason=%s\n' "$message"
-          } >>"$GITHUB_OUTPUT"
+            printf '::error::%s\n' "$message"
+            {
+              echo "login_ok=false"
+              printf 'reason=%s\n' "$message"
+            } >>"$GITHUB_OUTPUT"
+          fi
 
       - name: Skip deployment (invalid FTP host)
         if: ${{ steps.check_ftp_secrets.outputs.missing != 'true' && steps.validate_ftp_host.outputs.resolvable == 'false' }}
