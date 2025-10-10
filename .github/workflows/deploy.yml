@@ -250,6 +250,8 @@ jobs:
               printf 'port=%s\n' "$port"
               printf 'server_dir=%s\n' "$server_dir_output"
               printf 'protocol=%s\n' "$protocol"
+              printf 'username=%s\n' "$username"
+              printf 'password=%s\n' "$password"
             } >>"$GITHUB_OUTPUT"
             exit 0
           fi
@@ -298,6 +300,8 @@ jobs:
               printf 'port=%s\n' "$port"
               printf 'server_dir=%s\n' "$server_dir_output"
               printf 'protocol=%s\n' "$protocol"
+              printf 'username=%s\n' "$username"
+              printf 'password=%s\n' "$password"
             } >>"$GITHUB_OUTPUT"
             exit 0
           else
@@ -337,8 +341,8 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ steps.validate_ftp_host.outputs.normalized_host }}
-          username: ${{ env.FTP_USERNAME }}
-          password: ${{ env.FTP_PASSWORD }}
+          username: ${{ steps.verify_ftp_credentials.outputs.username || env.FTP_USERNAME }}
+          password: ${{ steps.verify_ftp_credentials.outputs.password || env.FTP_PASSWORD }}
           port: ${{ steps.verify_ftp_credentials.outputs.port }}
           protocol: ${{ steps.verify_ftp_credentials.outputs.protocol }}
           server-dir: ${{ steps.verify_ftp_credentials.outputs.server_dir }}

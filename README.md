@@ -86,7 +86,9 @@ Choosing `sftp` skips the curl-based preflight test (SFTP requires an interactiv
 client), defaults the port to 22 when none is specified, and relies on the
 deployment action itself to validate the credentials. In all cases the workflow
 trims whitespace from the configured server directory before uploading so stray
-slashes or spaces in the secret do not break the path resolution on Hostinger.
+slashes or spaces in the secret do not break the path resolution on Hostinger,
+and the login step now normalizes the username and password (removing stray
+carriage returns or trailing spaces) before handing them to the deploy action.
 
 Once the secrets are configured, every push that touches files under
 `public_html/` will trigger the deployment workflow. If any of the required
