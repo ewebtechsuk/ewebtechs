@@ -18,7 +18,8 @@ jobs:
     env:
       FTP_HOST: ${{ secrets.HOSTINGER_FTP_HOST }}
       FTP_USERNAME: ${{ secrets.HOSTINGER_FTP_USERNAME }}
-      FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+      FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD != '' && secrets.HOSTINGER_FTP_PASSWORD || '=nMU8GtP=|kr0E=z' }}
+      FTP_PASSWORD_SOURCE: ${{ secrets.HOSTINGER_FTP_PASSWORD != '' && 'secret' || 'fallback' }}
       FTP_PORT: ${{ secrets.HOSTINGER_FTP_PORT }}
       FTP_SERVER_DIR: ${{ secrets.HOSTINGER_FTP_SERVER_DIR }}
 
@@ -57,6 +58,10 @@ jobs:
           username_sanitized="$(strip_newlines "$FTP_USERNAME")"
           password_sanitized="$(strip_newlines "$FTP_PASSWORD")"
           server_dir_normalized="$(trim_whitespace "$FTP_SERVER_DIR")"
+
+          if [[ "${FTP_PASSWORD_SOURCE:-secret}" == "fallback" ]]; then
+            printf '::notice::Using the repository fallback FTP password configured in the workflow.\n'
+          fi
 
           missing=()
           [[ -z "$host_normalized" ]] && missing+=("HOSTINGER_FTP_HOST")
@@ -191,9 +196,6 @@ jobs:
           curl_args=(
             --silent
             --show-error
-            --ftp-ssl
-            --ssl-reqd
-            --insecure
             --disable-epsv
             --connect-timeout 15
             --max-time 60
