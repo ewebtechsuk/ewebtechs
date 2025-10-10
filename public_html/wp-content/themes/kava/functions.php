@@ -622,3 +622,37 @@ function ewebtechs_ensure_marketing_front_page() {
 
 add_action( 'after_switch_theme', 'ewebtechs_ensure_marketing_front_page' );
 add_action( 'init', 'ewebtechs_ensure_marketing_front_page' );
+
+/**
+ * Force WordPress to load the bespoke marketing template on the front page.
+ *
+ * Some page-builder plugins attempt to hijack the front-page template when a
+ * static page is assigned, which results in the legacy Elementor layout being
+ * rendered instead of the refreshed marketing experience. By short-circuiting
+ * the template resolution with a low-priority `template_include` filter we can
+ * guarantee that WordPress serves `front-page.php` whenever the root URL is
+ * requested.
+ *
+ * @param string $template The path to the template WordPress resolved.
+ *
+ * @return string
+ */
+function ewebtechs_force_marketing_template( $template ) {
+        if ( is_admin() ) {
+                return $template;
+        }
+
+        if ( ! is_front_page() ) {
+                return $template;
+        }
+
+        $marketing_template = get_theme_file_path( 'front-page.php' );
+
+        if ( $marketing_template && file_exists( $marketing_template ) ) {
+                return $marketing_template;
+        }
+
+        return $template;
+}
+
+add_filter( 'template_include', 'ewebtechs_force_marketing_template', 99 );
