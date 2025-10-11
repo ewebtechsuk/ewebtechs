@@ -65,7 +65,7 @@ jobs:
 
           case "$protocol_lower" in
             "")
-              protocol_normalized="ftps"
+              protocol_normalized="ftp"
               ;;
             ftp|ftps|sftp)
               protocol_normalized="$protocol_lower"
@@ -74,8 +74,8 @@ jobs:
               protocol_normalized="ftps"
               ;;
             *)
-              printf '::warning::Unrecognized FTP protocol "%s". Defaulting to ftps.\n' "$protocol_candidate"
-              protocol_normalized="ftps"
+              printf '::warning::Unrecognized FTP protocol "%s". Defaulting to ftp.\n' "$protocol_candidate"
+              protocol_normalized="ftp"
               ;;
           esac
 
@@ -188,7 +188,7 @@ jobs:
 
           case "$protocol" in
             "")
-              protocol="ftps"
+              protocol="ftp"
               ;;
             ftp|ftps|sftp)
               ;;
@@ -197,8 +197,8 @@ jobs:
               protocol="ftps"
               ;;
             *)
-              printf '::warning::Unknown FTP protocol "%s". Defaulting to ftps.\n' "$protocol"
-              protocol="ftps"
+              printf '::warning::Unknown FTP protocol "%s". Defaulting to ftp.\n' "$protocol"
+              protocol="ftp"
               ;;
           esac
 
@@ -256,11 +256,12 @@ jobs:
             exit 0
           fi
 
-          # Hostinger's FTPS endpoint expects the control connection to start as
-          # plain FTP and then upgrade via explicit TLS, so we intentionally use
-          # the ftp:// scheme for both FTP and FTPS while still enabling the TLS
-          # flags below. Keep the scheme explicit to avoid "unbound variable"
-          # errors when this script runs with `set -u`.
+          # Hostinger's FTP endpoints expect the control connection to start as
+          # plain FTP and (for FTPS) optionally upgrade via explicit TLS, so we
+          # intentionally use the ftp:// scheme regardless of whether TLS is
+          # enabled while still toggling the TLS flags below. Keep the scheme
+          # explicit to avoid "unbound variable" errors when this script runs
+          # with `set -u`.
           scheme="ftp"
 
           url="$scheme://$host:$port/"

@@ -66,28 +66,32 @@ your GitHub repository settings (Settings → Secrets and variables → Actions)
 
 | Secret name | Description |
 |-------------|-------------|
-| `HOSTINGER_FTP_HOST` | Hostname for your Hostinger FTP/FTPS server. |
+| `HOSTINGER_FTP_HOST` | Hostname for your Hostinger FTP/FTPS server. Use the exact FTP IP/host from hPanel (for example `185.185.185.185`) without `ftp://`, paths, or trailing slashes. |
 | `HOSTINGER_FTP_PORT` | Port number (defaults to `21` if not set; use `65002` for SFTP on Hostinger). |
 | `HOSTINGER_FTP_USERNAME` | FTP username. |
 | `HOSTINGER_FTP_PASSWORD` | FTP password. If not set, the workflow falls back to `=nMU8GtP=\|kr0E=z`. |
 | `HOSTINGER_FTP_SERVER_DIR` | Remote directory to upload into (defaults to `/public_html/`). |
-| `HOSTINGER_FTP_PROTOCOL` | Optional. Override the protocol (`ftps` explicit TLS by default). Accepts `ftp`, `ftps`, `ftpes`, or `sftp`. Set to `sftp` if your Hostinger plan only allows SFTP. |
+| `HOSTINGER_FTP_PROTOCOL` | Optional. Override the protocol (`ftp` by default). Accepts `ftp`, `ftps`, `ftpes`, or `sftp`. Set to `sftp` if your Hostinger plan only allows SFTP. |
 
 > **Tip:** Hostinger typically recommends FTPS (explicit TLS) on port 21 for
 > GitHub Actions. If you must use SFTP on port 65002, set the
 > `HOSTINGER_FTP_PROTOCOL` secret to `sftp` and the `HOSTINGER_FTP_PORT`
 > secret to `65002`.
 
-When `HOSTINGER_FTP_PROTOCOL` is omitted, the workflow performs an explicit FTPS
-preflight check on port 21 before deploying (the same approach Hostinger
-documents for GitHub Actions). Providing `ftp` disables TLS for hosts that only
-accept plain FTP. Specifying `ftpes` is treated as an alias for explicit FTPS.
-Choosing `sftp` skips the curl-based preflight test (SFTP requires an interactive
+Before saving the secrets, double-check that the FTP host resolves by running
+`nslookup <host>` or `ping <host>` from your local machine. If the lookup fails,
+use the numeric FTP IP shown in Hostinger's dashboard instead of a vanity
+hostname and wait for any DNS changes to propagate.
+
+When `HOSTINGER_FTP_PROTOCOL` is omitted, the workflow starts with plain FTP on
+port 21. Providing `ftps` upgrades the connection to explicit TLS (matching
+Hostinger's FTPS guidance). Specifying `ftpes` is treated as an alias for
+explicit FTPS. Choosing `sftp` skips the curl-based preflight test (SFTP requires an interactive
 client), defaults the port to 22 when none is specified, and relies on the
 deployment action itself to validate the credentials. In all cases the workflow
 trims whitespace from the configured server directory before uploading so stray
 slashes or spaces in the secret do not break the path resolution on Hostinger,
-and the login step now normalizes the username and password (removing stray
+and the login step normalizes the username and password (removing stray
 carriage returns or trailing spaces) before handing them to the deploy action.
 
 Once the secrets are configured, every push that touches files under
@@ -95,7 +99,7 @@ Once the secrets are configured, every push that touches files under
 secrets are missing, the workflow now fails immediately with an explanatory
 error so it is clear that no deployment occurred. When the secrets are present,
 the workflow validates that `public_html/` exists before deploying, and it
-defaults to FTPS on port 21 if no protocol or port secret is provided. You can
+defaults to FTP on port 21 if no protocol or port secret is provided. You can
 monitor the run on GitHub under the **Actions** tab.
 
 > **Important:** Keep the `HOSTINGER_FTP_PASSWORD` secret up to date whenever
